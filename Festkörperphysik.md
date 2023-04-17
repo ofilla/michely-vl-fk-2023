@@ -13,6 +13,7 @@ keywords:
 * Klausur: 1.8.23 8:00 Uhr
 * Nachklausur 12.9.23 8:00 Uhr
 
+[[20230415133311]]
 ## 1. Strukturen von Festkörpern
 ### Kristallstruktur
 Eine Kristallstruktur besteht aus einem mathematischen _Gitter_ [Bravaisgitter] und einer physikalischen/chemischen _Basis_.
@@ -226,3 +227,5 @@ In dieser Vorlesung werden Planare Defekte nicht weiter behandelt.
 
 ### Stapelfehler
 Es treten in der Realität immer wieder Stapelfehler auf, die die Kristallstruktur in einer Ebene verschieben.
+
+[[20230408120804]]
