@@ -1,5 +1,5 @@
 ---
-title: Festkörperpysik
+title: Festkörperphysik
 author:
   - Prof. Dr. Thomas Michely
   - Oliver Filla
@@ -8,7 +8,7 @@ keywords:
   - Physik
   - Festkörperpysik
 ---
-# Festkörperpysik
+# Festkörperphysik
 
 * Klausur: 1.8.23 8:00 Uhr
 * Nachklausur 12.9.23 8:00 Uhr
@@ -139,7 +139,7 @@ Das Rastertunnelmikroskop (STM) basiert auf dem Tunneleffekt der Quantenmechanik
 Die angelegte Spannung erzeugt eine Energie $eV$, die kleiner als die Austrittsenergie $\Phi$ der gebunden Elektronen.
 
 ### Rasterkraftmikroskop
-Das Rasterkraftmikroskop (AFM)[^1] misst die wirkende Kraft und kann - anders als das Rastertunnelmikroskop - auch nichtleitende Materialien an der Oberfläche vermessen.
+Das Rasterkraftmikroskop (AFM) misst die wirkende Kraft und kann - anders als das Rastertunnelmikroskop - auch nichtleitende Materialien an der Oberfläche vermessen.
 
 ### Feldionenmikroskop
 Ein Feldionenmikroskop (FIM) ionisiert ein Gas an der Spitze über der Messprobe.
@@ -151,12 +151,13 @@ Satz: Jede Symmetrieoperation an einem Bravaisgitter kann in zwei aufeinanderfol
     1. Drehung um $1,2,3,4,6$-zählige Achsen: $(c_n)$ oder $n\in\{1,2,3,4,6\}$
     2. Inversion $\vec{r} \mapsto - \vec{r}$: $(\mathcal I)$ oder $\bar{1}$
     3. Spiegelung an einer Ebene $(\sigma)$ oder $m$
-    4. Drehinversion: Erst Drehung, dann Inversion:[keine Notation] bzw $\bar{n}$
+    4. Drehinversion: Erst Drehung, dann Inversion: [keine Notation] bzw $\bar{n}$
     5. Drehspiegelung: Erst Drehung, dann Spiegelung $\bot$ Drehachse $(s_n)$ bzw [keine Notation]
 
 Die _Raumgruppe_ ist die Vereinigung von Translations- und Punktgruppe.
 
 Hier sind zwei Notationen: Das erste (hier) ist die _Schönfliess-Notation_, das zweite die _internationale Notation_.
+Drehinversion und Drehspiegelung sind jeweils nur in einer der Notationen enthalten.
 
 Beispiele:
 * $\bar{1} = s_2$: Drehung um $2\pi$ + Inversion = Drehung um $\pi$ + Spiegelung
@@ -225,5 +226,3 @@ In dieser Vorlesung werden Planare Defekte nicht weiter behandelt.
 
 ### Stapelfehler
 Es treten in der Realität immer wieder Stapelfehler auf, die die Kristallstruktur in einer Ebene verschieben.
-
-[^1]: atomic force microscope
