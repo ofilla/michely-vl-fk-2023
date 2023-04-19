@@ -71,11 +71,27 @@ Es bringt das genutzte Volumen in ein Verhältnis zu dem freien Volumen.
 * einfache kubische Gitterstruktur
 * nur Polonium kristallisiert in dieser Gitterstruktur.
 * $P_\mathrm{sc} \approx 0.54$
+* primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Würfelecken
+$$
+    \vec{a}_1 = a \cdot \begin{pmatrix} 1\\0\\0 \end{pmatrix}
+    \land
+    \vec{a}_2 = a \cdot \begin{pmatrix} 0\\1\\0 \end{pmatrix}
+    \land
+    \vec{a}_3 = a \cdot \begin{pmatrix} 0\\0\\1 \end{pmatrix}
+$$
 
 ### body centered cubic (_bcc_)
 * 17 Metalle
     * u.a. Eisen, Alkalimetalle
 * $P_\mathrm{bcc} \approx 0.68$
+* primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Körperzentrierte Punkte
+$$
+    \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
+    \land
+    \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\-1\\1 \end{pmatrix}
+    \land
+    \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} -1\\1\\1 \end{pmatrix}
+$$
 
 * konventionelle Einheitszelle ist kubisch (_sc_), mit zweiatomiger Basis
 * Vektoren $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/2 (1,1,1)^T$
@@ -86,6 +102,14 @@ Es bringt das genutzte Volumen in ein Verhältnis zu dem freien Volumen.
 * Dichtestmögliche Kugelpackung
     * Vermutung von Kepler, Beweis 2017
 * 3 verschiedene "Schichten": Stapelfolge A,B,C,A,B,C
+* primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Flächenzentrierte Punkte
+$$
+    \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\0 \end{pmatrix}
+    \land
+    \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\0\\1 \end{pmatrix}
+    \land
+    \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}
+$$
 
 ### hexagonal closed packed
 * 36 Metalle
