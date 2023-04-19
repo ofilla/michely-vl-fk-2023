@@ -62,6 +62,8 @@ Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwis
 
 Im Allgemeinen ist das Pendant im reziproken Raum wichtiger als die Wiegner-Seitz-Zelle selbst.
 
+### Die Koordinationszahl
+Die Koordinationszahl ist der Bruchteil des Raumes, der von identischen, sich berührenden Kugeln auf den Gitterpunkten ausgefüllt wird.[^1] Man zählt sie, indem man die nächsten Nachbarn der selben Atomsorte zählt.
 ## 1.1 Einfache Kristallstrukturen
 ### Packungsdichte
 Die meisten Metalle kristallisieren so, dass sie eine hohe Packungsdichte $P$ erreichen.
@@ -71,6 +73,7 @@ Es bringt das genutzte Volumen in ein Verhältnis zu dem freien Volumen.
 * einfache kubische Gitterstruktur
 * nur Polonium kristallisiert in dieser Gitterstruktur.
 * $P_\mathrm{sc} \approx 0.54$
+* Koordinationszahl $6$
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Würfelecken
 $$
     \vec{a}_1 = a \cdot \begin{pmatrix} 1\\0\\0 \end{pmatrix}
@@ -84,6 +87,7 @@ $$
 * 17 Metalle
     * u.a. Eisen, Alkalimetalle
 * $P_\mathrm{bcc} \approx 0.68$
+* Koordinationszahl $8$
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Körperzentrierte Punkte
 $$
     \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
@@ -102,6 +106,7 @@ $$
 * Dichtestmögliche Kugelpackung
     * Vermutung von Kepler, Beweis 2017
 * 3 verschiedene "Schichten": Stapelfolge A,B,C,A,B,C
+* Koordinationszahl $12$: $6$ Würfelecken und $6$ Flächenzentrierte Punkte
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Flächenzentrierte Punkte
 $$
     \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\0 \end{pmatrix}
@@ -253,3 +258,4 @@ In dieser Vorlesung werden Planare Defekte nicht weiter behandelt.
 Es treten in der Realität immer wieder Stapelfehler auf, die die Kristallstruktur in einer Ebene verschieben.
 
 [[20230408120804]]
+[^1]: [@Gross2012Festkörper, 27]
