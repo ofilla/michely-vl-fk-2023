@@ -335,3 +335,7 @@ In dieser Vorlesung werden Planare Defekte nicht weiter behandelt.
 
 ### Stapelfehler
 Es treten in der Realität immer wieder Stapelfehler auf, die die Kristallstruktur in einer Ebene verschieben.
+
+# Literatur
+1. [@Gross2012Festkörper]
+2. [@Hunklinger2011Festkörper]
