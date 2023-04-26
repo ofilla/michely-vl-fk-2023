@@ -16,18 +16,8 @@ keywords:
 [[20230415133311]]
 
 ## 1. Strukturen von Festkörpern
-### Kristallstruktur
-Eine Kristallstruktur besteht aus einem mathematischen _Gitter_ [Bravaisgitter] und einer physikalischen/chemischen _Basis_.
-
-#### Gitter einer Kristallstruktur
-Das Gitter einer Kristallstruktur ist ein mathematisches Punktgitter. An jedem Gitterpunkt ist eine Basis zu finden.
-
-#### Basis einer Kristallstruktur
-Die Basis ist eine physikalische oder chemische Struktur, die an jedem Gitterpunkt zu finden ist.
-
-Eine einatomige Basis besteht aus einem einzelnen Atom. Eine Basis kann aber auch aus komplexen Strukturen bestehen.
-
 ### 1.1 Bravaisgitter
+#### Bravaisgitter
 Nicht alle Gitter sind für die Beschreibung von Festkörpern sinnvoll. Deswegen gibt es die Gruppe der Bravaisgitter.
 
 Ein Bravaisgitter ist definiert als eine sich unendliche erstreckende Anordnung von Punkten, die von jedem dieser Punkte aus exakt gleich aussieht.
@@ -42,7 +32,18 @@ $$
 
 Die primitiven Translationen sind _keine_ mathematische Basis eines Vektorraums. Die primitiven Translationen sind nicht eineindeutig festgelegt.
 
-### Die primitive Einheitszelle
+#### Kristallstruktur
+Eine Kristallstruktur besteht aus einem mathematischen _Gitter_ [Bravaisgitter] und einer physikalischen/chemischen _Basis_.
+
+##### Gitter einer Kristallstruktur
+Das Gitter einer Kristallstruktur ist ein mathematisches Punktgitter. An jedem Gitterpunkt ist eine Basis zu finden.
+
+##### Basis einer Kristallstruktur
+Die Basis ist eine physikalische oder chemische Struktur, die an jedem Gitterpunkt zu finden ist.
+
+Eine einatomige Basis besteht aus einem einzelnen Atom. Eine Basis kann aber auch aus komplexen Strukturen bestehen.
+
+#### Die primitive Einheitszelle
 Wenn eine Zelle bei jeder möglichen Verschiebung um $\vec{R}$ den gesamten Raum ohne Lücke und ohne Überlapp erfüllt, wird sie _primitive Einheitszelle_ genannt. Sie hat ein festes Volumen $V_e$.
 
 Wie auch die primitiven Translationen ist die primitive Einheitszelle ist nicht eineindeutig definiert. Jede primitive Einheitszelle enthält exakt einen Gitterpunkt, da es ansonsten Translationen gäbe, die Lücken oder Überlappe erzeugen würden.
@@ -51,10 +52,10 @@ Eine offensichtliche Wahl ist die Menge $\{\vec{r}=\sum_{i=1}^3 x_i\vec{a}_i | x
 
 Zwei gängige Lösungen für das Problem sind, entweder eine _konventionelle Einheitszelle_ oder eine _Wiegner-Seitz-Zelle_ zu betrachten.
 
-### Die konventionelle Einheitszelle
+#### Die konventionelle Einheitszelle
 Eine konventionelle Einheitszelle ist eine nicht-primitive Einheitszelle, die den Raum bereits mit einer Teilmenge des Gitters erfüllt. An ihr kann man die Gittersymmetrie sehen.
 
-### Die Wiegner-Seitz-Zelle
+#### Die Wiegner-Seitz-Zelle
 Die Wiegner-Seitz-Zelle ist die Menge aller Punkte, die näher an einem Gitterpunkt liegen als an allen anderen Gitterpunkten liegen. Sie beschreibt die Umgebung eines Gitterpunktes und ist eine primitive Zelle.
 
 Daher erfüllt sie wie die primitive Einheitszelle den Raum ohne Lücke und ohne Überlapp. Durch ihre Konstruktion repräsentiert sie die volle Symmetrie des Gitters.
@@ -63,17 +64,17 @@ Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwis
 
 Im Allgemeinen ist das Pendant im reziproken Raum wichtiger als die Wiegner-Seitz-Zelle selbst.
 
-### Die Koordinationszahl
+#### Die Koordinationszahl
 Die Koordinationszahl ist der Bruchteil des Raumes, der von identischen, sich berührenden Kugeln auf den Gitterpunkten ausgefüllt wird.[^1] Man zählt sie, indem man die nächsten Nachbarn der selben Atomsorte zählt.
 
 [^1]: [@Gross2012Festkörper, 27]
 
-## 1.1 Einfache Kristallstrukturen
-### Packungsdichte
+### 1.2 Einfache Kristallstrukturen
+#### Packungsdichte
 Die meisten Metalle kristallisieren so, dass sie eine hohe Packungsdichte $P$ erreichen.
 Es bringt das genutzte Volumen in ein Verhältnis zu dem freien Volumen.
 
-### simple cubic (_sc_)
+#### simple cubic (_sc_)
 * einfache kubische Gitterstruktur
 * nur Polonium kristallisiert in dieser Gitterstruktur.
 * $P_\mathrm{sc} \approx 0.54$
@@ -87,7 +88,7 @@ $$
     \vec{a}_3 = a \cdot \begin{pmatrix} 0\\0\\1 \end{pmatrix}
 $$
 
-### body centered cubic (_bcc_)
+#### body centered cubic (_bcc_)
 * 17 Metalle
     * u.a. Eisen, Alkalimetalle
 * $P_\mathrm{bcc} \approx 0.68$
@@ -104,7 +105,7 @@ $$
 * konventionelle Einheitszelle ist kubisch (_sc_), mit zweiatomiger Basis
 * Vektoren $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/2 (1,1,1)^T$
 
-### face centered cubic (_fcc_)
+#### face centered cubic (_fcc_)
 * 24 Metalle
 * $P_\mathrm{ffc} \approx 0.74$
 * Dichtestmögliche Kugelpackung
@@ -120,7 +121,7 @@ $$
     \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}
 $$
 
-### hexagonal closed packed
+#### hexagonal closed packed
 * 36 Metalle
 * $P_\mathrm{hcp} \approx 0.74$
 * Ähnlich zu fcc
@@ -131,7 +132,7 @@ $$
 
 Es gibt auch _double hexagonal closed packed_ (_dhcp_).
 
-### Nichtmetalle
+#### Nichtmetalle
 Hier werden die Kristallstruktur durch die Orbitale der Atome/Modeküle bestimmt.
 Die Packungsdichte ist hier nicht entscheiden, sonder der Überlapp der Orbitale. _Kovalente Bindung_
 
@@ -145,7 +146,7 @@ Beispiel: Kohlenstoff
         * als sc betrachtet eine 4-atomige basis
     * Auch Silizium und Germanium kristallisieren in der Diamantstruktur
 
-### Ionenkristalle
+#### Ionenkristalle
 Zwei Ionensorten, jeweils in Edelgaskonfiguration. Hierbei wird wieder die Packungsdichte bei verschiedenen Ionenradien maximiert.
 
 * NaCl: fcc mit 2-Atomiger Basis (je 1 Na und 1 Cl)
@@ -155,8 +156,8 @@ Zwei Ionensorten, jeweils in Edelgaskonfiguration. Hierbei wird wieder die Packu
 * Zinkblendestruktur: fcc mit 2-Atomiger Basis
     * $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/4 (1,1,1)^T$
 
-## 1.3 Direkte atomar aufgelöste Abbildung von Festkörpern
-### Transmissionselektronenmikroskop
+### 1.3 Direkte atomar aufgelöste Abbildung von Festkörpern
+#### Transmissionselektronenmikroskop
 Ein Elektronenstrahl der ähnlich wie Licht unterschiedlich fokussiert werden kann, schiesst auf eine dünne Probe ($<10\mathrm{nm}$). Dadurch wird ein Bild auf einem Schirm ein Bild erzeugt. Je nach Einstellung kann man ein Beugungsbild oder ein Realraumbild / Ortsraumbild erzeugen. Dies nennt man Transmissionselektronenmikroskop (TEM).
 
 Bei einer Energie von ca $100\mathrm{keV}$ erhält man eine Wellenlänge von $\lambda_e \approx 4\cdot10^{-12}\mathrm{m}$
@@ -167,18 +168,18 @@ Der Streuwinkel $\alpha$ ist wegen sphärischer Aberration geladener Teilchen se
 
 Durch abberrationskorrigierte Transmissionselektronenmikroskopen kann man inzwischen Wellenlängen von unter $0.8\AA$ erzeugen. Damit kann man einzelne Atome messen und z.B. "falsche" Atomsorten im Gitter detektieren.
 
-### Rastertunnelmikroskop
+#### Rastertunnelmikroskop
 Das Rastertunnelmikroskop (STM) basiert auf dem Tunneleffekt der Quantenmechanik. Über einen Piezoröhrchen kriegt man einen sehr feinen Sensor, der Oberfläche misst. Es kann nur leitende Materialien messen.
 
 Die angelegte Spannung erzeugt eine Energie $eV$, die kleiner als die Austrittsenergie $\Phi$ der gebunden Elektronen.
 
-### Rasterkraftmikroskop
+#### Rasterkraftmikroskop
 Das Rasterkraftmikroskop (AFM) misst die wirkende Kraft und kann - anders als das Rastertunnelmikroskop - auch nichtleitende Materialien an der Oberfläche vermessen.
 
-### Feldionenmikroskop
+#### Feldionenmikroskop
 Ein Feldionenmikroskop (FIM) ionisiert ein Gas an der Spitze über der Messprobe.
 
-## 1.4 Klassifikation der Gitter und Kristallsymmetrien
+#### 1.4 Klassifikation der Gitter und Kristallsymmetrien
 Satz: Jede Symmetrieoperation an einem Bravaisgitter kann in zwei aufeinanderfolgende Operationen zerlegt werden:
 1. Translation: Translationsgruppe
 2. Operationen, die mindestens _einen_ Punkt unverändert lassen: Punktgruppe
@@ -218,12 +219,12 @@ Heftet man an diese Gruppen eine nicht-spärische Basis, verändert das die Symm
 
 Im thermodynamischen Gleichgewicht kann es bei endlichen Temperaturen keine defektfreien Kristalle geben!
 
-## 2.1 Punktdefekte
+### 2.1 Punktdefekte
 Bei künstlich erstellen Kristallen kann man technisch planare Defekte verhindern, sogar (größtenteils) Liniendefekte. Punktdefekte kann man jedoch nicht verhindern.
 
 ZGA & Leerstellen kann man auch athermisch durch Beschuss mit energiereichen Teilchen erzeugen.
 
-### Leerstellen
+#### Leerstellen
 _Leerstelle_ / _Schottky-Defekt_: Ein fehlendes Atom im Gitter.
 
 * $p, T$ konstant: Gibbs-Potential $G = U - TS + pV$ ist im Gleichgewicht minimal. $U$ beschreibt die Energie pro Leerstelle; $-TS$ zeigt, dass Leerstellen die Konfigurationsentropie $S_\mathrm{konf}$ erhöhen: Man hat deutlich mehr mögliche Mikrozustände, wenn es Lücken gibt.
@@ -252,17 +253,17 @@ B-Praktikum: Versuch $\mathrm{Cu_3Au}$. Zur Erklärung ist es wichtig, dass $G$ 
 #### Leitfähigkeit
 Die Leitfähigkeit von Ionenkristallen wird größtenteils durch die Anzahl der Leerstellen bestimmt. Dadurch gibt es eine Atommobilität und der Ionenkristall kann Elektrizität leiten. Bei praktisch allen anderen anderen Kristallsorten (v.a. Metallen) ist Elektronenmobilität für die Leitfähigkeit verantwortlich.
 
-### Zwischengitteratome
+#### Zwischengitteratome
 Große Gitterverzerrung führt zu hoher Energie $\varepsilon_0\approx 3\mathrm{eV}$, das führt zu kleinen Konzentrationen von Zwischengitteratomen.
 
 Deswegen ist die Konzentration von Zwischengitteratomen deutlich geringer als die von Leerstellen: $n_\mathrm{ZGA}\ll n_\mathrm{Leer}$.
 
-### Fremdatome
+#### Fremdatome
 * substitionell: auf regulären Gitterplätzen
 * intersubstitionell: auf Zwischengitterplätzen, nur bei kleinen Atomen
 
 
-## 2.2 Versetzungen
+### 2.2 Versetzungen
 Experiment: Verbiegung von Kupfer
 1. Hartes Kupfer: hat viele Versetzungen
 2. weiches Kupferf: hat kaum Versetzungen
@@ -273,7 +274,7 @@ Durch Biegungen werden aus wenigen Versetzungen viele Versetzungen erzeugt. Die 
 
 Metalle sind _duktil_, also formbar; Keramiken sind _spröde_.
 
-### 1. Problem der kritischen Schubspannung
+#### Problem der kritischen Schubspannung
 Dieses Modell ist **falsch**, es stimmt mit keinen Messwerten überein!
 
 Verschiebe zwei Schichten eines Kristalls. Fläche $A$, Kraft $F$, Scherspannung/Schubspannung $\sigma=\frac{F}{A}$, Scherwinkel $\varepsilon$, Schermodul/Schubmodul $G$, Auslenkung $x$, Gitterkonstante $a$: Es gilt $\sigma(\varepsilon) = G\cdot\varepsilon\approx \sigma(x)= G\cdot \frac{x}{a}$, Näherung des Winkels, $\varepsilon$ klein ist. Wenn die Scherung die eine Schicht um $\frac{a}{2}$ verschoben hat, ist an dieser Stelle die Scherspannung $\sigma=0$.
@@ -282,7 +283,7 @@ $\sigma_\mathrm{max}$ bei $\frac{a}{4}$, $\Rightarrow \sigma_\mathrm{max}(x=\fra
 
 Die kritische Schubspannung heißt $\sigma_\mathrm{c}$.
 
-### 2. Plastische Verformung
+#### Plastische Verformung
 _Plastische Verformung_: Durch Kraft wird ein Stoff verformt. Auch ohne weitere Kraft bleibt diese neue Form erhalten.
 _Elastische Verformung_: Durch Kraft wird ein Stoff verformt. Ohne weitere Kraft wird die ursprüngliche Form wieder angenommen.
 
@@ -300,7 +301,8 @@ Operative Definition:
 
 Dadurch ist eine Versetzunglinie entstanden: Eine Ebene des Kristallgitters endet an dem Punkt, wo beide Ebenen getrennt waren.
 
-_Burgers Vektor_[^2] $\vec{b}$ = Schließungswinkel beim Umlauf um die Versetzung.
+#### Burgers Vektor
+Der _Burgers Vektor_[^2] $\vec{b}$ = ist der Schließungswinkel beim Umlauf um die Versetzung.
 
 $\vec{b}$ ist $\perp$ zur Gleitebene.
 
@@ -330,11 +332,96 @@ Da $U_\mathrm{el} \propto b^2$, sind Versetzungen immer möglichst kurz, größe
 _Frank-Read-Quelle_: Eine Versetzung ist fest zwischen 2 Punkten, z.B. zwei Fremdatomen.
 Durch Schubspannung wird die Versetzung vergrößert und wächst zu einem Ring. Sobald diese ringförmige Linie sich berührt, wird sie als Ring abgelöst und ein neuer Versetzungsring kann entstehen.
 
-## Planare Defekte
+#### Stapelfehler
+Es treten in der Realität immer wieder Stapelfehler auf, die die Kristallstruktur in einer Ebene verschieben.
+
+### 2.3 Planare Defekte
 In dieser Vorlesung werden Planare Defekte nicht weiter behandelt.
 
-### Stapelfehler
-Es treten in der Realität immer wieder Stapelfehler auf, die die Kristallstruktur in einer Ebene verschieben.
+## 3. Beugung
+### 3.1 Das reziproke Gitter
+#### Das reziproke Gitter
+Eine gitterperiodischen Funktion $f(\vec{r}) = f(\vec{r} + \vec{R})$ kann auch als als Fourierreihe $\mathcal F(f(\vec{r}))$ dargestellt werden. Die Menge aller $\vec{G}$ erfüllt $\mathrm e^{i\vec{G}\vec{r}}=1$ und definiert somit _reziprokes Gitter_.
+$$
+    f(\vec{r}) = \mathcal F(f(\vec{r})) = \sum_{\vec{G}} f_{\vec{G}}\mathrm e^{i\vec{G}\vec{r}}=1 \\
+    f_{\vec{G}} = \frac{1}{V} \int_V f(\vec{r}) \mathrm e^{-i\vec{G}\vec{r}}
+$$
+Dieses ist ein Bravaisgitter, da $\vec{G}$ durch ganzzahlige $k_i$ und Basisvektoren $\vec{b_i}$ dargestellt werden kann. $V$ ist hier das Volumen einer Einheitszelle.
+$$
+\begin{aligned}
+    \vec{G} = &k_1 \vec{b}_1 + k_2 \vec{b}_2 + k_3 \vec{b}_3\\
+    \vec{b}_1 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_2 \times \vec{a}_3)\\
+    \vec{b}_2 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_3 \times \vec{a}_1)\\
+    \vec{b}_3 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_1 \times \vec{a}_2)\\
+    \forall i,j\in\{1,2,3\}: &\vec{a}_i \vec{b}_j = \delta_{ij}
+\end{aligned}
+$$
+
+Das Gitter im Realraum wird zur Unterscheidung vom reziproken Gitter _direktes Gitter_ genannt.
+
+* Beispiele:
+    * sc: reziprok sc
+    * fcc: reziprok bcc
+    * hexagonal: reziprok gedrehtes hexagonal
+
+#### Brillouinzone (BZ)
+Die _1. BZ_ ist die Wigner-Seitz-Zelle des reziproken Gitters.
+
+#### Netzebene
+Eine Netzebene ist eine Ebene durch 3 Gitterpunkte eines Bravaisgitters, die nicht auf einer Linie liegen. Eine Netzebene entält unendlich viele Gitterpunkte.
+
+##### Netzebenenschar
+Eine Netzebenenschar ist eine Menge äquidistanter und paralleler Netzebenen, die alle Gitterpunkte enthalten.
+
+##### Klassifizierung von Netzebenenscharen
+Für jede Netzebenenschar mit Ebenenabstand $d$ gibt es reziproke Gittervektoren senkrecht auf diesen Ebenen. Der kürzeste dieser reziproke Gittervektoren $\vec{G}_\mathrm{min}$ hat die Länge $|\vec{G}_\mathrm{min}|=\frac{2\pi}{d}$.
+
+Umgekehrt gibt es zu jedem reziproken Gittervektor $\vec{G}$ eine Netzebenenschar, die senkrecht zu $\vec{G}$ steht und den Abstand $d$ haben. Der kürzeste zu $\vec{G}$ parallele Gittervektor ist $\vec{G}_\mathrm{min}$ mit $|\vec{G}_\mathrm{min}| = \frac{2\pi}{d}$.
+
+#### Millersche Indizes
+Die Millerschen Indizes sind die Komponenten des kürzesten reziproken Gittervektors auf einer Netzebenenschar. Sie sind ganze Zahlen ohne gemeinsamen Teiler. Eine Ebene mit Millerschen Indizes $(hkl)$ steht also senkrecht auf $\vec{G} = h \vec{b}_1 + k \vec{b}_2 + l \vec{b}_3$. $\{\vec{b}_i\}$ sind dabei Gittervektoren, die reziprok zu den Kristallachsen $\{\vec{a}_i\}$ der konventionellen Einheitszelle sind.
+
+Eine äquivalente Definition im direkten Gitter:
+1. Bestimme Achsenabschnitte einer Netzebene mit den Kristallachsen in Einheiten von $\{\vec{a}_i\}$.
+2. Bilde Kehrwerte dieser Zahlen und erweitere Brüche auf kleinste ganze Zahlen.
+3. Das Ergebnis $(hkl)$ sind die Millerschen Indizes dieser Ebene.
+
+#### Notation von Ebenen
+* Einen negativen Achsenabschnitt kennzeichnet man durch einen Strich über der Zahl, z.B. $(\bar{1}00)$.
+* Ein Achsenabschnitt im Unendlichen wird durch $0$ indiziert, da $\frac{1}{\infty}\rightarrow 0$.
+* Eine einzelne Ebene hat runde Klammern, z.B. $(100)$.
+* Meint man alle äquivalenten Ebenen, nutzt man geschweifte Klammern, z.B. $\{100\}$.
+* Richtungen im Kristall werden durch die kleinsten ganzen Zahlen $[n_1,n_2,n_3]$ angegeben, die dasselbe Verhältnis wie die selben Komponenten des Richtungsvektors $\vec{R} = n_1 \vec{a_1} + n_2 \vec{a_2} + n_3 \vec{a_3}$ haben.
+    * Ein Satz äquivalenter Richtungen stellt man in spitzen Klammern, z.B. $\braket{100}$ dar.
+    * Im kubischen Gitter stehen $(hkl)$ und $[hkl]$ senkrecht aufeinander, in anderen Kristallsystemen gilt dies nicht.
+
+### 3.2 Die Beugungsbedingungen
+Für passende Strahlung wirkt ein Kristall als _Beugungsgitter_. Röntgenstrahlung ist die häufigste verwendete Strahlung. Die Wellenlänge der Strahlung $\lambda$ muss die Größenordnung der Gitterkonstante $a$ haben: $\lambda\approx a$.
+
+#### Elastische Wechselwirkung
+Wir nehmen an, das bei der Streuung keine Energieverluste auftreten.
+
+#### Braggsche Erklärung
+Ein scharfer Röntgenreflex entsteht, wenn
+1. die Strahlung jeweils zu einem kleinen Bruchteil an Netzebenen einer Schar mit Ebenenabstand $d$ reflektiert wird.
+2. reflektierte Strahlung verschiedener Ebenen konstruktiv interferiert.
+
+Für polychromatische Strahlung treten i.A. viele Reflexe und höhere Beugungsordnungen auf.
+
+Die Braggsche Beugungsbedingung lautet also $n\cdot \lambda = 2d\sin\theta$. $\theta$ ist hier der Winkel an dem oberen Atom, sodass ein rechtwinkliges Dreieck mit beiden Reflektionspunkten und dem Strahl gebildet wird.
+
+Dies ist nicht vollständig physikalisch erklärbar, da auf z.B. der 2. Ebene nicht notwendigerweise ein Atom "unterhalb" der Atome der 1. Ebene sitzen muss.
+
+#### Laues Erklärung
+Interferenz von streuenden Atomgruppen (Basis), die an die Gitterpunkte angeheftet sind. Jedes Atom strahlt einfallende Strahlung isotrop ab. Diese können als Punktstrahler angenommen werden.
+
+Der Gangunterschied ist $d\cos\theta + d\cos\theta^\prime = \vec{d}\cdot(\vec{n}-\vec{n}^\prime)$, wobei $\theta$ der Winkel zwischen dem Strahl und der Verbindungslinie zwischen beiden Punktstrahlern ist.
+
+Damit es Streureflexe gibt, müssen alle Punktstrahler konstruktiv interferieren, d.h. $\vec{R}\cdot(\vec{k}-\vec{k}^\prime)2\pi m$, mit $m\in\mathbb N$. Dies ist widerum äquivalent zu $\mathrm e^{i(\vec{k}-\vec{k}^\prime)\vec{R}}=1$, d.h. die Differenz der Wellenvektoren muss ein reziprokes Gitter $\vec{G}=\pm(\vec{k}-\vec{k}^\prime)$ sein. $\vec{k}$ ist hierbei der Wellenvektor des einfallenden Strahls und $\vec{k}^\prime$ der des am hinteren Atoms reflektierte Strahl.
+$$
+    \vec{G}=(\vec{k}-\vec{k}^\prime) \\
+    \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} = \frac{|\vec{G}|}{2}
+$$
 
 # Literatur
 1. [@Gross2012Festkörper]
