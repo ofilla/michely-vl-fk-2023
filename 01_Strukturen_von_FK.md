@@ -45,7 +45,7 @@ Daher erfüllt sie wie die primitive Einheitszelle den Raum ohne Lücke und ohne
 
 Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die Wiegner-Seitz-Zelle.
 
-Im Allgemeinen ist das Pendant im reziproken Raum wichtiger als die Wiegner-Seitz-Zelle selbst.
+Im Allgemeinen ist das Pendant im reziproken Raum, die Brillouin-Zone, wichtiger als die Wiegner-Seitz-Zelle selbst.
 
 ### Die Koordinationszahl
 Die Koordinationszahl ist der Bruchteil des Raumes, der von identischen, sich berührenden Kugeln auf den Gitterpunkten ausgefüllt wird.[^1] Man zählt sie, indem man die nächsten Nachbarn der selben Atomsorte zählt.

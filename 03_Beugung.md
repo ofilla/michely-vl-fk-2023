@@ -25,7 +25,11 @@ Das Gitter im Realraum wird zur Unterscheidung vom reziproken Gitter _direktes G
     * hexagonal: reziprok gedrehtes hexagonal
 
 ### Brillouinzone (BZ)
-Die _1. BZ_ ist die Wigner-Seitz-Zelle des reziproken Gitters.
+Die 1. BZ ist die Menge aller Punkte im reziproken Gitter, die näher an einem Gitterpunkt liegen als an allen anderen Gitterpunkten liegen. Sie beschreibt die Umgebung eines Gitterpunktes und ist eine primitive Zelle. Sie entspricht der Wiegner-Seitz-Zelle im direkten Raum.
+
+Daher erfüllt sie wie die primitive Einheitszelle den Raum ohne Lücke und ohne Überlapp. Durch ihre Konstruktion repräsentiert sie die volle Symmetrie des Gitters.
+
+Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die 1. BZ.
 
 ### Netzebene
 Eine Netzebene ist eine Ebene durch 3 Gitterpunkte eines Bravaisgitters, die nicht auf einer Linie liegen. Eine Netzebene entält unendlich viele Gitterpunkte.
@@ -62,17 +66,6 @@ Für passende Strahlung wirkt ein Kristall als _Beugungsgitter_. Röntgenstrahlu
 ### Elastische Wechselwirkung
 Wir nehmen an, das bei der Streuung keine Energieverluste auftreten.
 
-### Braggsche Erklärung
-Ein scharfer Röntgenreflex entsteht, wenn
-1. die Strahlung jeweils zu einem kleinen Bruchteil an Netzebenen einer Schar mit Ebenenabstand $d$ reflektiert wird.
-2. reflektierte Strahlung verschiedener Ebenen konstruktiv interferiert.
-
-Für polychromatische Strahlung treten i.A. viele Reflexe und höhere Beugungsordnungen auf.
-
-Die Braggsche Beugungsbedingung lautet also $n\cdot \lambda = 2d\sin\theta$. $\theta$ ist hier der Winkel an dem oberen Atom, sodass ein rechtwinkliges Dreieck mit beiden Reflektionspunkten und dem Strahl gebildet wird.
-
-Dies ist nicht vollständig physikalisch erklärbar, da auf z.B. der 2. Ebene nicht notwendigerweise ein Atom "unterhalb" der Atome der 1. Ebene sitzen muss. Man kann die Bragg-Bedingung allerdings aus Laues Erklärung herleiten.
-
 ### Laues Erklärung
 Interferenz von streuenden Atomgruppen (Basis), die an die Gitterpunkte angeheftet sind. Jedes Atom strahlt einfallende Strahlung isotrop ab. Diese können als Punktstrahler angenommen werden.
 
@@ -85,14 +78,25 @@ $$
 $$
 Dies bedeutet, dass die Projektion des einfallenden Wellenvektors $\vec{k}$ auf den Gittervektor $\vec{G}$ der halbe Gittervektor $\frac{\vec{G}}{2}$ sein muss. Daher werden alle Wellenvektoren, die auf der sogenannten **Braggebene** - der Ebene in der Mitte zwischen zwei Netzebenen - enden, werden reflektiert. Die Braggebenen bilden die 1. Brillouinzone. Alle Wellenvektoren, die auf der Grenze der Brillouinzone enden, werden demnach reflektiert.
 
-### Herleitung der Bragg-Bedingung aus der Laue-Bedingung
-Der Streuvektor $\vec{G}$ sei ein ganzzahliges Vielfaches des kürzesten reziproken Gittervektors $\vec{G}_\mathrm{min}$, d.h. $\vec{G}=n\cdot\vec{G}_\mathrm{min}$. Dieser Gittervektor steht senkrecht auf der Netzebenenschar, an der reflektiert wird. Es soll konstruktive Interferenz geben, also gilt nach der Laue-Bedingung $n\vec{G}_\mathrm{min} = 2k\sin\theta$. Da $k=\frac{2\pi}{\lambda}$ und $|\vec{G}_\mathrm{min}|=\frac{2\pi}{d}$ folgt die Bragg-Bedingung $n\lambda=2d\sin\theta$.
-
 ### Evald-Konstruktion
 Die Evald-Konstruktion ist eine besonders anschauliche Darstellung der Laue-Bedingung:
 * $\vec{k}$ endet am Ursprung
 * schlage Kreis vom Radius $k$ um Anfangspunkt von $\vec{k}$
 * Schneidet der Kreis neben dem Ursprung einen weiteren Gitterpunkt, so gibt es fúr diesen Streuvektor einen Beugungsreflex mit $\vec{k}^\prime$. Verbindet $\vec{G}$ diesen Punkt mit dem Ursprung $0$, so ist $\vec{G}=\vec{k} -\vec{k}^\prime$.
+
+### Braggsche Erklärung
+Ein scharfer Röntgenreflex entsteht, wenn
+1. die Strahlung jeweils zu einem kleinen Bruchteil an Netzebenen einer Schar mit Ebenenabstand $d$ reflektiert wird.
+2. reflektierte Strahlung verschiedener Ebenen konstruktiv interferiert.
+
+Für polychromatische Strahlung treten i.A. viele Reflexe und höhere Beugungsordnungen auf.
+
+Die Braggsche Beugungsbedingung lautet also $n\cdot \lambda = 2d\sin\theta$. $\theta$ ist hier der Winkel an dem oberen Atom, sodass ein rechtwinkliges Dreieck mit beiden Reflektionspunkten und dem Strahl gebildet wird.
+
+Dies ist nicht vollständig physikalisch erklärbar, da auf z.B. der 2. Ebene nicht notwendigerweise ein Atom "unterhalb" der Atome der 1. Ebene sitzen muss. Man kann die Bragg-Bedingung allerdings aus Laues Erklärung herleiten.
+
+#### Herleitung der Bragg-Bedingung aus der Laue-Bedingung
+Der Streuvektor $\vec{G}$ sei ein ganzzahliges Vielfaches des kürzesten reziproken Gittervektors $\vec{G}_\mathrm{min}$, d.h. $\vec{G}=n\cdot\vec{G}_\mathrm{min}$. Dieser Gittervektor steht senkrecht auf der Netzebenenschar, an der reflektiert wird. Es soll konstruktive Interferenz geben, also gilt nach der Laue-Bedingung $n\vec{G}_\mathrm{min} = 2k\sin\theta$. Da $k=\frac{2\pi}{\lambda}$ und $|\vec{G}_\mathrm{min}|=\frac{2\pi}{d}$ folgt die Bragg-Bedingung $n\lambda=2d\sin\theta$.
 
 ## 3.3 Strukturfaktor und Atomformfaktor
 Bisher haben wir punktförmige Streuer an Gitterpunkten angenommen und nur die Richtungen der möglichen Streureflexe betrachtet. Die Intensität dieser Reflexe haben wir bislang nicht betrachtet.
