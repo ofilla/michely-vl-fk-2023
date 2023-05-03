@@ -59,12 +59,11 @@ Eine äquivalente Definition im direkten Gitter:
     * Ein Satz äquivalenter Richtungen stellt man in spitzen Klammern, z.B. $\braket{100}$ dar.
 * Im kubischen Gitter stehen $(hkl)$ und $[hkl]$ senkrecht aufeinander, in anderen Kristallsystemen gilt dies nicht.
 * $n(111)$ oder $(nnn)$ beschreibt die $n$-te Beugungsebene in der $(111)$-Ebene.
+* Für hohe Zahlen schreibt man z.B. $(12\ 13\ 24)$, Sonderzeichen werden nicht verwendet.
 
 ## 3.2 Die Beugungsbedingungen
 Für passende Strahlung wirkt ein Kristall als _Beugungsgitter_. Röntgenstrahlung ist die häufigste verwendete Strahlung. Die Wellenlänge der Strahlung $\lambda$ muss die Größenordnung der Gitterkonstante $a$ haben: $\lambda\approx a$.
-
-### Elastische Wechselwirkung
-Wir nehmen an, das bei der Streuung keine Energieverluste auftreten.
+Wir nehmen hier an, das bei der Streuung keine Energieverluste auftreten.
 
 ### Laues Erklärung
 Interferenz von streuenden Atomgruppen (Basis), die an die Gitterpunkte angeheftet sind. Jedes Atom strahlt einfallende Strahlung isotrop ab. Diese können als Punktstrahler angenommen werden.
@@ -101,6 +100,8 @@ Der Streuvektor $\vec{G}$ sei ein ganzzahliges Vielfaches des kürzesten rezipro
 ## 3.3 Strukturfaktor und Atomformfaktor
 Bisher haben wir punktförmige Streuer an Gitterpunkten angenommen und nur die Richtungen der möglichen Streureflexe betrachtet. Die Intensität dieser Reflexe haben wir bislang nicht betrachtet.
 
+$\tilde{\vec{r}}_j$ ist der Vektor vom Atomzentrum (am Ort $\vec{r}$) zum Ort des $j$-ten Elektronen. Dies ist der zu betrachtende Ort, da Röntgenstrahlung an den Elektronen gestreut wird. Dies wiederum ist die meistverwendete Strahlung für Beugungsexperimente.
+
 ### Strukturfaktor
 Betrachte eine einzelne Elementarzelle für die Analyse. Die Streuamplitude in Richtung $\vec{k}^\prime$ wird bestimmt durch Superposition der Teilwellen von Streuvolumina $\mathrm dV$ mit Elektronendichten $\rho(\vec{r})$, Phasen $\varphi(\vec{r})$ und Phasenfaktoren $\mathrm e^{i\varphi(\vec{r})}$.
 $$
@@ -125,18 +126,24 @@ $$
         \int_{V_\mathrm{Zelle}} \rho_j(\tilde{\vec{r}}) \cdot \mathrm e^{i\vec{G}\tilde{\vec{r}_j}} \mathrm dV
 $$
 
-Unter Verwendung des Atomformfaktors $f_g$ folgt
+Unter Verwendung des Atomformfaktors $f_j$ folgt
 $$
-    S_{\vec{G}} = \sum_j \mathrm e^{-i\vec{G}\vec{r}_j} \cdot f_g .
+    S_{\vec{G}} = \sum_j \mathrm e^{-i\vec{G}\vec{r}_j} \cdot f_j .
 $$
 
 ### Atomformfaktor
 $$
-    f_g = \int_{V_\mathrm{Zelle}} \rho_j(\tilde{\vec{r}}) \cdot \mathrm e^{i\vec{G}\tilde{\vec{r}_j}} \mathrm dV
+    f = \int_{V_\mathrm{Atom}} \rho(\vec{r}) \cdot \mathrm e^{i\vec{G}\vec{r}} \mathrm dV
 $$
 
+$\rho$ kann man sehr gut annähern, indem man die Elektronendichte des einzelnen Atoms annimmt. Die Veränderung durch Wechselwirkung bei Atombindungen ist vergleichsweise gering.
+
+Wären sämtliche Elektronen am Ort $\vec{r}=0$ konzentriert, so wäre $\rho(\vec{r}) = Z\delta(\vec{r})$. Dann wäre $f=Z$, was das maximale Streuvermögen eines Atoms darstellt. Hierbei sind $Z$ die Anzahl der Protonen und $\vec{r}$ der Verbindungsvektor von Atomzentrum zu dem jeweiligen Elektron.
+
+Die geringste Beugungsordnung hat die höchste Streuintensität.
+
 #### Beispiel
-Beschreiben wir das fcc-Gitter als sc-Gitter mit zweiatomiger Basis. Dann werden die manche Ebenen $(hkl)$ reflektieren, die einen Strukturfaktor ungleich $0$ haben.
+Beschreiben wir das bcc-Gitter als sc-Gitter mit zweiatomiger Basis. Dann werden die Ebenen $\{hkl\}$ reflektieren, die einen Strukturfaktor ungleich $0$ haben. Für gerade $n$ ist dies für alle Ebenen  $\{nh\ nk\ nl\}$ gegeben.
 $$
     S_{\vec{G}} =
         \begin{cases}
@@ -144,4 +151,50 @@ $$
             0 & \Leftrightarrow nh+nk+nl \text{ ungerade}
         \end{cases}
 $$
+
+Beispielsweise gibt es den $(100)$-Reflex nicht, aber den $(200)$-Reflex.
+
+### Debye-Waller-Faktor
+Der Debye-Waller-Faktor $D(T)$ beschreibt das Verhalten der Streuintensität als Funktion der Temperatur. $M$ ist die Masse der schwingenden Atome bzw. Modeküle, $\omega$ die Schw.
+$$
+    D(T) = \exp\left[-\frac{k_bT}{M\omega^2}\right] \cdot \vec{G}^2 \\
+    I(T) = D(T)\cdot I_0 \\
+$$
+
+## 3.4 Experimentelle Beugungsverfahren
+
+### Laue-Verfahren
+Ein polychromatischer Röntgenstrahl mit $\lambda\in[\lambda_1, \lambda_0]$ und $k\in[k_0, k_1]$ wird längs der Symmetrieachse eines Kristalls eingestrahlt.
+
+Dies führt zu einem Beugungsbild, das die Symmetrie des reziproken Gitters zeigt. Dies wird zur Orientierung von Kristallen verwendet.
+
+### Drehkristallverfahren
+Ein monochromatische Röntgenstrahl wird auf den Kristall gestrahlt. Dann wird der Kristall gedreht, was die reziproken Gitterpunkte des Kristalls auf einer Kreisbahn bewegt. Sobald $|\vec{G}|\le 2k$ gilt, gibt es Reflexe.
+
+Dies wird für die Suche nach Reflexen parallel zur Kristalloberfläche in der $\theta-2\theta$-Geometrie durchgeführt. $2\theta$ ist dabei der Winkel zwischen dem einfallenden und dem ausfallendem Strahl.
+
+Beispielsweise wird auf diese Weise die Textur von Stoffen.
+
+### Debye-Scherrer-Verfahren
+Man untersucht ein _Pulver_ aus Kristalliten ($\approx 1\mathrm{\mu m}$), so dass gleichzeitig alle Orientierungen des reziproken Raums vorhanden sind. Der Beugungsreflex zur Netzebene $(hkl)$ ist ein Kreis, der durch die Rotation von $\vec{k}$ um die $\vec{k}$-Achse beschrieben wird.
+
+Hier gilt $|\vec{G}|=2k\sin\theta$. Daher gibt Kreisreflexe für jede Netzebene, da es immer alle Netzebenen in jeder Orientierung gibt. Da die Intensität abhängig von der Beugungsordnung abhängt, wird nicht alles gleich stark reflektiert. Höhere Beugungsordnungen verschwinden.
+
+Der große Vorteil dieser Methode ist, dass keine makroskopischen Kristalle benötigt werden. Diese sind oft nicht einfach herstellbar.
+
+### Synchrotronstrahlung
+Die Röntgenbeugung hat einen großen Aufschwung durch den Bau von Synchrotronstrahlungsquellen erfahren. Sie liefern eine Auflösung mit $10^{10}$-mal größerer Brillianz (Intensität pro Fläche) als Laborgeräte liefern.
+
+Die Abstrahlcharakteristik eines im Kreis rotierenden Elektrons hat in seinem Ruhesystem Dipolcharakteristik. Im Laborsystem tritt eine scharfe Fokussierung in Vorwärtsrichtung auf, da das Elektron relativistisch schnell ist.
+
+### Teilchenstrahlen
+Neben Photonen können auch Teilchen mit Ruhemasse an Kristallen gebeugt werden. Die De-Broglie-Wellenlänge ist für nichtrelativistische Teilchen $\lambda=\frac{h}{p}=\frac{h}{\sqrt{2mE}}$.
+
+Beispielsweise kann man mit Heliumatomen die Oberfläche von Kristallen messen.
+
+Mit Neutronen kann man dagegen auch tiefere Netzebenen erreichen. Diese werden an den Atomkernen gestreut, haben aber eine geringe Wechselwirkungswahrscheinlichkeit, weshalb große Kristalle notwendig sind. Da der Neutronenspin mit Elektronenspins wechselwirkt, kann man auch magnetische Informationen erhalten.
+
+Elektronen kann man ebenfalls gut für Beugungsexperimente nutzen. Hochenergetische Elektronen erzeugen Beugungsbilder im Transmissionselektronenmikroskop TEM. Bei zu hoher Energie gibt es Kernreaktionen.
+
+Niedrigenergetische Elektronen werden u.a. in der Oberflächenkristallographie verwendet.
 
