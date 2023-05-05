@@ -8,15 +8,17 @@ Gravitation und Magnetismus sind für die Bindung irrelevant, nur die elektrosta
 Die Kohäsivenergie $E_\mathrm{coh}$ ("Bindungsenergie") ist die Arbeit pro Atom, um einen Kristall in Atome zu zerlegen.
 
 $$
-    E_\mathrm{coh} = \frac{E_\mathrm{frei}}{n_\mathrm{Atome}} - \frac{E_\mathrm{Kristall}}{n_\mathrm{Atome}}  
+    E_\mathrm{coh} =
+        \frac{E_\mathrm{frei}}{n_\mathrm{Atome}}
+        - \frac{E_\mathrm{Kristall}}{n_\mathrm{Atome}}
 $$
 
-Neon hat $E_\mathrm{coh}=0.02\mathrm{eV}$, Silizium $E_\mathrm{coh}=4.63\mathrm{eV}$ und Wolfram $E_\mathrm{coh}=8.95\mathrm{eV}$. Außer bei Edelgasen ist diese Energie in der Größenordnung von Elektronenvolt und können im Periodensystem um Faktor $400$ variieren. Die Schmelztemperaturen in Kelvin variieren um den Faktor $150$. 
+Neon hat $E_\mathrm{coh}=0.02\mathrm{eV}$, Silizium $E_\mathrm{coh}=4.63\mathrm{eV}$ und Wolfram $E_\mathrm{coh}=8.95\mathrm{eV}$. Außer bei Edelgasen ist diese Energie in der Größenordnung von Elektronenvolt und können im Periodensystem um Faktor $400$ variieren. Die Schmelztemperaturen in Kelvin variieren um den Faktor $150$.
 
 ### Van-der-Waals-Bindung
 Sehr schware interatomare Wechselwirkung, die immer anwesend ist. Sie ist jedoch nur relevant, wenn keine andere Wechselwirkungen vorhanden sind, ansonsten wirken sie nur zusätzlich. Bei Edelgasen tritt nur diese Bindungsart auf.
 
-Dadurch, dass die Elektronen fluktuieren, gibt es in Atomen immer verschiedene Dipolmomente. Diese Dipolmomente können eine attraktive Wechselwirkung verursachen. Es gibt sowohl eine Coulomb-Wechselwirkung als auch eine statische Wechselwirkung durch das Pauliprinzip, die eine repulsive Wechselwirkung erzeugen. Diese nennt man Paulirepulsion. Dadurch gibt es ein Gleichgewicht zwischen attraktiver und 
+Dadurch, dass die Elektronen fluktuieren, gibt es in Atomen immer verschiedene Dipolmomente. Diese Dipolmomente können eine attraktive Wechselwirkung verursachen. Es gibt sowohl eine Coulomb-Wechselwirkung als auch eine statische Wechselwirkung durch das Pauliprinzip, die eine repulsive Wechselwirkung erzeugen. Diese nennt man Paulirepulsion. Dadurch gibt es ein Gleichgewicht zwischen attraktiver und repulsiver Wechselwirkung.
 
 ### Paulirepulsion
 Es gibt zwei verschiedene Varianten, Paulirepulsion darzustellen.
