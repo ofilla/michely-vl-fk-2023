@@ -75,6 +75,7 @@ $$
     \vec{G}=(\vec{k}-\vec{k}^\prime) \\
     \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} = \frac{|\vec{G}|}{2}
 $$
+
 Dies bedeutet, dass die Projektion des einfallenden Wellenvektors $\vec{k}$ auf den Gittervektor $\vec{G}$ der halbe Gittervektor $\frac{\vec{G}}{2}$ sein muss. Daher werden alle Wellenvektoren, die auf der sogenannten **Braggebene** - der Ebene in der Mitte zwischen zwei Netzebenen - enden, werden reflektiert. Die Braggebenen bilden die 1. Brillouinzone. Alle Wellenvektoren, die auf der Grenze der Brillouinzone enden, werden demnach reflektiert.
 
 ### Evald-Konstruktion
@@ -110,6 +111,7 @@ $$
 $$
 
 Die Phase der gestreuten Teilwelle ist $-\vec{G}\cdot\vec{r} = \varphi(\vec{r})$. Daraus folgt für die Streuamplitude
+
 $$
     S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\vec{G}\vec{r}} \mathrm dV .
 $$
@@ -136,7 +138,7 @@ $$
     f = \int_{V_\mathrm{Atom}} \rho(\vec{r}) \cdot \mathrm e^{i\vec{G}\vec{r}} \mathrm dV
 $$
 
-$\rho$ kann man sehr gut annähern, indem man die Elektronendichte des einzelnen Atoms annimmt. Die Veränderung durch Wechselwirkung bei Atombindungen ist vergleichsweise gering.
+$\rho$ kann man sehr gut annähern, indem man die Elektronendichte des einzelnen Atoms annimmt. Die Veränderung durch Wechselwirkung bei Atombindungen ist vergleichsweise gering. Je größer $\vec{G}$, desto kleiner $f_{\vec{G}}$.
 
 Wären sämtliche Elektronen am Ort $\vec{r}=0$ konzentriert, so wäre $\rho(\vec{r}) = Z\delta(\vec{r})$. Dann wäre $f=Z$, was das maximale Streuvermögen eines Atoms darstellt. Hierbei sind $Z$ die Anzahl der Protonen und $\vec{r}$ der Verbindungsvektor von Atomzentrum zu dem jeweiligen Elektron.
 
@@ -155,11 +157,14 @@ $$
 Beispielsweise gibt es den $(100)$-Reflex nicht, aber den $(200)$-Reflex.
 
 ### Debye-Waller-Faktor
-Der Debye-Waller-Faktor $D(T)$ beschreibt das Verhalten der Streuintensität als Funktion der Temperatur. $M$ ist die Masse der schwingenden Atome bzw. Modeküle, $\omega$ die Schw.
+Der Debye-Waller-Faktor $D(T)$ beschreibt das Verhalten der Streuintensität als Funktion der Temperatur. $M$ ist die Masse der schwingenden Atome bzw. Modeküle, $\omega$ die Schwingungsfrequenz.
+
 $$
     D(T) = \exp\left[-\frac{k_bT}{M\omega^2}\right] \cdot \vec{G}^2 \\
     I(T) = D(T)\cdot I_0 \\
 $$
+
+Je größer $\vec{G}$ oder $T$, desto kleiner $D$.
 
 ## 3.4 Experimentelle Beugungsverfahren
 
@@ -196,5 +201,5 @@ Mit Neutronen kann man dagegen auch tiefere Netzebenen erreichen. Diese werden a
 
 Elektronen kann man ebenfalls gut für Beugungsexperimente nutzen. Hochenergetische Elektronen erzeugen Beugungsbilder im Transmissionselektronenmikroskop TEM. Bei zu hoher Energie gibt es Kernreaktionen.
 
-Niedrigenergetische Elektronen werden u.a. in der Oberflächenkristallographie verwendet.
+Niedrigenergetische Elektronen (LEED) werden u.a. in der Oberflächenkristallographie verwendet.
 
