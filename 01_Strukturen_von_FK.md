@@ -31,7 +31,7 @@ Wenn eine Zelle bei jeder möglichen Verschiebung um $\vec{R}$ den gesamten Raum
 
 Wie auch die primitiven Translationen ist die primitive Einheitszelle ist nicht eineindeutig definiert. Jede primitive Einheitszelle enthält exakt einen Gitterpunkt, da es ansonsten Translationen gäbe, die Lücken oder Überlappe erzeugen würden.
 
-Eine offensichtliche Wahl ist die Menge $\{\vec{r}=\sum_{i=1}^3 x_i\vec{a}_i | x_i \in [0,1] \}$. ${\vec{r}}$ ist dabei ein _Parallelepiped_ mit dem Volumen $V_e=\vec{a}_1\cdot(\vec{a}_2\times\vec{a}_3)$. Allerdings kann man die Gitterstruktur, u.a. Symmetrien, i.A. nicht aus der primitiven Einheitszelle schließen.
+Eine offensichtliche Wahl ist die Menge $\{\vec{r}=\sum_{i=1}^3 x_i\vec{a}_i | x_i \in [0,1] \}$. Dies beschreibt ein _Parallelepiped_ mit dem Volumen $V_e=\vec{a}_1\cdot(\vec{a}_2\times\vec{a}_3)$. Allerdings kann man die Gitterstruktur, beispielsweise Symmetrien, im Allgemeinen nicht aus der primitiven Einheitszelle schließen.
 
 Zwei gängige Lösungen für das Problem sind, entweder eine _konventionelle Einheitszelle_ oder eine _Wiegner-Seitz-Zelle_ zu betrachten.
 
@@ -48,7 +48,7 @@ Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwis
 Im Allgemeinen ist das Pendant im reziproken Raum, die Brillouin-Zone, wichtiger als die Wiegner-Seitz-Zelle selbst.
 
 ### Die Koordinationszahl
-Die Koordinationszahl ist der Bruchteil des Raumes, der von identischen, sich berührenden Kugeln auf den Gitterpunkten ausgefüllt wird.[^1] Man zählt sie, indem man die nächsten Nachbarn der selben Atomsorte zählt.
+Die Koordinationszahl ist der Bruchteil des Raumes, der von identischen, sich berührenden Kugeln auf den Gitterpunkten ausgefüllt wird.[^1] Man zählt sie, indem man die nächsten Nachbarn der _selben_ Atomsorte zählt.
 
 [^1]: [@Gross2012Festkörper, 27]
 
@@ -58,6 +58,8 @@ Die meisten Metalle kristallisieren so, dass sie eine hohe Packungsdichte $P$ er
 Es bringt das genutzte Volumen in ein Verhältnis zu dem freien Volumen.
 
 ### simple cubic (_sc_)
+Bei einem sc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten Würfels.
+
 * einfache kubische Gitterstruktur
 * nur Polonium kristallisiert in dieser Gitterstruktur.
 * $P_\mathrm{sc} \approx 0.54$
@@ -72,6 +74,8 @@ $$
 $$
 
 ### body centered cubic (_bcc_)
+Bei einem bcc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten Würfels, zudem liegt ein Gitterpunkt im Zentrum ebendieses Würfels.
+
 * 17 Metalle
     * u.a. Eisen, Alkalimetalle
 * $P_\mathrm{bcc} \approx 0.68$
@@ -89,11 +93,13 @@ $$
 * Vektoren $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/2 (1,1,1)^T$
 
 ### face centered cubic (_fcc_)
+Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten Würfels, zudem liegt je ein Gitterpunkt im Zentrum der Würfeloberflächen.
+
 * 24 Metalle
 * $P_\mathrm{ffc} \approx 0.74$
 * Dichtestmögliche Kugelpackung
     * Vermutung von Kepler, Beweis 2017
-* 3 verschiedene "Schichten": Stapelfolge A,B,C,A,B,C
+* 3 verschiedene "Schichten": Stapelfolge $A,B,C,A,B,C$
 * Koordinationszahl $12$: $6$ Würfelecken und $6$ Flächenzentrierte Punkte
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Flächenzentrierte Punkte
 $$
@@ -105,6 +111,8 @@ $$
 $$
 
 ### hexagonal closed packed
+Auf jeder Ebene sind die Kugeln hexagonal angeordnet. Anders als bei dem fcc-Gitter gibt es hier nur zwei verschiedene Schichten. Die Stapelfolge ist $A,B,A,B$ und unterscheidet sich von der des fcc-Gitters.
+
 * 36 Metalle
 * $P_\mathrm{hcp} \approx 0.74$
 * Ähnlich zu fcc
@@ -145,16 +153,16 @@ Ein hochenergetischer Elektronenstrahl, der ähnlich wie Licht unterschiedlich f
 
 Bei einer Energie von ca $100\mathrm{keV}$ erhält man eine Wellenlänge von $\lambda_e \approx 4\cdot10^{-12}\mathrm{m}$
 $$
-    \lambda_e = \frac{h}{p} = \frac{4}{\sqrt{2m_eE}} \approx 
+    \lambda_e = \frac{h}{p} = \frac{4}{\sqrt{2m_eE}}
 $$
 Der Streuwinkel $\alpha$ ist wegen sphärischer Aberration geladener Teilchen sehr klein. Die Auflösung $\approx\frac{\lambda_e}{\sin{(\alpha)}}$ ist dafür sehr gering.
 
 Durch abberrationskorrigierte Transmissionselektronenmikroskopen kann man inzwischen Wellenlängen von unter $0.8\AA$ erzeugen. Damit kann man einzelne Atome messen und z.B. "falsche" Atomsorten im Gitter detektieren.
 
 ### Rastertunnelmikroskop
-Das Rastertunnelmikroskop (STM) basiert auf dem Tunneleffekt der Quantenmechanik. Über einen Piezoröhrchen kriegt man einen sehr feinen Sensor, der Oberfläche misst. Es kann nur leitende Materialien messen.
+Das Rastertunnelmikroskop (STM) basiert auf dem Tunneleffekt der Quantenmechanik. Über einen Piezoröhrchen kriegt man einen sehr feinen Sensor, der Oberfläche misst. Die angelegte Spannung erzeugt eine Energie $eV$, die kleiner als die Austrittsenergie $\Phi$ der gebunden Elektronen ist.
 
-Die angelegte Spannung erzeugt eine Energie $eV$, die kleiner als die Austrittsenergie $\Phi$ der gebunden Elektronen.
+Das STM kann nur leitende Materialien messen. Das Rasterkraftmikroskop ist eine Weiterentwicklung, die auch nichtleitende Materialien messen kann.
 
 ### Rasterkraftmikroskop
 Das Rasterkraftmikroskop (AFM) misst die wirkende Kraft und kann - anders als das Rastertunnelmikroskop - auch nichtleitende Materialien an der Oberfläche vermessen.
@@ -162,7 +170,7 @@ Das Rasterkraftmikroskop (AFM) misst die wirkende Kraft und kann - anders als da
 ### Feldionenmikroskop
 Ein Feldionenmikroskop (FIM) ionisiert ein Gas an der Spitze über der Messprobe.
 
-### 1.4 Klassifikation der Gitter und Kristallsymmetrien
+## 1.4 Klassifikation der Gitter und Kristallsymmetrien
 Satz: Jede Symmetrieoperation an einem Bravaisgitter kann in zwei aufeinanderfolgende Operationen zerlegt werden:
 1. Translation: Translationsgruppe
 2. Operationen, die mindestens _einen_ Punkt unverändert lassen: Punktgruppe
@@ -193,5 +201,5 @@ Beispiele:
 * Eselsbrücke: "Katermut": kubisch, tetragonal, rhombisch, monoklin, triklin
 * fcc & bcc: Sind Spezialfälle des tetragonalen Gitters
 
-Heftet man an diese Gruppen eine nicht-spärische Basis, verändert das die Symmetrie. Es gibt dann 32 kristallographische Punktgruppen und kristallographische 230 Raumgruppen. Hier treten auch Translationen auf, die keine Gittervektoren sind. Solche Symmetrieoperationen können z.B. eine Schraubenachse oder eine Gleitspiegelebene sein.
+Heftet man an diese Gruppen eine nicht-spärische Basis, verändert das die Symmetrie. Es gibt dann 32 kristallographische Punktgruppen und 230 kristallographische Raumgruppen. Hier treten auch Translationen auf, die keine Gittervektoren sind. Solche Symmetrieoperationen können z.B. eine Schraubenachse oder eine Gleitspiegelebene sein.
 
