@@ -189,15 +189,22 @@ Beispiele:
 * $\bar{2}  = m$: Drehung um $\pi$ + Inversion = Spiegelung an Ebene
 * $\bar{6} = \frac{3}{m}$: Drehung um $\frac{\pi}{3}$ + Inversion = Drehung um $\frac{2\pi}{3}$ + Spiegelung
 
-* Für Bravaisgitter gibt es 7 Punktgruppen, die _Kristallsysteme_, […] insgesamt gibt es 14 Bravaisgitter.
-1. kubisch: 3 Strukturen
-2. tetragonal: 2 Strukturen
-3. rhombisch: 4 Strukturen
-4. monoklin: 2 Strukturen
-5. triklin: 1 Struktur
-6. hexagonal: 1 Struktur
-7. rhomboedrisch: 1 Struktur
+* Für Bravaisgitter gibt es 7 Punktgruppen, die _Kristallsysteme_, insgesamt gibt es 14 Bravaisgitter.
 
+1. kubisch: P, I, F
+2. tetragonal: P, I
+3. rhombisch: P, I, F, C
+4. monoklin: P, C
+5. triklin: P
+6. hexagonal: P
+7. rhomboedrisch: P
+
+Bedeutungen:
+
+* P: primitiv
+* I: raumzentriert
+* F: flächenzentriert
+* C: basiszentriert
 * Eselsbrücke: "Katermut": kubisch, tetragonal, rhombisch, monoklin, triklin
 * fcc & bcc: Sind Spezialfälle des tetragonalen Gitters
 
