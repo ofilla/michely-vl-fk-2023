@@ -206,7 +206,7 @@ Bedeutungen:
 * F: flächenzentriert
 * C: basiszentriert
 * Eselsbrücke: "Katermut": kubisch, tetragonal, rhombisch, monoklin, triklin
-* fcc & bcc: Sind Spezialfälle des tetragonalen Gitters
+* fcc & bcc: Sind Spezialfälle des tetragonalen Gitters (bct)
 
 Heftet man an diese Gruppen eine nicht-spärische Basis, verändert das die Symmetrie. Es gibt dann 32 kristallographische Punktgruppen und 230 kristallographische Raumgruppen. Hier treten auch Translationen auf, die keine Gittervektoren sind. Solche Symmetrieoperationen können z.B. eine Schraubenachse oder eine Gleitspiegelebene sein.
 
