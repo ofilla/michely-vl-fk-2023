@@ -104,6 +104,8 @@ Bisher haben wir punktförmige Streuer an Gitterpunkten angenommen und nur die R
 $\tilde{\vec{r}}_j$ ist der Vektor vom Atomzentrum (am Ort $\vec{r}$) zum Ort des $j$-ten Elektronen. Dies ist der zu betrachtende Ort, da Röntgenstrahlung an den Elektronen gestreut wird. Dies wiederum ist die meistverwendete Strahlung für Beugungsexperimente.
 
 ### Strukturfaktor
+Der Strukturfaktor ist die Fouriertransformierte der Elektronendichte einer Elementarzelle.
+
 Betrachte eine einzelne Elementarzelle für die Analyse. Die Streuamplitude in Richtung $\vec{k}^\prime$ wird bestimmt durch Superposition der Teilwellen von Streuvolumina $\mathrm dV$ mit Elektronendichten $\rho(\vec{r})$, Phasen $\varphi(\vec{r})$ und Phasenfaktoren $\mathrm e^{i\varphi(\vec{r})}$.
 $$
     S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\varphi(\vec{r})} \mathrm dV\\
@@ -115,7 +117,6 @@ Die Phase der gestreuten Teilwelle ist $-\vec{G}\cdot\vec{r} = \varphi(\vec{r})$
 $$
     S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\vec{G}\vec{r}} \mathrm dV .
 $$
-Dies nennt man Strukturfaktor. Dieser ist die Fouriertransformierte der Elektronendichte einer Elementarzelle.
 
 ### Streuintensität
 Die messabare Streuintensität eines Kristalls ist $I_{\vec{G}} \propto |S_{\vec{G}}|^2$. Sei $\vec{r}$ der Ort, der betrachtet wird, $\tilde{\vec{r}}$ der Vektor von einem Atomkern zu dem Punkt, den wir betrachten wollen, und $\vec{r}_1$ der Vektor zum Atomkern. Dann schreiben wir die Elektronendichte in einer Elementarzelle als
@@ -134,6 +135,8 @@ $$
 $$
 
 ### Atomformfaktor
+Der Atomformfaktor ist die Fouriertransformierte der Elektronendichte eines Atoms und gibt das Streuvermögen desselben als Funktion des Streuvektor $\vec{G}$ an.
+
 $$
     f = \int_{V_\mathrm{Atom}} \rho(\vec{r}) \cdot \mathrm e^{i\vec{G}\vec{r}} \mathrm dV
 $$
@@ -164,7 +167,7 @@ $$
     I(T) = D(T)\cdot I_0 \\
 $$
 
-Je größer $\vec{G}$ oder $T$, desto kleiner $D$.
+Je größer $\vec{G}$ oder $T$, desto kleiner $D$ und folglich desto kleiner $I(T)$.
 
 ## 3.4 Experimentelle Beugungsverfahren
 
