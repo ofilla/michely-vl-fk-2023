@@ -216,15 +216,17 @@ $$
         \right)
 $$
 
-Ansatz der Mod in LCAO-Näherung:
+Ansatz der Molekülwellenfunktion in LCAO-Näherung:[^4]
 
 $$
     \Psi(\vec{r},\vec{R}) =
-        c_A \phi_A(\vec{r},\vec{R})
-        + c_B \phi_B(\vec{r},\vec{R})
+        c_A \phi_A(\vec{r}_A,)
+        + c_B \phi_B(\vec{r}_B)
 $$
 
 Es gibt zwei mögliche Lösungen, eine symmetrische $\Psi_s$ und eine antisymmetrische $\Psi_a$. Die Energieeigenwerte unterscheiden sich $E_a>E_s$. Deswegen nennt man $\Psi_s$ das _bindende Orbital_ und $\Psi_a$ das _antibindende Orbital_.
+
+[^4]: _linear combination of atomic orbitals_
 
 #### magnetsche Ordnung
 Die kovalente Bindung führt zur Erhöhung der Valenzelektronendichte zwischen den Kernen. Dies verursacht eine elektrostatische Anziehung.
