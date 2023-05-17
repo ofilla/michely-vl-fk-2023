@@ -15,6 +15,9 @@ $$
 
 Neon hat $E_\mathrm{coh}=0.02\mathrm{eV}$, Silizium $E_\mathrm{coh}=4.63\mathrm{eV}$ und Wolfram $E_\mathrm{coh}=8.95\mathrm{eV}$. Außer bei Edelgasen ist diese Energie in der Größenordnung von Elektronenvolt und können im Periodensystem um Faktor $400$ variieren. Die Schmelztemperaturen in Kelvin variieren um den Faktor $150$.
 
+### Gleichgewichtsgitterkonstante
+Da das Potential $V$ immer eine attraktive und eine repulsive Komponente hat, gibt es einen Abstand $a$, bei dem die Kräfte im Gleichgewicht sind. Es gilt $\frac{\mathrm d}{\mathrm dr}V_\mathrm{total}\overset{!}{=}0$.
+
 ### Van-der-Waals-Bindung
 Sehr schware interatomare Wechselwirkung, die immer anwesend ist. Sie ist jedoch nur relevant, wenn keine andere Wechselwirkungen vorhanden sind, ansonsten wirken sie nur zusätzlich. Bei Edelgasen tritt nur diese Bindungsart auf.
 
@@ -159,7 +162,7 @@ $$
 $$
 
 #### Gleichgewichtsgitterkonstante
-Die Bindungsenergie und die Paulirepulsion sorgen zusammen für einen Gleichgewichtszustand. Die Paulirepulsion wird durch das Born-Meyer-Potential dargestellt. Da dieses sehr kurzreichweitig ist, werden nur die nächsten Nachbarn betrachtet, die durch die Koordinationszahl $K$ dargestellt ist.
+Die Bindungsenergie und die Paulirepulsion sorgen zusammen für einen Gleichgewichtszustand. Die Paulirepulsion wird durch das Born-Meyer-Potential dargestellt. Da dieses sehr kurzreichweitig ist, werden nur die nächsten Nachbarn betrachtet, die durch die Koordinationszahl $K$ dargestellt ist. Hierbei ist $N$ nach wie vor die Anzahl der Ionenpaare, nicht die Anzahl der Ionen.
 
 $$
     V_\mathrm{total} = -N
@@ -168,7 +171,7 @@ $$
         \right]
 $$
 
-Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Daraus folgt <!-- wie? -->
+Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Daraus folgt
 
 $$
     V_\mathrm{total} = -\frac{Ne^2\alpha}{4\pi\varepsilon_0a}
@@ -177,16 +180,71 @@ $$
     \right) \ .
 $$
 
-### Born-Haber-Kreisprozess (_skipped_)
+#### $\mathrm{NaCl}$-Struktur
+Die $\mathrm{NaCl}$-Struktur ist dann energetisch günstig, wenn sie die unterschiedlich geladenen Ionen berühren können. Wenn der Größenunterschied zwischen den Ionen so groß ist, dass sich die gleichgeladenen Ionen berühren, ist die $\mathrm{NaCl}$-Struktur energetisch ungünstig. Sei $r_>$ der Radius des größeren Ions und $r_<$ der Radius des kleineren Ions.
 
-<!--
+$$
+\begin{aligned}
+     2(r_>+r_<)^2 < (2r_>)^2 \\
+     \Leftrightarrow r_> > \frac{r_<}{\sqrt{2}-1}
+\end{aligned}
+$$
+
+Wird $r_>$ zu groß, so ist die $\mathrm{NaCl}$-Struktur nicht mehr stabil. Typischerweise entsteht dann eine Zinkblendestruktur.
+Falls dagegen $r_> < \frac{r_<}{\sqrt{3}-1}$ zu klein ist, entsteht die $\mathrm{CsCl}$-Struktur.
+
+### Born-Haber-Kreisprozess
+Mit dem Born-Haber-Kreisprozess kann man die Bindungsenergie
+
+$$
+    E_b = -\frac{V_\mathrm{total}}{N}
+$$
 
 ### Kovalente Bindung
-z.B. Diamant, Silizium, Germanium
+Im Unterschied zu der Van-der-Waals-Bindung oder der Ionenbindung befinden sich die Atome in der Kovalenten Bindung nicht in der Edelgaskonfiguration. Stattdessen überlagern sich die Orbitale, dies gehört in den Bereich der Quantenchemie. Die Ursache dafür ist die Quantenmechanische Austauschwechselwirkung.
+
+Beispielsweise Diamant, Silizium und Germanium treten in dieser Bindungsform auf.
+
+#### Wasserstoff
+Die Molekülwellenfunktion der Elektronen erfüllt $\hat{H}\Psi=E\Psi$. Für Wasserstoff ($\mathrm H_2$) gilt mit dem Abstand $R$ zwischen beiden Protonen und den Abständen $r_{A,B}$ zwischen den jeweiligen Protonen zu dem Elektron: 
+
+$$
+    \hat{H} = -\frac{\hbar^2}{2m_e} \nabla^2
+        - \frac{e^2}{4\pi\varepsilon_0}
+        \left(
+            \frac{1}{r_A} + \frac{1}{r_B} - \frac{1}{R}
+        \right)
+$$
+
+Ansatz der Mod in LCAO-Näherung:
+
+$$
+    \Psi(\vec{r},\vec{R}) =
+        c_A \phi_A(\vec{r},\vec{R})
+        + c_B \phi_B(\vec{r},\vec{R})
+$$
+
+Es gibt zwei mögliche Lösungen, eine symmetrische $\Psi_s$ und eine antisymmetrische $\Psi_a$. Die Energieeigenwerte unterscheiden sich $E_a>E_s$. Deswegen nennt man $\Psi_s$ das _bindende Orbital_ und $\Psi_a$ das _antibindende Orbital_.
+
+#### magnetsche Ordnung
+Die kovalente Bindung führt zur Erhöhung der Valenzelektronendichte zwischen den Kernen. Dies verursacht eine elektrostatische Anziehung.
+
+Durch das Pauliprinzip ist gefordert, dass die Gesamtwellenfunktion für mehrere Fermionen antisymmetrisch unter Vertauschung ist. Die Gesamtwellenfunktion ist das Produkt aus Ortswellenfunktion und Spinwellenfunktion.
+
+Wenn beide Elektronen im niedrigeren Energieniveau sind, das die symmetrische Ortswellenfunktion voraussetzt, muss die Spinwellenfunktion antisymmetrisch sein. Werden beide Elektronen auf verschiedene Energieniveaus verteilt, muss die Spinwellenfunktion symmetrisch sein. Daher bestimmt die Energetik der Ortswellenfunktion die Spinwellenfunktion, was die magnetsche Ordnung bestimmt.
+
+### Mischbindungen
+Die Ionenbindung und die kovalente Bindung treten nur selten in Reinform aus, oft gibt es eine Mischung aus beidem. Auch die Metallbindung ist oft in in Kombination mit der kovalenten Bindung anzutreffen. Übergangsmetalle haben stehts auch einen Antail an kovalenter Bindung.
 
 ### Metallbindung
-z.B. Na
+Die Metallbindung entsteht durch Valenzelektronen, die am Ort der Nachbaratome noch eine erhebliche Aufenthaltswahrscheinlichkeit besitzen. Die Elektronen werden von allen Atomen geteilt.
+
+Ein Musterbeispiel sind die Alkalimetalle. Übergangsmetalle haben stehts auch einen Antail an kovalenter Bindung.
+
+Die Delokalisierung der Elektronen erhöht die Ortsungenauigkeit $\Delta x$, dadurch kann die Impulsungenauigkeit $\Delta p$ sinken. Dies senkt die kinetische Energie, dies bestimmt die Energieeffizienz der Metallbindung.
 
 ### Wasserstoffbrückenbindung
--->
+Im Folgenden wird Wasser ($\mathrm{H_2O}$) betrachtet.
+
+Das Rumpfion des Wasserstoffs ist besonders. Das Rumpfion $\mathrm H^-$ ist ein reines Proton, die elektrostatische Energie in Höhe der Ionisierungsenergie $E_i=13.59\mathrm{eV}$ wird nicht durch andere Elektronen abgeschirmt. In der kovalenten Bindung mit dem Sauerstoffatom $\mathrm O$ sitzt das Bindungselektron zwischen dem $\mathrm H^-$ und dem $\mathrm O$. Daher entsteht eine schwache Bindung zwischen dem $\mathrm H^-$ und den Elektronen des $\mathrm O$-Atoms. Die Bindungsenergie ist eher schwach ($0.2-1.0\mathrm{eV}$).
 
