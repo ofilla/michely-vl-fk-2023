@@ -216,7 +216,7 @@ $$
         \right)
 $$
 
-Ansatz der Molekülwellenfunktion in LCAO-Näherung:[^4]
+Ansatz der Molekülwellenfunktion in LCAO-Näherung[^4]:
 
 $$
     \Psi(\vec{r},\vec{R}) =

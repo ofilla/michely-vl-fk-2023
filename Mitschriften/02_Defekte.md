@@ -123,7 +123,7 @@ Dadurch ist eine Versetzunglinie entstanden: Eine Ebene des Kristallgitters ende
 ### Burgers Vektor
 Der _Burgers Vektor_[^2] $\vec{b}$ = ist der Schließungswinkel beim Umlauf um die Versetzung.
 
-Bei einer Stufenversetzung [[20230507154747]] ist $\vec{b}$ immer senkrecht zur Gleitebene, bei einer Schraubenversetzung parallel zur Gleitebene.
+Bei einer Stufenversetzung ist $\vec{b}$ immer senkrecht zur Gleitebene, bei einer Schraubenversetzung parallel zur Gleitebene.
 
 Eine Versetzungslinie lässt sich parallel zum Burgersvektor verschieben. Steht dieser Vektor senkrecht zur Versetzungslinie, so lässt diese sich nicht verschieben. Man spricht dann von _sesshaften Versetzungen_.
 
