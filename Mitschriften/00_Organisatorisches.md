@@ -16,5 +16,5 @@ Dies ist eine _inoffizielle_ Mitschrift aus der Vorlesung zur Festkörperphysik 
 * Klausur: 1.8.23 8:00 Uhr
 * Nachklausur 12.9.23 8:00 Uhr
 
-[[20230415133311]]
+Die Bestehensquote für der Teilnehmer, die max. 2x in der Übung gefehlt haben, wird auf 75% festgelegt.
 

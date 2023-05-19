@@ -16,7 +16,7 @@ Dies ist eine _inoffizielle_ Mitschrift aus der Vorlesung zur Festkörperphysik 
 * Klausur: 1.8.23 8:00 Uhr
 * Nachklausur 12.9.23 8:00 Uhr
 
-[[20230415133311]]
+Die Bestehensquote für der Teilnehmer, die max. 2x in der Übung gefehlt haben, wird auf 75% festgelegt.
 
 # 1. Strukturen von Festkörpern
 ## 1.1 Bravaisgitter
@@ -355,7 +355,7 @@ Dadurch ist eine Versetzunglinie entstanden: Eine Ebene des Kristallgitters ende
 ### Burgers Vektor
 Der _Burgers Vektor_[^2] $\vec{b}$ = ist der Schließungswinkel beim Umlauf um die Versetzung.
 
-Bei einer Stufenversetzung [[20230507154747]] ist $\vec{b}$ immer senkrecht zur Gleitebene, bei einer Schraubenversetzung parallel zur Gleitebene.
+Bei einer Stufenversetzung ist $\vec{b}$ immer senkrecht zur Gleitebene, bei einer Schraubenversetzung parallel zur Gleitebene.
 
 Eine Versetzungslinie lässt sich parallel zum Burgersvektor verschieben. Steht dieser Vektor senkrecht zur Versetzungslinie, so lässt diese sich nicht verschieben. Man spricht dann von _sesshaften Versetzungen_.
 
@@ -819,7 +819,7 @@ $$
         \right)
 $$
 
-Ansatz der Molekülwellenfunktion in LCAO-Näherung:[^4]
+Ansatz der Molekülwellenfunktion in LCAO-Näherung[^4]:
 
 $$
     \Psi(\vec{r},\vec{R}) =
@@ -862,6 +862,7 @@ $$
     \vec{r} = \vec{R} + \vec{u}(\vec{R})
 $$
 ## 5.1 Adiabatische und harmonische Approximation
+
 ### Adiabatische Approximation
 Ein elektronisches System folgt dem Kern instantan. Dies bedeutet, dass alle Elektronen sofort ihre Bewegung entsprechend verändern, wenn der Kern bewegt wird. Es gebe keine Anregungen von Elektronen.
 
@@ -880,7 +881,7 @@ $$
 $$
 Für kleine Auslenkungen sind die Rückstellkräfte linear. Dies kann als Federkraft interpretiert werden.
 
-## 5.2 Klassische Theorie der 1D-Kette
+## 5.2 Klassische Theorie der eindimensionalen Kette
 Sei $a$ der Abstand zwischen den Atomen eines eindimensionales Kristalls. Dann befinde sich die Ruhelage des $n$-ten Atoms an der Position $na$. Das Atom sei von der Position $na$ um eine kleine Strecke $u$ verschoben. Zwischen den verschienenen Atomen wirke eine Federkraft $F(x)=cx$. Diese wirke nur zwischen den direkten Nachbarn.
 
 $$
@@ -891,16 +892,60 @@ $$
 \end{aligned}
 $$
 
-Der Ansatz zur Lösung dieser Differentialgleichung sei eine laufende, auf Gitterpunkten definierte Welle $u(ua, t) = A\exp[i(kna - \omega t)]$.
+### Dispersionsrelation
+Der Ansatz zur Lösung dieser Differentialgleichung sei eine laufende, auf Gitterpunkten definierte Welle $u(ua, t) = A\exp[i(kna - \omega t)]$. Dadurch kann die Schwingungsfrequenz (durch Einsetzen in die Differentialgleichung) bestimmt werden.
 
 $$
 \begin{aligned}
-    \Rightarrow -M\omega^2 u(na, t) A\exp[i(kna - \omega t)]
-        &= -c [2 - \exp(-ika) - \exp(ika)] \exp[i(kna - \omega t)] \\
-        &= -2c[1 - \cos(ka)] \exp[i(kna - \omega t)] \\
-    \Leftrightarrow \omega^2 &= \frac{2C}{M} [1-\cos(ka)]
+    \Rightarrow \omega^2 &= \frac{2C}{M} [1-\cos(ka)]
 \end{aligned}
 $$
+
+Dieser Ausdruck kann mit der Relation $\frac{1-\cos{\alpha}}{2} = \sin^2(ka)$ vereinfacht werden. Daraus erhält man die Dispersionsrelation:
+
+$$
+    \omega = 2\sqrt{\frac{C}{M}}
+        \left|
+            \sin\left(
+                \frac{ka}{2}
+            \right)
+        \right|
+$$
+
+### Beschränkungen von $k$ und $\omega$
+Daher ist $\omega$ $\frac{2\pi}{a}$-periodisch. Seien $k$ ein Wellenvektor und $k^\prime=k+G$ mit dem reziproken Gittervektor $G=m\frac{2\pi}{a}$ (min $m\in\mathbb N$) des eindimensionalen Gitters. An der Stellen $k$ und $k^\prime$ ist die Auslenkung identisch mit $u(na, t)_{k^\prime} = u(na, t)_k$.
+
+Alle Phasendifferenzen von benachbarten Atomen, die größer sind als $\pi$, sind unphysikalisch. In diesem Fall weist man Schwingungen im "leeren" Raum zu, die keine Relevanz haben und auch nicht messbar sind, da nur an den Gitterpunkten gemessen werden kann. Daher fordern wir $\lambda=\frac{2\pi}{|k|}$. Mit dem kürzestmöglichen reziproken Gittervektor $G_0$ folgt:
+
+$$
+    -\frac{\pi}{a} \le k \le \frac{\pi}{a}
+    \Leftrightarrow -\frac{G_0}{2} \le k \le \frac{G_0}{2}
+$$
+
+Folglich muss $k$ ein Wellenvektor aus der 1. Brillouinzone sein. Der Wellenvektor kann beide Vorzeichen haben, da die Wellen in beide Richtungen laufen dürfen. An der Zonengrenze gilt $u(na, t)_{\frac{a}{2}}=A(-1)^n\exp[-i\omega t]$. Dies beschreibt eine stehende Welle von gegenphasig schwingenden Atomen.
+
+Dadurch sind die Frequenzen der Wellen auf $\omega\in\left[0, 2\sqrt{\frac{C}{M}} \right]$ beschränkt.
+
+### Schallgeschwindigkeit
+Für kleine Frequenzen gilt $\omega \approx\sqrt{\frac{C}{M}} |ka|$. Die Gruppengeschwindigkeit $v_\mathrm{Gruppe}=\frac{\mathrm d\omega}{\mathrm dk}=\sqrt{\frac{C}{M}}a$ ist konstant, insbesondere unabhängig von $\lambda$. Wir bezeichnen $v_s=\sqrt{\frac{C}{M}}$ als Schallgeschwindigkeit der eindimensionalen Kette. Diese ist für kleine Frequenzen konstant.
+
+Im Allgemeinen, d.h. auch für grössere Winkel, gilt
+
+$$
+\begin{aligned}
+    v_\mathrm{Gruppe}
+        &= \frac{\mathrm d\omega}{\mathrm dk} \\
+        &= \frac{\mathrm d}{\mathrm dk}
+            \left(
+                2\sqrt{\frac{C}{M}} \left|\sin\left(\frac{ka}{2}\right)\right|
+            \right) \\
+        &= v_s \left|\cos\left(\frac{ka}{2}\right)\right|
+\end{aligned}
+$$
+
+Auch hier gibt es stehende Wellen mit $v_\mathrm{Gruppe}(k=\frac{\pi}{a})=0$.
+
+Die Ausbreitung von elastischen Stellen in Hochsymmetrierichtungen wie $[100]$ oder $[111]$ werden bereits durch die eindimensionale Kette beschrieben, wenn sich Netzebenen statt Atomen bewegen. Man hat eine longitudinale und zwei transversale Moden. Die Kraftkonstanten der moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
 
 # Literatur
 1. [@Gross2012Festkörper]
