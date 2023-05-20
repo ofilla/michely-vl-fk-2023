@@ -424,7 +424,9 @@ Die 1. BZ ist die Menge aller Punkte im reziproken Gitter, die näher an einem G
 
 Daher erfüllt sie wie die primitive Einheitszelle den Raum ohne Lücke und ohne Überlapp. Durch ihre Konstruktion repräsentiert sie die volle Symmetrie des Gitters.
 
-Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die 1. BZ.
+Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen, die Bragg-Ebenen, eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die 1. BZ.
+
+Wird eine Welle an einem Punkt im reziproken Gitter gestreut, so wird sie dann reflektiert wenn sie auf dem Rand der 1. BZ enden.
 
 ### Netzebene
 Eine Netzebene ist eine Ebene durch 3 Gitterpunkte eines Bravaisgitters, die nicht auf einer Linie liegen. Eine Netzebene entält unendlich viele Gitterpunkte.
@@ -458,37 +460,45 @@ Eine äquivalente Definition im direkten Gitter:
 
 ## 3.2 Die Beugungsbedingungen
 Für passende Strahlung wirkt ein Kristall als _Beugungsgitter_. Röntgenstrahlung ist die häufigste verwendete Strahlung. Die Wellenlänge der Strahlung $\lambda$ muss die Größenordnung der Gitterkonstante $a$ haben: $\lambda\approx a$.
-Wir nehmen hier an, das bei der Streuung keine Energieverluste auftreten.
 
-### Laues Erklärung
-Interferenz von streuenden Atomgruppen (Basis), die an die Gitterpunkte angeheftet sind. Jedes Atom strahlt einfallende Strahlung isotrop ab. Diese können als Punktstrahler angenommen werden.
+Oft nimmt man vereinfachend an, das bei der Streuung keine Energieverluste auftreten.
 
-Der Gangunterschied ist $d\cos\theta + d\cos\theta^\prime = \vec{d}\cdot(\vec{n}-\vec{n}^\prime)$, wobei $\theta$ der Winkel zwischen dem Strahl und der Verbindungslinie zwischen beiden Punktstrahlern ist.
+### Beugungsbedingung nach Laue
+Ein Beugungsbild entsteht durch Interferenz von streuenden Atomgruppen, die Basis, die an die Gitterpunkte angeheftet sind. Jedes Atom strahlt einfallende Strahlung isotrop ab und kann als Punktstrahler angenommen werden.
 
-Damit es Streureflexe gibt, müssen alle Punktstrahler konstruktiv interferieren, d.h. $\vec{R}\cdot(\vec{k}-\vec{k}^\prime)=2\pi m$, mit $m\in\mathbb Z$. Dies ist widerum äquivalent zu $\mathrm e^{i(\vec{k}-\vec{k}^\prime)\vec{R}}=1$, d.h. die Differenz der Wellenvektoren muss ein reziprokes Gitter $\vec{G}=\pm(\vec{k}-\vec{k}^\prime)$ sein. $\vec{k}$ ist hierbei der Wellenvektor des einfallenden Strahls und $\vec{k}^\prime$ der des am hinteren Atoms reflektierte Strahl.
+Der Gangunterschied zwischen verschiedenen reflektierten Strahlen ist durch $d\cos\theta + d\cos\theta^\prime = \vec{d}\cdot(\vec{n}-\vec{n}^\prime)$, wobei $\theta$ der Winkel zwischen dem Strahl und der Verbindungslinie zwischen beiden Punktstrahlern ist.
+
+Damit es Streureflexe gibt, müssen alle Punktstrahler konstruktiv interferieren. Dies ist gegeben, falls das Skalarprodukt des Ortsvektors $\vec{R}$ (des Gitterpunktes) und der Differenz der Wellenvektoren ein Vielfaches von $2\pi$ ist, also wenn $\vec{R}\cdot(\vec{k}-\vec{k}^\prime)=2\pi m$. . $\vec{k}$ ist hierbei der Wellenvektor des einfallenden Strahls und $\vec{k}^\prime$ der des am hinteren Atoms reflektierte Strahl.
+
+Dies ist äquivalent zu $\exp[i(\vec{k}-\vec{k}^\prime)\vec{R}]=1$, die Differenz der Wellenvektoren muss also ein reziprokes Gitter $\vec{G}=\pm(\vec{k}-\vec{k}^\prime)$ beschreiben. Dies bedeutet, dass die Projektion des einfallenden Wellenvektors $\vec{k}$ auf den Gittervektor $\vec{G}$ der halbe Gittervektor $\frac{\vec{G}}{2}$ sein muss.
+
 $$
     \vec{G}=(\vec{k}-\vec{k}^\prime) \\
     \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} = \frac{|\vec{G}|}{2}
 $$
 
-Dies bedeutet, dass die Projektion des einfallenden Wellenvektors $\vec{k}$ auf den Gittervektor $\vec{G}$ der halbe Gittervektor $\frac{\vec{G}}{2}$ sein muss. Daher werden alle Wellenvektoren, die auf der sogenannten **Braggebene** - der Ebene in der Mitte zwischen zwei Netzebenen - enden, werden reflektiert. Die Braggebenen bilden die 1. Brillouinzone. Alle Wellenvektoren, die auf der Grenze der Brillouinzone enden, werden demnach reflektiert.
+Daher werden alle Wellenvektoren, die auf den Bragg-Ebenen enden, reflektiert. Dies ist äquivalent zu der Aussage, dass alle Wellenvektoren, die auf der Grenze der Brillouinzone enden, reflektiert werden.
+
+#### Bragg-Ebenen
+Die Ebenen in der Mitte zwischen zwei Netzebenen werden Bragg-Ebenen genannt. Sie sind die mittelsenkrechten Ebenen zwischen Punkten im reziproken Gitter. Daher bilden sie die Randflächen der 1. Brillouinzone.
+
+Alle Wellenvektoren, die an einem Gittterpunkt reflektiert werden und auf der Bragg-Ebeneenden, werden reflektiert.
 
 ### Evald-Konstruktion
-Die Evald-Konstruktion ist eine besonders anschauliche Darstellung der Laue-Bedingung:
-* $\vec{k}$ endet am Ursprung
-* schlage Kreis vom Radius $k$ um Anfangspunkt von $\vec{k}$
-* Schneidet der Kreis neben dem Ursprung einen weiteren Gitterpunkt, so gibt es fúr diesen Streuvektor einen Beugungsreflex mit $\vec{k}^\prime$. Verbindet $\vec{G}$ diesen Punkt mit dem Ursprung $0$, so ist $\vec{G}=\vec{k} -\vec{k}^\prime$.
+Die Evald-Konstruktion ist eine besonders anschauliche Darstellung der Laue-Bedingung für Reflektion.
 
-### Braggsche Erklärung
-Ein scharfer Röntgenreflex entsteht, wenn
-1. die Strahlung jeweils zu einem kleinen Bruchteil an Netzebenen einer Schar mit Ebenenabstand $d$ reflektiert wird.
-2. reflektierte Strahlung verschiedener Ebenen konstruktiv interferiert.
+* Der einfallende Wellenvektor $\vec{k}$ endet am Ursprung.
+* Schlage Kreis vom Radius $k$ um Anfangspunkt von $\vec{k}$.
+* Schneidet der Kreis neben dem Ursprung einen weiteren Gitterpunkt, so gibt es fúr diesen Streuvektor einen Beugungsreflex mit $\vec{k}^\prime$. Verbindet ein reziproker Gittervektor $\vec{G}$ diesen Punkt mit dem Ursprung $0$, so ist $\vec{G}=\vec{k} -\vec{k}^\prime$.
 
-Für polychromatische Strahlung treten i.A. viele Reflexe und höhere Beugungsordnungen auf.
+### Beugungsbedingung nach Bragg
+Ein scharfer Röntgenreflex entsteht dann, wenn die Strahlung jeweils zu einem kleinen Bruchteil an Netzebenen einer Schar mit Ebenenabstand $d$ reflektiert wird und die reflektierte Strahlung verschiedener Ebenen konstruktiv interferiert.
 
-Die Braggsche Beugungsbedingung lautet also $n\cdot \lambda = 2d\sin\theta$. $\theta$ ist hier der Winkel an dem oberen Atom, sodass ein rechtwinkliges Dreieck mit beiden Reflektionspunkten und dem Strahl gebildet wird.
+Für polychromatische Strahlung treten im Allgemeinen viele Reflexe und höhere Beugungsordnungen auf.
 
-Dies ist nicht vollständig physikalisch erklärbar, da auf z.B. der 2. Ebene nicht notwendigerweise ein Atom "unterhalb" der Atome der 1. Ebene sitzen muss. Man kann die Bragg-Bedingung allerdings aus Laues Erklärung herleiten.
+Die Braggsche Beugungsbedingung lautet $n\cdot \lambda = 2d\sin\theta$ mit dem Einfallswinkel $\theta$ des Strahls.
+
+Dies ist nicht vollständig physikalisch erklärbar, da sich nicht notwendigerweise auf jeder Netzebene ein Atom "unterhalb" der Atome der 1. Ebene befindet. Man kann die Bragg-Bedingung allerdings aus Laues Erklärung herleiten.
 
 #### Herleitung der Bragg-Bedingung aus der Laue-Bedingung
 Der Streuvektor $\vec{G}$ sei ein ganzzahliges Vielfaches des kürzesten reziproken Gittervektors $\vec{G}_\mathrm{min}$, d.h. $\vec{G}=n\cdot\vec{G}_\mathrm{min}$. Dieser Gittervektor steht senkrecht auf der Netzebenenschar, an der reflektiert wird. Es soll konstruktive Interferenz geben, also gilt nach der Laue-Bedingung $n\vec{G}_\mathrm{min} = 2k\sin\theta$. Da $k=\frac{2\pi}{\lambda}$ und $|\vec{G}_\mathrm{min}|=\frac{2\pi}{d}$ folgt die Bragg-Bedingung $n\lambda=2d\sin\theta$.
