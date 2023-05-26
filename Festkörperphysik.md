@@ -805,13 +805,18 @@ $$
     \right) \ .
 $$
 
-#### $\mathrm{NaCl}$-Struktur
-Die $\mathrm{NaCl}$-Struktur ist dann energetisch günstig, wenn sie die unterschiedlich geladenen Ionen berühren können. Wenn der Größenunterschied zwischen den Ionen so groß ist, dass sich die gleichgeladenen Ionen berühren, ist die $\mathrm{NaCl}$-Struktur energetisch ungünstig. Sei $r_>$ der Radius des größeren Ions und $r_<$ der Radius des kleineren Ions.
+#### Gültigkeitesintervalle für Kristallstrukturen
+Eine Kristallstruktur ist dann energetisch günstig, wenn sie die unterschiedlich geladenen Ionen berühren können, die gleichgeladenen aber nicht. Wenn der Größenunterschied zwischen den Ionen so groß ist, dass sich die gleichgeladenen Ionen berühren, ist die Struktur energetisch ungünstig.
+
+##### Beispiel: $\mathrm{NaCl}$
+Sei $r_>$ der Radius des Chloratoms und $r_<$ der Radius des Natriumions. Dann dürfen sich die Chloratome nicht berühren, ein Chloratom und ein Natriumion dürfen es jedoch. Aus beiden Bedingungen lassen sich Einschränkungen für das Größenverhältnis beider Atome berechnen.
 
 $$
 \begin{aligned}
-     2(r_>+r_<)^2 < (2r_>)^2 \\
-     \Leftrightarrow r_> > \frac{r_<}{\sqrt{2}-1}
+    r_> &< \sqrt{2}\frac{a}{2} \\
+    r_> + r_< &= \frac{a}{2} \\
+    \Rightarrow r_> + r_< &< \frac{r_>}{\sqrt{2}} \\
+    \Leftrightarrow \frac{r_>}{r_<} &< \frac{1}{\sqrt{2}-1}
 \end{aligned}
 $$
 
