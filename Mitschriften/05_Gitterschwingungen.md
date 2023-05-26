@@ -59,8 +59,6 @@ $$
         \right|
 $$
 
-<!-- ergänze ansatz/beweise -->
-
 ### Beschränkungen von $k$ und $\omega$
 Daher ist $\omega$ $\frac{2\pi}{a}$-periodisch. Seien $k$ ein Wellenvektor und $k^\prime=k+G$ mit dem reziproken Gittervektor $G=m\frac{2\pi}{a}$ (min $m\in\mathbb N$) des eindimensionalen Gitters. An der Stellen $k$ und $k^\prime$ ist die Auslenkung identisch mit $u(na, t)_{k^\prime} = u(na, t)_k$.
 
@@ -112,7 +110,9 @@ Der Zweig mit dem Minus ist der _akustische Zweig_, der mit dem Plus ist der _op
 Sei an jedem Gitterpunkt eine zweiatomige Basis. Sei der Abstand zwischen den Atomen der Basis $d$ und die Gitterkonstante $a$. Dann ist das linke der beiden Atome an der Position $na$ und das rechte an der Position $na+d$.
 
 Sei $u_1(na)$ die Auslenkung des linken Atoms und $u_2(na)$ die Auslenkung des rechten Atoms an der Position $na+d$. $na$ bezeichnet damit die Elementarzelle Zwischen den Atomen der Basis sei die Federkonstante $C$ kleiner als die Federkonstante $D$ der Kraft zwischen den verschiedenen Basen. Seien die Massen der beiden Basisatome gleich.
-<!-- ergänze ansatz -->
+
+Die wirkende Kraft $F_i=M\ddot{u}_i$ besteht jeweils aus der Federkraft zum linken und zum rechten Atom. Eines der beiden ist das andere Basiselement, das andere aus der benachbarten Zelle. Dieses System an Differentialgleichungen kann mit dem Ansatz $u(na, t)=A_i\exp[i(kna-\omega t)]$ gelöst werden.
+
 $$
 \begin{aligned}
     M\ddot{u}_1(na) &= -C[u_1(na) - u_2(na)] - D[u_1(na) - u_2((n-1)a)] \\
@@ -136,31 +136,35 @@ Man kann die Berechnung auf die 1. Brillouinzone (BZ) beschränken.
 Dispersion wird üblicherweise in Richtungen der Symmetrie geplottet. Punkte hoher Symmetrie werden mit griechischen Buchstaben markiert. Es gibt die Punkte $\Gamma, X, K$. $k=|\vec{k}|$ wird üblicherweise in Einheiten von $\frac{\pi}{a}$ aufgetragen.
 
 * $\Gamma$ ist der Punkt im Zentrum der BZ, an dem $\vec{k}=0$.
-* $X$ liegt bei $k=\frac{\pi}{a}$, $\Gamma X$ beschreibt die $[110]$-Richtung.<!-- korrigiere Richtung -->
-* $K$ liegt bei $k=\sqrt{2}\frac{\pi}{a}$, $\Gamma K$ beschreibt die $[100]$-Richtung.<!-- korrigiere Richtung -->
-* $L$ liegt bei $k=\sqrt{3}\frac{\pi}{a}$, $\Gamma L$  beschreibt die $[100]$-Richtung.<!-- korrigiere Richtung -->
+* $X$ liegt bei $k=\frac{\pi}{a}$, $\Gamma X$ beschreibt die $[110]$-Richtung.
+* $K$ liegt bei $k=\sqrt{2}\frac{\pi}{a}$, $\Gamma K$ beschreibt die $[100]$-Richtung.
+* $L$ liegt bei $k=\sqrt{3}\frac{\pi}{a}$, $\Gamma L$  beschreibt die $[111]$-Richtung.
 
 ## 5.3 Randbedingungen
-Es ist essentiell, Randbedingungen zu verwenden. Es ist jedoch aufgrund der verschwindenden Zahl der Oberflächenatome praktisch irrelevant, welche Randbedingungen man wählt. Üblicherweise wählt man periodische Randbedingungen, weil sie mathematisch einfacher sind und besser zum Prinzip der Translationsinvarianz passen als feste Enden an der Oberfläche.
+Da in der Realität jeder Körper endlich ist, ist es essentiell, Randbedingungen zu verwenden. Aufgrund der verschwindenden Zahl der Oberflächenatome es ist jedoch  praktisch irrelevant, welche Randbedingungen man wählt. Üblicherweise wählt man periodische Randbedingungen, weil sie mathematisch einfacher sind und besser zum Prinzip der Translationsinvarianz passen als feste Enden an der Oberfläche.
+
+Dadurch erhält man eine endliche Menge an möglichen Wellenvektoren $\vec{k}$.
 
 ### Born-von-Karmann-Randbedingungen
-Born-von-Karmann-Randbedingungen sind periodische Randbedingungen. Alle Randatome bilden einen geschlossenen Ring an Atomen, die durch einzelne Federkräfte verbunden sind. Demnach das $0$-te Atom identisch mit dem $N$-ten.
+Born-von-Karmann-Randbedingungen sind periodische Randbedingungen. Alle Randatome bilden einen geschlossenen Ring an Atomen, die durch einzelne Federkräfte verbunden sind. Demnach das $0$-te Atom identisch mit dem $N$-ten, es gilt also $u(0) = u(Na)$. Daraus folgt mit dem Ansatz für die eindimensionale Kette $\exp[ikNa]=1$, was mit ganzen Zahlen $n\in\mathbb Z$ durch $kNa=2\pi n$ erfüllt ist.
 
-Man erhält $N$ verschiedene $k$-Werte mit verschiedenen Eigenfrequenzen $\omega$ für $N$ eindimensionale Oszillatoren.
-<!-- fixme -->
+Man erhält $N$ verschiedene $k$-Werte mit verschiedenen Eigenfrequenzen $\omega$ für $N$ eindimensionale Oszillatoren. Da $\vec{k}$ in der 1. Brillouinzone liegen muss, gilt $ak\in(-\pi, \pi]$. Daraus ergibt sich folgende Relation für $N$ und $n$, was die möglichen Wellenvektoren definiert.
 
 $$
     k = \frac{2\pi}{a} \cdot \frac{n}{N} \\
-    \rightarrow - \frac{N}{2} < n \le \frac{N}{2}
+    \Rightarrow - \frac{N}{2} < n \le \frac{N}{2}
 $$
 
 ### Zustandsdichte
 Die Zustandsdichte ist die Anzahl der Zustände im $\vec{k}$-Raum pro $\vec{k}$-Raum-Einheitslänge.
-<!-- fixme -->
 
 $$
-    Z(k) = \frac{\#\mathrm{Zustände}}{k\mathrm{-Raum-Intervall}} = ???
+\begin{aligned}
+    Z(k) = \frac{\#\mathrm{Zustände}}{k\mathrm{-Raum-Intervall}} \\
+\end{aligned}
 $$
+
+Im eindimensionalen Fall gilt demnach $Z(k) = \frac{Na}{2\pi}$. Da $Na$ die Länge der Kette ist, gilt damit $Z(k) = \frac{L}{2\pi}$.
 
 Im dreidimensionalen Fall erhält man mit den primitiven Translationen des reziproken Gitters $\vec{b}_i$, der Kantenlängen $N_i|a_i|$ mit $- \frac{N_i}{2} < l_i \le \frac{N_i}{2}$.
 

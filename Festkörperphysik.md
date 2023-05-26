@@ -915,6 +915,8 @@ $$
 $$
 
 ### Dispersionsrelation
+Eine Dispersionsrelation ist eine Relation zwischen Energie und Wellenvektor bzw. Frequenz.
+
 Der Ansatz zur Lösung dieser Differentialgleichung sei eine laufende, auf Gitterpunkten definierte Welle $u(ua, t) = A\exp[i(kna - \omega t)]$. Dadurch kann die Schwingungsfrequenz (durch Einsetzen in die Differentialgleichung) bestimmt werden.
 
 $$
@@ -967,7 +969,91 @@ $$
 
 Auch hier gibt es stehende Wellen mit $v_\mathrm{Gruppe}(k=\frac{\pi}{a})=0$.
 
-Die Ausbreitung von elastischen Stellen in Hochsymmetrierichtungen wie $[100]$ oder $[111]$ werden bereits durch die eindimensionale Kette beschrieben, wenn sich Netzebenen statt Atomen bewegen. Man hat eine longitudinale und zwei transversale Moden. Die Kraftkonstanten der moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
+Die Ausbreitung von elastischen Stellen in Hochsymmetrierichtungen wie $[100]$ oder $[111]$ werden bereits durch die eindimensionale Kette beschrieben, wenn sich Netzebenen statt Atomen bewegen. Man hat eine longitudinale und zwei transversale Moden. Die longitudinalen Moden haben immer eine höhere Frequenz als die transversalen Moden. Dies liegt daran, dass eine Scherung immer einfacher als eine Kompression ist.
+
+Die Kraftkonstanten der Moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
+
+### Eindimensionale Kette mit zwei Basisatomen
+Nun wird eine zweiatomige Basis betrachtet. Dies führt dazu, dass die Dispersionsrelation zwei verschiedene Zweige hat. Dies ist genau so lange der Fall, wie die Massen der beiden Teilchen unterschiedlich sind; ansonsten bilden beide Basisatome eine neue Einheitszelle.
+
+$$
+    \omega^2 =
+            \frac{C+D}{M} \pm \frac{1}{M}\sqrt{C^2+D^2+2CD\cos(ka)}
+$$
+
+Der Zweig mit dem Minus ist der _akustische Zweig_, der mit dem Plus ist der _optische Zweig_. Der akustische Zweig hat bei $k=0$ auf $0$ und verändert sich im Interval $\pm \frac{\pi}{a}$ sehr stark, der optische Zweig hat bei $k=0$ ein Maximum, verändert sich im selben Interval allerdings vergleichsweise gering.
+
+#### Beweis
+Sei an jedem Gitterpunkt eine zweiatomige Basis. Sei der Abstand zwischen den Atomen der Basis $d$ und die Gitterkonstante $a$. Dann ist das linke der beiden Atome an der Position $na$ und das rechte an der Position $na+d$.
+
+Sei $u_1(na)$ die Auslenkung des linken Atoms und $u_2(na)$ die Auslenkung des rechten Atoms an der Position $na+d$. $na$ bezeichnet damit die Elementarzelle Zwischen den Atomen der Basis sei die Federkonstante $C$ kleiner als die Federkonstante $D$ der Kraft zwischen den verschiedenen Basen. Seien die Massen der beiden Basisatome gleich.
+
+Die wirkende Kraft $F_i=M\ddot{u}_i$ besteht jeweils aus der Federkraft zum linken und zum rechten Atom. Eines der beiden ist das andere Basiselement, das andere aus der benachbarten Zelle. Dieses System an Differentialgleichungen kann mit dem Ansatz $u(na, t)=A_i\exp[i(kna-\omega t)]$ gelöst werden.
+
+$$
+\begin{aligned}
+    M\ddot{u}_1(na) &= -C[u_1(na) - u_2(na)] - D[u_1(na) - u_2((n-1)a)] \\
+    M\ddot{u}_2(na) &= -C[u_2(na) - u_1(na)] - D[u_2(na) - u_1((n+1)a)]
+\end{aligned}
+$$
+
+## 5.3 Klassische Theorie im dreidimension Fall
+Für jede Welle mit $\vec{k}$ gibt es $3$ Schwingungsformen, von denen eine Mode longitudinal und zwei Moden transversal sind.
+
+Für eine Basis mit $j$ Atomen gibt es $3$ akustische Zweige und $3j-3$ optische Zweige der Dispersionsrelation.
+
+Die Frequenz der longitudinalen Mode ist höher als die der transversalen Moden, da eine Scherung auch im dreidimensionalen Fall einfacher als eine Kompression ist.
+
+In Hochsymmetrischen Kristallrichtungen wie beispielsweise $[100]$ im kubischen System sind die transversalen Moden entartet. Das bedeutet, beide transversalen Moden sind identisch und man kann nur eine transversale Mode messen.
+
+Die Gruppengeschwindigkeit $\vec{v} _ \mathrm{Gruppe} = \nabla _{\vec{k}} \omega(\vec{k})$ verschwindet am Zonenrand längs der Hochsymmetrierichtung.
+
+Man kann die Berechnung auf die 1. Brillouinzone (BZ) beschränken.
+
+Dispersion wird üblicherweise in Richtungen der Symmetrie geplottet. Punkte hoher Symmetrie werden mit griechischen Buchstaben markiert. Es gibt die Punkte $\Gamma, X, K$. $k=|\vec{k}|$ wird üblicherweise in Einheiten von $\frac{\pi}{a}$ aufgetragen.
+
+* $\Gamma$ ist der Punkt im Zentrum der BZ, an dem $\vec{k}=0$.
+* $X$ liegt bei $k=\frac{\pi}{a}$, $\Gamma X$ beschreibt die $[110]$-Richtung.
+* $K$ liegt bei $k=\sqrt{2}\frac{\pi}{a}$, $\Gamma K$ beschreibt die $[100]$-Richtung.
+* $L$ liegt bei $k=\sqrt{3}\frac{\pi}{a}$, $\Gamma L$  beschreibt die $[111]$-Richtung.
+
+## 5.3 Randbedingungen
+Da in der Realität jeder Körper endlich ist, ist es essentiell, Randbedingungen zu verwenden. Aufgrund der verschwindenden Zahl der Oberflächenatome es ist jedoch  praktisch irrelevant, welche Randbedingungen man wählt. Üblicherweise wählt man periodische Randbedingungen, weil sie mathematisch einfacher sind und besser zum Prinzip der Translationsinvarianz passen als feste Enden an der Oberfläche.
+
+Dadurch erhält man eine endliche Menge an möglichen Wellenvektoren $\vec{k}$.
+
+### Born-von-Karmann-Randbedingungen
+Born-von-Karmann-Randbedingungen sind periodische Randbedingungen. Alle Randatome bilden einen geschlossenen Ring an Atomen, die durch einzelne Federkräfte verbunden sind. Demnach das $0$-te Atom identisch mit dem $N$-ten, es gilt also $u(0) = u(Na)$. Daraus folgt mit dem Ansatz für die eindimensionale Kette $\exp[ikNa]=1$, was mit ganzen Zahlen $n\in\mathbb Z$ durch $kNa=2\pi n$ erfüllt ist.
+
+Man erhält $N$ verschiedene $k$-Werte mit verschiedenen Eigenfrequenzen $\omega$ für $N$ eindimensionale Oszillatoren. Da $\vec{k}$ in der 1. Brillouinzone liegen muss, gilt $ak\in(-\pi, \pi]$. Daraus ergibt sich folgende Relation für $N$ und $n$, was die möglichen Wellenvektoren definiert.
+
+$$
+    k = \frac{2\pi}{a} \cdot \frac{n}{N} \\
+    \Rightarrow - \frac{N}{2} < n \le \frac{N}{2}
+$$
+
+### Zustandsdichte
+Die Zustandsdichte ist die Anzahl der Zustände im $\vec{k}$-Raum pro $\vec{k}$-Raum-Einheitslänge.
+
+$$
+\begin{aligned}
+    Z(k) = \frac{\#\mathrm{Zustände}}{k\mathrm{-Raum-Intervall}} \\
+\end{aligned}
+$$
+
+Im eindimensionalen Fall gilt demnach $Z(k) = \frac{Na}{2\pi}$. Da $Na$ die Länge der Kette ist, gilt damit $Z(k) = \frac{L}{2\pi}$.
+
+Im dreidimensionalen Fall erhält man mit den primitiven Translationen des reziproken Gitters $\vec{b}_i$, der Kantenlängen $N_i|a_i|$ mit $- \frac{N_i}{2} < l_i \le \frac{N_i}{2}$.
+
+$$
+\begin{aligned}
+    \vec{k} &= \frac{l_1}{N_1}\vec{b}_1 + \frac{l_2}{N_2}\vec{b}_2 + \frac{l_3}{N_3}\vec{b}_3 \\
+    Z(k) &= \frac{L_1\cdot L_2\cdot L_3}{(2\pi)^2} = \frac{V}{(2\pi)^2}
+\end{aligned}
+$$
+
+## 5.5 Quantisierung der Gitterschwingung
+QM: diskrete Eigenniveaus $(n_{\vec{k}}, p+\frac{1}{2})\hbar\omega_p(\vec{k})$ mit $p\in\mathbb N$.
 
 # Literatur
 1. [@Gross2012Festkörper]
