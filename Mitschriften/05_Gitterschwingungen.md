@@ -1,7 +1,7 @@
 # 5. Gitterschwingungen
 Bisher wurden die Atome als ortsfest betrachtet. Dieses Modell versagt bei Gleichgewichtseigenschaften, wie der Längenausdehnung bei Temperaturerhöhung. Auch Wärmeleitung von Isolatoren, Schallübertragung und Supraleitung können nur mit bewegten Atomen beschrieben werden, ebenso wie Wechselwirkung von Strahlung mit Festkörpern, wie die schon besprochene Temperaturabhängigkeit der Röngtgenreflexe.
 
-Der Ortsvektor $\vec{r}$ eines Atoms wird nun beschrieben durch eine Abweichweichung $\vec{u}$ vom Gitterpunkt.
+Der Ortsvektor $\vec{r}$ eines Atoms wird nun beschrieben durch eine Abweichung $\vec{u}$ vom Gitterpunkt.
 
 $$
     \vec{r} = \vec{R} + \vec{u}(\vec{R})
@@ -171,10 +171,89 @@ Im dreidimensionalen Fall erhält man mit den primitiven Translationen des rezip
 $$
 \begin{aligned}
     \vec{k} &= \frac{l_1}{N_1}\vec{b}_1 + \frac{l_2}{N_2}\vec{b}_2 + \frac{l_3}{N_3}\vec{b}_3 \\
-    Z(k) &= \frac{L_1\cdot L_2\cdot L_3}{(2\pi)^2} = \frac{V}{(2\pi)^2}
+    Z(k) &= \frac{L_1\cdot L_2\cdot L_3}{(2\pi)^3} = \frac{V}{(2\pi)^3}
 \end{aligned}
 $$
 
+Damit ist die Zustandsdichte proportional zum Volumen $V$.
+
+$$
+    Z(k) = \frac{V}{(2\pi)^2}
+$$
+
 ## 5.5 Quantisierung der Gitterschwingung
-QM: diskrete Eigenniveaus $(n_{\vec{k}}, p+\frac{1}{2})\hbar\omega_p(\vec{k})$ mit $p\in\mathbb N$.
+<!-- Folie 2 -->
+
+### Energie
+Sei $E_p$ die Eigenenergie zum Impuls $p\in\{1, \dots, 3N_j\}$.
+
+$$
+    E_p = \left(n_{\vec{k}}, p+\frac{1}{2}\right)\hbar\omega_p(\vec{k})
+$$
+
+Die Besetzungszahlen $n_{\vec{k}, p}$ bestimmen den dynamischen Zustand. Dann ist die Gesamtenergie $E$ die Summe aller Eigenenergien $E_p$.
+
+$$
+    E = \sum_{\vec{k}, p}
+        \left(
+            n_{\vec{k}, p} + \frac{1}{2}
+        \right)
+        \cdot \hbar \omega_p(\vec{k})
+$$
+
+### Phononen
+Die Energiequanten der Normalschwingungen teilt man als Quantenteilchen die Phonenen zu. Diese können erzeugt und vernichtet werden. Die Phononenbesetzungszahlen $n_{\vec{k}, p}$ steigen mit der Temperatur $T$.
+
+#### Translationsinvarianz
+Ein Phonon mit der Energie $\hbar \omega_p(\vec{k})$ hat den Kristallimpuls $\hbar\vec{k}$, formal analog zum Impuls eines freien Teilchens. Während die Translationsinvarians des Raumes die Impulserhaltung erzeugt, so erzeugt die diskrete Translationsinvarianz im Gitter den Kristallimpuls hervor. Der Kristallimpuls ist nur bis auf reziproke Gittervektoren $\vec{G}$ erhalten, das heißt die Wellenvektoren $\vec{k}$ und $\vec{k}^\prime$ haben genau dann den selben Kristallimpuls, wenn $\vec{k}^\prime=\vec{k}+\vec{G}$.
+
+#### Stoßprozesse
+Bei Stoßprozessen in Kristallen gilt für den Wellenvektor vor dem Stoß $\vec{k}$ und den nach dem Stoß $\vec{k}$ folgende Relation, bei dem über alle am Stoßprozess beteiligten Teilchen summiert wird.
+
+$$
+    \sum_i \hbar\vec{k}_i = \sum_i \hbar\vec{k}_i^\prime+ \vec{G}
+$$
+
+Da Gitterschwingungen nur Relativkoordinaten enthalten, ist $\hbar\vec{k}$ kein linearer Impuls.
+
+## 5.6 Messung der Phononendispersionsrelation
+Man kann Die Energien und die Wellenvektoren der einfallenden und ausfallenden Strahlung messen. Daraus kann man den Wellenvektor und die Energie der Phononen ermitteln.
+
+### Energiesatz
+Für die inelastische Streuung eines Teilchens am Kristall muss für die Erzeugung bzw. Vernichtung eines Phonons folgende Relation gelten.
+
+$$
+    E_{\vec{k}} - E_{\vec{k}^\prime} = \pm \hbar \omega_\mathrm{Phonon}
+$$
+Falls die Differenz positiv ist, wird die Energie der gestreuten Welle verringert, dazu muss ein Phonon erzeugt werden. Analog wird bei einer negativen Differenz ein Phonon vernichtet.
+
+### Kristallimpulssatz
+Für die inelastische Streuung eines Teilchens am Kristall muss für die Erzeugung bzw. Vernichtung eines Phonons folgende Relation gelten.
+
+$$
+    \vec{k} - \vec{k}^\prime = \pm \vec{k}_\mathrm{Phonon} + \vec{G}
+$$
+
+Wird kein Teilchen erzeugt oder vernichtet, ist der Kristallimpulssatz identisch mit der Beugungsbedingung nach Laue.
+
+### Sondenstrahlung
+Als Sonden eignen sich insbesondere Neutronen bei thermischer Energie. Röntgenstrahlung kann ebenfalls verwendet werden, ist aber nicht so gut.
+
+Für die Erkundung der 1. Brillouinzone benötigt man eine Spannweite der Wellenvektoren von $\Delta k\approx 10^{10}\mathrm{m}^{-1}$. Photonen in diesem Energiebereich haben eine Energie von ca $10^3\mathrm{eV}$. Dadurch ist die Empfindlichkeit $\frac{\Delta E}{E}\approx 10^{-5}$ schlecht.
+
+Neutronen eignen sich besser, da die Empfindlichkeit $\frac{\Delta E}{E}\approx 1$ deutlich besser ist. Dies bedeutet, dass die relative Energieänderung sehr groß ist, was die Messung vereinfacht.
+
+### 3-Achsen-Spektrometer
+Zur Messung wird meist ein 3-Achsen-Spektrometer verwendet.
+
+### Raman-Strahlung und Brillouin-Strahlung und Rayleigh-Strahlung
+In der Raman-Spektroskopie wird optisches Licht zur Streuung verwendet. Allerdings können dabei nur Phononen mit verschwindender Energie messen. Diese nennt man auch optische Phononen. Man kann auch akustische Phononen verwenden.
+
+$$
+    \frac{\Omega-\Omega^\prime}{\Omega} = \frac{\Delta \Omega}{\Omega} = \frac{\omega_\mathrm{Phonon}}{\Omega}
+$$
+
+Für Energien $E\approx 3\mathrm{eV}$ ist $k$ in der 1. Brillouinzone. Daher ist aber der reziproke Gittervektor $\vec{G}=0$. Aufgrund der Erhaltungssätze sollte man für $\vec{k}=\vec{k}^\prime$ keine Streuung beobachtbar sein, aufgrund von Defekten sieht man aber auch dafür Streuung. Dies nennt man Rayleigh-Strahlung.
+
+Bei der Phononenerzeugung nennt man die Strahlung Stokes-Streuung, bei der Vernichtung nennt man sie Anti-Stokes-Streuung. Das Verhältnis zwischen den beiden Streuungen ist stark Temperaturabhängig, damit kann man Kristalle als Thermometer nutzen.
 
