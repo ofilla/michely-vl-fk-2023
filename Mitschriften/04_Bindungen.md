@@ -1,11 +1,11 @@
 # 4. Bindungen in Kristallen
 ## 4.1 Einleitung
-Bisher haben wir Kristalle nach Symmetrien klassifiziert. Jetzt wollen wir Kristalle auch nach Bindungsart bzw. Elektronenverteilung klassifizieren. Im Allgemeinen treten Mischformen von verschiedenen Bindungsarten auf.
+Man kann Kristalle nach Symmetrien klassifizieren, ebenso auch nach Bindungsart bzw. Elektronenverteilung klassifizieren. Im Allgemeinen treten Mischformen von verschiedenen Bindungsarten auf.
 
-Gravitation und Magnetismus sind für die Bindung irrelevant, nur die elektrostatische Coulomb-Wechselwirkung zwischen Atomrümpfen und Elektronen ist ausschlaggebend. Durch Minimierung der Coulomb-Energie können Spins geordnet werden, dadurch kann Magnetismus entstehen.
+Gravitation und Magnetismus sind für die Bindung in Kristallen praktisch irrelevant, nur die elektrostatische Coulomb-Wechselwirkung zwischen Atomrümpfen und Elektronen ist ausschlaggebend. Durch Minimierung der Coulomb-Energie können Spins geordnet werden, dadurch kann Magnetismus entstehen.
 
-### Kohäsivenergie
-Die Kohäsivenergie $E_\mathrm{coh}$ ("Bindungsenergie") ist die Arbeit pro Atom, um einen Kristall in Atome zu zerlegen.
+### Bindungsenergie / Kohäsivenergie
+Die Kohäsivenergie $E_\mathrm{coh}$ ist die Arbeit pro Atom, um einen Kristall in Atome zu zerlegen.
 
 $$
     E_\mathrm{coh} =
@@ -13,23 +13,28 @@ $$
         - \frac{E_\mathrm{Kristall}}{n_\mathrm{Atome}}
 $$
 
-Neon hat $E_\mathrm{coh}=0.02\mathrm{eV}$, Silizium $E_\mathrm{coh}=4.63\mathrm{eV}$ und Wolfram $E_\mathrm{coh}=8.95\mathrm{eV}$. Außer bei Edelgasen ist diese Energie in der Größenordnung von Elektronenvolt und können im Periodensystem um Faktor $400$ variieren. Die Schmelztemperaturen in Kelvin variieren um den Faktor $150$.
+Beispielsweise haben Neon $E_\mathrm{coh}=0.02\mathrm{eV}$, Silizium $E_\mathrm{coh}=4.63\mathrm{eV}$ und Wolfram $E_\mathrm{coh}=8.95\mathrm{eV}$. Außer bei Edelgasen ist diese Energie in der Größenordnung von Elektronenvolt und können im Periodensystem um den Faktor $400$ variieren, die Schmelztemperaturen in Kelvin variieren dagegen um den Faktor $150$.
 
 ### Gleichgewichtsgitterkonstante
-Da das Potential $V$ immer eine attraktive und eine repulsive Komponente hat, gibt es einen Abstand $a$, bei dem die Kräfte im Gleichgewicht sind. Es gilt $\frac{\mathrm d}{\mathrm dr}V_\mathrm{total}\overset{!}{=}0$.
+Aus der Kohäsivenergie und der Paulirepulsion entsteht ein Potential $V$, das eine attraktive und eine repulsive Komponente hat. Es gibt immer einen Abstand $a$, bei dem die Kräfte im Gleichgewicht sind, weshalb $\frac{\mathrm d}{\mathrm dr}V_\mathrm{total}\overset{!}{=}0$ gilt. Diesen Abstand nennt man _Gleichgewichtsgitterkonstante_.
 
-### Van-der-Waals-Bindung
+### Mischbindungen
+Die Ionenbindung und die kovalente Bindung treten nur selten in Reinform aus, oft gibt es eine Mischung aus beidem. Auch die Metallbindung ist oft in in Kombination mit der kovalenten Bindung anzutreffen. Übergangsmetalle haben stehts auch einen Antail an kovalenter Bindung.
+
+## Van-der-Waals-Bindung
 Sehr schware interatomare Wechselwirkung, die immer anwesend ist. Sie ist jedoch nur relevant, wenn keine andere Wechselwirkungen vorhanden sind, ansonsten wirken sie nur zusätzlich. Bei Edelgasen tritt nur diese Bindungsart auf.
 
 Dadurch, dass die Elektronen fluktuieren, gibt es in Atomen immer verschiedene Dipolmomente. Diese Dipolmomente können eine attraktive Wechselwirkung verursachen. Es gibt sowohl eine Coulomb-Wechselwirkung als auch eine statische Wechselwirkung durch das Pauliprinzip, die eine repulsive Wechselwirkung erzeugen. Diese nennt man Paulirepulsion. Dadurch gibt es ein Gleichgewicht zwischen attraktiver und repulsiver Wechselwirkung.
 
-#### Van-der-Waals-Materialien
+### Van-der-Waals-Materialien
 Materialien, bei denen Schichten durch die Van-der-Waals-Bindung zusammengehalten werden, nennt man Van-der-Waals-Materialien. Diese werden z.B. in der Computertechnik verwenden.
 
-#### Lithium-Ionen-Akku
-Beispielsweise Graphit gehört dazu. Dieses wird u.a. in Lithium-Ionen-Akkus verwendet. Hierbei besteht eine Hälfte des Akkus aus einem Ionenkristall, der teilweise aus Lithium-Ionen besteht, die andere aus Graphitschichten. Die Lithium-Ionen werden beim Laden des Akkus aus dem Ionenkristall gelöst und zwischend en Graphitschichten gespeichert, beim Entladen wandern sie zurück. Bläht sich der Akku auf, haben sich normalerweise die Graphitschichten verschoben bzw. verändert.
+### Lithium-Ionen-Akku
+Ein Lithium-Ionen-Akku besteht zur Hälfte aus einem Ionenkristall, der Lithium beinhaltet, und zur anderen Hälfte aus Graphit-Schichten. Diese sind durch einen Seperator getrennt.
 
-#### Gleichgewichtsgitterkonstante
+Weil Graphit ein Van-der-Waals-Material ist, können Lithiumionen zwischen den Graphitschichten gelagert werden. Das Lösen aus dem Kristall kostet Energie und findet daher beim Laden des Akkus statt. Beim Entladen fließen die Lithiumionen wieder in den Ionenkristall. Bläht sich der Akku auf, haben sich normalerweise die Graphitschichten verschoben.
+
+### Gleichgewichtsgitterkonstante
 Die Gesamtenergie eines Van-der-Waals-Kristalls kann als Funktion des nächsten Nachbarabstandes $a$, mit $r_{ij}=\alpha_{ij}a$ und der Gesamtzahl der Atome $N$, dargestellt werden. Damit jedes Paar nur einfach gezählt wird, muss das Lennard-Jones-Potential mit $\frac{N}{2}$ multipliziert werden, um alle Bindungskombinationen zu ermitteln. $A_{12}$ und $A_6$ sind Gittersummen.
 
 $$
@@ -51,7 +56,7 @@ $$
     \Rightarrow \left(\frac{a}{\sigma}\right)^6 = \frac{12A_{12}}{6A_6} \ .
 $$
 
-#### QM Nullpunktsschwingungen
+### QM Nullpunktsschwingungen
 Für die Gittersummen einer fcc-Struktur erhält man eine Gleichgewichtsgitterkonstante von $\frac{a}{\sigma}\approx 1.09$. Im Experiment erhält man leicht höhere Werte,[^3] die potentielle Energie ist dafür etwas kleiner. Es gibt also einen systematischen Fehler. Dies liegt an quantenmechanischen Nullpunktsschwingungen, die Energie binden.
 
 Die Nullpunktsenergie ist $E_0=\frac{1}{2}\hbar\omega$. Interpretiert man dies als Potential einer Federkraft, erhält man $E_0=\frac{1}{2}\hbar\sqrt{\frac{D}{M}}=\frac{1}{2} D\hat{x}^2$, wobei die Federkonstante $D$ von der Elektronenzahl des Atoms abhängt und $\hat{x}$ die Auslenkung ist.
@@ -62,7 +67,7 @@ Für Helium ist dieser Effekt so groß, dass kein kristalliner Zustand existiert
 
 [^3]: Für Xenon stimmt der Wert ungefähr, für Neon liegt er bei $1.14$.
 
-### Paulirepulsion
+## Paulirepulsion
 Eine statische, repulsive Wechselwirkung durch das Pauliprinzip nennt man auch Paulirepulsion.
 
 Es gibt zwei verschiedene Potentiale um Paulirepulsion darzustellen:
@@ -70,9 +75,9 @@ Es gibt zwei verschiedene Potentiale um Paulirepulsion darzustellen:
 1. mit dem Born-Mayer-Potential: $V(r)_\mathrm{rep} = \lambda \exp[-\frac{r}{\rho}]$
 2. mit dem repulsiven Teil des Lennard-Jones-Potentials mit $B>0$: $V(r)_\mathrm{rep} = \frac{B}{r^{12}} = 4\varepsilon \left( \frac{\sigma}{r} \right)^{12}$
 
-Bei Ionenkristallen verringert die Paulirepulsion die Bindungsenergie im Gleichgewichtszustand um $15$%.
+Bei Ionenkristallen verringert die Paulirepulsion die Bindungsenergie im Gleichgewichtszustand um ca. $15$%.
 
-### Lennard-Jones-Potential
+## Lennard-Jones-Potential
 Die Wechselwirkung zweier Atome kann wie folgt beschrieben werden. Es gilt $4\varepsilon\sigma^{12} = A$ und $4\varepsilon\sigma^6=B$. $\sigma$ und $\varepsilon$ können an Gasen gemessen werden.
 
 $$
@@ -90,7 +95,7 @@ $$
     \end{aligned}
 $$
 
-#### Gittersummen
+### Gittersummen
 Die *Gittersummen* $A_6=\sum_j\left(\frac{\sigma}{\alpha_{ij}a}\right)^{6}$ und $A_{12}=\sum_j\left(\frac{\sigma}{\alpha_{ij}a}\right)^{12}$  hängen von der Kristallstruktur ab und konvergieren schnell. Damit lässt sich das Lennard-Jones-Potential sehr viel einfacher darstellen. Es gilt aber nur für einatomige Kristalle, da in den Variablen $\varepsilon$ und $\sigma$ von der genauen Bindung abhängen. Für Modekülkristalle kann man diese Rechnung nutzen, wenn man die Bindungen innerhalb der Modeküle vernachlässigt.
 
 Beispiele:
@@ -107,33 +112,24 @@ Beispiele:
     * $A_{12}=9.11$
     * Koordinationszahl $K=8$
 
-### Born-Meyer-Potential
-$\rho, \lambda$ sind Konstanten
+## Born-Meyer-Potential
+Das Born-Meyer-Potential beschreibt ein repulsives Potential mit den Parametern $\rho$ und $\lambda$. Es wird beispielsweise zur Beschreibung von Paulirepulsion [[20230531121942]] verwendet.
 
 $$
-    V(r)_\mathrm{rep} = \lambda \exp[-\frac{r}{\rho}]
+    V(r)_\mathrm{rep} = \lambda \exp\left[-\frac{r}{\rho}\right]
 $$
 
-### Ionische Bindung
+
+## Ionische Bindung
 Ionenkristalle bestehen aus positiv und negativ geladenen Ionen. Die Bindung erfolgt durch elektrostatische Anziehung zwischen den Ionen.
 
 Die Ionisationsenergie $E_I$ wird aufgewendet um das Elektron aus dem gebenden Atom zu lösen. Die Elektronenaffinität $E_\mathrm{aff}$ wird durch die Aufnahme dieses Elektrons beim anderen Atom freigesetzt. Da die Ionen sich anziehen, wird zudem die Coulombenergie $E_C$ verringert. Ohne den Term der verringerten Coulombenergie würde der Gesamtprozess Energie kosten und demnach nicht ablaufen. Es muss gelten $E_C - E_I + E_\mathrm{aff} >0$.
 
-Beispielsweise gibt ein Natriumatom ein Elektron an ein Chloratom ab. Bei Natrium ist $E_I=5.1\mathrm{eV}$, bei Chlor ist $E_a=3.61\mathrm{eV}$, die Coulombenergie wird bei der Gitterkonstante $a=2.8\AA$ etwa $E_C=5\mathrm{eV}$. 
+Beispielsweise gibt ein Natriumatom ein Elektron an ein Chloratom ab. Bei Natrium ist $E_I=5.1\mathrm{eV}$, bei Chlor ist $E_a=3.61\mathrm{eV}$, die Coulombenergie wird bei der Gitterkonstante $a=2.8\AA$ etwa $E_C=5\mathrm{eV}$.
 
 Die Paulirepulsion die Bindungsenergie im Gleichgewichtszustand um $15$%.
 
-#### Coulombpotential
-$$
-    E_C(r)=\frac{q}{4\pi\varepsilon_0r}
-$$
-
-##### Coulombenergie
-$$
-    E_C(r)=\frac{q\cdot q^\prime}{4\pi\varepsilon_0r}
-$$
-
-#### Bindungsenergie
+### Bindungsenergie
 Die Bindungsenergie im Ionenkristall ist die gesammelte Coulombenergie für alle Ionenpaare, die Van-Der-Waals-Bindung kann vernachlässigt werden. Den Abstand $r_{ij}$ zwischen zwei Ionen kann man mit dem nächsten Nachbarabstand $a$, als $r_{ij}=\alpha_{ij}a$ darstellen.
 
 Damit jedes der $N$ Ionenpaare nur einfach gezählt wird, muss das Coulombpotential mit $\frac{N}{2}$ multipliziert werden, um alle Bindungskombinationen zu ermitteln. Der Faktor $2$ kommt daher, das jedes Ionenpaar aus $2$ Ionen besteht.
@@ -151,10 +147,20 @@ $$
 \end{aligned}
 $$
 
-#### Madelungskonstante
+#### Coulombpotential
+$$
+    E_C(r)=\frac{q}{4\pi\varepsilon_0r}
+$$
+
+#### Coulombenergie
+$$
+    E_C(r)=\frac{q\cdot q^\prime}{4\pi\varepsilon_0r}
+$$
+
+### Madelungskonstante
 Die Madelungskonstante $\alpha=-\sum\pm\frac{1}{\alpha_{ij}}$ ist für bindende Kristalle positiv. Das jeweilige Vorzeichen innerhalb der Summe hängt von der Ladung des dort liegenden Atoms ab.
 
-##### Beispiel: 1D-Kristalle
+#### Beispiel: 1D-Kristalle
 $$
 \begin{aligned}
     \alpha &=
@@ -165,13 +171,13 @@ $$
 \end{aligned}
 $$
 
-#### Gleichgewichtsgitterkonstante
+### Gleichgewichtsgitterkonstante
 Die Bindungsenergie und die Paulirepulsion sorgen zusammen für einen Gleichgewichtszustand. Die Paulirepulsion wird durch das Born-Meyer-Potential dargestellt. Da dieses sehr kurzreichweitig ist, werden nur die nächsten Nachbarn betrachtet, die durch die Koordinationszahl $K$ dargestellt ist. Hierbei ist $N$ nach wie vor die Anzahl der Ionenpaare, nicht die Anzahl der Ionen.
 
 $$
     V_\mathrm{total} = -N
         \left[
-            \frac{e^2}{4\pi\varepsilon_0a}\alpha - K\cdot\lambda\exp[-\frac{a}{\rho}]
+            \frac{e^2}{4\pi\varepsilon_0a}\alpha - K\cdot\lambda\exp\left[-\frac{a}{\rho}\right]
         \right]
 $$
 
@@ -203,7 +209,7 @@ Wird $r_>$ zu groß, so ist die $\mathrm{NaCl}$-Struktur nicht mehr stabil. Typi
 Falls dagegen $r_> < \frac{r_<}{\sqrt{3}-1}$ zu klein ist, entsteht die $\mathrm{CsCl}$-Struktur.
 
 ### Born-Haber-Kreisprozess
-Mit dem Born-Haber-Kreisprozess kann man die Bindungsenergie
+Mit dem Born-Haber-Kreisprozess kann man die Bindungsenergie innerhalb eines Ionenkristalls gemessen werden.
 
 $$
     E_b = -\frac{V_\mathrm{total}}{N}
@@ -243,9 +249,6 @@ Die kovalente Bindung führt zur Erhöhung der Valenzelektronendichte zwischen d
 Durch das Pauliprinzip ist gefordert, dass die Gesamtwellenfunktion für mehrere Fermionen antisymmetrisch unter Vertauschung ist. Die Gesamtwellenfunktion ist das Produkt aus Ortswellenfunktion und Spinwellenfunktion.
 
 Wenn beide Elektronen im niedrigeren Energieniveau sind, das die symmetrische Ortswellenfunktion voraussetzt, muss die Spinwellenfunktion antisymmetrisch sein. Werden beide Elektronen auf verschiedene Energieniveaus verteilt, muss die Spinwellenfunktion symmetrisch sein. Daher bestimmt die Energetik der Ortswellenfunktion die Spinwellenfunktion, was die magnetsche Ordnung bestimmt.
-
-### Mischbindungen
-Die Ionenbindung und die kovalente Bindung treten nur selten in Reinform aus, oft gibt es eine Mischung aus beidem. Auch die Metallbindung ist oft in in Kombination mit der kovalenten Bindung anzutreffen. Übergangsmetalle haben stehts auch einen Antail an kovalenter Bindung.
 
 ### Metallbindung
 Die Metallbindung entsteht durch Valenzelektronen, die am Ort der Nachbaratome noch eine erhebliche Aufenthaltswahrscheinlichkeit besitzen. Die Elektronen werden von allen Atomen geteilt.
