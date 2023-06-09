@@ -29,7 +29,7 @@ Die 1. BZ ist die Menge aller Punkte im reziproken Gitter, die näher an einem G
 
 Daher erfüllt sie wie die primitive Einheitszelle den Raum ohne Lücke und ohne Überlapp. Durch ihre Konstruktion repräsentiert sie die volle Symmetrie des Gitters.
 
-Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen, die Bragg-Ebenen, eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die 1. BZ.
+Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen, die Bragg-Ebenen, eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die 1. BZ. Das Volumen ist identisch mit dem Volumen einer beliebigen primitiven Zelle im reziproken Raum und kann daher aus dem Spatprodukt der Basisvektoren des reziproken Raums $\vec{b}_i$ berechnet werden.
 
 Wird eine Welle an einem Punkt im reziproken Gitter gestreut, so wird sie dann reflektiert wenn sie auf dem Rand der 1. BZ enden.
 

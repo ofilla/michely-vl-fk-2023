@@ -59,6 +59,8 @@ $$
         \right|
 $$
 
+Auf einer Seite der Universität zu Köln gibt es ein [Applet](https://ph2.uni-koeln.de/lehre/applets-solid-state-physics/phonons), das die Phononendispersion interaktiv darstellt.
+
 ### Beschränkungen von $k$ und $\omega$
 Daher ist $\omega$ $\frac{2\pi}{a}$-periodisch. Seien $k$ ein Wellenvektor und $k^\prime=k+G$ mit dem reziproken Gittervektor $G=m\frac{2\pi}{a}$ (min $m\in\mathbb N$) des eindimensionalen Gitters. An der Stellen $k$ und $k^\prime$ ist die Auslenkung identisch mit $u(na, t)_{k^\prime} = u(na, t)_k$.
 
@@ -154,6 +156,9 @@ $$
     k = \frac{2\pi}{a} \cdot \frac{n}{N} \\
     \Rightarrow - \frac{N}{2} < n \le \frac{N}{2}
 $$
+
+#### Dreidimensionaler Fall
+Die Auslenkung $u$ soll auf gegenüberliegenden Seiten des Festkörpers gleich sein. Für einen Ortsvektor $\vec{R}$, der auf eine Oberfläche zeigt, soll dann für $j\in\{1,2,3\}$ die Relation $u(\vec{R}) = u(\vec{R}+N_i\vec{a}_i)$ gelten. Hierbei sind die $\vec{a}_i$ die primitiven Translationen und $N_i$ die Anzahl der Basiselemente in der Richtung $\vec{a}_i$. Damit ist $L_i=N_i |\vec{a}_i|$ die Länge des Festkörpers.
 
 ### Zustandsdichte
 Die Zustandsdichte ist die Anzahl der Zustände im $\vec{k}$-Raum pro $\vec{k}$-Raum-Einheitslänge.
