@@ -182,7 +182,10 @@ $$
 $$
 
 ## 5.5 Quantisierung der Gitterschwingung
-<!-- Folie 2 -->
+### Theorie der kleinen Schwingungen
+Bei Festkörpern geht man davon aus, dass die Schwingungen um die Gitterpunkte klein sind.
+
+Dadurch kann man von dem korrekteren Modell von $3N_j$ gekoppelten Oszillatioren mit diskreten Wellenvektoren $\vec{k}$ und Frequenzen $\omega(\vec{k})$ zu einem Modell von $3N_j$ entkoppelten Oszillatoren übergehen. Hierzu sind _Normalkoordinaten_ hilfreich, die eine Auslenkung $\vec{u}$ um den jeweiligen Gitterpunkt beschreiben. Dazu gibt es die Eigenfrequenzen $\omega_p(\vec{k})$.
 
 ### Energie
 Sei $E_p$ die Eigenenergie zum Impuls $p\in\{1, \dots, 3N_j\}$.
@@ -202,10 +205,10 @@ $$
 $$
 
 ### Phononen
-Die Energiequanten der Normalschwingungen teilt man als Quantenteilchen die Phonenen zu. Diese können erzeugt und vernichtet werden. Die Phononenbesetzungszahlen $n_{\vec{k}, p}$ steigen mit der Temperatur $T$.
+Die Energiequanten der Normalschwingungen teilt man als Quantenteilchen die Phonenen zu. Diese können erzeugt und vernichtet werden. Die Phononenbesetzungszahlen $n_{\vec{k}, p}$ steigen mit der Temperatur $T$. Phononen haben eine Energie $\hbar \omega_p(\vec{k})$ und einen Kristallimpuls $\hbar\vec{k}$, dies ist formal analog zum Impuls eines freien Teilchens.
 
 #### Translationsinvarianz
-Ein Phonon mit der Energie $\hbar \omega_p(\vec{k})$ hat den Kristallimpuls $\hbar\vec{k}$, formal analog zum Impuls eines freien Teilchens. Während die Translationsinvarians des Raumes die Impulserhaltung erzeugt, so erzeugt die diskrete Translationsinvarianz im Gitter den Kristallimpuls hervor. Der Kristallimpuls ist nur bis auf reziproke Gittervektoren $\vec{G}$ erhalten, das heißt die Wellenvektoren $\vec{k}$ und $\vec{k}^\prime$ haben genau dann den selben Kristallimpuls, wenn $\vec{k}^\prime=\vec{k}+\vec{G}$.
+Während die Translationsinvarians des Raumes die Impulserhaltung erzeugt, so erzeugt die diskrete Translationsinvarianz im Gitter den Kristallimpuls hervor. Der Kristallimpuls ist nur bis auf reziproke Gittervektoren $\vec{G}$ erhalten, das heißt die Wellenvektoren $\vec{k}$ und $\vec{k}^\prime$ haben genau dann den selben Kristallimpuls, wenn $\vec{k}^\prime=\vec{k}+\vec{G}$.
 
 #### Stoßprozesse
 Bei Stoßprozessen in Kristallen gilt für den Wellenvektor vor dem Stoß $\vec{k}$ und den nach dem Stoß $\vec{k}$ folgende Relation, bei dem über alle am Stoßprozess beteiligten Teilchen summiert wird.
@@ -234,7 +237,7 @@ $$
     \vec{k} - \vec{k}^\prime = \pm \vec{k}_\mathrm{Phonon} + \vec{G}
 $$
 
-Wird kein Teilchen erzeugt oder vernichtet, ist der Kristallimpulssatz identisch mit der Beugungsbedingung nach Laue.
+Wird kein Teilchen erzeugt oder vernichtet, ist der Kristallimpulssatz identisch mit der Beugungsbedingung nach Laue. Wie auch beim Energiesatz beschreibt die größere Differenz (mit dem positiven Vorzeichen) die Erzeugung und die kleinere Differenz (mit dem negativen Vorzeichen) die Vernichtung eines Phonons.
 
 ### Sondenstrahlung
 Als Sonden eignen sich insbesondere Neutronen bei thermischer Energie. Röntgenstrahlung kann ebenfalls verwendet werden, ist aber nicht so gut.
@@ -244,7 +247,7 @@ Für die Erkundung der 1. Brillouinzone benötigt man eine Spannweite der Wellen
 Neutronen eignen sich besser, da die Empfindlichkeit $\frac{\Delta E}{E}\approx 1$ deutlich besser ist. Dies bedeutet, dass die relative Energieänderung sehr groß ist, was die Messung vereinfacht.
 
 ### 3-Achsen-Spektrometer
-Zur Messung wird meist ein 3-Achsen-Spektrometer verwendet.
+Zur Messung von Phononen wird meist ein 3-Achsen-Spektrometer mit inelastischer Neutronenstreuung verwendet.
 
 ### Raman-Strahlung und Brillouin-Strahlung und Rayleigh-Strahlung
 In der Raman-Spektroskopie wird optisches Licht zur Streuung verwendet. Allerdings können dabei nur Phononen mit verschwindender Energie messen. Diese nennt man auch optische Phononen. Man kann auch akustische Phononen verwenden.
