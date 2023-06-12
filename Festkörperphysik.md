@@ -36,7 +36,7 @@ $$
     \right\}
 $$
 
-Die primitiven Translationen sind _keine_ mathematische Basis eines Vektorraums. Die primitiven Translationen sind nicht eineindeutig festgelegt.
+Die primitiven Translationen sind eine mathematische Basis des Vektorraums der Ortsvektoren $\vec{R}$ des Bravaisgitters, sie sind nicht eineindeutig festgelegt. Im Allgemeinen bilden sie jedoch keine orthogonale Basis.
 
 ### Kristallstruktur
 Eine Kristallstruktur besteht aus einem mathematischen _Gitter_ [Bravaisgitter] und einer physikalischen/chemischen _Basis_.
@@ -66,7 +66,7 @@ Die Wiegner-Seitz-Zelle ist die Menge aller Punkte, die näher an einem Gitterpu
 
 Daher erfüllt sie wie die primitive Einheitszelle den Raum ohne Lücke und ohne Überlapp. Durch ihre Konstruktion repräsentiert sie die volle Symmetrie des Gitters.
 
-Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die Wiegner-Seitz-Zelle.
+Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die Wiegner-Seitz-Zelle. Das Volumen ist identisch mit dem Volumen der primitiven Einheitszelle und kann daher aus dem Spatprodukt der primitiven Translationen $\vec{a}_i$ berechnet werden.
 
 Im Allgemeinen ist das Pendant im reziproken Raum, die Brillouin-Zone, wichtiger als die Wiegner-Seitz-Zelle selbst.
 
@@ -427,7 +427,7 @@ Die 1. BZ ist die Menge aller Punkte im reziproken Gitter, die näher an einem G
 
 Daher erfüllt sie wie die primitive Einheitszelle den Raum ohne Lücke und ohne Überlapp. Durch ihre Konstruktion repräsentiert sie die volle Symmetrie des Gitters.
 
-Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen, die Bragg-Ebenen, eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die 1. BZ.
+Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwischen benachbarten Gitterpunkten eintragen, im dreidimensionalen Raum muss man entsprechende Flächen, die Bragg-Ebenen, eintragen. Das auf diese Weise eingeschlossene Volumen ergibt die 1. BZ. Das Volumen ist identisch mit dem Volumen einer beliebigen primitiven Zelle im reziproken Raum und kann daher aus dem Spatprodukt der Basisvektoren des reziproken Raums $\vec{b}_i$ berechnet werden.
 
 Wird eine Welle an einem Punkt im reziproken Gitter gestreut, so wird sie dann reflektiert wenn sie auf dem Rand der 1. BZ enden.
 
@@ -949,6 +949,8 @@ $$
         \right|
 $$
 
+Auf einer Seite der Universität zu Köln gibt es ein [Applet](https://ph2.uni-koeln.de/lehre/applets-solid-state-physics/phonons), das die Phononendispersion interaktiv darstellt.
+
 ### Beschränkungen von $k$ und $\omega$
 Daher ist $\omega$ $\frac{2\pi}{a}$-periodisch. Seien $k$ ein Wellenvektor und $k^\prime=k+G$ mit dem reziproken Gittervektor $G=m\frac{2\pi}{a}$ (min $m\in\mathbb N$) des eindimensionalen Gitters. An der Stellen $k$ und $k^\prime$ ist die Auslenkung identisch mit $u(na, t)_{k^\prime} = u(na, t)_k$.
 
@@ -1044,6 +1046,9 @@ $$
     k = \frac{2\pi}{a} \cdot \frac{n}{N} \\
     \Rightarrow - \frac{N}{2} < n \le \frac{N}{2}
 $$
+
+#### Dreidimensionaler Fall
+Die Auslenkung $u$ soll auf gegenüberliegenden Seiten des Festkörpers gleich sein. Für einen Ortsvektor $\vec{R}$, der auf eine Oberfläche zeigt, soll dann für $j\in\{1,2,3\}$ die Relation $u(\vec{R}) = u(\vec{R}+N_i\vec{a}_i)$ gelten. Hierbei sind die $\vec{a}_i$ die primitiven Translationen und $N_i$ die Anzahl der Basiselemente in der Richtung $\vec{a}_i$. Damit ist $L_i=N_i |\vec{a}_i|$ die Länge des Festkörpers.
 
 ### Zustandsdichte
 Die Zustandsdichte ist die Anzahl der Zustände im $\vec{k}$-Raum pro $\vec{k}$-Raum-Einheitslänge.
