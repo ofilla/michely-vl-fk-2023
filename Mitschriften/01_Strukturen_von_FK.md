@@ -13,7 +13,7 @@ $$
     \right\}
 $$
 
-Die primitiven Translationen sind _keine_ mathematische Basis eines Vektorraums. Die primitiven Translationen sind nicht eineindeutig festgelegt.
+Die primitiven Translationen sind eine mathematische Basis des Vektorraums der Ortsvektoren $\vec{R}$ des Bravaisgitters, sie sind nicht eineindeutig festgelegt. Im Allgemeinen bilden sie jedoch keine orthogonale Basis.
 
 ### Kristallstruktur
 Eine Kristallstruktur besteht aus einem mathematischen _Gitter_ [Bravaisgitter] und einer physikalischen/chemischen _Basis_.
