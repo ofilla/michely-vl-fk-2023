@@ -254,6 +254,23 @@ Neutronen eignen sich besser, da die Empfindlichkeit $\frac{\Delta E}{E}\approx 
 ### 3-Achsen-Spektrometer
 Zur Messung von Phononen wird meist ein 3-Achsen-Spektrometer mit inelastischer Neutronenstreuung verwendet.
 
+Der Streuwinkel $2\theta$ kann durch die Energie des einfallenden Strahls $E_i$ und die des gestreuten Strahls $E_f$ ermittelt werden. Alternativ können die Wellenvektoren $\vec{k}_i$ verwendet werden.
+
+$$
+\begin{aligned}
+    2\theta &= \arccos\left[
+            \frac{
+                -\frac{Q^2\hbar^2}{2m} + E_i + E_f
+            }{2\sqrt{E_i E_f}}
+        \right] \\
+    2\theta &= \arccos\left[
+            \frac{
+                -Q^2 + k_i^2 + k_f^2
+            }{2 k_i k_f}
+        \right]
+\end{aligned}
+$$
+
 ### Raman-Strahlung und Brillouin-Strahlung und Rayleigh-Strahlung
 In der Raman-Spektroskopie wird optisches Licht zur Streuung verwendet. Allerdings können dabei nur Phononen mit verschwindender Energie messen. Diese nennt man auch optische Phononen. Man kann auch akustische Phononen verwenden.
 
@@ -264,4 +281,8 @@ $$
 Für Energien $E\approx 3\mathrm{eV}$ ist $k$ in der 1. Brillouinzone. Daher ist aber der reziproke Gittervektor $\vec{G}=0$. Aufgrund der Erhaltungssätze sollte man für $\vec{k}=\vec{k}^\prime$ keine Streuung beobachtbar sein, aufgrund von Defekten sieht man aber auch dafür Streuung. Dies nennt man Rayleigh-Strahlung.
 
 Bei der Phononenerzeugung nennt man die Strahlung Stokes-Streuung, bei der Vernichtung nennt man sie Anti-Stokes-Streuung. Das Verhältnis zwischen den beiden Streuungen ist stark Temperaturabhängig, damit kann man Kristalle als Thermometer nutzen.
+
+Wird ein Phonon erzeugt, so bleibt das angeregte Elektron nach der Anregung in einem angeregten Zustand, nachdem es abgestrahlt hat. Deswegen hat das emittierte Photon eine geringere Energie als das absorbierte, diese geht in das erzeugte Phonon.
+
+Umgekehrt wird dann ein Phonon vernichtet, wenn dessen Energie verwendet wird um von dem angeregten Zustand in den vorherigen Zustand zu gelangen. Dies ist weniger wahrscheinlich als der erzeugende Fall, weshalb eine gemessene Stokes-Streuung eine höhere Intensität als die Anti-Stokes-Streuung hat.
 
