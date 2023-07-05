@@ -142,6 +142,8 @@ Dispersion wird üblicherweise in Richtungen der Symmetrie geplottet. Punkte hoh
 * $K$ liegt bei $k=\sqrt{2}\frac{\pi}{a}$, $\Gamma K$ beschreibt die $[100]$-Richtung.
 * $L$ liegt bei $k=\sqrt{3}\frac{\pi}{a}$, $\Gamma L$  beschreibt die $[111]$-Richtung.
 
+Zwischen diesen verschiedenen Punkten kann man beispielsweise Dispersionsrelationen oder Bandstrukturen messen. All diese Messungen werden üblicherweise in einem einzelnen Diagramm dargestellt, das ohne Übung sehr unübersichtlich aussieht.
+
 ## 5.3 Randbedingungen
 Da in der Realität jeder Körper endlich ist, ist es essentiell, Randbedingungen zu verwenden. Aufgrund der verschwindenden Zahl der Oberflächenatome es ist jedoch  praktisch irrelevant, welche Randbedingungen man wählt. Üblicherweise wählt man periodische Randbedingungen, weil sie mathematisch einfacher sind und besser zum Prinzip der Translationsinvarianz passen als feste Enden an der Oberfläche.
 
