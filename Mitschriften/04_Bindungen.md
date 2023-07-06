@@ -181,13 +181,13 @@ $$
         \right]
 $$
 
-Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Daraus folgt
+Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Die abgeleitete Gleichung kann man so umstellen, dass man auf der einen Seite wieder das Potential erhält.
 
 $$
     V_\mathrm{total} = -\frac{Ne^2\alpha}{4\pi\varepsilon_0a}
     \left(
          1-\frac{\rho}{a}
-    \right) \ .
+    \right)
 $$
 
 #### Gültigkeitesintervalle für Kristallstrukturen
