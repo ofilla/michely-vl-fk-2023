@@ -204,9 +204,9 @@ Beispielsweise wird auf diese Weise die Textur von Stoffen untersucht.
 ### Debye-Scherrer-Verfahren
 Das Debye-Scherrer-Verfahren ist ein Verfahren um Beugungsexperimente an Kristallen durchzuführen, bei dem man ein Pulver aus Kristalliten untersucht, die etwa $1\mathrm{\mu m}$ groß sind.
 
-Auf diese Weise sind gleichzeitig alle Orientierungen des reziproken Raums vorhanden. Der Beugungsreflex zur Netzebene $(hkl)$ [[20230519183942]] ist ein Kreis, der durch die Rotation des Wellenvektors $\vec{k}$ um die $\vec{k}$-Achse beschrieben wird.
+Auf diese Weise sind gleichzeitig alle Orientierungen des reziproken Raums vorhanden. Der Beugungsreflex zur Netzebene $(hkl)$ ist ein Kreis, der durch die Rotation des Wellenvektors $\vec{k}$ um die $\vec{k}$-Achse beschrieben wird.
 
-Hier gilt die Beugungsbedingung $|\vec{G}|=2k\sin\theta$. Daher gibt Kreisreflexe für jede Netzebene, da es immer alle Netzebenen in jeder Orientierung gibt. Da die Intensität [[20230522164406]] abhängig von der Beugungsordnung abhängt, wird nicht alles gleich stark reflektiert. Höhere Beugungsordnungen verschwinden.
+Hier gilt die Beugungsbedingung $|\vec{G}|=2k\sin\theta$. Daher gibt Kreisreflexe für jede Netzebene, da es immer alle Netzebenen in jeder Orientierung gibt. Da die Intensität abhängig von der Beugungsordnung abhängt, wird nicht alles gleich stark reflektiert. Höhere Beugungsordnungen verschwinden.
 
 Der große Vorteil dieser Methode ist, dass keine makroskopischen Kristalle benötigt werden. Diese sind oft nicht einfach herstellbar.
 

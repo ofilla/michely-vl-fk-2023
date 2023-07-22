@@ -76,11 +76,12 @@ Die Koordinationszahl ist der Bruchteil des Raumes, der von identischen, sich be
 [^1]: [@Gross2012Festkörper, 27]
 
 ## 1.2 Einfache Kristallstrukturen
-### Packungsdichte
+### Metalle
+#### Packungsdichte
 Die meisten Metalle kristallisieren so, dass sie eine hohe Packungsdichte $P$ erreichen.
 Es bringt das genutzte Volumen in ein Verhältnis zu dem freien Volumen.
 
-### simple cubic (_sc_)
+#### simple cubic (_sc_)
 Bei einem sc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten Würfels.
 
 * einfache kubische Gitterstruktur
@@ -96,7 +97,7 @@ $$
     \vec{a}_3 = a \cdot \begin{pmatrix} 0\\0\\1 \end{pmatrix}
 $$
 
-### body centered cubic (_bcc_)
+#### body centered cubic (_bcc_)
 Bei einem bcc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten Würfels, zudem liegt ein Gitterpunkt im Zentrum ebendieses Würfels.
 
 * 17 Metalle
@@ -115,7 +116,7 @@ $$
 * konventionelle Einheitszelle ist kubisch (_sc_), mit zweiatomiger Basis
 * Vektoren $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/2 (1,1,1)^T$
 
-### face centered cubic (_fcc_)
+#### face centered cubic (_fcc_)
 Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten Würfels, zudem liegt je ein Gitterpunkt im Zentrum der Würfeloberflächen.
 
 * 24 Metalle
@@ -125,6 +126,8 @@ Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * 3 verschiedene "Schichten": Stapelfolge $A,B,C,A,B,C$
 * Koordinationszahl $12$: $6$ Würfelecken und $6$ Flächenzentrierte Punkte
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Flächenzentrierte Punkte
+* Verschiedene Ebenen, z.B. die $(111)$-Ebene, haben eine hexagonale Struktur.
+
 $$
     \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\0 \end{pmatrix}
     \land
@@ -133,7 +136,7 @@ $$
     \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}
 $$
 
-### hexagonal closed packed
+#### hexagonal closed packed
 Auf jeder Ebene sind die Kugeln hexagonal angeordnet. Anders als bei dem fcc-Gitter gibt es hier nur zwei verschiedene Schichten. Die Stapelfolge ist $A,B,A,B$ und unterscheidet sich von der des fcc-Gitters.
 
 * 36 Metalle
@@ -147,28 +150,37 @@ Auf jeder Ebene sind die Kugeln hexagonal angeordnet. Anders als bei dem fcc-Git
 Es gibt auch _double hexagonal closed packed_ (_dhcp_).
 
 ### Nichtmetalle
-Hier werden die Kristallstruktur durch die Orbitale der Atome/Modeküle bestimmt.
-Die Packungsdichte ist hier nicht entscheiden, sonder der Überlapp der Orbitale. _Kovalente Bindung_
+Bei Nichtmetallen wird die Kristallstruktur durch die Orbitale der Atome/Modeküle bestimmt. Die Packungsdichte ist hier nicht entscheiden, sondern der Überlapp der Orbitale, die eine Kovalente Bindung eingehen. Ein Beispiel dafür ist die Diamantstruktur. Auch andere Bindungen können auftreten, so werden die verschiedenen Schichten von Graphit durch die Van-der-Waals-Wechselwirkung zusammengehalten, man spricht dann auch von Van-der-Waals-Materialien.
 
-Beispiel: Kohlenstoff
-* 3 $\mathrm{sp}^2$-Orbitale: stabile Schichten, z.B. Graphit, Graphen
-    * 1 Orbital ist noch frei, für van-der-Waals-Bindungen
-* 4 $\mathrm{sp}^3$-Orbitale: stabil in alle Richtungen, z.B. Diamant
-    * $P_\mathrm{Diamant} \approx 0.34$
-    * fcc-Gitter mit 2-atomiger Basis
-        * $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/4 (1,1,1)^T$
-        * als sc betrachtet eine 4-atomige basis
-    * Auch Silizium und Germanium kristallisieren in der Diamantstruktur
+#### Diamantstruktur
+Die Diamantstruktur eine fcc-Struktur mit einer zweiatomigen Basis. Neben Kohlenstoff kristallisieren auch Silizium und Germanium in der Diamantstruktur.
+
+Ein Atom ist an der Position $\vec{d}_1=a/2 (0,0,0)^T$, ein zweites Atom an der Position $\vec{d}_2=a/4 (1,1,1)^T$. Die Positionen der Basiselemente entsprechen denen in der Zinkblende-Struktur, die allerdings verschiedene Ionen als Basiselemente besitzt.
+
+Die Struktur wird dann eingenommen, wenn vier $\mathrm{sp}^3$-Orbitale eine Kovalente Bindung bestimmen, diese sind in alle Richtungen sehr stabil.
+
+#### Graphit und Graphen
+Graphit bildet durch eine kovalente Bindung stabile Schichten, indem drei $\mathrm{sp}^2$-Orbitale die Bindung eingehen. Dabei ist noch ein Orbital frei, das für eine Van-der-Waals-Bindung verwendet werden kann. Deshalb zählt Graphit als Van-der-Waals-Material.
 
 ### Ionenkristalle
-Zwei Ionensorten, jeweils in Edelgaskonfiguration. Hierbei wird wieder die Packungsdichte bei verschiedenen Ionenradien maximiert.
+Ionenkristalle werden immer mit einer mehratomigen Basis gebildet. Die Vektoren $\vec{d}_i$ geben jeweils die Positionen der Atome an, gemessen vom zugeordneten Gitterpunkt. Eine Gitterstruktur ist genau dann energetisch sinnvoll, wenn sich die unterschiedlich geladenen Ionen berühren und die gleichgeladenen Ionen sich _nicht_ berühren. Ionische Bindung wird durch die Coulomb-Wechselwirkung bestimmt.
 
-* NaCl: fcc mit 2-Atomiger Basis (je 1 Na und 1 Cl)
-    * $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/2 (1,0,0)^T$
-* Cäsiumchlorid: bcc mit 2-Atomiger Basis, da der Unterschied zwischen den Ionenradien deutlich grösser ist
-    * $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/2 (1,1,1)^T$
-* Zinkblendestruktur: fcc mit 2-Atomiger Basis
-    * $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/4 (1,1,1)^T$
+Seien $r_+$ der Radius der größeren Ions und $r_-$ der Radius des kleineren Ions. Bei einem Größenverhältnis von $\frac{r_+}{r_-} < \frac{1}{\sqrt{3}-1}$ wird üblicherweise die $\mathrm{CsCl}$-Struktur eingenommen. Bei $\frac{r_+}{r_-} < \frac{1}{\sqrt{2}-1}$ wird üblicherweise die $\mathrm{ZnS}$-Struktur eingenommen, ansonsten ist die $\mathrm{NaCl}$-Struktur energetisch sinnvoll.
+
+#### Cäsium-Chlorid-Struktur (CsCl-Struktur)
+Die Cäsiumchlorid-Struktur ist eine bcc-Struktur mit einer zweiatomigen Basis. Sie eignet sich für Ionen, deren Radien sich stark unterscheiden.
+
+Die Basis wird durch die unterschiedlich geladenen Ionen gebildet. Ein Ion ist an der Position $\vec{d}_1=a/2 (0,0,0)^T$, das zweite Ion an der Position $\vec{d}_2=a/2 (1,1,1)^T$.
+
+#### Zinkblendestruktur (ZnS-Struktur)
+Die Gitterstruktur einer Zinkblende $\mathrm{ZnS}$ ist eine fcc-Struktur mit einer zweiatomigen Basis. Sie ähnelt der Diamantstruktur, allerdings mit verschiedenen Basiselementen.
+
+Die Basis wird durch die unterschiedlich geladenen Ionen gebildet. Ein Ion ist an der Position $\vec{d}_1=a/2 (0,0,0)^T$, das zweite Ion an der Position $\vec{d}_2=a/4 (1,1,1)^T$. Die Position des zweiten Ions unterscheidet die $\mathrm{ZnS}$-Struktur von der $\mathrm{NaCl}$-Struktur.
+
+#### Natrium-Chlorid-Gitterstruktur (NaCl-Struktur)
+Die Gitterstruktur von $\mathrm{NaCl}$ ist eine fcc-Struktur mit einer zweiatomigen Basis.
+
+Die Basis wird durch die unterschiedlich geladenen Ionen gebildet. Ein Ion ist an der Position $\vec{d}_1=a/2 (0,0,0)^T$, das zweite Ion an der Position $\vec{d}_2=a/2 (1,0,0)^T$.
 
 ## 1.3 Direkte atomar aufgelöste Abbildung von Festkörpern
 ### Transmissionselektronenmikroskop
@@ -255,7 +267,8 @@ Seien der Druck $p$ und die Temperatur $T$ konstant, dann wird das Gibbs-Potenti
 Typischerweise hat eine Leerstelle eine Energie $\varepsilon_0\approx 1\mathrm{eV}$, Bindungsenergien liegen bei ca $1\mathrm{eV} - 5 \mathrm{eV}$.
 
 #### Temperaturabhängigkeit
-Der Kristall habe das Volumen $V=(n+N)v_0$ mit $n$ Leerstellen und $N$ Atomen. Die Entropie ist aus einer thermischen Koponente $S_\mathrm{therm}$ und einer Konfigurationskomponente $S_\mathrm{konf}$ zusammengesetzt.
+Der Kristall habe das Volumen $V=(n+N)v_0$ mit $n$ Leerstellen und $N$ Atomen. Die Entropie ist aus einer thermischen Koponente $S_\mathrm{therm}$ und einer Konfigurationskomponente $S_\mathrm{konf}$ zusammengesetzt. Hierbei ist $\sigma_\mathrm{therm}$ Vibrationsenergie, die durch die erhöhte Schwingungsrate bei Temperaturanstieg entsteht.
+
 
 $$
 \begin{aligned}
@@ -267,8 +280,9 @@ $$
         - T\sigma_\mathrm{therm}
         - k_BT \ln\frac{N}{n}
         + pv_0 \overset{!}{=} 0 \\
-    \Rightarrow \frac{n}{N} &= \exp[-\frac{\varepsilon_0}{k_BT}]
-        \cdot \exp[\frac{\sigma_\mathrm{therm}}{k_B}]
+    \Rightarrow \frac{n}{N}
+        &= \exp\left[-\frac{\varepsilon_0}{k_BT}
+            + \frac{\sigma_\mathrm{therm}}{k_B}\right]
 \end{aligned}
 $$
 
@@ -602,9 +616,9 @@ Beispielsweise wird auf diese Weise die Textur von Stoffen untersucht.
 ### Debye-Scherrer-Verfahren
 Das Debye-Scherrer-Verfahren ist ein Verfahren um Beugungsexperimente an Kristallen durchzuführen, bei dem man ein Pulver aus Kristalliten untersucht, die etwa $1\mathrm{\mu m}$ groß sind.
 
-Auf diese Weise sind gleichzeitig alle Orientierungen des reziproken Raums vorhanden. Der Beugungsreflex zur Netzebene $(hkl)$ [[20230519183942]] ist ein Kreis, der durch die Rotation des Wellenvektors $\vec{k}$ um die $\vec{k}$-Achse beschrieben wird.
+Auf diese Weise sind gleichzeitig alle Orientierungen des reziproken Raums vorhanden. Der Beugungsreflex zur Netzebene $(hkl)$ ist ein Kreis, der durch die Rotation des Wellenvektors $\vec{k}$ um die $\vec{k}$-Achse beschrieben wird.
 
-Hier gilt die Beugungsbedingung $|\vec{G}|=2k\sin\theta$. Daher gibt Kreisreflexe für jede Netzebene, da es immer alle Netzebenen in jeder Orientierung gibt. Da die Intensität [[20230522164406]] abhängig von der Beugungsordnung abhängt, wird nicht alles gleich stark reflektiert. Höhere Beugungsordnungen verschwinden.
+Hier gilt die Beugungsbedingung $|\vec{G}|=2k\sin\theta$. Daher gibt Kreisreflexe für jede Netzebene, da es immer alle Netzebenen in jeder Orientierung gibt. Da die Intensität abhängig von der Beugungsordnung abhängt, wird nicht alles gleich stark reflektiert. Höhere Beugungsordnungen verschwinden.
 
 Der große Vorteil dieser Methode ist, dass keine makroskopischen Kristalle benötigt werden. Diese sind oft nicht einfach herstellbar.
 
@@ -739,7 +753,7 @@ Beispiele:
     * Koordinationszahl $K=8$
 
 ## Born-Meyer-Potential
-Das Born-Meyer-Potential beschreibt ein repulsives Potential mit den Parametern $\rho$ und $\lambda$. Es wird beispielsweise zur Beschreibung von Paulirepulsion [[20230531121942]] verwendet.
+Das Born-Meyer-Potential beschreibt ein repulsives Potential mit den Parametern $\rho$ und $\lambda$. Es wird beispielsweise zur Beschreibung von Paulirepulsion verwendet.
 
 $$
     V(r)_\mathrm{rep} = \lambda \exp\left[-\frac{r}{\rho}\right]

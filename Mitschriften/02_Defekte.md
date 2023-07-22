@@ -20,7 +20,8 @@ Seien der Druck $p$ und die Temperatur $T$ konstant, dann wird das Gibbs-Potenti
 Typischerweise hat eine Leerstelle eine Energie $\varepsilon_0\approx 1\mathrm{eV}$, Bindungsenergien liegen bei ca $1\mathrm{eV} - 5 \mathrm{eV}$.
 
 #### Temperaturabhängigkeit
-Der Kristall habe das Volumen $V=(n+N)v_0$ mit $n$ Leerstellen und $N$ Atomen. Die Entropie ist aus einer thermischen Koponente $S_\mathrm{therm}$ und einer Konfigurationskomponente $S_\mathrm{konf}$ zusammengesetzt.
+Der Kristall habe das Volumen $V=(n+N)v_0$ mit $n$ Leerstellen und $N$ Atomen. Die Entropie ist aus einer thermischen Koponente $S_\mathrm{therm}$ und einer Konfigurationskomponente $S_\mathrm{konf}$ zusammengesetzt. Hierbei ist $\sigma_\mathrm{therm}$ Vibrationsenergie, die durch die erhöhte Schwingungsrate bei Temperaturanstieg entsteht.
+
 
 $$
 \begin{aligned}
@@ -32,8 +33,9 @@ $$
         - T\sigma_\mathrm{therm}
         - k_BT \ln\frac{N}{n}
         + pv_0 \overset{!}{=} 0 \\
-    \Rightarrow \frac{n}{N} &= \exp[-\frac{\varepsilon_0}{k_BT}]
-        \cdot \exp[\frac{\sigma_\mathrm{therm}}{k_B}]
+    \Rightarrow \frac{n}{N}
+        &= \exp\left[-\frac{\varepsilon_0}{k_BT}
+            + \frac{\sigma_\mathrm{therm}}{k_B}\right]
 \end{aligned}
 $$
 

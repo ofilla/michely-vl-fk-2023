@@ -113,7 +113,7 @@ Beispiele:
     * Koordinationszahl $K=8$
 
 ## Born-Meyer-Potential
-Das Born-Meyer-Potential beschreibt ein repulsives Potential mit den Parametern $\rho$ und $\lambda$. Es wird beispielsweise zur Beschreibung von Paulirepulsion [[20230531121942]] verwendet.
+Das Born-Meyer-Potential beschreibt ein repulsives Potential mit den Parametern $\rho$ und $\lambda$. Es wird beispielsweise zur Beschreibung von Paulirepulsion verwendet.
 
 $$
     V(r)_\mathrm{rep} = \lambda \exp\left[-\frac{r}{\rho}\right]
