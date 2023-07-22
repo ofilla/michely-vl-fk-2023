@@ -215,12 +215,12 @@ $$
     E_b = -\frac{V_\mathrm{total}}{N}
 $$
 
-### Kovalente Bindung
+## Kovalente Bindung
 Im Unterschied zu der Van-der-Waals-Bindung oder der Ionenbindung befinden sich die Atome in der Kovalenten Bindung nicht in der Edelgaskonfiguration. Stattdessen überlagern sich die Orbitale, dies gehört in den Bereich der Quantenchemie. Die Ursache dafür ist die Quantenmechanische Austauschwechselwirkung.
 
 Beispielsweise Diamant, Silizium und Germanium treten in dieser Bindungsform auf.
 
-#### Wasserstoff
+### Wasserstoff
 Die Molekülwellenfunktion der Elektronen erfüllt $\hat{H}\Psi=E\Psi$. Für Wasserstoff ($\mathrm H_2$) gilt mit dem Abstand $R$ zwischen beiden Protonen und den Abständen $r_{A,B}$ zwischen den jeweiligen Protonen zu dem Elektron: 
 
 $$
@@ -243,21 +243,21 @@ Es gibt zwei mögliche Lösungen, eine symmetrische $\Psi_s$ und eine antisymmet
 
 [^4]: _linear combination of atomic orbitals_
 
-#### magnetsche Ordnung
+### magnetsche Ordnung
 Die kovalente Bindung führt zur Erhöhung der Valenzelektronendichte zwischen den Kernen. Dies verursacht eine elektrostatische Anziehung.
 
 Durch das Pauliprinzip ist gefordert, dass die Gesamtwellenfunktion für mehrere Fermionen antisymmetrisch unter Vertauschung ist. Die Gesamtwellenfunktion ist das Produkt aus Ortswellenfunktion und Spinwellenfunktion.
 
 Wenn beide Elektronen im niedrigeren Energieniveau sind, das die symmetrische Ortswellenfunktion voraussetzt, muss die Spinwellenfunktion antisymmetrisch sein. Werden beide Elektronen auf verschiedene Energieniveaus verteilt, muss die Spinwellenfunktion symmetrisch sein. Daher bestimmt die Energetik der Ortswellenfunktion die Spinwellenfunktion, was die magnetsche Ordnung bestimmt.
 
-### Metallbindung
+## Metallbindung
 Die Metallbindung entsteht durch Valenzelektronen, die am Ort der Nachbaratome noch eine erhebliche Aufenthaltswahrscheinlichkeit besitzen. Die Elektronen werden von allen Atomen geteilt.
 
 Ein Musterbeispiel sind die Alkalimetalle. Übergangsmetalle haben stehts auch einen Antail an kovalenter Bindung.
 
 Die Delokalisierung der Elektronen erhöht die Ortsungenauigkeit $\Delta x$, dadurch kann die Impulsungenauigkeit $\Delta p$ sinken. Dies senkt die kinetische Energie, dies bestimmt die Energieeffizienz der Metallbindung.
 
-### Wasserstoffbrückenbindung
+## Wasserstoffbrückenbindung
 Im Folgenden wird Wasser ($\mathrm{H_2O}$) betrachtet.
 
 Das Rumpfion des Wasserstoffs ist besonders. Das Rumpfion $\mathrm H^-$ ist ein reines Proton, die elektrostatische Energie in Höhe der Ionisierungsenergie $E_i=13.59\mathrm{eV}$ wird nicht durch andere Elektronen abgeschirmt. In der kovalenten Bindung mit dem Sauerstoffatom $\mathrm O$ sitzt das Bindungselektron zwischen dem $\mathrm H^-$ und dem $\mathrm O$. Daher entsteht eine schwache Bindung zwischen dem $\mathrm H^-$ und den Elektronen des $\mathrm O$-Atoms. Die Bindungsenergie ist eher schwach ($0.2-1.0\mathrm{eV}$).

@@ -7,7 +7,6 @@ $$
     \vec{r} = \vec{R} + \vec{u}(\vec{R})
 $$
 ## 5.1 Adiabatische und harmonische Approximation
-
 ### Adiabatische Approximation
 Ein elektronisches System folgt dem Kern instantan. Dies bedeutet, dass alle Elektronen sofort ihre Bewegung entsprechend verändern, wenn der Kern bewegt wird. Es gebe keine Anregungen von Elektronen.
 
@@ -27,76 +26,65 @@ $$
 Für kleine Auslenkungen sind die Rückstellkräfte linear. Dies kann als Federkraft interpretiert werden.
 
 ## 5.2 Klassische Theorie der eindimensionalen Kette
-Sei $a$ der Abstand zwischen den Atomen eines eindimensionales Kristalls. Dann befinde sich die Ruhelage des $n$-ten Atoms an der Position $na$. Das Atom sei von der Position $na$ um eine kleine Strecke $u$ verschoben. Zwischen den verschienenen Atomen wirke eine Federkraft $F(x)=cx$. Diese wirke nur zwischen den direkten Nachbarn.
+In der Festkörperphysik wird die eindimensionale Kette benutzt, um Gitterschwingungen eines eindimensionalen Kristalls zu beschreiben.
+
+Die Ausbreitung von elastischen Wellen in Hochsymmetrierichtungen wie $[100]$ oder $[111]$ werden bereits durch die eindimensionale Kette beschrieben. Hierzu nimmt man an, dass die kompletten Netzebenen anstelle einzelner Atome schwingen.
+
+### Differentialgleichung
+Sei $a$ der Abstand zwischen den Atomen, dann befinde sich die Ruhelage des $n$-ten Atoms an der Position $x_n=n\cdot a$. Von dieser Position $x_n$ sei das Atum um eine kleine Strecke $u$ verschoben. Zwischen benachbarten Atomen wirke eine Federkraft $F(x)=Cx$. Daraus ergibt sich die Differentialgleichung $F=M\ddot{u}$ für Atome der Masse $M$.
 
 $$
 \begin{aligned}
     M\ddot{u}(na) = F(na)
-        &= -c{\large [} u(na) - u((n-1)a) + u(na) - u((n+1)a) {\large ]} \\
-        &= -c{\large [} 2u(na) - u((n-1)a) - u((n+1)a) {\large ]}
+        &= -C{\large [} u(na) - u((n-1)a) + u(na) - u((n+1)a) {\large ]} \\
+        &= -C{\large [} 2u(na) - u((n-1)a) - u((n+1)a) {\large ]}
 \end{aligned}
 $$
 
 ### Dispersionsrelation
-Eine Dispersionsrelation ist eine Relation zwischen Energie und Wellenvektor bzw. Frequenz.
-
-Der Ansatz zur Lösung dieser Differentialgleichung sei eine laufende, auf Gitterpunkten definierte Welle $u(ua, t) = A\exp[i(kna - \omega t)]$. Dadurch kann die Schwingungsfrequenz (durch Einsetzen in die Differentialgleichung) bestimmt werden.
+Der Ansatz zur Lösung der obigen Differentialgleichung kann als laufende, auf Gitterpunkten definierte Welle $u(ua, t) = A\exp[i(kna - \omega t)]$ gewählt werden. Dadurch kann die Schwingungsfrequenz (durch Einsetzen in die Differentialgleichung) bestimmt werden. Daraus erhält man die folgende Dispersionsrelation $\omega(k)$, die mit der Relation $\frac{1-\cos(2\alpha)}{2} = \sin^2(\alpha)$ vereinfacht werden kann.
 
 $$
 \begin{aligned}
-    \Rightarrow \omega^2 &= \frac{2C}{M} [1-\cos(ka)]
-\end{aligned}
-$$
-
-Dieser Ausdruck kann mit der Relation $\frac{1-\cos{\alpha}}{2} = \sin^2(ka)$ vereinfacht werden. Daraus erhält man die Dispersionsrelation:
-
-$$
-    \omega = 2\sqrt{\frac{C}{M}}
+    \omega(k) &= \sqrt{\frac{2C}{M} [1-\cos(ka)]} \\
+    \omega(k) &= 2\sqrt{\frac{C}{M}}
         \left|
             \sin\left(
                 \frac{ka}{2}
             \right)
         \right|
-$$
-
-Auf einer Seite der Universität zu Köln gibt es ein [Applet](https://ph2.uni-koeln.de/lehre/applets-solid-state-physics/phonons), das die Phononendispersion interaktiv darstellt.
-
-### Beschränkungen von $k$ und $\omega$
-Daher ist $\omega$ $\frac{2\pi}{a}$-periodisch. Seien $k$ ein Wellenvektor und $k^\prime=k+G$ mit dem reziproken Gittervektor $G=m\frac{2\pi}{a}$ (min $m\in\mathbb N$) des eindimensionalen Gitters. An der Stellen $k$ und $k^\prime$ ist die Auslenkung identisch mit $u(na, t)_{k^\prime} = u(na, t)_k$.
-
-Alle Phasendifferenzen von benachbarten Atomen, die größer sind als $\pi$, sind unphysikalisch. In diesem Fall weist man Schwingungen im "leeren" Raum zu, die keine Relevanz haben und auch nicht messbar sind, da nur an den Gitterpunkten gemessen werden kann. Daher fordern wir $\lambda=\frac{2\pi}{|k|}$. Mit dem kürzestmöglichen reziproken Gittervektor $G_0$ folgt:
-
-$$
-    -\frac{\pi}{a} \le k \le \frac{\pi}{a}
-    \Leftrightarrow -\frac{G_0}{2} \le k \le \frac{G_0}{2}
-$$
-
-Folglich muss $k$ ein Wellenvektor aus der 1. Brillouinzone sein. Der Wellenvektor kann beide Vorzeichen haben, da die Wellen in beide Richtungen laufen dürfen. An der Zonengrenze gilt $u(na, t)_{\frac{a}{2}}=A(-1)^n\exp[-i\omega t]$. Dies beschreibt eine stehende Welle von gegenphasig schwingenden Atomen.
-
-Dadurch sind die Frequenzen der Wellen auf $\omega\in\left[0, 2\sqrt{\frac{C}{M}} \right]$ beschränkt.
-
-### Schallgeschwindigkeit
-Für kleine Frequenzen gilt $\omega \approx\sqrt{\frac{C}{M}} |ka|$. Die Gruppengeschwindigkeit $v_\mathrm{Gruppe}=\frac{\mathrm d\omega}{\mathrm dk}=\sqrt{\frac{C}{M}}a$ ist konstant, insbesondere unabhängig von $\lambda$. Wir bezeichnen $v_s=\sqrt{\frac{C}{M}}$ als Schallgeschwindigkeit der eindimensionalen Kette. Diese ist für kleine Frequenzen konstant.
-
-Im Allgemeinen, d.h. auch für grössere Winkel, gilt
-
-$$
-\begin{aligned}
-    v_\mathrm{Gruppe}
-        &= \frac{\mathrm d\omega}{\mathrm dk} \\
-        &= \frac{\mathrm d}{\mathrm dk}
-            \left(
-                2\sqrt{\frac{C}{M}} \left|\sin\left(\frac{ka}{2}\right)\right|
-            \right) \\
-        &= v_s \left|\cos\left(\frac{ka}{2}\right)\right|
 \end{aligned}
 $$
 
-Auch hier gibt es stehende Wellen mit $v_\mathrm{Gruppe}(k=\frac{\pi}{a})=0$.
+Hierbei muss der Wellenvektor $k$ muss aus der ersten Brilloinzone stammen. Dadurch sind die Frequenzen der Wellen auf $\omega\in\left[0, 2\sqrt{\frac{C}{M}} \right]$ beschränkt.
 
-Die Ausbreitung von elastischen Stellen in Hochsymmetrierichtungen wie $[100]$ oder $[111]$ werden bereits durch die eindimensionale Kette beschrieben, wenn sich Netzebenen statt Atomen bewegen. Man hat eine longitudinale und zwei transversale Moden. Die longitudinalen Moden haben immer eine höhere Frequenz als die transversalen Moden. Dies liegt daran, dass eine Scherung immer einfacher als eine Kompression ist.
+Der Wellenvektor kann beide Vorzeichen haben, da die Wellen in beide Richtungen laufen dürfen. An der Zonengrenze schwingen die Atome gegenphasig, was durch $u(na, t)_{\frac{a}{2}}=(-1)^n A\exp[-i\omega t]$ beschrieben wird.
 
-Die Kraftkonstanten der Moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
+### Beschränkung von $k$ und $\omega$
+Weil $\omega(k)$ periodisch ist, ist auch die Auslenkung $u(x, t)$ an der Stelle $x_n=na$ periodisch. Phasendifferenzen von benachbarten Atomen sind nur physikalisch sinnvoll sind, wenn sie kleiner als $\pi$ sind, ansonsten weist man Schwingungen in einem Raum zu, an denen keine Atome sitzen. Daraus folgt eine Einschränkung der Wellenlänge.
+
+Da $\lambda=\frac{2\pi}{|k|}$ gilt folgt mit dem kürzestmöglichen reziproken Gittervektor $G_0$ eine Einschränkung von $2k\in[-G_0, G_0]$, da dies äquivalent zu der Forderung $ka \in [-\pi, \pi]$ ist. Folglich muss $k$ ein Wellenvektor aus der ersten Brillouinzone sein.
+
+### Schallgeschwindigkeit
+Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$ nach dem Wellenvektor $k$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$ der eindimensionalen Kette. Es gibt Wellenvektoren $k=\frac{\pi}{a}$, für die die Gruppengeschwindigkeit $v_G$ verschwindet. Dies nennt man stehende Wellen.
+
+$$
+\begin{aligned}
+    v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
+    \Rightarrow v_s &= \sqrt{\frac{C}{M}}
+\end{aligned}
+$$
+
+Für kleine Frequenzen ist die Dispersionsrelation linear $\omega(k) \approx\sqrt{\frac{C}{M}} |ka|$, dann ist die Gruppengeschwindigkeit $v_G=v_s$ ist konstant, insbesondere unabhängig von der Wellenlänge $\lambda$.
+
+### Schwingungsmoden
+Bei einem eindimensionalen Kristall im dreidimensionalen Raum gibt es drei Richtungen, entlang derer die Teilchen schwingen können. Es gibt eine akustische Mode und zwei optische Moden.
+
+Eine dieser Richtingen ist longitudinal, d.h. die Teilchen schwingen in Ausbreitungsrichtung der Welle. Ein Beispiel dafür sind Schallwellen, deswegen werden longitudinale Moden auch als akustische Moden bezeichnet.
+
+Zwei dieser Richtungen sind transversal, sie stehen senkrecht zu der Ausbreitungsrichtung der Welle. Ein Beispiel dafür sind Lichtwellen, weshalb transversale Moden auch optische Moden genannt werden. Die Schwingungsrichtung beider optischer Moden sind senkrecht zueinander.
+
+Aus der eindimensionalen Kette mit zweiatomiger Basis kann man herleiten, dass akustische Moden haben immer eine kleinere Frequenz als die optischen Moden haben. Dies liegt daran, dass eine Scherung immer einfacher als eine Kompression ist. Die Kraftkonstanten der Moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
 
 ### Eindimensionale Kette mit zwei Basisatomen
 Nun wird eine zweiatomige Basis betrachtet. Dies führt dazu, dass die Dispersionsrelation zwei verschiedene Zweige hat. Dies ist genau so lange der Fall, wie die Massen der beiden Teilchen unterschiedlich sind; ansonsten bilden beide Basisatome eine neue Einheitszelle.

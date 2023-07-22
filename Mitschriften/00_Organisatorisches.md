@@ -19,5 +19,5 @@ Dies ist eine _inoffizielle_ Mitschrift aus der Vorlesung zur Festkörperphysik 
 Die Bestehensquote für der Teilnehmer, die max. 2x in der Übung gefehlt haben, wird auf 75% festgelegt.
 
 # Softwareempfehlung
-Zum Visualisieren von Kristallstrukturen und Kristalleigenschaften wird das Programm [VESTA](http://jp-minerals.org/vesta/en) empfohlen.
+Zum Visualisieren von Kristallstrukturen und Kristalleigenschaften wird das Programm [VESTA](http://jp-minerals.org/vesta/en) empfohlen. Zudem gibt es auf einer Seite der Universität zu Köln ein [Applet](https://ph2.uni-koeln.de/lehre/applets-solid-state-physics/phonons), das die Phononendispersion interaktiv darstellt.
 
