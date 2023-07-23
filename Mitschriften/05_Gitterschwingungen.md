@@ -94,7 +94,7 @@ $$
             \frac{C+D}{M} \pm \frac{1}{M}\sqrt{C^2+D^2+2CD\cos(ka)}
 $$
 
-Der Zweig mit dem Minus ist der _akustische Zweig_, der mit dem Plus ist der _optische Zweig_. Der akustische Zweig hat bei $k=0$ auf $0$ und verändert sich im Interval $\pm \frac{\pi}{a}$ sehr stark, der optische Zweig hat bei $k=0$ ein Maximum, verändert sich im selben Interval allerdings vergleichsweise gering.
+Der Zweig mit der geringeren Frequenz, der mit dem Minus, ist der _akustische Zweig_. Der Zweig mit der höheren Frequenz, der  mit dem Plus, ist der _optische Zweig_. Der akustische Zweig verschwindet bei $k=0$ und verändert sich im Interval $\pm \frac{\pi}{a}$ sehr stark. Der optische Zweig dagegen hat bei $k=0$ ein Maximum, verändert sich im selben Interval allerdings vergleichsweise gering.
 
 #### Beweis
 Sei an jedem Gitterpunkt eine zweiatomige Basis. Sei der Abstand zwischen den Atomen der Basis $d$ und die Gitterkonstante $a$. Dann ist das linke der beiden Atome an der Position $na$ und das rechte an der Position $na+d$.
@@ -111,19 +111,13 @@ $$
 $$
 
 ## 5.3 Klassische Theorie im dreidimension Fall
-Für jede Welle mit $\vec{k}$ gibt es $3$ Schwingungsformen, von denen eine Mode longitudinal und zwei Moden transversal sind.
+Für jede Welle mit $\vec{k}$ gibt es $3$ Schwingungsformen, von denen eine Mode longitudinal und zwei Moden transversal sind. Für eine Basis mit $j$ Atomen gibt es $3$ akustische Zweige und $3j-3$ optische Zweige der Dispersionsrelation. Die Frequenz der longitudinalen Mode ist auch hier höher als die der transversalen Moden, da eine Scherung auch im dreidimensionalen Fall einfacher als eine Kompression ist.
 
-Für eine Basis mit $j$ Atomen gibt es $3$ akustische Zweige und $3j-3$ optische Zweige der Dispersionsrelation.
+In Hochsymmetrischen Kristallrichtungen, wie beispielsweise $[100]$ im kubischen System, sind die transversalen Moden entartet. Das bedeutet, beide transversalen Moden sind identisch und man kann nur eine transversale Mode messen.
 
-Die Frequenz der longitudinalen Mode ist höher als die der transversalen Moden, da eine Scherung auch im dreidimensionalen Fall einfacher als eine Kompression ist.
+Die Gruppengeschwindigkeit $\vec{v} _ \mathrm{Gruppe} = \nabla _{\vec{k}} \omega(\vec{k})$ verschwindet am Zonenrand längs der Hochsymmetrierichtung. Man kann die Berechnung auf die 1. Brillouinzone (BZ) beschränken.
 
-In Hochsymmetrischen Kristallrichtungen wie beispielsweise $[100]$ im kubischen System sind die transversalen Moden entartet. Das bedeutet, beide transversalen Moden sind identisch und man kann nur eine transversale Mode messen.
-
-Die Gruppengeschwindigkeit $\vec{v} _ \mathrm{Gruppe} = \nabla _{\vec{k}} \omega(\vec{k})$ verschwindet am Zonenrand längs der Hochsymmetrierichtung.
-
-Man kann die Berechnung auf die 1. Brillouinzone (BZ) beschränken.
-
-Dispersion wird üblicherweise in Richtungen der Symmetrie geplottet. Punkte hoher Symmetrie werden mit griechischen Buchstaben markiert. Es gibt die Punkte $\Gamma, X, K$. $k=|\vec{k}|$ wird üblicherweise in Einheiten von $\frac{\pi}{a}$ aufgetragen.
+Dispersion wird üblicherweise in Richtungen der Symmetrie geplottet. Punkte hoher Symmetrie werden mit griechischen Buchstaben markiert. Es gibt die Punkte $\Gamma, X, K$ und $L$. $k=|\vec{k}|$ wird üblicherweise in Einheiten von $\frac{\pi}{a}$ aufgetragen.
 
 * $\Gamma$ ist der Punkt im Zentrum der BZ, an dem $\vec{k}=0$.
 * $X$ liegt bei $k=\frac{\pi}{a}$, $\Gamma X$ beschreibt die $[110]$-Richtung.
@@ -132,7 +126,7 @@ Dispersion wird üblicherweise in Richtungen der Symmetrie geplottet. Punkte hoh
 
 Zwischen diesen verschiedenen Punkten kann man beispielsweise Dispersionsrelationen oder Bandstrukturen messen. All diese Messungen werden üblicherweise in einem einzelnen Diagramm dargestellt, das ohne Übung sehr unübersichtlich aussieht.
 
-## 5.3 Randbedingungen
+## 5.4 Randbedingungen
 Da in der Realität jeder Körper endlich ist, ist es essentiell, Randbedingungen zu verwenden. Aufgrund der verschwindenden Zahl der Oberflächenatome es ist jedoch  praktisch irrelevant, welche Randbedingungen man wählt. Üblicherweise wählt man periodische Randbedingungen, weil sie mathematisch einfacher sind und besser zum Prinzip der Translationsinvarianz passen als feste Enden an der Oberfläche.
 
 Dadurch erhält man eine endliche Menge an möglichen Wellenvektoren $\vec{k}$.
