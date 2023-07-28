@@ -1,5 +1,5 @@
 # 6. Thermische Eigenschaften des Kristallgitters
-## Wärmekapazität
+## 6.1 Wärmekapazität
 ### Wärmekapazität
 Die Wärmekapazität $C$ ist der Quotient aus der zugeführten Wärme $\Delta Q$ und der Temperaturänderung $\Delta T$.
 
@@ -9,7 +9,9 @@ $$
     C_x = \frac{\Delta Q}{\Delta T} = \left.\frac{\partial U}{\partial T}\right|_x
 $$
 
-Mithilfe des Volumenausdehnungskoeffizienten $\alpha$ und des Kompressionsmodul $\beta$ gilt die Relation $C_p-C_V = TV\alpha^2\beta$. In der harmonischen Näherung gilt $\alpha=0$, daraus folgt $C_p=C_V$. Tatsächlich gibt es allerdings eine Abweichung von unter $1\%$.
+Mithilfe des Volumenausdehnungskoeffizienten $\alpha$ und des Kompressionsmoduls $\beta$ gilt die Relation $C_p-C_V = TV\alpha^2\beta$. In der harmonischen Näherung gilt $\alpha=0$, daraus folgt $C_p=C_V$. Tatsächlich gibt es allerdings eine Abweichung von unter $1\%$.
+
+Für hohe Temperaturen wird $C_V$ durch das Dulong-Petit-Gesetz beschrieben. In Kristallen ist die Bose-Einstein-Verteilung notwendig, um das Potential $U$ zu beschreiben.
 
 #### Beitrag der freien Elektronen bei Metallen
 Jedes Valenzelektron liefert eine mittlere Energie von $\braket{E}=\frac{1}{2}k_BT$. Daraus folgt für die mittlere innere Energie $\braket{U}=N\braket{E}$, wodurch $C_V$ sehr klein ist nämlich proportional zu der Breite der aufgeweichten Fermikante. Die freien Elektronen liefern demnach einen geringen Beitrag zur Wärmekapazität.
@@ -23,14 +25,12 @@ $$
 
 Der Klassischen Gleichverteilungssatz der Statistischen Physik besagt, dass jede quadratischen Komponente in der Gesamtenergie die mittlere Energie $\frac{1}{2}k_bT$ erzeugt. In drei Dimensionen hat man je drei Orts- und Impulskoordinaten, die die Gesamtenergie bezeichnen. Für die mittlere Energie gilt daher $\braket{U}=3k_BT$. Aus der Definition der isochoren Wärmekapazität folgt das Dulong-Petit-Gesetz.
 
-Alternativ kann das Dulong-Petit-Gesetz aus der Einstein-Nährung hergeleitet werden, wenn diese für große Temperaturen verwendet wird..
+Alternativ kann das Dulong-Petit-Gesetz aus der Einstein-Nährung hergeleitet werden, wenn diese für große Temperaturen verwendet wird.
 
 [^5]: [Dulong-Petit-Gesetz](https://de.wikipedia.org/wiki/Dulong-Petit-Gesetz), Abruf am 2023-06-09
 
 ### Bose-Einstein-Verteilung
-Bei tiefen Temperaturen $T$ wird die Quantisierung der Energieniveaus relevant. Nicht jede Schwingung hat die richtige Energie um ein Phonon erzeugen, daher gibt es Schwingungen, die eingefroren sind.
-
-Die Bose-Einstein-Verteilung beschreibt die Verteilung der Teilchenzahl. In diesem Fall ist die Zahl der Phononen durch die Energie bestimmt, daher sind die Energie der Phononen $\hbar\omega$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$.
+Die Bose-Einstein-Verteilung beschreibt die Verteilung der Teilchenzahl von Bosonen. In diesem Fall ist die Zahl der Phononen durch die Energie bestimmt, daher sind die Energie der Phononen $\hbar\omega$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$.
 
 $$
     \braket{n} = \frac{1}{
@@ -55,25 +55,22 @@ $$
             \right]
 $$
 
-### Zustandsdichte
-Die Zustandsdichte $D(\omega)$ im Fourierraum ist die Anzahl der Zustände in einem Frequenzinterval. Damit kann man einen Kontinuitätsübergang für die innere Energie $U$ durchführen.
+Bei tiefen Temperaturen $T$ wird die Quantisierung der Energieniveaus relevant. Nicht jede Schwingung hat die richtige Energie um ein Phonon erzeugen, daher gibt es Schwingungen, die eingefroren sind.
+
+### Zustandsdichte im Fourierraum
+Die Zustandsdichte $D(\omega)$ im Fourierraum ist die Anzahl der Zustände in einem Frequenzinterval, ähnlich wie die Zustandsdichte in Kristallen im Ortsraum definiert ist. Damit kann man einen Kontinuitätsübergang für die innere Energie $U$ durchführen. Hierbei ist $\frac{V}{(2\pi)^3}$ die Zustandsdichte im Fourierraum und das Integral das Volumen des Frequenzintervals im Fourierraum. Die Innere Energie wird maßgeblich durch die Bose-Einstein-Verteilung beschrieben.
 
 $$
 \begin{aligned}
-    \braket{U_\mathrm{th}} &= U_0 + \braket{U} \\
-    \braket{U} &= \sum_{\vec{k},p} \braket{n_p(\vec{k})} \hbar \omega_p(\vec{k}) \\
-        &= \sum_{\vec{k},p}
-            \frac{\hbar \omega_p(\vec{k})}
+    \braket{U_\mathrm{th}} &= U_0 + \braket{U} = U_0 + \sum_{\vec{k},p} \braket{U_p} \\
+    \braket{U_p} &= \braket{n_p(\vec{k})} \hbar \omega_p(\vec{k}) = \frac{\hbar \omega_p(\vec{k})}
             {\exp\left[\hbar\omega(\vec{k})k_bT\right]-1} \\
-        &= \sum_p \braket{U_p} \\
-    \braket{U_p} &= \int \frac{\hbar\omega}{\exp[\hbar\omega k_bT]} D(\omega)\mathrm{d}\omega \\
+    \braket{U_p} &= \int \frac{\hbar\omega}{\exp[\hbar\omega k_BT]} D(\omega)\mathrm{d}\omega \\
     D(\omega)\mathrm d\omega &=
         \frac{V}{(2\pi)^3}
         \int_{\omega(\vec{k})}^{\omega(\vec{k})+\mathrm d\omega(\vec{k})} \mathrm d^3 k
 \end{aligned}
 $$
-
-Hierbei ist $\frac{V}{(2\pi)^3}$ die Zustandsdichte im Fourierraum und das Integral das Volumen des Frequenzintervals im Fourierraum f.
 
 ### Debye-Näherung
 Die Debye-Näherung beschreibt das Verhalten bei niedrigen Temperaturen durch eine lineare Beschreibung der Dispersionsreleation $\omega(\vec{k})=vk$.

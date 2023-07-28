@@ -29,6 +29,7 @@ Nicht alle Gitter sind für die Beschreibung von Festkörpern sinnvoll. Deswegen
 Ein Bravaisgitter ist definiert als eine sich unendliche erstreckende Anordnung von Punkten, die von jedem dieser Punkte aus exakt gleich aussieht.
 
 Bravaisgitter besteht aus der Menge der Punkte mit Positionsvektoren $\vec{R}$, die durch ganzzahlige Linearkombinationen der _primitiven Translationen_ $\vec{a}_i$ gebildet werden. Es dürfen dabei nicht alle primitiven Translationen $\vec{a}_i$ in einer Ebene liegen. Dies ist eine äquivalent zur erstgenannten Definition.
+
 $$
     \left\{\left.
         \vec{R} = \sum_{i=1}^3 n_i\vec{a}_i  \in \mathbb R^3 \right|
@@ -89,6 +90,7 @@ Bei einem sc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W�
 * $P_\mathrm{sc} \approx 0.54$
 * Koordinationszahl $6$
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Würfelecken
+
 $$
     \vec{a}_1 = a \cdot \begin{pmatrix} 1\\0\\0 \end{pmatrix}
     \land
@@ -105,6 +107,7 @@ Bei einem bcc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * $P_\mathrm{bcc} \approx 0.68$
 * Koordinationszahl $8$
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Körperzentrierte Punkte
+
 $$
     \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
     \land
@@ -187,9 +190,11 @@ Die Basis wird durch die unterschiedlich geladenen Ionen gebildet. Ein Ion ist a
 Ein hochenergetischer Elektronenstrahl, der ähnlich wie Licht unterschiedlich fokussiert werden kann, schiesst auf eine dünne Probe ($<10\mathrm{nm}$). Dadurch wird ein Bild auf einem Schirm ein Bild erzeugt. Je nach Einstellung kann man ein Beugungsbild oder ein Realraumbild / Ortsraumbild erzeugen. Dies nennt man Transmissionselektronenmikroskop (TEM).
 
 Bei einer Energie von ca $100\mathrm{keV}$ erhält man eine Wellenlänge von $\lambda_e \approx 4\cdot10^{-12}\mathrm{m}$
+
 $$
     \lambda_e = \frac{h}{p} = \frac{4}{\sqrt{2m_eE}}
 $$
+
 Der Streuwinkel $\alpha$ ist wegen sphärischer Aberration geladener Teilchen sehr klein. Die Auflösung $\approx\frac{\lambda_e}{\sin{(\alpha)}}$ ist dafür sehr gering.
 
 Durch abberrationskorrigierte Transmissionselektronenmikroskopen kann man inzwischen Wellenlängen von unter $0.8\AA$ erzeugen. Damit kann man einzelne Atome messen und z.B. "falsche" Atomsorten im Gitter detektieren.
@@ -268,7 +273,6 @@ Typischerweise hat eine Leerstelle eine Energie $\varepsilon_0\approx 1\mathrm{e
 
 #### Temperaturabhängigkeit
 Der Kristall habe das Volumen $V=(n+N)v_0$ mit $n$ Leerstellen und $N$ Atomen. Die Entropie ist aus einer thermischen Koponente $S_\mathrm{therm}$ und einer Konfigurationskomponente $S_\mathrm{konf}$ zusammengesetzt. Hierbei ist $\sigma_\mathrm{therm}$ Vibrationsenergie, die durch die erhöhte Schwingungsrate bei Temperaturanstieg entsteht.
-
 
 $$
 \begin{aligned}
@@ -414,11 +418,13 @@ In dieser Vorlesung werden Planare Defekte nicht weiter behandelt.
 ## 3.1 Das reziproke Gitter
 ### Das reziproke Gitter
 Eine gitterperiodischen Funktion $f(\vec{r}) = f(\vec{r} + \vec{R})$ kann auch als als Fourierreihe $\mathcal F(f(\vec{r}))$ dargestellt werden. Die Menge aller $\vec{G}$ erfüllt $\mathrm e^{i\vec{G}\vec{r}}=1$ und definiert somit _reziprokes Gitter_.
+
 $$
     f(\vec{r}) = \mathcal F(f(\vec{r})) = \sum_{\vec{G}} f_{\vec{G}}\mathrm e^{i\vec{G}\vec{r}}=1 \\
     f_{\vec{G}} = \frac{1}{V} \int_V f(\vec{r}) \mathrm e^{-i\vec{G}\vec{r}}
 $$
 Dieses ist ein Bravaisgitter, da $\vec{G}$ durch ganzzahlige $k_i$ und Basisvektoren $\vec{b_i}$ dargestellt werden kann. $V$ ist hier das Volumen einer Einheitszelle. Die Vektoren $\vec{b}_i$ haben die Einheit $\mathrm m^{-1}$, da sie Wellenvektoren $k=\frac{2\pi}{\lambda}$ entsprechen.
+
 $$
 \begin{aligned}
     \vec{G} = &k_1 \vec{b}_1 + k_2 \vec{b}_2 + k_3 \vec{b}_3\\
@@ -692,6 +698,7 @@ $$
 Dies geht in dieser Form nur für einatomige Kristalle, da in den Variablen $\varepsilon$ und $\sigma$ von der genauen Bindung abhängen. Für Modekülkristalle kann man diese Rechnung nutzen, wenn man die Bindungen innerhalb der Modeküle vernachlässigt.
 
 Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Dies ist erfüllt, falls
+
 $$
     \Rightarrow \left(\frac{a}{\sigma}\right)^6 = \frac{12A_{12}}{6A_6} \ .
 $$
@@ -736,7 +743,7 @@ $$
 $$
 
 ### Gittersummen
-Die *Gittersummen* $A_6=\sum_j\left(\frac{\sigma}{\alpha_{ij}a}\right)^{6}$ und $A_{12}=\sum_j\left(\frac{\sigma}{\alpha_{ij}a}\right)^{12}$  hängen von der Kristallstruktur ab und konvergieren schnell. Damit lässt sich das Lennard-Jones-Potential sehr viel einfacher darstellen. Es gilt aber nur für einatomige Kristalle, da in den Variablen $\varepsilon$ und $\sigma$ von der genauen Bindung abhängen. Für Modekülkristalle kann man diese Rechnung nutzen, wenn man die Bindungen innerhalb der Modeküle vernachlässigt.
+Die _Gittersummen_ $A_6=\sum_j\left(\frac{\sigma}{\alpha_{ij}a}\right)^{6}$ und $A_{12}=\sum_j\left(\frac{\sigma}{\alpha_{ij}a}\right)^{12}$  hängen von der Kristallstruktur ab und konvergieren schnell. Damit lässt sich das Lennard-Jones-Potential sehr viel einfacher darstellen. Es gilt aber nur für einatomige Kristalle, da in den Variablen $\varepsilon$ und $\sigma$ von der genauen Bindung abhängen. Für Modekülkristalle kann man diese Rechnung nutzen, wenn man die Bindungen innerhalb der Modeküle vernachlässigt.
 
 Beispiele:
 * sc-Struktur
@@ -758,7 +765,6 @@ Das Born-Meyer-Potential beschreibt ein repulsives Potential mit den Parametern 
 $$
     V(r)_\mathrm{rep} = \lambda \exp\left[-\frac{r}{\rho}\right]
 $$
-
 
 ## Ionische Bindung
 Ionenkristalle bestehen aus positiv und negativ geladenen Ionen. Die Bindung erfolgt durch elektrostatische Anziehung zwischen den Ionen.
@@ -910,6 +916,7 @@ Der Ortsvektor $\vec{r}$ eines Atoms wird nun beschrieben durch eine Abweichung 
 $$
     \vec{r} = \vec{R} + \vec{u}(\vec{R})
 $$
+
 ## 5.1 Adiabatische und harmonische Approximation
 ### Adiabatische Approximation
 Ein elektronisches System folgt dem Kern instantan. Dies bedeutet, dass alle Elektronen sofort ihre Bewegung entsprechend verändern, wenn der Kern bewegt wird. Es gebe keine Anregungen von Elektronen.
@@ -1121,7 +1128,7 @@ Die Träger und Übermittler des Kristallimpulses sind die Phononen, Photonen k�
 Man kann Die Energien und die Wellenvektoren der einfallenden und ausfallenden Strahlung messen. Daraus kann man den Wellenvektor und die Energie der Phononen ermitteln.
 
 ### Energiesatz & Kristallimpulssatz
-Für die inelastische Streuung eines Teilchens am Kristall müssen für die Erzeugung bzw. Vernichtung eines Phonons folgende Relationen für die Energie [[20230724101502]] und den Kristallimpuls [[20230724102744]] gelten.
+Für die inelastische Streuung eines Teilchens am Kristall müssen für die Erzeugung bzw. Vernichtung eines Phonons folgende Relationen für die Energie und den Kristallimpuls gelten.
 
 $$
 \begin{aligned}
@@ -1130,7 +1137,7 @@ $$
 \end{aligned}
 $$
 
-Der Term mit der größeren Differenz $(+)$ beschreibt die Erzeugung eines Phonons. Analog wird bei der geringeren Differenz $(-)$ ein Phonon vernichtet. Wird kein Teilchen erzeugt oder vernichtet, ist der Kristallimpulssatz identisch mit der Beugungsbedingung nach Laue. [[20230519190039]]
+Der Term mit der größeren Differenz $(+)$ beschreibt die Erzeugung eines Phonons. Analog wird bei der geringeren Differenz $(-)$ ein Phonon vernichtet. Wird kein Teilchen erzeugt oder vernichtet, ist der Kristallimpulssatz identisch mit der Beugungsbedingung nach Laue.
 
 ### Sondenstrahlung
 Als Sonden eignen sich insbesondere Neutronen bei thermischer Energie. Röntgenstrahlung kann ebenfalls verwendet werden, ist aber nicht so gut.
@@ -1188,7 +1195,7 @@ Umgekehrt wird dann ein Phonon vernichtet, wenn dessen Energie verwendet wird um
 Das Verhältnis zwischen den beiden Streuungen ist stark Temperaturabhängig, damit kann man Kristalle als Thermometer nutzen.
 
 # 6. Thermische Eigenschaften des Kristallgitters
-## Wärmekapazität
+## 6.1 Wärmekapazität
 ### Wärmekapazität
 Die Wärmekapazität $C$ ist der Quotient aus der zugeführten Wärme $\Delta Q$ und der Temperaturänderung $\Delta T$.
 
@@ -1198,7 +1205,9 @@ $$
     C_x = \frac{\Delta Q}{\Delta T} = \left.\frac{\partial U}{\partial T}\right|_x
 $$
 
-Mithilfe des Volumenausdehnungskoeffizienten $\alpha$ und des Kompressionsmodul $\beta$ gilt die Relation $C_p-C_V = TV\alpha^2\beta$. In der harmonischen Näherung gilt $\alpha=0$, daraus folgt $C_p=C_V$. Tatsächlich gibt es allerdings eine Abweichung von unter $1\%$.
+Mithilfe des Volumenausdehnungskoeffizienten $\alpha$ und des Kompressionsmoduls $\beta$ gilt die Relation $C_p-C_V = TV\alpha^2\beta$. In der harmonischen Näherung gilt $\alpha=0$, daraus folgt $C_p=C_V$. Tatsächlich gibt es allerdings eine Abweichung von unter $1\%$.
+
+Für hohe Temperaturen wird $C_V$ durch das Dulong-Petit-Gesetz beschrieben. In Kristallen ist die Bose-Einstein-Verteilung notwendig, um das Potential $U$ zu beschreiben.
 
 #### Beitrag der freien Elektronen bei Metallen
 Jedes Valenzelektron liefert eine mittlere Energie von $\braket{E}=\frac{1}{2}k_BT$. Daraus folgt für die mittlere innere Energie $\braket{U}=N\braket{E}$, wodurch $C_V$ sehr klein ist nämlich proportional zu der Breite der aufgeweichten Fermikante. Die freien Elektronen liefern demnach einen geringen Beitrag zur Wärmekapazität.
@@ -1206,22 +1215,18 @@ Jedes Valenzelektron liefert eine mittlere Energie von $\braket{E}=\frac{1}{2}k_
 ### Dulong-Petit-Gesetz
 Das Dulong-Petit-Gesetz besagt, dass die molare Wärmekapazität eines aus einzelnen Atomen zusammengesetzten Festkörpers einen universalen und konstanten Wert habe, nämlich das Dreifache der universellen Gaskonstante $R=\frac{pV}{Nk_b}$.[^5] Diese Näherung gilt für hohe Temperaturen $T$, für niedrige $T$ gilt sie nicht.
 
-
 $$
     C_V = 3N_j k_b = 3R
 $$
 
-
 Der Klassischen Gleichverteilungssatz der Statistischen Physik besagt, dass jede quadratischen Komponente in der Gesamtenergie die mittlere Energie $\frac{1}{2}k_bT$ erzeugt. In drei Dimensionen hat man je drei Orts- und Impulskoordinaten, die die Gesamtenergie bezeichnen. Für die mittlere Energie gilt daher $\braket{U}=3k_BT$. Aus der Definition der isochoren Wärmekapazität folgt das Dulong-Petit-Gesetz.
 
-Alternativ kann das Dulong-Petit-Gesetz aus der Einstein-Nährung hergeleitet werden, wenn diese für große Temperaturen verwendet wird..
+Alternativ kann das Dulong-Petit-Gesetz aus der Einstein-Nährung hergeleitet werden, wenn diese für große Temperaturen verwendet wird.
 
 [^5]: [Dulong-Petit-Gesetz](https://de.wikipedia.org/wiki/Dulong-Petit-Gesetz), Abruf am 2023-06-09
 
 ### Bose-Einstein-Verteilung
-Bei tiefen Temperaturen $T$ wird die Quantisierung der Energieniveaus relevant. Nicht jede Schwingung hat die richtige Energie um ein Phonon erzeugen, daher gibt es Schwingungen, die eingefroren sind.
-
-Die Bose-Einstein-Verteilung beschreibt die Verteilung der Teilchenzahl. In diesem Fall ist die Zahl der Phononen durch die Energie bestimmt, daher sind die Energie der Phononen $\hbar\omega$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$.
+Die Bose-Einstein-Verteilung beschreibt die Verteilung der Teilchenzahl von Bosonen. In diesem Fall ist die Zahl der Phononen durch die Energie bestimmt, daher sind die Energie der Phononen $\hbar\omega$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$.
 
 $$
     \braket{n} = \frac{1}{
@@ -1246,24 +1251,22 @@ $$
             \right]
 $$
 
-### Zustandsdichte
-Die Zustandsdichte $D(\omega)$ im Fourierraum ist die Anzahl der Zustände in einem Frequenzinterval. Damit kann man einen Kontinuitätsübergang für die innere Energie $U$ durchführen.
+Bei tiefen Temperaturen $T$ wird die Quantisierung der Energieniveaus relevant. Nicht jede Schwingung hat die richtige Energie um ein Phonon erzeugen, daher gibt es Schwingungen, die eingefroren sind.
+
+### Zustandsdichte im Fourierraum
+Die Zustandsdichte $D(\omega)$ im Fourierraum ist die Anzahl der Zustände in einem Frequenzinterval, ähnlich wie die Zustandsdichte in Kristallen im Ortsraum definiert ist. Damit kann man einen Kontinuitätsübergang für die innere Energie $U$ durchführen. Hierbei ist $\frac{V}{(2\pi)^3}$ die Zustandsdichte im Fourierraum und das Integral das Volumen des Frequenzintervals im Fourierraum. Die Innere Energie wird maßgeblich durch die Bose-Einstein-Verteilung beschrieben.
 
 $$
 \begin{aligned}
-    \braket{U_\mathrm{th}} &= U_0 + \braket{U} \\
-    \braket{U} &= \sum_{\vec{k},p} \braket{n_p(\vec{k})} \hbar \omega_p(\vec{k}) \\
-        &= \sum_{\vec{k},p}
-            \frac{\hbar \omega_p(\vec{k})}
+    \braket{U_\mathrm{th}} &= U_0 + \braket{U} = U_0 + \sum_{\vec{k},p} \braket{U_p} \\
+    \braket{U_p} &= \braket{n_p(\vec{k})} \hbar \omega_p(\vec{k}) = \frac{\hbar \omega_p(\vec{k})}
             {\exp\left[\hbar\omega(\vec{k})k_bT\right]-1} \\
-        &= \sum_p \braket{U_p} \\
-    \braket{U_p} &= \int \frac{\hbar\omega}{\exp[\hbar\omega k_bT]} D(\omega)\mathrm{d}\omega \\
+    \braket{U_p} &= \int \frac{\hbar\omega}{\exp[\hbar\omega k_BT]} D(\omega)\mathrm{d}\omega \\
     D(\omega)\mathrm d\omega &=
         \frac{V}{(2\pi)^3}
         \int_{\omega(\vec{k})}^{\omega(\vec{k})+\mathrm d\omega(\vec{k})} \mathrm d^3 k
 \end{aligned}
 $$
-Hierbei ist $\frac{V}{(2\pi)^3}$ die Zustandsdichte im Fourierraum und das Integral das Volumen des Frequenzintervals im Fourierraum f.
 
 ### Debye-Näherung
 Die Debye-Näherung beschreibt das Verhalten bei niedrigen Temperaturen durch eine lineare Beschreibung der Dispersionsreleation $\omega(\vec{k})=vk$.
@@ -1277,7 +1280,7 @@ $$
 Insbesondere bei Kristallen mit vielen Basisatomen wird die Zustandsdichte $D(\omega)$ für akustische Zweige durch die Debye-Näherung beschrieben. Für optische Zweige wählt man die Einstein-Näherung.
 
 ### Debye'sches $T^3$-Gesetz
-Für niedrige Temperaturen, d.h. $T\ll \theta_D$ deutlich kleiner als die Debye-Temperatur, gilt $\frac{\hbar\omega_D}{k_bT}\gg 1$ und $\braket{n}\approx 0$. Damit kann die Wärmekapazität berechnet werden.
+Für niedrige Temperaturen, d.h. $T\ll \theta_D$ deutlich kleiner als die Debye-Temperatur $\theta_D$ gilt $\frac{\hbar\omega_D}{k_bT}\gg 1$ und $\braket{n}\approx 0$. Damit kann die Wärmekapazität berechnet werden.
 
 $$
     C_V = \frac{12\pi^2}{5} Nk_B \left(\frac{T}{\theta_D}\right)^3
@@ -1332,8 +1335,8 @@ $$
 ### Freies Elektronengas
 $$
 \begin{aligned}
-    E &= \frac{\hbar^2k^2}{2m} \\
-    k_h &= \frac{\hbar^2}{2m}\frac{2\pi}{L}\left[n^2_x + n^2_y + n^2_z \right]
+    E_n &= \frac{\hbar^2k_n^2}{2m} \\
+    k_n &= \frac{\hbar^2}{2m}\frac{2\pi}{L}\left[n^2_x + n^2_y + n^2_z \right]
 \end{aligned}
 $$
 
@@ -1360,7 +1363,6 @@ $$
     }
 $$
 
-
 ### Chemisches Potential
 Stehen zwei Systeme in Kontakt, sodass Wärme und Teilchen ausgetauscht werden können, so müssen ihre Temperaturen $T$ und chemische Potentiale $\mu$ gleich sein. $\mu$ ist die Freie Energie $F=E-TS$, die notwendig ist, um einem System ein Teilchen hinzuzufügen. Dies kann auch durch die freie Enthalpie $G$ pro Teilchen als $\mu=\frac{G}{N}$ dargestellt werden.
 
@@ -1375,8 +1377,13 @@ Am absoluten Nullpunkt $T=0$ sind exakt die Zustände besetzt, deren Energie ger
 
 Auf z.B. Silberatom-Gas hat dieser Effekt allerdings kaum einen Einfluss. Die Fermitemperatur $T_{F,g}$ für Silberatome liegt bei ca. $5\mathrm{mK}$, weswegen bei annährender Raumtemperatur $T\gg T_{F,g}$ keine Quanteneffekte.
 
+# 7. Das freie Elektronengas
+
+# 8. Energiebänder
+
+# 9. Halbleiter
+
 # Literatur
 1. [@Gross2012Festkörper]
 2. [@Hunklinger2011Festkörper]
 3. Software: [VESTA](http://jp-minerals.org/vesta/en)
-
