@@ -22,7 +22,6 @@ Typischerweise hat eine Leerstelle eine Energie $\varepsilon_0\approx 1\mathrm{e
 #### Temperaturabhängigkeit
 Der Kristall habe das Volumen $V=(n+N)v_0$ mit $n$ Leerstellen und $N$ Atomen. Die Entropie ist aus einer thermischen Koponente $S_\mathrm{therm}$ und einer Konfigurationskomponente $S_\mathrm{konf}$ zusammengesetzt. Hierbei ist $\sigma_\mathrm{therm}$ Vibrationsenergie, die durch die erhöhte Schwingungsrate bei Temperaturanstieg entsteht.
 
-
 $$
 \begin{aligned}
     S &= S_\mathrm{therm} + S_\mathrm{konf} \\

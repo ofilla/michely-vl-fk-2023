@@ -6,6 +6,7 @@ Der Ortsvektor $\vec{r}$ eines Atoms wird nun beschrieben durch eine Abweichung 
 $$
     \vec{r} = \vec{R} + \vec{u}(\vec{R})
 $$
+
 ## 5.1 Adiabatische und harmonische Approximation
 ### Adiabatische Approximation
 Ein elektronisches System folgt dem Kern instantan. Dies bedeutet, dass alle Elektronen sofort ihre Bewegung entsprechend verändern, wenn der Kern bewegt wird. Es gebe keine Anregungen von Elektronen.
@@ -217,7 +218,7 @@ Die Träger und Übermittler des Kristallimpulses sind die Phononen, Photonen k�
 Man kann Die Energien und die Wellenvektoren der einfallenden und ausfallenden Strahlung messen. Daraus kann man den Wellenvektor und die Energie der Phononen ermitteln.
 
 ### Energiesatz & Kristallimpulssatz
-Für die inelastische Streuung eines Teilchens am Kristall müssen für die Erzeugung bzw. Vernichtung eines Phonons folgende Relationen für die Energie [[20230724101502]] und den Kristallimpuls [[20230724102744]] gelten.
+Für die inelastische Streuung eines Teilchens am Kristall müssen für die Erzeugung bzw. Vernichtung eines Phonons folgende Relationen für die Energie und den Kristallimpuls gelten.
 
 $$
 \begin{aligned}
@@ -226,7 +227,7 @@ $$
 \end{aligned}
 $$
 
-Der Term mit der größeren Differenz $(+)$ beschreibt die Erzeugung eines Phonons. Analog wird bei der geringeren Differenz $(-)$ ein Phonon vernichtet. Wird kein Teilchen erzeugt oder vernichtet, ist der Kristallimpulssatz identisch mit der Beugungsbedingung nach Laue. [[20230519190039]]
+Der Term mit der größeren Differenz $(+)$ beschreibt die Erzeugung eines Phonons. Analog wird bei der geringeren Differenz $(-)$ ein Phonon vernichtet. Wird kein Teilchen erzeugt oder vernichtet, ist der Kristallimpulssatz identisch mit der Beugungsbedingung nach Laue.
 
 ### Sondenstrahlung
 Als Sonden eignen sich insbesondere Neutronen bei thermischer Energie. Röntgenstrahlung kann ebenfalls verwendet werden, ist aber nicht so gut.

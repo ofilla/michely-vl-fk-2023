@@ -17,11 +17,9 @@ Jedes Valenzelektron liefert eine mittlere Energie von $\braket{E}=\frac{1}{2}k_
 ### Dulong-Petit-Gesetz
 Das Dulong-Petit-Gesetz besagt, dass die molare Wärmekapazität eines aus einzelnen Atomen zusammengesetzten Festkörpers einen universalen und konstanten Wert habe, nämlich das Dreifache der universellen Gaskonstante $R=\frac{pV}{Nk_b}$.[^5] Diese Näherung gilt für hohe Temperaturen $T$, für niedrige $T$ gilt sie nicht.
 
-
 $$
     C_V = 3N_j k_b = 3R
 $$
-
 
 Der Klassischen Gleichverteilungssatz der Statistischen Physik besagt, dass jede quadratischen Komponente in der Gesamtenergie die mittlere Energie $\frac{1}{2}k_bT$ erzeugt. In drei Dimensionen hat man je drei Orts- und Impulskoordinaten, die die Gesamtenergie bezeichnen. Für die mittlere Energie gilt daher $\braket{U}=3k_BT$. Aus der Definition der isochoren Wärmekapazität folgt das Dulong-Petit-Gesetz.
 
@@ -74,6 +72,7 @@ $$
         \int_{\omega(\vec{k})}^{\omega(\vec{k})+\mathrm d\omega(\vec{k})} \mathrm d^3 k
 \end{aligned}
 $$
+
 Hierbei ist $\frac{V}{(2\pi)^3}$ die Zustandsdichte im Fourierraum und das Integral das Volumen des Frequenzintervals im Fourierraum f.
 
 ### Debye-Näherung
@@ -88,7 +87,7 @@ $$
 Insbesondere bei Kristallen mit vielen Basisatomen wird die Zustandsdichte $D(\omega)$ für akustische Zweige durch die Debye-Näherung beschrieben. Für optische Zweige wählt man die Einstein-Näherung.
 
 ### Debye'sches $T^3$-Gesetz
-Für niedrige Temperaturen, d.h. $T\ll \theta_D$ deutlich kleiner als die Debye-Temperatur, gilt $\frac{\hbar\omega_D}{k_bT}\gg 1$ und $\braket{n}\approx 0$. Damit kann die Wärmekapazität berechnet werden.
+Für niedrige Temperaturen, d.h. $T\ll \theta_D$ deutlich kleiner als die Debye-Temperatur $\theta_D$ gilt $\frac{\hbar\omega_D}{k_bT}\gg 1$ und $\braket{n}\approx 0$. Damit kann die Wärmekapazität berechnet werden.
 
 $$
     C_V = \frac{12\pi^2}{5} Nk_B \left(\frac{T}{\theta_D}\right)^3
@@ -143,8 +142,8 @@ $$
 ### Freies Elektronengas
 $$
 \begin{aligned}
-    E &= \frac{\hbar^2k^2}{2m} \\
-    k_h &= \frac{\hbar^2}{2m}\frac{2\pi}{L}\left[n^2_x + n^2_y + n^2_z \right]
+    E_n &= \frac{\hbar^2k_n^2}{2m} \\
+    k_n &= \frac{\hbar^2}{2m}\frac{2\pi}{L}\left[n^2_x + n^2_y + n^2_z \right]
 \end{aligned}
 $$
 
@@ -170,7 +169,6 @@ $$
         \exp\left[\frac{E-\mu}{k_BT}\right] + 1
     }
 $$
-
 
 ### Chemisches Potential
 Stehen zwei Systeme in Kontakt, sodass Wärme und Teilchen ausgetauscht werden können, so müssen ihre Temperaturen $T$ und chemische Potentiale $\mu$ gleich sein. $\mu$ ist die Freie Energie $F=E-TS$, die notwendig ist, um einem System ein Teilchen hinzuzufügen. Dies kann auch durch die freie Enthalpie $G$ pro Teilchen als $\mu=\frac{G}{N}$ dargestellt werden.

@@ -6,6 +6,7 @@ Nicht alle Gitter sind für die Beschreibung von Festkörpern sinnvoll. Deswegen
 Ein Bravaisgitter ist definiert als eine sich unendliche erstreckende Anordnung von Punkten, die von jedem dieser Punkte aus exakt gleich aussieht.
 
 Bravaisgitter besteht aus der Menge der Punkte mit Positionsvektoren $\vec{R}$, die durch ganzzahlige Linearkombinationen der _primitiven Translationen_ $\vec{a}_i$ gebildet werden. Es dürfen dabei nicht alle primitiven Translationen $\vec{a}_i$ in einer Ebene liegen. Dies ist eine äquivalent zur erstgenannten Definition.
+
 $$
     \left\{\left.
         \vec{R} = \sum_{i=1}^3 n_i\vec{a}_i  \in \mathbb R^3 \right|
@@ -66,6 +67,7 @@ Bei einem sc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W�
 * $P_\mathrm{sc} \approx 0.54$
 * Koordinationszahl $6$
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Würfelecken
+
 $$
     \vec{a}_1 = a \cdot \begin{pmatrix} 1\\0\\0 \end{pmatrix}
     \land
@@ -82,6 +84,7 @@ Bei einem bcc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * $P_\mathrm{bcc} \approx 0.68$
 * Koordinationszahl $8$
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Körperzentrierte Punkte
+
 $$
     \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
     \land
@@ -164,9 +167,11 @@ Die Basis wird durch die unterschiedlich geladenen Ionen gebildet. Ein Ion ist a
 Ein hochenergetischer Elektronenstrahl, der ähnlich wie Licht unterschiedlich fokussiert werden kann, schiesst auf eine dünne Probe ($<10\mathrm{nm}$). Dadurch wird ein Bild auf einem Schirm ein Bild erzeugt. Je nach Einstellung kann man ein Beugungsbild oder ein Realraumbild / Ortsraumbild erzeugen. Dies nennt man Transmissionselektronenmikroskop (TEM).
 
 Bei einer Energie von ca $100\mathrm{keV}$ erhält man eine Wellenlänge von $\lambda_e \approx 4\cdot10^{-12}\mathrm{m}$
+
 $$
     \lambda_e = \frac{h}{p} = \frac{4}{\sqrt{2m_eE}}
 $$
+
 Der Streuwinkel $\alpha$ ist wegen sphärischer Aberration geladener Teilchen sehr klein. Die Auflösung $\approx\frac{\lambda_e}{\sin{(\alpha)}}$ ist dafür sehr gering.
 
 Durch abberrationskorrigierte Transmissionselektronenmikroskopen kann man inzwischen Wellenlängen von unter $0.8\AA$ erzeugen. Damit kann man einzelne Atome messen und z.B. "falsche" Atomsorten im Gitter detektieren.
