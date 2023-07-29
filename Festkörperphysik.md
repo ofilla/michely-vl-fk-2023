@@ -1345,6 +1345,13 @@ $$
     \alpha_L = \frac{1}{L} \frac{\mathrm dL}{\mathrm dT}
 $$
 
+### Umklappprozesse und Normalprozesse
+Bei Stoßprozessen von Phononen ist der Kristallimpuls generell erhalten. Da dieser allerdings nur bis auf einen reziproken Gittervektor definiert ist, muss der finale Impuls $p_f$ nach einem Stoß anders interpretiert werden, wenn er die erste Brillouinzone (BZ) verlässt.
+
+Wenn $p_f$ die Grenze der 1. BZ verlässt, wird er "umgeklappt" und der herausragende Teil von $p_f$ wirkt in die andere Richtung. Deswegen nennt man diese Prozesse _Umklappprozesse_. Die Prozesse, bei denen das nicht passiert, nennt man zur Unterscheidung _Normalprozesse_.
+
+Daher wirken Umklappprozesse als Widerstand gegen den Fluss von Phononen. Da Phononen Energie transportieren, wirken diese Prozesse als Widerstand gegen einen Wärmefluss. Auf diese Weise kann die Wärmeleitfähigkeit beschrieben werden.
+
 ### Wärmeleitfähigkeit
 Die Wärmeleitfähigkeit ist proportional zum Temperaturgradienten $\nabla T$, der Faktor $\kappa$ hängt von der Gruppengeschwindigkeit der Phononen $v$ und der Länge $l$ ab sowie von der spezifischen Wärmekapazität $\frac{C_V}{V}$ ab.
 
@@ -1355,7 +1362,24 @@ $$
 \end{aligned}
 $$
 
-### Freies Elektronengas
+# 7. Das freie Elektronengas
+## Freies Elektronengas
+Beim Freien Elektronengas geht man von einem starren Gitter aus, bei dem Phononen nicht mit Elektronen wechselwirken. Zudem wird die Einelektronnäherung verwendet.
+
+Eine Beschreibung der freien Elektronen in einem Festkörper ist notwendig, um die elektrische Leitfähigkeit, Supraleitung, Magnetismus und elektromagnetische Bauelemente zu beschreiben.
+
+Die Besetzungswahrscheinlichkeit der Zustände mit Energie $E_n$ durch die Fermi-Dirac-Verteilung beschrieben. Die Zustandsdichte wird durch die Elektronenspins verdoppelt, die Dispersionsrelation ist durch die Energie $E_n(k_n)$ beschrieben.
+
+### Einelektronnäherung
+Die Einelektronnäherung wird genutzt, um das freie Elektronengas zu beschreiben. Dabei geht man davon aus, dass ein einzelnes Elektron durch ein zeitabhängiges Potential beschrieben werden kann, das von Atomrümpfen und anderen Elektronen aufgestellt wird.
+
+Oft kann man dieses Potential durch einen Potentialkasten darstellen.
+
+### Dispersionsrelation des freien Elektronengases
+Die Dispersionsrelation des freien Elektronengases beschreibt die Abhängigkeit der Energie von dem Wellenvektor.
+
+Die Besetzungswahrscheinlichkeit der Zustände mit Energie $E_n$ durch die Fermi-Dirac-Verteilung beschrieben. Die klassische Zustandsdichte wird durch die Elektronenspins verdoppelt.
+
 $$
 \begin{aligned}
     E_n &= \frac{\hbar^2k_n^2}{2m} \\
@@ -1363,7 +1387,7 @@ $$
 \end{aligned}
 $$
 
-#### Zustandsdichte
+### Zustandsdichte
 Die Zustandsdichte $Z$ ist doppelt so hoch wie im klassischen Fall, dies kommt von dem Elektronenspin.
 
 $$
@@ -1377,6 +1401,7 @@ Besonders interessant sind die Elektronen mit der Fermienergie $E_F$, da diese a
 
 Die quantenmechanische Energie ist $\braket{E_\mathrm{QM}} = \frac{3}{5} k_BT \gg \braket{E_\mathrm{klass}}=\frac{3}{2}k_BT$ ist für Temperaturen $T\ll T_F$, die kleiner als die Fermitemperatur $T_F$ sind. Da $T_F$ extrem hoch sind, sind herrschen in Festkörpern immer deutlich geringere Funktionen vor.
 
+## Fermigas
 ### Fermi-Dirac-Verteilung
 Die Bose-Einstein-Verteilung beschreibt die Verteilung der Teilchenzahl von Fermionen. Die Zahl der Fermionen ist durch die Energie bestimmt, daher sind die Energie $E$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$, $\mu$ ist das chemische Potential.
 
@@ -1392,15 +1417,13 @@ Stehen zwei Systeme in Kontakt, sodass Wärme und Teilchen ausgetauscht werden k
 Bei $T=0$ ist $\mu=E_F$, der Fermienergie $E_F$. Mithilfe der Somerfeld-Näherung kann man $\mu$ für Temperaturen oberhalb der Fermienergie berechnen. Bei typischen Temperaturen (auf der Erde) nimmt die Temperatur nur minimal ab, es gilt auch dann $\mu\approx E_F$.
 
 $$
-    \mu(T) = E_F\left[1 - \dots \right]
+    \mu(T) = E_F\left[1 - \frac{\pi^2}{12}\left(\frac{T}{T_F}\right)^2 \right]
 $$
 
 ### Aufweichung der Fermikante
 Am absoluten Nullpunkt $T=0$ sind exakt die Zustände besetzt, deren Energie geringer als die Fermienergie sind. Bei steigender Temperatur (mit $T\ll T_F$) weicht diese scharfe Kante auf. Diese Aufweichung ist proportional zu $k_BT$, d.h. $\braket{n(E_F+k_BT)} =\frac{1}{e+1} \approx 0.25$, die Besetzungswahrscheinlichkeit ist demnach sehr gering. $\braket{n(E_F-k_BT)}=\frac{1}{e^{-1}+1}\approx 0.75$.
 
 Auf z.B. Silberatom-Gas hat dieser Effekt allerdings kaum einen Einfluss. Die Fermitemperatur $T_{F,\mathrm{Ag}}$ für Silberatome liegt bei ca. $5\mathrm{mK}$, weswegen bei annährender Raumtemperatur $T\gg T_{F,\mathrm{Ag}}$ keine Quanteneffekte auftreten.
-
-# 7. Das freie Elektronengas
 
 # 8. Energiebänder
 

@@ -126,6 +126,13 @@ $$
     \alpha_L = \frac{1}{L} \frac{\mathrm dL}{\mathrm dT}
 $$
 
+### Umklappprozesse und Normalprozesse
+Bei Stoßprozessen von Phononen ist der Kristallimpuls generell erhalten. Da dieser allerdings nur bis auf einen reziproken Gittervektor definiert ist, muss der finale Impuls $p_f$ nach einem Stoß anders interpretiert werden, wenn er die erste Brillouinzone (BZ) verlässt.
+
+Wenn $p_f$ die Grenze der 1. BZ verlässt, wird er "umgeklappt" und der herausragende Teil von $p_f$ wirkt in die andere Richtung. Deswegen nennt man diese Prozesse _Umklappprozesse_. Die Prozesse, bei denen das nicht passiert, nennt man zur Unterscheidung _Normalprozesse_.
+
+Daher wirken Umklappprozesse als Widerstand gegen den Fluss von Phononen. Da Phononen Energie transportieren, wirken diese Prozesse als Widerstand gegen einen Wärmefluss. Auf diese Weise kann die Wärmeleitfähigkeit beschrieben werden.
+
 ### Wärmeleitfähigkeit
 Die Wärmeleitfähigkeit ist proportional zum Temperaturgradienten $\nabla T$, der Faktor $\kappa$ hängt von der Gruppengeschwindigkeit der Phononen $v$ und der Länge $l$ ab sowie von der spezifischen Wärmekapazität $\frac{C_V}{V}$ ab.
 
@@ -135,49 +142,4 @@ $$
     \kappa &= \frac{1}{3} vl\frac{C_V}{V}
 \end{aligned}
 $$
-
-### Freies Elektronengas
-$$
-\begin{aligned}
-    E_n &= \frac{\hbar^2k_n^2}{2m} \\
-    k_n &= \frac{\hbar^2}{2m}\frac{2\pi}{L}\left[n^2_x + n^2_y + n^2_z \right]
-\end{aligned}
-$$
-
-#### Zustandsdichte
-Die Zustandsdichte $Z$ ist doppelt so hoch wie im klassischen Fall, dies kommt von dem Elektronenspin.
-
-$$
-\begin{aligned}
-    Z(k) &= 2\frac{V}{(2\pi)^2} \\
-    D(E) &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
-\end{aligned}
-$$
-
-Besonders interessant sind die Elektronen mit der Fermienergie $E_F$, da diese angeregt werden können. Die anderen können ihren Zustand praktisch nicht ändern, da alle Zustände innerhalb der Fermikugel besetzt sind.
-
-Die quantenmechanische Energie ist $\braket{E_\mathrm{QM}} = \frac{3}{5} k_BT \gg \braket{E_\mathrm{klass}}=\frac{3}{2}k_BT$ ist für Temperaturen $T\ll T_F$, die kleiner als die Fermitemperatur $T_F$ sind. Da $T_F$ extrem hoch sind, sind herrschen in Festkörpern immer deutlich geringere Funktionen vor.
-
-### Fermi-Dirac-Verteilung
-Die Bose-Einstein-Verteilung beschreibt die Verteilung der Teilchenzahl von Fermionen. Die Zahl der Fermionen ist durch die Energie bestimmt, daher sind die Energie $E$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$, $\mu$ ist das chemische Potential.
-
-$$
-    f(E) = \frac{1}{
-        \exp\left[\frac{E-\mu}{k_BT}\right] + 1
-    }
-$$
-
-### Chemisches Potential
-Stehen zwei Systeme in Kontakt, sodass Wärme und Teilchen ausgetauscht werden können, so müssen ihre Temperaturen $T$ und chemische Potentiale $\mu$ gleich sein. $\mu$ ist die Freie Energie $F=E-TS$, die notwendig ist, um einem System ein Teilchen hinzuzufügen. Dies kann auch durch die freie Enthalpie $G$ pro Teilchen als $\mu=\frac{G}{N}$ dargestellt werden.
-
-Bei $T=0$ ist $\mu=E_F$, der Fermienergie $E_F$. Mithilfe der Somerfeld-Näherung kann man $\mu$ für Temperaturen oberhalb der Fermienergie berechnen. Bei typischen Temperaturen (auf der Erde) nimmt die Temperatur nur minimal ab, es gilt auch dann $\mu\approx E_F$.
-
-$$
-    \mu(T) = E_F\left[1 - \dots \right]
-$$
-
-### Aufweichung der Fermikante
-Am absoluten Nullpunkt $T=0$ sind exakt die Zustände besetzt, deren Energie geringer als die Fermienergie sind. Bei steigender Temperatur (mit $T\ll T_F$) weicht diese scharfe Kante auf. Diese Aufweichung ist proportional zu $k_BT$, d.h. $\braket{n(E_F+k_BT)} =\frac{1}{e+1} \approx 0.25$, die Besetzungswahrscheinlichkeit ist demnach sehr gering. $\braket{n(E_F-k_BT)}=\frac{1}{e^{-1}+1}\approx 0.75$.
-
-Auf z.B. Silberatom-Gas hat dieser Effekt allerdings kaum einen Einfluss. Die Fermitemperatur $T_{F,\mathrm{Ag}}$ für Silberatome liegt bei ca. $5\mathrm{mK}$, weswegen bei annährender Raumtemperatur $T\gg T_{F,\mathrm{Ag}}$ keine Quanteneffekte auftreten.
 
