@@ -117,10 +117,10 @@ Insbesondere bei Kristallen mit vielen Basisatomen wird die Zustandsdichte $D(\o
 
 ## 6.2 Anharmonische Näherung
 ### Anharmonische Näherung
-In der harmonischen Näherung kann man einige Beobachtungen beschreiben, jedoch nicht alle. So kann man weder Längenausdehnung noch Wechselwirkungen zwischen Gitterwellen beschreiben. Desweiteren gilt in dieser Näherung $C_p=C_V$ und elastische Konstanten sind unabhängig von Druck $p$ und Temperatur $T$. Dies entspricht nicht der Realität, deswegen muss man Anharmonizitäten berücksichtigen.
+In der harmonischen Approximation kann man einige Beobachtungen in Festkörpern beschreiben, jedoch nicht alle. So kann man weder Längenausdehnung noch Wechselwirkungen zwischen Gitterwellen beschreiben. Desweiteren gilt in dieser Näherung $C_p=C_V$ und elastische Konstanten sind unabhängig von Druck $p$ und Temperatur $T$. Dies entspricht nicht der Realität, deswegen muss man Anharmonizitäten berücksichtigen.
 
 ### Längenausdehnung
-Die Längenausdehnung $\alpha_L$ ist die relative Änderung der Länge $L$ unter Änderung der Temperatur $L$.
+Die Längenausdehnung $\alpha_L$ ist die relative Änderung der Länge $L$ unter Änderung der Temperatur $T$. Um sie zu erklären, benötigt man die anharmonische Näherung.
 
 $$
     \alpha_L = \frac{1}{L} \frac{\mathrm dL}{\mathrm dT}
@@ -144,8 +144,8 @@ $$
 \end{aligned}
 $$
 
-### Zustandsdichte
-$Z$ ist doppelt so hoch wie im klassischen Fall, dies kommt von dem Elektronenspin.
+#### Zustandsdichte
+Die Zustandsdichte $Z$ ist doppelt so hoch wie im klassischen Fall, dies kommt von dem Elektronenspin.
 
 $$
 \begin{aligned}
@@ -159,7 +159,7 @@ Besonders interessant sind die Elektronen mit der Fermienergie $E_F$, da diese a
 Die quantenmechanische Energie ist $\braket{E_\mathrm{QM}} = \frac{3}{5} k_BT \gg \braket{E_\mathrm{klass}}=\frac{3}{2}k_BT$ ist für Temperaturen $T\ll T_F$, die kleiner als die Fermitemperatur $T_F$ sind. Da $T_F$ extrem hoch sind, sind herrschen in Festkörpern immer deutlich geringere Funktionen vor.
 
 ### Fermi-Dirac-Verteilung
-Die Wahrscheinlichkeit dafür, dass ein Zustand mit der Energie $E$ besetzt ist, wird durch $f(E)$ gegeben. Hierbei ist $\mu$ das chemische Potential.
+Die Bose-Einstein-Verteilung beschreibt die Verteilung der Teilchenzahl von Fermionen. Die Zahl der Fermionen ist durch die Energie bestimmt, daher sind die Energie $E$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$, $\mu$ ist das chemische Potential.
 
 $$
     f(E) = \frac{1}{
@@ -177,7 +177,7 @@ $$
 $$
 
 ### Aufweichung der Fermikante
-Am absoluten Nullpunkt $T=0$ sind exakt die Zustände besetzt, deren Energie geringer als die Fermienergie sind. Bei steigender Temperatur (mit $T\ll T_F$) weicht diese scharfe Kante auf. Diese Aufweichung ist proportional zu $k_BT$, d.h. $f(E_F+k_BT) =\frac{1}{e+1} \approx 0.25$, die Besetzungswahrscheinlichkeit ist demnach sehr gering. $f(E_F-k_BT)=\frac{1}{e^{-1}+1}\approx 0.75$.
+Am absoluten Nullpunkt $T=0$ sind exakt die Zustände besetzt, deren Energie geringer als die Fermienergie sind. Bei steigender Temperatur (mit $T\ll T_F$) weicht diese scharfe Kante auf. Diese Aufweichung ist proportional zu $k_BT$, d.h. $\braket{n(E_F+k_BT)} =\frac{1}{e+1} \approx 0.25$, die Besetzungswahrscheinlichkeit ist demnach sehr gering. $\braket{n(E_F-k_BT)}=\frac{1}{e^{-1}+1}\approx 0.75$.
 
-Auf z.B. Silberatom-Gas hat dieser Effekt allerdings kaum einen Einfluss. Die Fermitemperatur $T_{F,g}$ für Silberatome liegt bei ca. $5\mathrm{mK}$, weswegen bei annährender Raumtemperatur $T\gg T_{F,g}$ keine Quanteneffekte.
+Auf z.B. Silberatom-Gas hat dieser Effekt allerdings kaum einen Einfluss. Die Fermitemperatur $T_{F,\mathrm{Ag}}$ für Silberatome liegt bei ca. $5\mathrm{mK}$, weswegen bei annährender Raumtemperatur $T\gg T_{F,\mathrm{Ag}}$ keine Quanteneffekte auftreten.
 

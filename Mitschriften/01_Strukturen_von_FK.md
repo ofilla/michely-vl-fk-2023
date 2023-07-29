@@ -84,17 +84,22 @@ Bei einem bcc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * $P_\mathrm{bcc} \approx 0.68$
 * Koordinationszahl $8$
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Körperzentrierte Punkte
+* konventionelle Einheitszelle ist kubisch (_sc_), mit zweiatomiger Basis
+* Vektoren $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/2 (1,1,1)^T$
+* Der Strukturfaktor $S_{\vec{G}}$ verschwindet für viele Netzebenen
 
 $$
     \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
     \land
     \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\-1\\1 \end{pmatrix}
     \land
-    \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} -1\\1\\1 \end{pmatrix}
+    \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} -1\\1\\1 \end{pmatrix} \\
+    S_{\vec{G}} =
+        \begin{cases}
+            2 & \Leftrightarrow nh+nk+nl \text{ gerade}\\
+            0 & \Leftrightarrow nh+nk+nl \text{ ungerade}
+        \end{cases}
 $$
-
-* konventionelle Einheitszelle ist kubisch (_sc_), mit zweiatomiger Basis
-* Vektoren $\vec{d}_1=a/2 (0,0,0)^T$  und $\vec{d}_2=a/2 (1,1,1)^T$
 
 #### face centered cubic (_fcc_)
 Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten Würfels, zudem liegt je ein Gitterpunkt im Zentrum der Würfeloberflächen.
@@ -107,13 +112,20 @@ Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * Koordinationszahl $12$: $6$ Würfelecken und $6$ Flächenzentrierte Punkte
 * primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Flächenzentrierte Punkte
 * Verschiedene Ebenen, z.B. die $(111)$-Ebene, haben eine hexagonale Struktur.
+* Der Strukturfaktor $S_{\vec{G}}$ verschwindet für einige Netzebenen
 
 $$
     \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\0 \end{pmatrix}
     \land
     \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\0\\1 \end{pmatrix}
     \land
-    \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}
+    \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}\\
+    S_{\vec{G}} =
+        \begin{cases}
+            4 & \Leftrightarrow h,k,l \text{ gerade}\\
+            4 & \Leftrightarrow h,k,l \text{ ungerade}\\
+            0 & \Leftrightarrow \text{sonst}
+        \end{cases}
 $$
 
 #### hexagonal closed packed
@@ -138,6 +150,17 @@ Die Diamantstruktur eine fcc-Struktur mit einer zweiatomigen Basis. Neben Kohlen
 Ein Atom ist an der Position $\vec{d}_1=a/2 (0,0,0)^T$, ein zweites Atom an der Position $\vec{d}_2=a/4 (1,1,1)^T$. Die Positionen der Basiselemente entsprechen denen in der Zinkblende-Struktur, die allerdings verschiedene Ionen als Basiselemente besitzt.
 
 Die Struktur wird dann eingenommen, wenn vier $\mathrm{sp}^3$-Orbitale eine Kovalente Bindung bestimmen, diese sind in alle Richtungen sehr stabil.
+
+Der Strukturfaktor $S_{\vec{G}}$ verschwindet für einige Netzebenen. Hierbei bezeichnet $n$ die Ordnung des Beugungsreflexes.
+
+$$
+    S_{\vec{G}} =
+        \begin{cases}
+            4 & \Leftrightarrow h,k,l \text{ gerade } \land (h+k+l)=4n\\
+            4 & \Leftrightarrow h,k,l \text{ ungerade}\\
+            0 & \Leftrightarrow \text{sonst}
+        \end{cases}
+$$
 
 #### Graphit und Graphen
 Graphit bildet durch eine kovalente Bindung stabile Schichten, indem drei $\mathrm{sp}^2$-Orbitale die Bindung eingehen. Dabei ist noch ein Orbital frei, das für eine Van-der-Waals-Bindung verwendet werden kann. Deshalb zählt Graphit als Van-der-Waals-Material.
