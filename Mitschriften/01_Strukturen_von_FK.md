@@ -8,8 +8,10 @@ Ein Bravaisgitter ist definiert als eine sich unendliche erstreckende Anordnung 
 Bravaisgitter besteht aus der Menge der Punkte mit Positionsvektoren $\vec{R}$, die durch ganzzahlige Linearkombinationen der _primitiven Translationen_ $\vec{a}_i$ gebildet werden. Es dürfen dabei nicht alle primitiven Translationen $\vec{a}_i$ in einer Ebene liegen. Dies ist eine äquivalent zur erstgenannten Definition.
 
 $$
-    \left\{\left.
-        \vec{R} = \sum_{i=1}^3 n_i\vec{a}_i  \in \mathbb R^3 \right|
+    \left\{
+        \left.
+        	\vec{R} = \sum_{i=1}^3 n_i\vec{a}_i  \in \mathbb R^3
+        \right|
         n_i \in \mathbb Z \land \vec{a}_1\cdot(\vec{a}_2\times\vec{a}_3) \neq 0
     \right\}
 $$
