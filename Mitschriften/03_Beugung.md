@@ -105,11 +105,14 @@ Der Gangunterschied zwischen verschiedenen reflektierten Strahlen ist durch $d\c
 
 Damit es Streureflexe gibt, müssen alle Punktstrahler konstruktiv interferieren. Dies ist gegeben, falls das Skalarprodukt des Ortsvektors $\vec{R}$ (des Gitterpunktes) und der Differenz der Wellenvektoren ein Vielfaches von $2\pi$ ist, also wenn $\vec{R}\cdot(\vec{k}-\vec{k}^\prime)=2\pi m$. $\vec{k}$ ist hierbei der Wellenvektor des einfallenden Strahls und $\vec{k}^\prime$ der des am hinteren Atoms reflektierte Strahl.
 
-Dies ist äquivalent zu $\exp[i(\vec{k}-\vec{k}^\prime)\vec{R}]=1$, die Differenz der Wellenvektoren muss also ein reziprokes Gitter $\vec{G}=\pm(\vec{k}-\vec{k}^\prime)$ beschreiben. Dies bedeutet, dass die Projektion des einfallenden Wellenvektors $\vec{k}$ auf den Gittervektor $\vec{G}$ der halbe Gittervektor $\frac{\vec{G}}{2}$ sein muss.
+Dies ist äquivalent zu $\exp[i(\vec{k}-\vec{k}^\prime)\vec{R}]=1$, die Differenz der Wellenvektoren muss also ein reziprokes Gitter $\vec{G}=\pm(\vec{k}-\vec{k}^\prime)$ beschreiben. Dies bedeutet, dass die Projektion des einfallenden Wellenvektors $\vec{k}$ auf den Gittervektor $\vec{G}$ der halbe Gittervektor $\frac{\vec{G}}{2}$ sein muss. Im zweidimensionalen Fall liegen $\vec{G}_\parallel$ und $\vec{R}_\parallel$ in einer Ebene, daher sind nur die parallelen Komponenten interessant.
 
 $$
- \vec{G}=(\vec{k}-\vec{k}^\prime) \\
- \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} = \frac{|\vec{G}|}{2}
+\begin{aligned}
+     && \vec{G} &= \pm(\vec{k}-\vec{k}^\prime) \\
+     2\mathrm D: && \vec{G}_\parallel &= \pm(\vec{k}_\parallel-\vec{k}_\parallel^\prime) \\
+     && \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} &= \frac{|\vec{G}|}{2}
+\end{aligned}
 $$
 
 Daher werden alle Wellenvektoren, die auf den Bragg-Ebenen enden, reflektiert. Dies ist äquivalent zu der Aussage, dass alle Wellenvektoren, die auf der Grenze der Brillouinzone enden, reflektiert werden.
