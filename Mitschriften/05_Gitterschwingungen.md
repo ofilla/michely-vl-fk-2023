@@ -340,14 +340,7 @@ $$
 ### Phononen
 Phononen sind Quasiteilchen, die den Energiequanten der Normalschwingungen in einem Festkörper zugeteilt werden. Sie können erzeugt und vernichtet werden. Die Phononenbesetzungszahlen $n_{\vec{k}, p}$ steigen mit der Temperatur $T$. Phononen haben eine Energie $\hbar \omega_p(\vec{k})$ und einen Kristallimpuls $\hbar\vec{k}$, dies ist formal analog zum Impuls eines freien Teilchens.
 
-Interessant sind Stoßprozesse der Phononen. Auch können sie mit Elektronen stoßen, was den spezifischen Widerstand des Kristalls erhöht.
-
-Auf einer Seite der Universität zu Köln gibt es ein [Applet](https://ph2.uni-koeln.de/lehre/applets-solid-state-physics/phonons), das die _Phononendispersion_ interaktiv darstellt.
-
-#### Stoßprozesse
-Phononen sind Quasiteilchen, die den Energiequanten der Normalschwingungen in einem Festkörper zugeteilt werden. Sie können erzeugt und vernichtet werden. Die Phononenbesetzungszahlen $n_{\vec{k}, p}$ steigen mit der Temperatur $T$. Phononen haben eine Energie $\hbar \omega_p(\vec{k})$ und einen Kristallimpuls $\hbar\vec{k}$, dies ist formal analog zum Impuls eines freien Teilchens.
-
-Interessant sind Stoßprozesse der Phononen. Auch können sie mit Elektronen stoßen, was den spezifischen Widerstand des Kristalls erhöht.
+Interessant sind Stoßprozesse der Phononen. Auch können sie mit Elektronen stoßen, was den spezifischen Widerstand des Kristalls erhöht. Das chemische Potential ist $\mu=0$.
 
 Auf einer Seite der Universität zu Köln gibt es ein [Applet](https://ph2.uni-koeln.de/lehre/applets-solid-state-physics/phonons), das die _Phononendispersion_ interaktiv darstellt.
 

@@ -48,11 +48,12 @@ Die Besetzungszahl ist durch die Fermi-Dirac-Verteilung beschrieben. $n_e=\frac{
 
 $$
 \begin{aligned}
- E_F &= \frac{\hbar^2k_F^2}{2m} \\
+ E_F &= \frac{p_F^2}{2m} \\
+ p_F &= \hbar k_F \\
  k_F &= \sqrt[3]{3\pi^2 n_e} \\
  k_BT_F &= E_F \\
  \lambda_F &= \frac{2\pi}{k_F} \\
- p_F &= m v_F = \hbar k_F
+ p_F &= m v_F
 \end{aligned}
 $$
 
@@ -90,7 +91,11 @@ $$
 Bei $T=0$ sind alle Zustände mit einer Energie bis zu der Fermi-Energie besetzt. Dann ist die Besetzungswahrscheinlichkeit für alle Zustände mit einer Energie bis zur Fermi-Energie $1$ und für alle größeren Energien $0$. Diese Kante nennt man Fermikante. Bei Temperaturen $T>0$ schmilzt diese Kante ab.
 
 ### Chemisches Potential
-Stehen zwei Systeme in Kontakt, sodass Wärme und Teilchen ausgetauscht werden können, so müssen ihre Temperaturen $T$ und chemische Potentiale $\mu$ gleich sein. $\mu$ ist die Freie Energie $F=E-TS$, die notwendig ist, um einem System ein Teilchen hinzuzufügen. Dies kann auch durch die freie Enthalpie $G$ pro Teilchen als $\mu=\frac{G}{N}$ dargestellt werden.
+Stehen zwei Systeme in Kontakt, sodass Wärme und Teilchen ausgetauscht werden können, so müssen ihre Temperaturen $T$ und chemische Potentiale $\mu$ gleich sein. $\mu$ ist die Freie Energie $F=E-TS$, die notwendig ist, um einem System ein Teilchen hinzuzufügen. Dies kann auch durch die freie Enthalpie $G$ pro Teilchen dargestellt werden.
+
+$$
+ \mu=\frac{G}{N}
+$$
 
 Bei $T=0$ ist $\mu$ gleich der Fermienergie $E_F$. Mithilfe der Somerfeld-Näherung kann man $\mu$ für Temperaturen oberhalb der Fermienergie berechnen. Bei typischen Temperaturen (auf der Erde) nimmt die Temperatur nur minimal ab, es gilt auch dann $\mu\approx E_F$.
 
