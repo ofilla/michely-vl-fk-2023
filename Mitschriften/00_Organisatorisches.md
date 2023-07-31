@@ -11,13 +11,9 @@ keywords:
 # Disclaimer
 Dies ist eine _inoffizielle_ Mitschrift aus der Vorlesung zur Festkörperphysik von Prof. Dr. Thomas Michely. Ich habe Prof. Michely's Erlaubnis, dies zu publizieren. Dies bedeutet jedoch nicht, dass irgendjemand Korrekturgelesen hätte. Fehler, Ungenauigkeiten etc. sind demnach zu erwarten und mir zuzuschreiben.
 
-# Organisatorisches
-
-* Klausur: 1.8.23 8:00 Uhr
-* Nachklausur 12.9.23 8:00 Uhr
-
-Die Bestehensquote für der Teilnehmer, die max. 2x in der Übung gefehlt haben, wird auf 75% festgelegt.
-
 # Softwareempfehlung
 Zum Visualisieren von Kristallstrukturen und Kristalleigenschaften wird das Programm [VESTA](http://jp-minerals.org/vesta/en) empfohlen. Zudem gibt es auf einer Seite der Universität zu Köln ein [Applet](https://ph2.uni-koeln.de/lehre/applets-solid-state-physics/phonons), das die Phononendispersion interaktiv darstellt.
+
+# Festkörperphysik
+Die Festkörperphysik beschäftigt sich mit festen Körpern, vor allem mit Kristallen. Aber auch Gele und Flüssigkristalle gehören zu ihren Aufgaben. Kennzeichnend ist, dass die Bausteine der Körper periodisch angeordnet sind. Man spricht hierbei von einer Kristallstruktur.
 
