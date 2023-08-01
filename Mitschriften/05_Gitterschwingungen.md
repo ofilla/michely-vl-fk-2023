@@ -35,7 +35,7 @@ Eine Dispersionsrelation beschreibt den Zusammenhang zwischen dem _Ablauf_ eines
 
 Beispielsweise in Festkörpern sind Frequenz und Wellenvektoren beschränkt. Dies kann man beispielsweise bei der klassischen eindimensionalen Kette sehen, bei der die Wellenvektoren auf die der ersten Brillouinzone beschränkt sind. Dadurch kann man viele Rechnungen auf diese Zone beschränken.
 
-## akustische und optische Zweige
+#### akustische und optische Zweige
 Betrachtet man Kristalle mit mehratomiger Basis, so ergeben sich unterschiedliche Zweige in der Dispersionsrelation, die unterschiedliche Moden verursachen. So wie man zwischen akustischen und optischen Moden unterscheidet, unterscheidet man auch zwischen akustischen und optischen Zweigen der Dispersionsrelation.
 
 #### Schallgeschwindigkeit

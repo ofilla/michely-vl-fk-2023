@@ -30,8 +30,8 @@ Die Zustandsdichte $Z$ des freien Elektronengases ist doppelt so hoch wie im kla
 
 $$
 \begin{aligned}
- Z(k) &= 2\frac{V}{(2\pi)^2} \\
- D(E) &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
+    Z(k) &= 2\frac{V}{(2\pi)^3} \\
+    D(E) \mathrm dE &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
 \end{aligned}
 $$
 

@@ -572,12 +572,12 @@ Der Gangunterschied zwischen verschiedenen reflektierten Strahlen ist durch $d\c
 
 Damit es Streureflexe gibt, müssen alle Punktstrahler konstruktiv interferieren. Dies ist gegeben, falls das Skalarprodukt des Ortsvektors $\vec{R}$ (des Gitterpunktes) und der Differenz der Wellenvektoren ein Vielfaches von $2\pi$ ist, also wenn $\vec{R}\cdot(\vec{k}-\vec{k}^\prime)=2\pi m$. $\vec{k}$ ist hierbei der Wellenvektor des einfallenden Strahls und $\vec{k}^\prime$ der des am hinteren Atoms reflektierte Strahl.
 
-Dies ist äquivalent zu $\exp[i(\vec{k}-\vec{k}^\prime)\vec{R}]=1$, die Differenz der Wellenvektoren muss also ein reziprokes Gitter $\vec{G}=\pm(\vec{k}-\vec{k}^\prime)$ beschreiben. Dies bedeutet, dass die Projektion des einfallenden Wellenvektors $\vec{k}$ auf den Gittervektor $\vec{G}$ der halbe Gittervektor $\frac{\vec{G}}{2}$ sein muss. Im zweidimensionalen Fall liegen $\vec{G}_\parallel$ und $\vec{R}_\parallel$ in einer Ebene, daher sind nur die parallelen Komponenten interessant.
+Dies ist äquivalent zu $\exp[i(\vec{k}-\vec{k}^\prime)\vec{R}]=1$, die Differenz der Wellenvektoren muss also ein reziprokes Gitter $\vec{G}=\vec{k}-\vec{k}^\prime$ beschreiben. Dies bedeutet, dass die Projektion des einfallenden Wellenvektors $\vec{k}$ auf den Gittervektor $\vec{G}$ der halbe Gittervektor $\frac{\vec{G}}{2}$ sein muss. Im zweidimensionalen Fall liegen $\vec{G}_\parallel$ und $\vec{R}_\parallel$ in einer Ebene, daher sind nur die parallelen Komponenten interessant.
 
 $$
 \begin{aligned}
-     && \vec{G} &= \pm(\vec{k}-\vec{k}^\prime) \\
-     2\mathrm D: && \vec{G}_\parallel &= \pm(\vec{k}_\parallel-\vec{k}_\parallel^\prime) \\
+     && \vec{G} &= \vec{k}-\vec{k}^\prime \\
+     2\mathrm D: && \vec{G}_\parallel &= \vec{k}_\parallel-\vec{k}_\parallel^\prime \\
      && \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} &= \frac{|\vec{G}|}{2}
 \end{aligned}
 $$
@@ -641,14 +641,18 @@ Bei der Beschreibung der Beugungsbedingungen wurden punktförmige Streuer an Git
 
 Der Strukturfaktor ist die Fouriertransformierte der Elektronendichte einer Elementarzelle.
 
-Die Streuamplitude in Richtung $\vec{k}^\prime$ wird bestimmt durch Superposition der Teilwellen von Streuvolumina $\mathrm dV$ mit Elektronendichten $\rho(\vec{r})$, Phasen $\varphi(\vec{r})$ und Phasenfaktoren $\mathrm e^{i\varphi(\vec{r})}$. $\vec{G}$ ist ein reziproker Gittervektor. Dafür ist es hilfreich, den Atomformfaktor zu nutzen.
+Die Streuamplitude in Richtung $\vec{k}^\prime$ wird bestimmt durch Superposition der Teilwellen von Streuvolumina $\mathrm dV$ mit Elektronendichten $\rho(\vec{r})$, Phasen $\varphi(\vec{r})$ und Phasenfaktoren $\mathrm e^{i\varphi(\vec{r})}$. $\vec{G}$ ist ein reziproker Gittervektor. Dafür ist es hilfreich, die Atomformfaktoren $f_j(\vec{G})$ zu nutzen.
 
 $$
- S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\varphi(\vec{r})} \mathrm dV\\
- (\vec{k}-\vec{k}^\prime)\cdot\vec{R} = -\vec{G}\cdot\vec{R} = 2\pi n = \varphi(\vec{r}) \land n\in\mathbb Z
+\begin{aligned}
+    S_{\vec{G}} &=
+        \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\varphi(\vec{r})} \mathrm dV\\
+    S_{\vec{G}} &= \sum_j f_j(\vec{G}) \cdot \exp[-i\vec{G}\vec{r}_j] \\
+\end{aligned}
 $$
 
-Die Phase der gestreuten Teilwelle ist $-\vec{G}\cdot\vec{r} = \varphi(\vec{r})$. Daraus folgt die Streuamplitude.
+An Gitterpunkten $\vec{R}$ gilt $\varphi(\vec{r})=-\vec{G}\cdot\vec{R}=2\pi n$ für ganze Zahlen $n\in\mathbb Z$. Die Phase der gestreuten Teilwelle ist $-\vec{G}\cdot\vec{r} = \varphi(\vec{r})$. Daraus folgt die Streuamplitude.
+
 
 $$
  S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\vec{G}\vec{r}} \mathrm dV
@@ -951,7 +955,7 @@ Eine Dispersionsrelation beschreibt den Zusammenhang zwischen dem _Ablauf_ eines
 
 Beispielsweise in Festkörpern sind Frequenz und Wellenvektoren beschränkt. Dies kann man beispielsweise bei der klassischen eindimensionalen Kette sehen, bei der die Wellenvektoren auf die der ersten Brillouinzone beschränkt sind. Dadurch kann man viele Rechnungen auf diese Zone beschränken.
 
-## akustische und optische Zweige
+#### akustische und optische Zweige
 Betrachtet man Kristalle mit mehratomiger Basis, so ergeben sich unterschiedliche Zweige in der Dispersionsrelation, die unterschiedliche Moden verursachen. So wie man zwischen akustischen und optischen Moden unterscheidet, unterscheidet man auch zwischen akustischen und optischen Zweigen der Dispersionsrelation.
 
 #### Schallgeschwindigkeit
@@ -1538,8 +1542,8 @@ Die Zustandsdichte $Z$ des freien Elektronengases ist doppelt so hoch wie im kla
 
 $$
 \begin{aligned}
- Z(k) &= 2\frac{V}{(2\pi)^2} \\
- D(E) &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
+    Z(k) &= 2\frac{V}{(2\pi)^3} \\
+    D(E) \mathrm dE &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
 \end{aligned}
 $$
 
