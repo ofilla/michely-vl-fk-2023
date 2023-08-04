@@ -17,9 +17,9 @@ Insbesondere die Ionenbindung und die kovalente Bindung treten nur selten in Rei
 Die Kohäsivenergie $E_\mathrm{coh}$ ist die Arbeit pro Atom, um einen Kristall in Atome zu zerlegen. Sie ist für die Bindungen in Kristallen verantwortich.
 
 $$
- E_\mathrm{coh} =
- \frac{E_\mathrm{frei}}{n_\mathrm{Atome}}
- - \frac{E_\mathrm{Kristall}}{n_\mathrm{Atome}}
+  E_\mathrm{coh} =
+  \frac{E_\mathrm{frei}}{n_\mathrm{Atome}}
+  - \frac{E_\mathrm{Kristall}}{n_\mathrm{Atome}}
 $$
 
 Beispielsweise haben Neon $E_\mathrm{coh}=0.02\mathrm{eV}$, Silizium $E_\mathrm{coh}=4.63\mathrm{eV}$ und Wolfram $E_\mathrm{coh}=8.95\mathrm{eV}$. Außer bei Edelgasen ist diese Energie in der Größenordnung von Elektronenvolt und können im Periodensystem um den Faktor $400$ variieren, die Schmelztemperaturen in Kelvin variieren dagegen um den Faktor $150$.
@@ -50,8 +50,8 @@ Die Gesamtenergie eines Van-der-Waals-Kristalls kann als Funktion des nächsten 
 
 $$
 \begin{aligned}
- V_\mathrm{total}(a) &= 4\varepsilon\frac{N}{2} V_i \\
- V_\mathrm{total}(a) &= 2N\varepsilon(A_{12} - A_{6})
+  V_\mathrm{total}(a) &= 4\varepsilon\frac{N}{2} V_i \\
+  V_\mathrm{total}(a) &= 2N\varepsilon(A_{12} - A_{6})
 \end{aligned}
 $$
 
@@ -60,7 +60,7 @@ Dies geht in dieser Form nur für einatomige Kristalle, da in den Variablen $\va
 Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Dies ist erfüllt, folgende Relation gilt.
 
 $$
- \Rightarrow \left(\frac{a}{\sigma}\right)^6 = \frac{12A_{12}}{6A_6} \ .
+  \Rightarrow \left(\frac{a}{\sigma}\right)^6 = \frac{12A_{12}}{6A_6} \ .
 $$
 
 ### Van-der-Waals-Materialien
@@ -76,7 +76,7 @@ Die Nullpunktsenergie ist $E_0=\frac{1}{2}\hbar\omega$. Interpretiert man dies a
 
 Wegen der Anharmonizität des Lennard-Jones-Potentials ist der Erwartungswert der Position für höhere $E_0$ größer als die Gleichgewichtsgitterkonstante. Daher ist potentielle Energie schwächer als berechnet.
 
-^[^2]: Für Xenon stimmt der Wert ungefähr, für Neon liegt er bei $1.14$.
+[^2]: Für Xenon stimmt der Wert ungefähr, für Neon liegt er bei $1.14$.
 
 ### Lithium-Ionen-Akku
 Ein Lithium-Ionen-Akku besteht zur Hälfte aus einem Ionenkristall, der Lithium beinhaltet, und zur anderen Hälfte aus Graphit-Schichten. Diese sind durch einen Seperator getrennt.
@@ -99,12 +99,12 @@ Das Coulomb-Potential wird über alle Ionen summiert. Das Potential ist jedoch f
 
 $$
 \begin{aligned}
- V_\mathrm{total} &= 2\frac{N}{2} \sum_j \frac{\pm e^2}{4\pi\varepsilon_0a\alpha_{ij}} \\
- &= -N\frac{e^2}{4\pi\varepsilon_0a}
- \left(
- -\sum\pm\frac{1}{\alpha_{ij}}
- \right) \\
- V_\mathrm{total} &= -N\frac{e^2}{4\pi\varepsilon_0a}\alpha
+  V_\mathrm{total} &= 2\frac{N}{2} \sum_j \frac{\pm e^2}{4\pi\varepsilon_0a\alpha_{ij}} \\
+  &= -N\frac{e^2}{4\pi\varepsilon_0a}
+  \left(
+  -\sum\pm\frac{1}{\alpha_{ij}}
+  \right) \\
+  V_\mathrm{total} &= -N\frac{e^2}{4\pi\varepsilon_0a}\alpha
 \end{aligned}
 $$
 
@@ -114,19 +114,19 @@ Die Bindungsenergie kann mit dem Born-Haber-Kreisprozess gemessen werden.
 Die Bindungsenergie und die Paulirepulsion sorgen zusammen für einen Gleichgewichtszustand. Die Paulirepulsion wird nun durch das Born-Meyer-Potential dargestellt. Da dieses sehr kurzreichweitig ist, werden nur die nächsten Nachbarn betrachtet, die durch die Koordinationszahl $K$ dargestellt ist. Hierbei ist $N$ nach wie vor die Anzahl der Ionenpaare.
 
 $$
- V_\mathrm{total} = -N
- \left[
- \frac{e^2}{4\pi\varepsilon_0a}\alpha - K\cdot\lambda\exp\left[-\frac{a}{\rho}\right]
- \right]
+  V_\mathrm{total} = -N
+  \left[
+  \frac{e^2}{4\pi\varepsilon_0a}\alpha - K\cdot\lambda\exp\left[-\frac{a}{\rho}\right]
+  \right]
 $$
 
 Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Die abgeleitete Gleichung kann man so umstellen, dass man auf der einen Seite wieder das Potential erhält.
 
 $$
- V_\mathrm{total} = -\frac{Ne^2\alpha}{4\pi\varepsilon_0a}
- \left(
- 1-\frac{\rho}{a}
- \right)
+  V_\mathrm{total} = -\frac{Ne^2\alpha}{4\pi\varepsilon_0a}
+  \left(
+  1-\frac{\rho}{a}
+  \right)
 $$
 
 ### Gültigkeitesintervalle für Kristallstrukturen
@@ -142,11 +142,11 @@ Sei $r_+$ der Radius des Chloratoms und $r_-$ der Radius des Natriumions. Dann d
 
 $$
 \begin{aligned}
- 1. &\Rightarrow& r_+ &< \sqrt{2}\frac{a}{2} \\
- 2. &\Rightarrow& r_+ + r_- &= \frac{a}{2} \\
- &\Rightarrow& r_+ &< \sqrt{2} (r_+ + r_-) \\
- &\Leftrightarrow& r_+ (1-\sqrt{2}) &< \sqrt{2} r_- \\
- &\Leftrightarrow& \frac{r_+}{r_-} &< \frac{\sqrt{2}}{1-\sqrt{2}} = \frac{1}{\sqrt{2}-1}
+  1. &\Rightarrow& r_+ &< \sqrt{2}\frac{a}{2} \\
+  2. &\Rightarrow& r_+ + r_- &= \frac{a}{2} \\
+  &\Rightarrow& r_+ &< \sqrt{2} (r_+ + r_-) \\
+  &\Leftrightarrow& r_+ (1-\sqrt{2}) &< \sqrt{2} r_- \\
+  &\Leftrightarrow& \frac{r_+}{r_-} &< \frac{\sqrt{2}}{1-\sqrt{2}} = \frac{1}{\sqrt{2}-1}
 \end{aligned}
 $$
 
@@ -156,7 +156,7 @@ Wird $r_+$ zu groß, so ist die $\mathrm{NaCl}$-Struktur nicht mehr stabil. Typi
 Mit dem Born-Haber-Kreisprozess kann man die Bindungsenergie innerhalb eines Ionenkristalls gemessen werden.
 
 $$
- E_b = -\frac{V_\mathrm{total}}{N}
+  E_b = -\frac{V_\mathrm{total}}{N}
 $$
 
 ## Kovalente Bindung

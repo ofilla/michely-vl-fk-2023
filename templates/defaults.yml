@@ -20,7 +20,7 @@ pdf-engine: pdflatex
 dpi: 72
 toc: true
 toc-depth: 5
-number-sections: true
+number-sections: false
 number-offset:
     - 0
     - 0

@@ -18,8 +18,8 @@ Die Besetzungswahrscheinlichkeit der Zustände mit Energie $E_n$ durch die Fermi
 
 $$
 \begin{aligned}
- E_n &= \frac{\hbar^2k_n^2}{2m} \\
- k_n^2 &= \left(\frac{2\pi}{L}\right)^2 \left[n^2_x + n^2_y + n^2_z \right]
+  E_n &= \frac{\hbar^2k_n^2}{2m} \\
+  k_n^2 &= \left(\frac{2\pi}{L}\right)^2 \left[n^2_x + n^2_y + n^2_z \right]
 \end{aligned}
 $$
 
@@ -30,8 +30,8 @@ Die Zustandsdichte $Z$ des freien Elektronengases ist doppelt so hoch wie im kla
 
 $$
 \begin{aligned}
-    Z(k) &= 2\frac{V}{(2\pi)^3} \\
-    D(E) \mathrm dE &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
+  Z(k) &= 2\frac{V}{(2\pi)^3} \\
+  D(E) \mathrm dE &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
 \end{aligned}
 $$
 
@@ -44,16 +44,16 @@ Bei einem Fermigas geht man davon aus, dass die meisten niederenergetischen Zust
 
 Die Fermienergie bildet im Wellenraum eine Kugelschale, das eingeschlossene Volumen nennt man Fermikugel. Die inneren Zustände sind dabei praktisch eingefroren: Sie können sich nicht verändern, weil alle erreichbaren Zustände schon besetzt sind. Daher ist nur die Oberfläche der Fermikugel für Wechselwirkungen, Anregungen etc. interessant.
 
-Die Besetzungszahl ist durch die Fermi-Dirac-Verteilung beschrieben. $n_e=\frac{N}{V}$ ist hier die Elektronendichte. Die Fermitemperatur $T_F$ ist die Temperatur, die $E_F$ entspricht. Analog werden der Fermiwellenvektor $k_F$, die Fermi-Wellenlänge $\lambda_F$, der Fermi-Impuls $p_F$ und Fermi-Geschwindigkeit $v_F$ definiert.
+Die Besetzungszahl ist durch die Fermi-Dirac-Verteilung beschrieben. $\frac{N}{V}$ ist die Elektronendichte. Die Fermitemperatur $T_F$ ist die Temperatur, die $E_F$ entspricht. Analog werden der Fermiwellenvektor $k_F$, die Fermi-Wellenlänge $\lambda_F$, der Fermi-Impuls $p_F$ und Fermi-Geschwindigkeit $v_F$ definiert.
 
 $$
 \begin{aligned}
- E_F &= \frac{p_F^2}{2m} \\
- p_F &= \hbar k_F \\
- k_F &= \sqrt[3]{3\pi^2 n_e} \\
- k_BT_F &= E_F \\
- \lambda_F &= \frac{2\pi}{k_F} \\
- p_F &= m v_F
+  E_F &= \frac{p_F^2}{2m} \\
+  p_F &= \hbar k_F \\
+  k_F &= \sqrt[3]{3\pi^2 \frac{N}{V}} \\
+  k_BT_F &= E_F \\
+  \lambda_F &= \frac{2\pi}{k_F} \\
+  p_F &= m v_F
 \end{aligned}
 $$
 
@@ -64,16 +64,16 @@ Das Potential $V(\vec{r})$ sei außerhalb eines Kastens der Länge $L$ ein Wert 
 
 $$
 \begin{aligned}
- V(\vec{r}) &=
- \begin{cases}
- 0 &: x,y,z \in [0, L] \\
- V_0 &: x,y,z \notin [0, L] \\
- \end{cases} \\
- E \Psi(\vec{r}) &=
- \left[
- -\frac{\hbar^2}{2m} \nabla^2 + V(\vec{r})
- \right] \Psi(\vec{r}) \\
- \Psi(\vec{r}) &= \frac{1}{\sqrt{V}} \exp[i\vec{k}\vec{r}]
+  V(\vec{r}) &=
+  \begin{cases}
+  0 &: x,y,z \in [0, L] \\
+  V_0 &: x,y,z \notin [0, L] \\
+  \end{cases} \\
+  E \Psi(\vec{r}) &=
+  \left[
+  -\frac{\hbar^2}{2m} \nabla^2 + V(\vec{r})
+  \right] \Psi(\vec{r}) \\
+  \Psi(\vec{r}) &= \frac{1}{\sqrt{V}} \exp[i\vec{k}\vec{r}]
 \end{aligned}
 $$
 
@@ -83,9 +83,9 @@ Der Normierungsfaktor $\frac{1}{\sqrt{V}}$ kann aus der Forderung zur Normierung
 Die Fermi-Dirac-Verteilung beschreibt die Verteilung der Teilchenzahl von Fermionen. Die Zahl der Fermionen ist durch die Energie bestimmt, daher sind die Energie $E$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$, $\mu$ ist das chemische Potential. Ein Anwendungsfall ist das freie Elektronengas.
 
 $$
- \braket{n} = \frac{1}{
- \exp\left[\frac{E-\mu}{k_BT}\right] + 1
- }
+  \braket{n} = \frac{1}{
+  \exp\left[\frac{E-\mu}{k_BT}\right] + 1
+  }
 $$
 
 Bei $T=0$ sind alle Zustände mit einer Energie bis zu der Fermi-Energie besetzt. Dann ist die Besetzungswahrscheinlichkeit für alle Zustände mit einer Energie bis zur Fermi-Energie $1$ und für alle größeren Energien $0$. Diese Kante nennt man Fermikante. Bei Temperaturen $T>0$ schmilzt diese Kante ab.
@@ -94,13 +94,13 @@ Bei $T=0$ sind alle Zustände mit einer Energie bis zu der Fermi-Energie besetzt
 Stehen zwei Systeme in Kontakt, sodass Wärme und Teilchen ausgetauscht werden können, so müssen ihre Temperaturen $T$ und chemische Potentiale $\mu$ gleich sein. $\mu$ ist die Freie Energie $F=E-TS$, die notwendig ist, um einem System ein Teilchen hinzuzufügen. Dies kann auch durch die freie Enthalpie $G$ pro Teilchen dargestellt werden.
 
 $$
- \mu=\frac{G}{N}
+  \mu=\frac{G}{N}
 $$
 
 Bei $T=0$ ist $\mu$ gleich der Fermienergie $E_F$. Mithilfe der Somerfeld-Näherung kann man $\mu$ für Temperaturen oberhalb der Fermienergie berechnen. Bei typischen Temperaturen (auf der Erde) nimmt die Temperatur nur minimal ab, es gilt auch dann $\mu\approx E_F$.
 
 $$
- \mu(T) = E_F\left[1 - \frac{\pi^2}{12}\left(\frac{T}{T_F}\right)^2 \right]
+\mu(T) = E_F\left[1 - \frac{\pi^2}{12}\left(\frac{T}{T_F}\right)^2 \right]
 $$
 
 ### Abschmelzen der Fermikante
@@ -129,8 +129,8 @@ Wenn eine Spannung anliegt, erhöht sich die Driftgeschwindigkeit, bis sie durch
 
 $$
 \begin{aligned}
- \vec{v}_D &= - \frac{e\tau}{m} \vec{E} \\
- \vec{j} &= -ne\vec{v}_D \\
+  \vec{v}_D &= - \frac{e\tau}{m} \vec{E} \\
+  \vec{j} &= -ne\vec{v}_D \\
 \end{aligned}
 $$
 
@@ -139,29 +139,29 @@ Die Stromdichte kann im Elektronengas durch die Driftgeschwindigkeit $v_D$ der E
 
 $$
 \begin{aligned}
- \vec{j} &= -ne\vec{v}_D \\
- \vec{j} &= \sigma \vec{E}
+  \vec{j} &= -ne\vec{v}_D \\
+  \vec{j} &= \sigma \vec{E}
 \end{aligned}
 $$
 #### Spezifische Leitfähigkeit
 Die spezifische Leitfähigkeit ist ein Proportionalitätsfaktor zwischen einem elektrischen Feld $\vec{E}$ und der daraus resultierenden Stromdichte $\vec{j}$. Sie ist invers zum spezifischen Widerstand.
 
 $$
- \vec{j} = \sigma \vec{E}
+  \vec{j} = \sigma \vec{E}
 $$
 
 #### Spezifischer Widerstand
 Der spezifische Widerstand $\sigma$ ist der Proportionalitätsfaktor zwischen einem elektrischen Feld $\vec{E}$ und der daraus resultierenden Stromdichte $\vec{j}$. Er ist invers zur spezifischen Leitfähigkeit.
 
 $$
- \vec{E} = \rho \vec{j}
+  \vec{E} = \rho \vec{j}
 $$
 
 ### Relaxationszeitnäherung
 Die Relaxationszeitnäherung beschreibt die Stöße von Elektronen, die die Transporteigenschaften beeinflussen. Diese Stöße bremsen Elektronen ab, durch ein existierendes Potential $V$ werden sie allerdings wieder beschleunigt, wobei die Kraft $\vec{F}=-\nabla V$ wirkt. Hierbei ist $\tau$ die Relaxationszeit.
 
 $$
- \frac{\mathrm d\vec{p}}{\mathrm dt} = \vec{F}(t) - \frac{\vec{p}(t)}{\tau}
+  \frac{\mathrm d\vec{p}}{\mathrm dt} = \vec{F}(t) - \frac{\vec{p}(t)}{\tau}
 $$
 
 ### Wiedemann-Franz-Gesetz
@@ -169,7 +169,7 @@ Das Wiedemann-Franz-Gesetz nähert reale Metalle an, indem man berücksichtigt, 
 
 $$
 \begin{aligned}
- L &= \frac{\kappa}{\sigma T} \\
+  L &= \frac{\kappa}{\sigma T} \\
 \end{aligned}
 $$
 
@@ -177,7 +177,7 @@ $$
 Die Lorenzzahl $L$ kann unter Berücksichtigung der Fermistatistik hergeleitet werden. Sie ist relevant für das Wiedemann-Franz-Gesetz.
 
 $$
- L = \frac{\pi^2}{3} \left(\frac{k_B}{e}\right)^2 \approx 2.45 \cdot 10^{-8} \frac{\mathrm W\Omega}{\mathrm K^2}
+  L = \frac{\pi^2}{3} \left(\frac{k_B}{e}\right)^2 \approx 2.45 \cdot 10^{-8} \frac{\mathrm W\Omega}{\mathrm K^2}
 $$
 
 ### Halleffekt
@@ -185,8 +185,8 @@ Eine Stromdichte in $x$-Richtung $j_x$ wird durch ein elektrisches Feld $\vec{B}
 
 $$
 \begin{aligned}
- \rho_{xy}(\vec{B}) &= \frac{E_y}{j_x} = B_z \cdot A_H \\
- A_H &= -\frac{1}{ne}
+  \rho_{xy}(\vec{B}) &= \frac{E_y}{j_x} = B_z \cdot A_H \\
+  A_H &= -\frac{1}{ne}
 \end{aligned}
 $$
 

@@ -27,10 +27,10 @@ Ein Bravaisgitter ist definiert als eine sich unendliche erstreckende Anordnung 
 Bravaisgitter besteht aus der Menge der Punkte mit Positionsvektoren $\vec{R}$, die durch ganzzahlige Linearkombinationen der _Primitiven Translationen_ $\vec{a}_i$ gebildet werden. Es dürfen dabei nicht alle primitiven Translationen $\vec{a}_i$ in einer Ebene liegen. Dies ist eine äquivalent zur erstgenannten Definition.
 
 $$
- \left\{\left.
- \vec{R} = \sum_{i=1}^3 n_i\vec{a}_i \in \mathbb R^3 \right|
- n_i \in \mathbb Z \land \vec{a}_1\cdot(\vec{a}_2\times\vec{a}_3) \neq 0
- \right\}
+  \left\{\left.
+  \vec{R} = \sum_{i=1}^3 n_i\vec{a}_i \in \mathbb R^3 \right|
+  n_i \in \mathbb Z \land \vec{a}_1\cdot(\vec{a}_2\times\vec{a}_3) \neq 0
+  \right\}
 $$
 
 Bravaisgitter werden mittels der Kristallsysteme klassifiziert.
@@ -114,11 +114,11 @@ Bei einem sc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W�
 * bcc-Gitter können als sc mit zweiatomiger Basis dargestellt werden.
 
 $$
- \vec{a}_1 = a \cdot \begin{pmatrix} 1\\0\\0 \end{pmatrix}
- \land
- \vec{a}_2 = a \cdot \begin{pmatrix} 0\\1\\0 \end{pmatrix}
- \land
- \vec{a}_3 = a \cdot \begin{pmatrix} 0\\0\\1 \end{pmatrix}
+  \vec{a}_1 = a \cdot \begin{pmatrix} 1\\0\\0 \end{pmatrix}
+  \land
+  \vec{a}_2 = a \cdot \begin{pmatrix} 0\\1\\0 \end{pmatrix}
+  \land
+  \vec{a}_3 = a \cdot \begin{pmatrix} 0\\0\\1 \end{pmatrix}
 $$
 
 #### body centered cubic (_bcc_)
@@ -130,20 +130,20 @@ Bei einem bcc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * Primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Körperzentrierte Punkte
 * Das reziproke Gitter ist ein fcc-Gitter.
 * Die Konventionelle Einheitszelle ist einfach-kubisch (_sc_), mit zweiatomiger Basis
- * Die Vektoren $\vec{d}_1=a/2 (0,0,0)^T$ und $\vec{d}_2=a/2 (1,1,1)^T$ weisen von einem Gitterpunkt auf die beiden Elemente der Basis.
+  * Die Vektoren $\vec{d}_1=a/2 (0,0,0)^T$ und $\vec{d}_2=a/2 (1,1,1)^T$ weisen von einem Gitterpunkt auf die beiden Elemente der Basis.
 * Der Strukturfaktor $S_{\vec{G}}$ verschwindet für viele Netzebenen
 
 $$
- \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
- \land
- \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\-1\\1 \end{pmatrix}
- \land
- \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} -1\\1\\1 \end{pmatrix} \\
- S_{\vec{G}} =
- \begin{cases}
- 2 & \Leftrightarrow nh+nk+nl \text{ gerade}\\
- 0 & \Leftrightarrow nh+nk+nl \text{ ungerade}
- \end{cases}
+  \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
+  \land
+  \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\-1\\1 \end{pmatrix}
+  \land
+  \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} -1\\1\\1 \end{pmatrix} \\
+  S_{\vec{G}} =
+  \begin{cases}
+  2 & \Leftrightarrow nh+nk+nl \text{ gerade}\\
+  0 & \Leftrightarrow nh+nk+nl \text{ ungerade}
+  \end{cases}
 $$
 
 #### face centered cubic (_fcc_)
@@ -152,7 +152,7 @@ Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * 24 Metalle kristallisieren in dieser Gitterstruktur.
 * Packungsdichte $P_\mathrm{ffc} \approx 0.74$
 * Dies ist die dichtestmögliche Kugelpackung
- * Vermutung von Kepler, Beweis 2017
+  * Vermutung von Kepler, Beweis 2017
 * Es gibt 3 verschiedene "Schichten": Die Stapelfolge folgt dem Muster $A,B,C,A,B,C$
 * Koordinationszahl $12$: $6$ Würfelecken und $6$ Flächenzentrierte Punkte
 * Das reziproke Gitter ist ein bcc-Gitter.
@@ -161,17 +161,17 @@ Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * Der Strukturfaktor $S_{\vec{G}}$ verschwindet für einige Netzebenen
 
 $$
- \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\0 \end{pmatrix}
- \land
- \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\0\\1 \end{pmatrix}
- \land
- \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}\\
- S_{\vec{G}} =
- \begin{cases}
- 4 & \Leftrightarrow h,k,l \text{ gerade}\\
- 4 & \Leftrightarrow h,k,l \text{ ungerade}\\
- 0 & \Leftrightarrow \text{sonst}
- \end{cases}
+  \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\0 \end{pmatrix}
+  \land
+  \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\0\\1 \end{pmatrix}
+  \land
+  \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}\\
+  S_{\vec{G}} =
+  \begin{cases}
+  4 & \Leftrightarrow h,k,l \text{ gerade}\\
+  4 & \Leftrightarrow h,k,l \text{ ungerade}\\
+  0 & \Leftrightarrow \text{sonst}
+  \end{cases}
 $$
 
 #### hexagonal closed packed (hcp)
@@ -225,12 +225,12 @@ Die Struktur wird dann eingenommen, wenn vier $\mathrm{sp}^3$-Orbitale eine Kova
 Der Strukturfaktor $S_{\vec{G}}$ verschwindet für einige Netzebenen. Hierbei bezeichnet $n$ die Ordnung des Beugungsreflexes.
 
 $$
- S_{\vec{G}} =
- \begin{cases}
- 4 & \Leftrightarrow h,k,l \text{ gerade } \land (h+k+l)=4n\\
- 4 & \Leftrightarrow h,k,l \text{ ungerade}\\
- 0 & \Leftrightarrow \text{sonst}
- \end{cases}
+  S_{\vec{G}} =
+  \begin{cases}
+  4 & \Leftrightarrow h,k,l \text{ gerade } \land (h+k+l)=4n\\
+  4 & \Leftrightarrow h,k,l \text{ ungerade}\\
+  0 & \Leftrightarrow \text{sonst}
+  \end{cases}
 $$
 
 #### Graphit
@@ -243,7 +243,7 @@ Ein hochenergetischer Elektronenstrahl, der ähnlich wie Licht unterschiedlich f
 Bei einer Energie von ca $100\mathrm{keV}$ erhält man eine Wellenlänge von $\lambda_e \approx 4\cdot10^{-12}\mathrm{m}$
 
 $$
- \lambda_e = \frac{h}{p} = \frac{4}{\sqrt{2m_eE}}
+  \lambda_e = \frac{h}{p} = \frac{4}{\sqrt{2m_eE}}
 $$
 
 Der Streuwinkel $\alpha$ ist wegen sphärischer Aberration geladener Teilchen sehr klein. Die Auflösung $\approx\frac{\lambda_e}{\sin{(\alpha)}}$ ist dafür sehr gering.
@@ -322,7 +322,7 @@ Bedeutungen:
 
 fcc und bcc sind Spezialfälle des tetragonalen Gitters (bct).
 
-## nicht-sphärische Basis
+#### nicht-sphärische Basis
 Heftet man an diese Gruppen eine nicht-spärische Basis, verändert das die Symmetrie. Es gibt dann 32 kristallographische Punktgruppen und 230 kristallographische Raumgruppen. Hier treten auch Translationen auf, die keine Gittervektoren sind. Solche Symmetrieoperationen können z.B. eine Schraubenachse oder eine Gleitspiegelebene sein.
 
 # 2. Defekte in Kristallen
@@ -337,7 +337,7 @@ Es gibt 3 Kategorien an Defekten:
 
 ## Punktdefekte
 * Leerstellen
- * Bei Ionenkristallen bestimmen die Leerstellen die Leitfähigkeit
+  * Bei Ionenkristallen bestimmen die Leerstellen die Leitfähigkeit
 * Zwischengitteratome
 * Fremdatome
 
@@ -345,7 +345,7 @@ Punktdefekte erhöhen den spezifischen Widerstand in Metallen.
 
 ## Liniendefekte
 * Versetzungen
- * verursachen Kaltverfestigung
+  * verursachen Kaltverfestigung
 * Burgers-Vektor
 * Stapelfehler
 * Korngrenzen
@@ -371,12 +371,13 @@ Bei Temperaturerhöhung können neue Leerstellen eingebaut werden und der Krista
 
 Zur Erklärung dieses Phänomens ist es wichtig, dass das Gibbs-Potential minimiert wird, die Minimierung der inneren Energie erklärt das Phänomen nicht.
 
-## Hüpffrequenz
+#### Hüpffrequenz
 $$
- \nu = \nu_0 \exp[-\frac{\varepsilon_m}{k_BT}]
+  \nu = \nu_0 \exp[-\frac{\varepsilon_m}{k_BT}]
 $$
 
 Im B-Praktikum gibt es einen Versuch mit $\mathrm{Cu_3Au}$. Zur Erklärung ist es wichtig, dass das Gibbs-Potential minimiert wird. Minimierung der inneren Energie erklärt das Phänomen nicht.
+
 ### Leitfähigkeit
 Bei Ionenkristallen wird die Leitfähigkeit größtenteils durch die Anzahl der Leerstellen bestimmt. Dadurch gibt es eine _Atommobilität_ und der Ionenkristall kann Elektrizität leiten.
 
@@ -416,12 +417,12 @@ Dadurch ist eine Versetzunglinie entstanden: Eine Ebene des Kristallgitters ende
 ### Stufenversetzung
 Eine Schraubenversetzung ist ein Liniendefekt, dessen Burgersvektor senkrecht zur Versetzungslinie ist.
 
-## Verschiebungen
+#### Verschiebungen
 Verschiebungen sind damit quasi gequantelt im $\vec{b}$, da die Gitterstruktur erhalten bleiben muss. Die aufzuwendende Arbeit $W$ ist kann für die Stufenversetzung durch die Verformungsarbeit ermittelt werden.
 
 $$
- W = A\cdot\sigma\cdot\underbrace{\frac{2\pi rb}{A} b}_\text{mittlere Verformung}
- = 2\pi rb^2 \sigma\ .
+  W = A\cdot\sigma\cdot\underbrace{\frac{2\pi rb}{A} b}_\text{mittlere Verformung}
+  = 2\pi rb^2 \sigma\ .
 $$
 
 ### Schraubenversetzung
@@ -438,7 +439,7 @@ Der Burgersvektor[^1] $\vec{b}$ ist der Schließungswinkel beim Umlauf um eine V
 
 Bei einer Stufenversetzung ist $\vec{b}$ immer senkrecht zur Gleitebene, bei einer Schraubenversetzung parallel zur Gleitebene.
 
-^[^1]: Benannt nach dem Niederländischen Wissenschaftler Jan Burgers.
+[^1]: Benannt nach dem Niederländischen Wissenschaftler Jan Burgers.
 
 ### Frank-Read-Quelle (Versetzungsquelle)
 Eine Versetzung ist zwischen 2 Punkten im Gitter fixiert, beispielsweise zwischen zwei Fremdatomen.
@@ -481,19 +482,19 @@ Es gibt verschiedene praktikable Verfahren, um Messungen durchzuführen.
 Eine gitterperiodischen Funktion $f(\vec{r}) = f(\vec{r} + \vec{R})$ kann auch als als Fourierreihe $\mathcal F(f(\vec{r}))$ dargestellt werden. Die Menge aller $\vec{G}$ erfüllt $\mathrm e^{i\vec{G}\vec{R}}=1$ und definiert somit reziprokes Gitter.
 
 $$
- f(\vec{r}) = \mathcal F(f(\vec{r})) = \sum_{\vec{G}} f_{\vec{G}}\mathrm e^{i\vec{G}\vec{R}}=1 \\
- f_{\vec{G}} = \frac{1}{V} \int_V f(\vec{r}) \mathrm e^{-i\vec{G}\vec{R}}
+  f(\vec{r}) = \mathcal F(f(\vec{r})) = \sum_{\vec{G}} f_{\vec{G}}\mathrm e^{i\vec{G}\vec{R}}=1 \\
+  f_{\vec{G}} = \frac{1}{V} \int_V f(\vec{r}) \mathrm e^{-i\vec{G}\vec{R}}
 $$
 
 Dieses ist ein Bravaisgitter, da $\vec{G}$ durch ganzzahlige $k_i$ und Basisvektoren $\vec{b_i}$ dargestellt werden kann. Die Basisvektoren sind die Entsprechung zu Primitiven Translationen im direkten Gitter. $V$ ist hier das Volumen einer Einheitszelle. Die Vektoren $\vec{b}_i$ haben die Einheit $\mathrm m^{-1}$, da sie Wellenvektoren $k=\frac{2\pi}{\lambda}$ entsprechen, und können aus den primitiven Translationen $\vec{a}_i$ ermittelt werden.
 
 $$
 \begin{aligned}
- \vec{G} = &k_1 \vec{b}_1 + k_2 \vec{b}_2 + k_3 \vec{b}_3\\
- \vec{b}_1 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_2 \times \vec{a}_3)\\
- \vec{b}_2 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_3 \times \vec{a}_1)\\
- \vec{b}_3 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_1 \times \vec{a}_2)\\
- \forall i,j\in\{1,2,3\}: &\ \vec{a}_i \vec{b}_j = \delta_{ij}
+  \vec{G} = &k_1 \vec{b}_1 + k_2 \vec{b}_2 + k_3 \vec{b}_3\\
+  \vec{b}_1 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_2 \times \vec{a}_3)\\
+  \vec{b}_2 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_3 \times \vec{a}_1)\\
+  \vec{b}_3 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_1 \times \vec{a}_2)\\
+  \forall i,j\in\{1,2,3\}: &\ \vec{a}_i \vec{b}_j = \delta_{ij}
 \end{aligned}
 $$
 
@@ -505,7 +506,7 @@ Das Gitter im Realraum wird zur Unterscheidung vom reziproken Gitter direktes Gi
 * Zu jedem reziproken Gittervektor $\vec{G}$ gibt es eine Netzebenenschar, die senkrecht zu $\vec{G}$ steht und den Abstand $d$ haben. Der kürzeste zu $\vec{G}$ parallele Gittervektor ist $\vec{G}_\mathrm{min}$ mit $|\vec{G}_\mathrm{min}| = \frac{2\pi}{d}$.
 * Die ganzzahligen Komponenten von $\vec{G}_\mathrm{min}$ sind die Millerschen Indizes.
 
-## Literatur
+#### Literatur
 1. Vorlesung: Festkörperpysik
 2. [@Gross2012Festkörper]
 3. [@Hunklinger2011Festkörper]
@@ -521,17 +522,17 @@ Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwis
 
 Wird eine Welle an einem Punkt im reziproken Gitter gestreut, so wird sie dann reflektiert wenn sie auf dem Rand der 1. BZ enden.
 
-## Literatur
+#### Literatur
 1. Vorlesung: Festkörperpysik
 2. [@Gross2012Festkörper]
 3. [@Hunklinger2011Festkörper]
 ### Netzebenen
 Eine Netzebene ist eine Ebene durch 3 Gitterpunkte eines Bravaisgitters, die nicht auf einer Linie liegen. Eine Netzebene entält unendlich viele Gitterpunkte. Netzebenen werden durch die Millerschen Indizes beschrieben.
 
-## Netzebenenschar
+#### Netzebenenschar
 Eine Netzebenenschar ist eine Menge äquidistanter und paralleler Netzebenen, die alle Gitterpunkte enthalten.
 
-## Klassifizierung von Netzebenenscharen
+#### Klassifizierung von Netzebenenscharen
 Für jede Netzebenenschar mit Ebenenabstand $d$ gibt es reziproke Gittervektoren senkrecht auf diesen Ebenen. Der kürzeste dieser reziproke Gittervektoren $\vec{G}_\mathrm{min}$ hat die Länge $|\vec{G}_\mathrm{min}|=\frac{2\pi}{d}$.
 
 Umgekehrt gibt es zu jedem reziproken Gittervektor $\vec{G}$ eine Netzebenenschar, die senkrecht zu $\vec{G}$ steht und den Abstand $d$ haben. Der kürzeste zu $\vec{G}$ parallele Gittervektor ist $\vec{G}_\mathrm{min}$ mit $|\vec{G}_\mathrm{min}| = \frac{2\pi}{d}$.
@@ -552,15 +553,15 @@ Einen negativen Achsenabschnitt kennzeichnet man durch einen Strich über der Za
 
 Im kubischen Gitter stehen die Ebenen $(hkl)$ und die Richtungen $[hkl]$ senkrecht aufeinander, in anderen Kristallsystemen gilt dies nicht. Die Richtungen $[110]$, $[100]$ und $[111]$ werden zudem durch besondere Punkte wie dem $\Gamma$-Punkt bezeichnet.
 
-## Ebenen
+#### Ebenen
 Eine einzelne Ebene wird durch runde Klammern, z.B. $(100)$, dargestellt. Meint man alle äquivalenten Ebenen, nutzt man geschweifte Klammern, beispielsweise $\{100\}$.
 
 $n(111)$ oder $(nnn)$ beschreibt die $n$-te Beugungsebene in der $(111)$-Ebene.
 
-## Richtungen
+#### Richtungen
 Richtungen im Kristall werden durch die kleinsten ganzen Zahlen $[n_1,n_2,n_3]$ angegeben, die dasselbe Verhältnis wie die selben Komponenten des Richtungsvektors $\vec{R} = n_1 \vec{a_1} + n_2 \vec{a_2} + n_3 \vec{a_3}$ haben. Einen Satz äquivalenter Richtungen stellt man in spitzen Klammern, z.B. $\braket{100}$, dar.
 
-## Merkhilfe
+#### Merkhilfe
 * Ebenen haben keine Kanten, daher werden zur Notation runde oder geschweifte Klammern verwendet.
 * Richtungen sind Vektoren, deswegen werden zur Notation eckige oder spitze Klammern verwendet.
 
@@ -576,9 +577,9 @@ Dies ist äquivalent zu $\exp[i(\vec{k}-\vec{k}^\prime)\vec{R}]=1$, die Differen
 
 $$
 \begin{aligned}
-     && \vec{G} &= \vec{k}-\vec{k}^\prime \\
-     2\mathrm D: && \vec{G}_\parallel &= \vec{k}_\parallel-\vec{k}_\parallel^\prime \\
-     && \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} &= \frac{|\vec{G}|}{2}
+  && \vec{G} &= \vec{k}-\vec{k}^\prime \\
+  2\mathrm D: && \vec{G}_\parallel &= \vec{k}_\parallel-\vec{k}_\parallel^\prime \\
+  && \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} &= \frac{|\vec{G}|}{2}
 \end{aligned}
 $$
 
@@ -609,7 +610,7 @@ Die Braggsche Beugungsbedingung lautet $n\cdot \lambda = 2d\sin\theta$ mit dem E
 
 Dies ist nicht vollständig physikalisch erklärbar, da sich nicht notwendigerweise auf jeder Netzebene ein Atom "unterhalb" der Atome der 1. Ebene befindet. Man kann die Bragg-Bedingung allerdings aus Laues Erklärung herleiten.
 
-#### Herleitung der Bragg-Bedingung aus der Laue-Bedingung
+###### Herleitung der Bragg-Bedingung aus der Laue-Bedingung
 Der Streuvektor $\vec{G}$ sei ein ganzzahliges Vielfaches des kürzesten reziproken Gittervektors $\vec{G}_\mathrm{min}$, d.h. $\vec{G}=n\cdot\vec{G}_\mathrm{min}$. Dieser Gittervektor steht senkrecht auf der Netzebenenschar, an der reflektiert wird. Es soll konstruktive Interferenz geben, also gilt nach der Laue-Bedingung $n\vec{G}_\mathrm{min} = 2k\sin\theta$. Da $k=\frac{2\pi}{\lambda}$ und $|\vec{G}_\mathrm{min}|=\frac{2\pi}{d}$ folgt die Bragg-Bedingung $n\lambda=2d\sin\theta$.
 
 ## Streuintensität
@@ -618,20 +619,20 @@ Der zu betrachtende Ort ist der Ort der Elektronen, da Röntgenstrahlung an den 
 Die messbare Streuintensität eines Kristalls ist $I_{\vec{G}} \propto |S_{\vec{G}}|^2$. Sei $\vec{r}$ der Ort, der betrachtet wird, $\tilde{\vec{r}}$ der Vektor von einem Atomkern zu ebendiesem Punkt und $\vec{r}_1$ der Vektor zum Atomkern. Dann schreiben wir die Elektronendichte in einer Elementarzelle als
 
 $$
- \rho(\vec{r}) = \sum_j \rho_j(\vec{r}-\vec{r}_j) = \sum_j \rho_j(\tilde{\vec{r}}) .
+  \rho(\vec{r}) = \sum_j \rho_j(\vec{r}-\vec{r}_j) = \sum_j \rho_j(\tilde{\vec{r}}) .
 $$
 
 Damit wird der Strukturfaktor $S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \sum_j \rho_j(\tilde{\vec{r}}) \cdot \mathrm e^{i\vec{G}(\vec{r}+\tilde{\vec{r}_j})} \mathrm dV$. Da $\vec{r}_j$ konstant ist, können die Terme mit $\vec{r}_j$ aus dem Integral gezogen werden.
 
 $$
- S_{\vec{G}} = \sum_j \mathrm e^{i\vec{G}\vec{r}_j}
- \int_{V_\mathrm{Zelle}} \rho_j(\tilde{\vec{r}}) \cdot \mathrm e^{i\vec{G}\tilde{\vec{r}_j}} \mathrm dV
+  S_{\vec{G}} = \sum_j \mathrm e^{i\vec{G}\vec{r}_j}
+  \int_{V_\mathrm{Zelle}} \rho_j(\tilde{\vec{r}}) \cdot \mathrm e^{i\vec{G}\tilde{\vec{r}_j}} \mathrm dV
 $$
 
 Unter Verwendung der Atomformfaktoren $f_j$ kann man den Strukturfaktor einfacher darstellen.
 
 $$
- S_{\vec{G}} = \sum_j \mathrm e^{-i\vec{G}\vec{r}_j} \cdot f_j
+  S_{\vec{G}} = \sum_j \mathrm e^{-i\vec{G}\vec{r}_j} \cdot f_j
 $$
 
 Die Temperaturabhängigkeit der Streuintensität wird durch den Debye-Waller-Faktor $D(T)$ beschrieben. Je größer der reziproke Gittervektor $\vec{G}$ oder Temperatur $T$ sind, desto kleiner sind $D(T)$ und die Streuintensität $I(T)$. Dadurch sind Streuungen höherer Ordnung schwächer.
@@ -645,20 +646,19 @@ Die Streuamplitude in Richtung $\vec{k}^\prime$ wird bestimmt durch Superpositio
 
 $$
 \begin{aligned}
-    S_{\vec{G}} &=
-        \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\varphi(\vec{r})} \mathrm dV\\
-    S_{\vec{G}} &= \sum_j f_j(\vec{G}) \cdot \exp[-i\vec{G}\vec{r}_j] \\
+  S_{\vec{G}} &=
+  \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\varphi(\vec{r})} \mathrm dV\\
+  S_{\vec{G}} &= \sum_j f_j(\vec{G}) \cdot \exp[-i\vec{G}\vec{r}_j] \\
 \end{aligned}
 $$
 
 An Gitterpunkten $\vec{R}$ gilt $\varphi(\vec{r})=-\vec{G}\cdot\vec{R}=2\pi n$ für ganze Zahlen $n\in\mathbb Z$. Die Phase der gestreuten Teilwelle ist $-\vec{G}\cdot\vec{r} = \varphi(\vec{r})$. Daraus folgt die Streuamplitude.
 
-
 $$
- S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\vec{G}\vec{r}} \mathrm dV
+  S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\vec{G}\vec{r}} \mathrm dV
 $$
 
-#### Beispiel
+###### Beispiel
 Sei das bcc-Gitter als sc-Gitter mit zweiatomiger Basis beschrieben. Dann werden die Ebenen $\{hkl\}$ reflektieren, die einen Strukturfaktor ungleich $0$ haben. Für gerade $n$ ist dies für alle Ebenen $\{nh\ nk\ nl\}$ gegeben. Beispielsweise gibt es keinen $(100)$-Reflex, aber einen $(200)$-Reflex.
 
 Im fcc-Gitter gibt es deutlich mehr reflektierende Ebenen. In der Diamantstruktur gibt es zwar mehr als im bcc-Gitter, aber weniger als im fcc-Giter.
@@ -667,7 +667,7 @@ Im fcc-Gitter gibt es deutlich mehr reflektierende Ebenen. In der Diamantstruktu
 Der Atomformfaktor ist die Fouriertransformierte der Elektronendichte eines Atoms und gibt das Streuvermögen desselben als Funktion des Streuvektors $\vec{G}$ an. Dieser ist dabei ein reziproker Gittervektor.
 
 $$
- f = \int_{V_\mathrm{Atom}} \rho(\vec{r}) \cdot \mathrm e^{i\vec{G}\vec{r}} \mathrm dV
+  f = \int_{V_\mathrm{Atom}} \rho(\vec{r}) \cdot \mathrm e^{i\vec{G}\vec{r}} \mathrm dV
 $$
 
 Die gesamte Elektronendichte $\rho$ kann man sehr gut annähern, indem man die Elektronendichte des einzelnen Atoms annimmt. Die Veränderung durch Wechselwirkung bei Atombindungen ist vergleichsweise gering. Je größer der Streuvektor $\vec{G}$, desto kleiner der Atomformfaktor $f_{\vec{G}}$.
@@ -680,8 +680,8 @@ Die geringste Beugungsordnung hat die höchste Streuintensität.
 Der Debye-Waller-Faktor $D(T)$ beschreibt in der Festkörperphysik das Verhalten der Streuintensität $I(T)$ als Funktion der Temperatur. $M$ ist die Masse der schwingenden Atome bzw. Modeküle, $\omega$ die Schwingungsfrequenz.
 
 $$
- D(T) = \exp\left[-\frac{k_bT}{M\omega^2}\cdot |\vec{G}|^2\right] < 1 \\
- I(T) = D(T)\cdot I_0 \\
+  D(T) = \exp\left[-\frac{k_bT}{M\omega^2}\cdot |\vec{G}|^2\right] < 1 \\
+  I(T) = D(T)\cdot I_0 \\
 $$
 
 Je größer der reziproke Gittervektor $\vec{G}$ oder Temperatur $T$ sind, desto kleiner sind $D(T)$ und die Streuintensität $I(T)$.
@@ -717,12 +717,12 @@ Der große Vorteil dieser Methode ist, dass keine makroskopischen Kristalle ben�
 ### Strahlung für Beugungsexperimente
 Für passende Strahlung wirkt ein Kristall als Beugungsgitter. Röntgenstrahlung ist die häufigste verwendete Strahlung. Die Wellenlänge der Strahlung $\lambda$ muss die Größenordnung der Gitterkonstante $a$ haben.
 
-## Synchrotronstrahlung
+#### Synchrotronstrahlung
 Die Röntgenbeugung hat einen großen Aufschwung durch den Bau von Synchrotronstrahlungsquellen erfahren. Sie liefern eine Auflösung mit $10^{10}$-mal größerer Brillianz (Intensität pro Fläche) als Laborgeräte mit herkömmlicher Röntgenstrahlung.
 
 Die Abstrahlcharakteristik eines im Kreis rotierenden Elektrons hat in seinem Ruhesystem Dipolcharakteristik. Im Laborsystem tritt eine scharfe Fokussierung in Vorwärtsrichtung auf, da das Elektron relativistisch schnell ist.
 
-## Teilchenstrahlen
+#### Teilchenstrahlen
 Neben Photonen können auch Teilchen mit Ruhemasse an Kristallen gebeugt werden. Die De-Broglie-Wellenlänge ist für nichtrelativistische Teilchen $\lambda=\frac{h}{p}=\frac{h}{\sqrt{2mE}}$.
 
 Beispielsweise kann man mit Heliumatomen die Oberfläche von Kristallen messen.
@@ -752,9 +752,9 @@ Insbesondere die Ionenbindung und die kovalente Bindung treten nur selten in Rei
 Die Kohäsivenergie $E_\mathrm{coh}$ ist die Arbeit pro Atom, um einen Kristall in Atome zu zerlegen. Sie ist für die Bindungen in Kristallen verantwortich.
 
 $$
- E_\mathrm{coh} =
- \frac{E_\mathrm{frei}}{n_\mathrm{Atome}}
- - \frac{E_\mathrm{Kristall}}{n_\mathrm{Atome}}
+  E_\mathrm{coh} =
+  \frac{E_\mathrm{frei}}{n_\mathrm{Atome}}
+  - \frac{E_\mathrm{Kristall}}{n_\mathrm{Atome}}
 $$
 
 Beispielsweise haben Neon $E_\mathrm{coh}=0.02\mathrm{eV}$, Silizium $E_\mathrm{coh}=4.63\mathrm{eV}$ und Wolfram $E_\mathrm{coh}=8.95\mathrm{eV}$. Außer bei Edelgasen ist diese Energie in der Größenordnung von Elektronenvolt und können im Periodensystem um den Faktor $400$ variieren, die Schmelztemperaturen in Kelvin variieren dagegen um den Faktor $150$.
@@ -785,8 +785,8 @@ Die Gesamtenergie eines Van-der-Waals-Kristalls kann als Funktion des nächsten 
 
 $$
 \begin{aligned}
- V_\mathrm{total}(a) &= 4\varepsilon\frac{N}{2} V_i \\
- V_\mathrm{total}(a) &= 2N\varepsilon(A_{12} - A_{6})
+  V_\mathrm{total}(a) &= 4\varepsilon\frac{N}{2} V_i \\
+  V_\mathrm{total}(a) &= 2N\varepsilon(A_{12} - A_{6})
 \end{aligned}
 $$
 
@@ -795,7 +795,7 @@ Dies geht in dieser Form nur für einatomige Kristalle, da in den Variablen $\va
 Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Dies ist erfüllt, folgende Relation gilt.
 
 $$
- \Rightarrow \left(\frac{a}{\sigma}\right)^6 = \frac{12A_{12}}{6A_6} \ .
+  \Rightarrow \left(\frac{a}{\sigma}\right)^6 = \frac{12A_{12}}{6A_6} \ .
 $$
 
 ### Van-der-Waals-Materialien
@@ -811,7 +811,7 @@ Die Nullpunktsenergie ist $E_0=\frac{1}{2}\hbar\omega$. Interpretiert man dies a
 
 Wegen der Anharmonizität des Lennard-Jones-Potentials ist der Erwartungswert der Position für höhere $E_0$ größer als die Gleichgewichtsgitterkonstante. Daher ist potentielle Energie schwächer als berechnet.
 
-^[^2]: Für Xenon stimmt der Wert ungefähr, für Neon liegt er bei $1.14$.
+[^2]: Für Xenon stimmt der Wert ungefähr, für Neon liegt er bei $1.14$.
 
 ### Lithium-Ionen-Akku
 Ein Lithium-Ionen-Akku besteht zur Hälfte aus einem Ionenkristall, der Lithium beinhaltet, und zur anderen Hälfte aus Graphit-Schichten. Diese sind durch einen Seperator getrennt.
@@ -834,12 +834,12 @@ Das Coulomb-Potential wird über alle Ionen summiert. Das Potential ist jedoch f
 
 $$
 \begin{aligned}
- V_\mathrm{total} &= 2\frac{N}{2} \sum_j \frac{\pm e^2}{4\pi\varepsilon_0a\alpha_{ij}} \\
- &= -N\frac{e^2}{4\pi\varepsilon_0a}
- \left(
- -\sum\pm\frac{1}{\alpha_{ij}}
- \right) \\
- V_\mathrm{total} &= -N\frac{e^2}{4\pi\varepsilon_0a}\alpha
+  V_\mathrm{total} &= 2\frac{N}{2} \sum_j \frac{\pm e^2}{4\pi\varepsilon_0a\alpha_{ij}} \\
+  &= -N\frac{e^2}{4\pi\varepsilon_0a}
+  \left(
+  -\sum\pm\frac{1}{\alpha_{ij}}
+  \right) \\
+  V_\mathrm{total} &= -N\frac{e^2}{4\pi\varepsilon_0a}\alpha
 \end{aligned}
 $$
 
@@ -849,19 +849,19 @@ Die Bindungsenergie kann mit dem Born-Haber-Kreisprozess gemessen werden.
 Die Bindungsenergie und die Paulirepulsion sorgen zusammen für einen Gleichgewichtszustand. Die Paulirepulsion wird nun durch das Born-Meyer-Potential dargestellt. Da dieses sehr kurzreichweitig ist, werden nur die nächsten Nachbarn betrachtet, die durch die Koordinationszahl $K$ dargestellt ist. Hierbei ist $N$ nach wie vor die Anzahl der Ionenpaare.
 
 $$
- V_\mathrm{total} = -N
- \left[
- \frac{e^2}{4\pi\varepsilon_0a}\alpha - K\cdot\lambda\exp\left[-\frac{a}{\rho}\right]
- \right]
+  V_\mathrm{total} = -N
+  \left[
+  \frac{e^2}{4\pi\varepsilon_0a}\alpha - K\cdot\lambda\exp\left[-\frac{a}{\rho}\right]
+  \right]
 $$
 
 Diese Funktion wird nach $a$ minimiert, d.h. $\frac{\mathrm d}{\mathrm da}V_\mathrm{total}\overset{!}{=}0$. Die abgeleitete Gleichung kann man so umstellen, dass man auf der einen Seite wieder das Potential erhält.
 
 $$
- V_\mathrm{total} = -\frac{Ne^2\alpha}{4\pi\varepsilon_0a}
- \left(
- 1-\frac{\rho}{a}
- \right)
+  V_\mathrm{total} = -\frac{Ne^2\alpha}{4\pi\varepsilon_0a}
+  \left(
+  1-\frac{\rho}{a}
+  \right)
 $$
 
 ### Gültigkeitesintervalle für Kristallstrukturen
@@ -877,11 +877,11 @@ Sei $r_+$ der Radius des Chloratoms und $r_-$ der Radius des Natriumions. Dann d
 
 $$
 \begin{aligned}
- 1. &\Rightarrow& r_+ &< \sqrt{2}\frac{a}{2} \\
- 2. &\Rightarrow& r_+ + r_- &= \frac{a}{2} \\
- &\Rightarrow& r_+ &< \sqrt{2} (r_+ + r_-) \\
- &\Leftrightarrow& r_+ (1-\sqrt{2}) &< \sqrt{2} r_- \\
- &\Leftrightarrow& \frac{r_+}{r_-} &< \frac{\sqrt{2}}{1-\sqrt{2}} = \frac{1}{\sqrt{2}-1}
+  1. &\Rightarrow& r_+ &< \sqrt{2}\frac{a}{2} \\
+  2. &\Rightarrow& r_+ + r_- &= \frac{a}{2} \\
+  &\Rightarrow& r_+ &< \sqrt{2} (r_+ + r_-) \\
+  &\Leftrightarrow& r_+ (1-\sqrt{2}) &< \sqrt{2} r_- \\
+  &\Leftrightarrow& \frac{r_+}{r_-} &< \frac{\sqrt{2}}{1-\sqrt{2}} = \frac{1}{\sqrt{2}-1}
 \end{aligned}
 $$
 
@@ -891,7 +891,7 @@ Wird $r_+$ zu groß, so ist die $\mathrm{NaCl}$-Struktur nicht mehr stabil. Typi
 Mit dem Born-Haber-Kreisprozess kann man die Bindungsenergie innerhalb eines Ionenkristalls gemessen werden.
 
 $$
- E_b = -\frac{V_\mathrm{total}}{N}
+  E_b = -\frac{V_\mathrm{total}}{N}
 $$
 
 ## Kovalente Bindung
@@ -940,12 +940,12 @@ Dazu wird das Potential $V(x)$ durch eine Taylor-Entwicklung um die Gleichgewich
 
 $$
 \begin{aligned}
- V(x) &= V(0)
- + \left.\frac{\partial V}{\partial x}\right|_{x_0=0} \cdot (x-x_0)
- + \left.\frac{\partial^ V}{\partial x^2}\right|_{x_0=0} \cdot (x-x_0)^2
- + \mathcal O((x-x_0)^3) \\
- \Rightarrow V(x) &\approx ax^2 \\
- \Rightarrow F&=-cx
+  V(x) &= V(0)
+  + \left.\frac{\partial V}{\partial x}\right|_{x_0=0} \cdot (x-x_0)
+  + \left.\frac{\partial^ V}{\partial x^2}\right|_{x_0=0} \cdot (x-x_0)^2
+  + \mathcal O((x-x_0)^3) \\
+  \Rightarrow V(x) &\approx ax^2 \\
+  \Rightarrow F&=-cx
 \end{aligned}
 $$
 
@@ -961,10 +961,10 @@ Betrachtet man Kristalle mit mehratomiger Basis, so ergeben sich unterschiedlich
 #### Schallgeschwindigkeit
 Die Schallgeschwindigkeit $v_s$ ist betragsmäßig die Amplitude der Gruppengeschwindigkeit einer Welle.
 
-Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$. So lange die Dispersionsrelation nicht linear ist, ist sie nicht konstant, hat aber eine konstante Amplitude, die Schallgeschwindigkeit. Für kleine Frequenzen ist die Gruppengeschwindigkeit näherungsweise konstant gleich der Schallgeschwindigkeit.
+Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$.
 
 $$
- v_G(t) = \frac{\mathrm d\omega(k)}{\mathrm dk} \propto v_s
+  v_G(t) = \frac{\mathrm d\omega(k)}{\mathrm dk} \propto v_s
 $$
 
 Es bestimmte Wellenvektoren, für die die Gruppengeschwindigkeit unabhängig von $v_s$ verschwindet $(v_G=0)$, dann gibt es stehende Wellen. Dies ist insbesondere am Rand der ersten Brillouinzone der Fall und kann beispielsweise anhand der eindimensionalen Kette ermittelt werden. Dies gilt auch im dreidimensionalen Fall.
@@ -998,52 +998,11 @@ Sei $a$ der Abstand zwischen den Atomen, dann befinde sich die Ruhelage des $n$-
 
 $$
 \begin{aligned}
- M\ddot{u}(na) = F(na)
- &= -C{\large [} u(na) - u((n-1)a) + u(na) - u((n+1)a) {\large ]} \\
- &= -C{\large [} 2u(na) - u((n-1)a) - u((n+1)a) {\large ]}
+  M\ddot{u}(na) = F(na)
+  &= -C{\large [} u(na) - u((n-1)a) + u(na) - u((n+1)a) {\large ]} \\
+  &= -C{\large [} 2u(na) - u((n-1)a) - u((n+1)a) {\large ]}
 \end{aligned}
 $$
-
-## Dispersionsrelation
-Im Folgenden bestehe die Basis der eindimensionalen Kette aus einem einzelnen Atom, eine Kette mit zweiatomiger Basis ist eine weitere Verallgemeinerung. Zudem werden Normalkoordinaten $u$ verwendet.
-
-Der Ansatz zur Lösung der Differentialgleichung kann als laufende, auf Gitterpunkten definierte Welle $u(ua, t) = A\exp[i(kna - \omega t)]$ gewählt werden. Dadurch kann die Schwingungsfrequenz (durch Einsetzen in die Differentialgleichung) bestimmt werden. Daraus erhält man die folgende Dispersionsrelation $\omega(k)$, die mit der Relation $\frac{1-\cos(2\alpha)}{2} = \sin^2(\alpha)$ vereinfacht werden kann.
-
-$$
-\begin{aligned}
- \omega(k) &= \sqrt{\frac{2C}{M} [1-\cos(ka)]} \\
- \omega(k) &= 2\sqrt{\frac{C}{M}}
- \left|
- \sin\left(
- \frac{ka}{2}
- \right)
- \right|
-\end{aligned}
-$$
-
-Hierbei muss der Wellenvektor $k$ muss aus der ersten Brilloinzone stammen. Dadurch sind die Frequenzen der Wellen auf $\omega\in\left[0, 2\sqrt{\frac{C}{M}} \right]$ beschränkt.
-
-Der Wellenvektor kann beide Vorzeichen haben, da die Wellen in beide Richtungen laufen dürfen. An der Zonengrenze schwingen die Atome gegenphasig, was durch $u(na, t)_{\frac{a}{2}}=(-1)^n A\exp[-i\omega t]$ beschrieben wird.
-
-## Beschränkung von $k$ und $\omega$
-Weil $\omega(k)$ periodisch ist, ist auch die Auslenkung $u(x, t)$ an der Stelle $x_n=na$ periodisch. Phasendifferenzen von benachbarten Atomen sind nur physikalisch sinnvoll sind, wenn sie kleiner als $\pi$ sind, ansonsten weist man Schwingungen in einem Raum zu, an denen keine Atome sitzen. Daraus folgt eine Einschränkung der Wellenlänge.
-
-Da $\lambda=\frac{2\pi}{|k|}$ gilt folgt mit dem kürzestmöglichen reziproken Gittervektor $G_0$ eine Einschränkung von $2k\in[-G_0, G_0]$, da dies äquivalent zu der Forderung $ka \in [-\pi, \pi]$ ist. Folglich muss $k$ ein Wellenvektor aus der ersten Brillouinzone sein.
-
-## Schallgeschwindigkeit
-Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$ nach dem Wellenvektor $k$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$ der eindimensionalen Kette. Es gibt Wellenvektoren $k=\frac{\pi}{a}$, für die die Gruppengeschwindigkeit $v_G$ verschwindet. Dies nennt man stehende Wellen, sie treten am Rand der ersten Brillouinzone auf.
-
-$$
-\begin{aligned}
- v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
- \Rightarrow v_s &= \sqrt{\frac{C}{M}}
-\end{aligned}
-$$
-
-Für kleine Frequenzen ist die Dispersionsrelation linear $\omega(k) \approx\sqrt{\frac{C}{M}} |ka|$, dann ist die Gruppengeschwindigkeit $v_G=v_s$ ist konstant, insbesondere unabhängig von der Wellenlänge.
-
-## Moden
-Es gibt eine akustische und zwei optische Moden. Die akustische Mode hat immer eine geringere Frequenz als die optischen Moden. Dies liegt daran, dass eine Scherung immer einfacher als eine Kompression ist. Die Kraftkonstanten der Moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
 
 #### Dispersionsrelation
 Im Folgenden bestehe die Basis der eindimensionalen Kette aus einem einzelnen Atom, eine Kette mit zweiatomiger Basis ist eine weitere Verallgemeinerung. Zudem werden Normalkoordinaten $u$ verwendet.
@@ -1052,13 +1011,13 @@ Der Ansatz zur Lösung der Differentialgleichung kann als laufende, auf Gitterpu
 
 $$
 \begin{aligned}
- \omega(k) &= \sqrt{\frac{2C}{M} [1-\cos(ka)]} \\
- \omega(k) &= 2\sqrt{\frac{C}{M}}
- \left|
- \sin\left(
- \frac{ka}{2}
- \right)
- \right|
+  \omega(k) &= \sqrt{\frac{2C}{M} [1-\cos(ka)]} \\
+  \omega(k) &= 2\sqrt{\frac{C}{M}}
+  \left|
+  \sin\left(
+  \frac{ka}{2}
+  \right)
+  \right|
 \end{aligned}
 $$
 
@@ -1071,19 +1030,19 @@ Weil $\omega(k)$ periodisch ist, ist auch die Auslenkung $u(x, t)$ an der Stelle
 
 Da $\lambda=\frac{2\pi}{|k|}$ gilt folgt mit dem kürzestmöglichen reziproken Gittervektor $G_0$ eine Einschränkung von $2k\in[-G_0, G_0]$, da dies äquivalent zu der Forderung $ka \in [-\pi, \pi]$ ist. Folglich muss $k$ ein Wellenvektor aus der ersten Brillouinzone sein.
 
-## Schallgeschwindigkeit
+##### Schallgeschwindigkeit
 Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$ nach dem Wellenvektor $k$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$ der eindimensionalen Kette. Es gibt Wellenvektoren $k=\frac{\pi}{a}$, für die die Gruppengeschwindigkeit $v_G$ verschwindet. Dies nennt man stehende Wellen, sie treten am Rand der ersten Brillouinzone auf.
 
 $$
 \begin{aligned}
- v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
- \Rightarrow v_s &= \sqrt{\frac{C}{M}}
+  v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
+  \Rightarrow v_s &= \sqrt{\frac{C}{M}}
 \end{aligned}
 $$
 
 Für kleine Frequenzen ist die Dispersionsrelation linear $\omega(k) \approx\sqrt{\frac{C}{M}} |ka|$, dann ist die Gruppengeschwindigkeit $v_G=v_s$ ist konstant, insbesondere unabhängig von der Wellenlänge.
 
-## Moden
+##### Moden
 Es gibt eine akustische und zwei optische Moden. Die akustische Mode hat immer eine geringere Frequenz als die optischen Moden. Dies liegt daran, dass eine Scherung immer einfacher als eine Kompression ist. Die Kraftkonstanten der Moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
 
 #### Schallgeschwindigkeit
@@ -1091,8 +1050,8 @@ Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\ome
 
 $$
 \begin{aligned}
- v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
- \Rightarrow v_s &= \sqrt{\frac{C}{M}}
+  v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
+  \Rightarrow v_s &= \sqrt{\frac{C}{M}}
 \end{aligned}
 $$
 
@@ -1105,8 +1064,8 @@ Es gibt schon in der eindimensionalen Kette eine akustische und zwei optische Mo
 Es wird eine eindimensionale Kette betrachtet, die eine zweiatomige Basis hat. Dies führt dazu, dass die Dispersionsrelation zwei verschiedene Zweige hat. Dies ist genau so lange der Fall, wie die Massen der beiden Teilchen unterschiedlich sind; ansonsten bilden beide Basisatome eine neue Einheitszelle.
 
 $$
- \omega^2 =
- \frac{C+D}{M} \pm \frac{1}{M}\sqrt{C^2+D^2+2CD\cos(ka)}
+  \omega^2 =
+  \frac{C+D}{M} \pm \frac{1}{M}\sqrt{C^2+D^2+2CD\cos(ka)}
 $$
 
 Der Zweig mit der geringeren Frequenz, der mit dem Minus, ist der _akustische Zweig_. Der Zweig mit der höheren Frequenz, der mit dem Plus, ist der _optische Zweig_. Der akustische Zweig verschwindet bei $k=0$ und verändert sich im Interval $\pm \frac{\pi}{a}$ sehr stark. Der optische Zweig dagegen hat bei $k=0$ ein Maximum, verändert sich im selben Interval allerdings vergleichsweise gering.
@@ -1122,36 +1081,38 @@ Die wirkende Kraft $F_i=M\ddot{u}_i$ besteht jeweils aus der Federkraft zum link
 
 $$
 \begin{aligned}
- M\ddot{u}_1(na) &= -C[u_1(na) - u_2(na)] - D[u_1(na) - u_2((n-1)a)] \\
- M\ddot{u}_2(na) &= -C[u_2(na) - u_1(na)] - D[u_2(na) - u_1((n+1)a)]
+  M\ddot{u}_1(na) &= -C[u_1(na) - u_2(na)] - D[u_1(na) - u_2((n-1)a)] \\
+  M\ddot{u}_2(na) &= -C[u_2(na) - u_1(na)] - D[u_2(na) - u_1((n+1)a)]
 \end{aligned}
 $$
 
 ## Klassische Theorie im dreidimension Fall
 ### Darstellung der Dispersionsrelation
-Üblicherweise wird der Wellenvektor $\vec{k}$ in Einheiten von $\frac{\pi}{a}$ geplottet, sodass die erste Brillouinzone (BZ) durch das Interval $[-1, 1]$ dargestellt wird. Hierbei gibt es mehrere Möglichkeiten der Darstellung, die meistgenutzte ist die reduzierte Darstellung.[^3] Alle drei Darstellungen enthalten die komplette Information.
+Üblicherweise wird der Wellenvektor $\vec{k}$ in Einheiten von $\frac{\pi}{a}$ geplottet, sodass die erste Brillouinzone (BZ) durch das Interval $[-1, 1]$ dargestellt wird. Hierbei gibt es mehrere Möglichkeiten der Darstellung, die meistgenutzte ist die reduzierte Darstellung.[^3] Alle drei Darstellungen der Dispersionsrelation enthalten die komplette Information.
 
 In der _ausgedehnten_ Darstellung wird die komplette Dispersionsrelation über den gesamten Raum geplottet, sie wird dabei nicht auf die erste BZ beschränkt. In der _periodischen_ Darstellung werden die Dispersionsrelationen aller reziproken Gitterpunkte nebeneinander geplottet.
 
 In der _reduzierten_ Darstellung wird die komplette Dispersionsrelation auf die erste BZ reduziert dargestellt. Dazu wird die Funktion gespiegelt, sobald sie den Rand der ersten BZ überschreiten würde. Das Ergebnis sieht wie ein Ausschnitt aus der periodischen Darstellung aus.
 
-Dispersionsrelationen werden üblicherweise in Hochsymmetrierichtungen geplottet. Im dreidimensionalen Fall werden normalerweise alle Messungen zwischen den Punkten $\Gamma$, $X$, $K$ und $L$ in dem selben Diagramm reduziert dargestellt. Dies sieht ohne Übung unübersichtlich aus.[^2]
+Dispersionsrelationen werden üblicherweise in Hochsymmetrierichtungen geplottet. Im dreidimensionalen Fall werden normalerweise alle Messungen zwischen den Punkten $\Gamma$, $X$, $K$ und $L$ in dem selben Diagramm reduziert dargestellt. Dies sieht ohne Übung unübersichtlich aus.[^4]
 
-^^[^3]: siehe Abbildung 8.6 in [@Gross2012Festkörper, p. 345]
-[^2]: siehe Abbildung 8.22 in [@Gross2012Festkörper, p. 370]### Schwingungsmoden
+[^3]: siehe Abbildung 8.6 in [@Gross2012Festkörper, p. 345]
+[^4]: siehe Abbildung 8.22 in [@Gross2012Festkörper, p. 370]
+
+### Schwingungsmoden
 Für jede Welle mit Wellenvektor $\vec{k}$ gibt es $3$ Moden, von denen eine Mode akustisch und zwei Moden optisch sind. Für eine Basis mit $j$ Atomen gibt es $3$ akustische Zweige und $3j-3$ optische Zweige der Dispersionsrelation.
 
-In Hochsymmetrischen Kristallrichtungen[^4] sind die transversalen Moden entartet. Das bedeutet, beide transversalen Moden sind identisch und man kann nur eine transversale Mode messen.
+In Hochsymmetrischen Kristallrichtungen[^5] sind die transversalen Moden entartet. Das bedeutet, beide transversalen Moden sind identisch und man kann nur eine transversale Mode messen.
 
-^[^4]: beispielsweise $[100]$ im kubischen System
+[^5]: beispielsweise $[100]$ im kubischen System
 
 ### Schallgeschwindigkeit
 Die Schallgeschwindigkeit $v_s$ ist betragsmäßig die Amplitude der Gruppengeschwindigkeit einer Welle.
 
-Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$. So lange die Dispersionsrelation nicht linear ist, ist sie nicht konstant, hat aber eine konstante Amplitude, die Schallgeschwindigkeit. Für kleine Frequenzen ist die Gruppengeschwindigkeit näherungsweise konstant gleich der Schallgeschwindigkeit.
+Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$.
 
 $$
- v_G(t) = \frac{\mathrm d\omega(k)}{\mathrm dk} \propto v_s
+  v_G(t) = \frac{\mathrm d\omega(k)}{\mathrm dk} \propto v_s
 $$
 
 Es bestimmte Wellenvektoren, für die die Gruppengeschwindigkeit unabhängig von $v_s$ verschwindet $(v_G=0)$, dann gibt es stehende Wellen. Dies ist insbesondere am Rand der ersten Brillouinzone der Fall und kann beispielsweise anhand der eindimensionalen Kette ermittelt werden. Dies gilt auch im dreidimensionalen Fall.
@@ -1161,16 +1122,16 @@ Manche Richtungen in Kristallen weisen besonders hohe Symmetrie auf. Um diese zu
 
 Die Punkte $\Gamma$, $X$, $K$ und $L$ liegen im Abstand $\sqrt{i}\frac{\pi}{a}$ mit $i=0,1,2,3$ vom Zentrum der ersten Brillouinzone entfernt. Die Richtungen $\Gamma X$, $\Gamma K$ und $\Gamma L$ bezeichnen die $[110]$, $[100]$ und die $[111]$-Richtung.
 
-## Gammapunkt
+#### Gammapunkt
 Der $\Gamma$-Punkt ist der Punkt im Zentrum der ersten Brillouinzone, an dieser Stelle gilt $\vec{k}=0$.
 
-## X-Punkt
+#### X-Punkt
 Der Punkt $X$ liegt an der Stelle mit $k=\frac{\pi}{a}$, wobei $\Gamma X$ die $[110]$-Richtung im Kristall beschreibt.
 
-## K-Punkt
+#### K-Punkt
 Der Punkt $K$ liegt an der Stelle mit $k=\sqrt{2}\frac{\pi}{a}$, wobei $\Gamma K$ die $[100]$-Richtung im Kristall beschreibt.
 
-## L-Punkt
+#### L-Punkt
 Der Punkt $L$ liegt an der Stelle mit $k=\sqrt{3}\frac{\pi}{a}$, wobei $\Gamma L$ die $[111]$-Richtung im Kristall beschreibt.
 
 ## Randbedingungen
@@ -1184,16 +1145,16 @@ Hier soll die eindimensionale Betrachtung der Born-von-Karmann-Randbedingungen h
 
 Alle Randatome bilden einen geschlossenen Ring an Atomen, die durch einzelne Federkräfte verbunden sind. Demnach das $0$-te Atom identisch mit dem $N$-ten, es gilt also $u(0) = u(Na)$. Daraus folgt mit dem Ansatz für die eindimensionale Kette $\exp[ikNa]=1$, was mit ganzen Zahlen $n\in\mathbb Z$ durch $kNa=2\pi n$ erfüllt ist.
 
-Man erhält $N$ verschiedene $k$-Werte mit verschiedenen Eigenfrequenzen $\omega$ für $N$ eindimensionale Oszillatoren. Da $\vec{k}$ in der ersten Brillouinzone liegen muss,[^5] gilt $ak\in(-\pi, \pi]$. Daraus ergibt sich folgende Relation für $N$ und $n$, was die möglichen Wellenvektoren definiert. Dadurch gibt es $Na$ erlaubte Zustände.
+Man erhält $N$ verschiedene $k$-Werte mit verschiedenen Eigenfrequenzen $\omega$ für $N$ eindimensionale Oszillatoren. Da $\vec{k}$ in der ersten Brillouinzone liegen muss,[^6] gilt $ak\in(-\pi, \pi]$. Daraus ergibt sich folgende Relation für $N$ und $n$, was die möglichen Wellenvektoren definiert. Dadurch gibt es $Na$ erlaubte Zustände.
 
 $$
 \begin{aligned}
- k &= \frac{2\pi}{a} \cdot \frac{n}{N} \\
- \Rightarrow - \frac{N}{2} &< n \le \frac{N}{2}
+  k &= \frac{2\pi}{a} \cdot \frac{n}{N} \\
+  \Rightarrow - \frac{N}{2} &< n \le \frac{N}{2}
 \end{aligned}
 $$
 
-^[^5]: vgl. eindimensionale Kette
+[^6]: vgl. eindimensionale Kette
 
 #### 3D
 Hier soll die dreidimensionale Betrachtung der Born-von-Karmann-Randbedingungen hergeleitet werden.
@@ -1205,8 +1166,8 @@ Die Zustandsdichte ist die Anzahl der Zustände im $\vec{k}$-Raum pro $\vec{k}$-
 
 $$
 \begin{aligned}
- Z(k) &= \frac{\#\mathrm{Zustände}}{k\mathrm{-Raum-Intervall}} \\
- Z(k) &= \frac{V}{(2\pi)^2}
+  Z(k) &= \frac{\#\mathrm{Zustände}}{k\mathrm{-Raum-Intervall}} \\
+  Z(k) &= \frac{V}{(2\pi)^2}
 \end{aligned}
 $$
 
@@ -1217,8 +1178,8 @@ Im dreidimensionalen Fall erhält man mit den primitiven Translationen des rezip
 
 $$
 \begin{aligned}
- \vec{k} &= \frac{l_1}{N_1}\vec{b}_1 + \frac{l_2}{N_2}\vec{b}_2 + \frac{l_3}{N_3}\vec{b}_3 \\
- Z(k) &= \frac{L_1\cdot L_2\cdot L_3}{(2\pi)^3} = \frac{V}{(2\pi)^3}
+  \vec{k} &= \frac{l_1}{N_1}\vec{b}_1 + \frac{l_2}{N_2}\vec{b}_2 + \frac{l_3}{N_3}\vec{b}_3 \\
+  Z(k) &= \frac{L_1\cdot L_2\cdot L_3}{(2\pi)^3} = \frac{V}{(2\pi)^3}
 \end{aligned}
 $$
 
@@ -1238,7 +1199,7 @@ Bei Festkörpern geht man davon aus, dass die Schwingungen um die Gitterpunkte k
 Zur quantitativen Beschreibung sind Normalkoordinaten hilfreich, die eine Auslenkung $\vec{u}$ um den jeweiligen Gitterpunkt beschreiben. Dazu wird der Ortsvektor $\vec{r}(t)$ eines Atoms durch eine Abweichung $\vec{u}$ vom Gitterpunkt an der Position $\vec{R}$ beschrieben.
 
 $$
- \vec{r}(t) = \vec{R} + \vec{u}(\vec{R},t)
+  \vec{r}(t) = \vec{R} + \vec{u}(\vec{R},t)
 $$
 
 #### Energie
@@ -1248,12 +1209,12 @@ Sei $E_p$ die Eigenenergie zum Impuls $p\in\{1, \dots, 3N_j\}$, die aufgrund der
 
 $$
 \begin{aligned}
- E_p &= \left(n_{\vec{k}}, p+\frac{1}{2}\right)\hbar\omega_p(\vec{k}) \\
- E &= \sum_{\vec{k}, p}
- \left(
- n_{\vec{k}, p} + \frac{1}{2}
- \right)
- \cdot \hbar \omega_p(\vec{k})
+  E_p &= \left(n_{\vec{k}}, p+\frac{1}{2}\right)\hbar\omega_p(\vec{k}) \\
+  E &= \sum_{\vec{k}, p}
+  \left(
+  n_{\vec{k}, p} + \frac{1}{2}
+  \right)
+  \cdot \hbar \omega_p(\vec{k})
 \end{aligned}
 $$
 
@@ -1283,8 +1244,8 @@ Für die inelastische Streuung eines Teilchens am Kristall müssen für die Erze
 
 $$
 \begin{aligned}
- E_{\vec{k}} - E_{\vec{k}^\prime} &= \pm \hbar \omega_\mathrm{Phonon} \\
- \vec{k} - \vec{k}^\prime &= \pm \vec{k}_\mathrm{Phonon} + \vec{G}
+  E_{\vec{k}} - E_{\vec{k}^\prime} &= \pm \hbar \omega_\mathrm{Phonon} \\
+  \vec{k} - \vec{k}^\prime &= \pm \vec{k}_\mathrm{Phonon} + \vec{G}
 \end{aligned}
 $$
 
@@ -1295,8 +1256,8 @@ Für die inelastische Streuung eines Teilchens am Kristall müssen für die Erze
 
 $$
 \begin{aligned}
- E_{\vec{k}} - E_{\vec{k}^\prime} &= \pm \hbar \omega_\mathrm{Phonon} \\
- \vec{k} - \vec{k}^\prime &= \pm \vec{k}_\mathrm{Phonon} + \vec{G}
+  E_{\vec{k}} - E_{\vec{k}^\prime} &= \pm \hbar \omega_\mathrm{Phonon} \\
+  \vec{k} - \vec{k}^\prime &= \pm \vec{k}_\mathrm{Phonon} + \vec{G}
 \end{aligned}
 $$
 
@@ -1316,18 +1277,18 @@ Der Streuwinkel $2\theta$ kann durch die Energie des einfallenden Strahls $E_i$ 
 
 $$
 \begin{aligned}
- E_i + E_f -\frac{Q^2\hbar^2}{2m} &= p_i p_f \cos(2\theta) \\
- &= 2\sqrt{E_iE_f} \cos(2\theta) \\
- \Leftrightarrow 2\theta &= \arccos\left[
- \frac{
- -\frac{Q^2\hbar^2}{2m} + E_i + E_f
- }{2\sqrt{E_i E_f}}
- \right] \\
- \Leftrightarrow 2\theta &= \arccos\left[
- \frac{
- -Q^2 + k_i^2 + k_f^2
- }{2 k_i k_f}
- \right]
+  E_i + E_f -\frac{Q^2\hbar^2}{2m} &= p_i p_f \cos(2\theta) \\
+  &= 2\sqrt{E_iE_f} \cos(2\theta) \\
+  \Leftrightarrow 2\theta &= \arccos\left[
+  \frac{
+  -\frac{Q^2\hbar^2}{2m} + E_i + E_f
+  }{2\sqrt{E_i E_f}}
+  \right] \\
+  \Leftrightarrow 2\theta &= \arccos\left[
+  \frac{
+  -Q^2 + k_i^2 + k_f^2
+  }{2 k_i k_f}
+  \right]
 \end{aligned}
 $$
 
@@ -1337,7 +1298,7 @@ In der Raman-Spektroskopie wird optisches Licht zur Streuung in Kristallen verwe
 Die Differenzen der Frequenzen des einfallenden Lichtes $\Omega$ und des ausfallenden Lichtes $\Omega^\prime$ muss der Frequenz des erzeugten Phonons $\omega_\mathrm{Phonon}$ entsprechen.
 
 $$
- \frac{\Omega-\Omega^\prime}{\Omega} = \frac{\Delta \Omega}{\Omega} = \frac{\omega_\mathrm{Phonon}}{\Omega}
+  \frac{\Omega-\Omega^\prime}{\Omega} = \frac{\Delta \Omega}{\Omega} = \frac{\omega_\mathrm{Phonon}}{\Omega}
 $$
 
 Bei der Phononenerzeugung entsteht Stokes-Streuung, bei der Phononenvernichtung Anti-Stokes-Streuung. Bei Energien um $E\approx 3\mathrm{eV}$ gilt $\vec{k}=\vec{k}^\prime$, daher sollte eigentlich keine Strahlung entstehen. Durch Defekte im Kristall entsteht jedoch Reyleigh-Strahlung.
@@ -1372,45 +1333,45 @@ Die Wärmekapazität $C$ ist der Quotient aus der zugeführten Wärme $\Delta Q$
 Nach dem 1. Hauptsatz der Thermodynamik ist das Differential der inneren Energie $\mathrm dU$ durch das Differential der Wärme $\mathrm dQ$ sowie das Produkt aus Druck $p$ und Volumendifferential $\mathrm dV$ darstellbar ($\mathrm dU = \mathrm dQ - p\mathrm dV$). $C_V$ ist die isochore Wärmekapazität mit $\mathrm dV=0$, $C_p$ ist die isobare Wärmekapazität mit $\mathrm dp=0$.
 
 $$
- C_x = \frac{\Delta Q}{\Delta T} = \left.\frac{\partial U}{\partial T}\right|_x
+  C_x = \frac{\Delta Q}{\Delta T} = \left.\frac{\partial U}{\partial T}\right|_x
 $$
 
 Mithilfe des Volumenausdehnungskoeffizienten $\alpha$ und des Kompressionsmoduls $\beta$ gilt die Relation $C_p-C_V = TV\alpha^2\beta$. In der harmonischen Näherung gilt $\alpha=0$, daraus folgt $C_p=C_V$. Tatsächlich gibt es allerdings eine Abweichung von unter $1\%$.
 
 Bei Metallen liefert jedes Valenzelektron eine mittlere Energie von $\braket{E}=\frac{1}{2}k_BT$. Daraus folgt für die mittlere innere Energie $\braket{U}=N\braket{E}$, wodurch $C_V$ sehr klein ist, nämlich proportional zu der Breite der aufgeweichten Fermikante. Die freien Elektronen liefern demnach einen geringen Beitrag zur Wärmekapazität.
 
-## hohe Temperaturen
+### hohe Temperaturen
 Für hohe Temperaturen wird $C_V$ durch das Dulong-Petit-Gesetz beschrieben. In Kristallen ist die Bose-Einstein-Verteilung notwendig, um das mittlere Potential $\braket{U}=\braket{n}\hbar \omega$ zu beschreiben.
 
 ### Dulong-Petit-Gesetz
-Das Dulong-Petit-Gesetz besagt, dass die molare Wärmekapazität eines aus einzelnen Atomen zusammengesetzten Festkörpers einen universalen und konstanten Wert habe, nämlich das Dreifache der universellen Gaskonstante $R=\frac{pV}{Nk_b}$.[^6] Diese Näherung gilt für hohe Temperaturen $T$, für niedrige Temperaturen gilt sie nicht.
+Das Dulong-Petit-Gesetz besagt, dass die molare Wärmekapazität eines aus einzelnen Atomen zusammengesetzten Festkörpers einen universalen und konstanten Wert habe, nämlich das Dreifache der universellen Gaskonstante $R=\frac{pV}{Nk_b}$.[^7] Diese Näherung gilt für hohe Temperaturen $T$, für niedrige Temperaturen gilt sie nicht.
 
 $$
- C_V = 3N_j k_b = 3R
+  C_V = 3N_j k_b = 3R
 $$
 
-## Herleitung
+#### Herleitung
 Der Klassischen Gleichverteilungssatz (der Statistischen Physik) besagt, dass jede quadratischen Komponente in der Gesamtenergie die mittlere Energie $\frac{1}{2}k_bT$ erzeugt. In drei Dimensionen hat man je drei Orts- und Impulskoordinaten, die die Gesamtenergie bezeichnen. Für die mittlere Energie gilt daher $\braket{U}=3k_BT$. Aus der Definition der isochoren Wärmekapazität folgt das Dulong-Petit-Gesetz.
 
 Alternativ kann das Dulong-Petit-Gesetz aus der Einstein-Nährung hergeleitet werden, wenn diese für große Temperaturen verwendet wird.
 
-^[^6]: [Dulong-Petit-Gesetz](https://de.wikipedia.org/wiki/Dulong-Petit-Gesetz), Abruf am 2023-06-09
+[^7]: [Dulong-Petit-Gesetz](https://de.wikipedia.org/wiki/Dulong-Petit-Gesetz), Abruf am 2023-06-09
 
 ### niedrige Temperaturen
 Da die Eigenenergie eines harmonischen Oszillators eine konstante Nullpunktsenergie hat, kann man die mittlere innere Energie $\braket{U_\mathrm{th}}$ als Summe einer Nullpunktsenergien $U_0$ und einer temperaturabhängigen mittleren Energie $\braket{U}$ darstellen ($\braket{U_\mathrm{th}}=U_0+\braket{U}$). Damit bestimmt nur noch $\braket{U}$ die Wärmekapazität, was die Bose-Einstein-Verteilung zur Darstellung benötigt.
 
 $$
 \begin{aligned}
- \braket{U} &= \sum_{\vec{k},p} \braket{n} \hbar \omega_p(\vec{k}) = \sum_{\vec{k},p}
- \frac{\hbar \omega_p(\vec{k})}
- {\exp\left[\hbar\omega(\vec{k})k_bT\right]-1} \\
- C_V &= \left.\frac{\partial U}{\partial T}\right|_x
- = \frac{\partial}{\partial T}
- \left[
- \sum_{\vec{k},p}
- \frac{\hbar \omega_p(\vec{k})}
- {\exp\left[\hbar\omega(\vec{k})k_bT\right]-1}
- \right]
+  \braket{U} &= \sum_{\vec{k},p} \braket{n} \hbar \omega_p(\vec{k}) = \sum_{\vec{k},p}
+  \frac{\hbar \omega_p(\vec{k})}
+  {\exp\left[\hbar\omega(\vec{k})k_bT\right]-1} \\
+  C_V &= \left.\frac{\partial U}{\partial T}\right|_x
+  = \frac{\partial}{\partial T}
+  \left[
+  \sum_{\vec{k},p}
+  \frac{\hbar \omega_p(\vec{k})}
+  {\exp\left[\hbar\omega(\vec{k})k_bT\right]-1}
+  \right]
 \end{aligned}
 $$
 
@@ -1420,12 +1381,12 @@ Bei tiefen Temperaturen $T$ wird die Quantisierung der Energieniveaus relevant. 
 Die Bose-Einstein-Verteilung beschreibt die Verteilung der Teilchenzahl von Bosonen. In diesem Fall ist die Zahl der Phononen durch die Energie bestimmt, daher sind die Energie der Phononen $\hbar\omega$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$.
 
 $$
- \braket{n} = \frac{1}{
- \exp\left[
- \frac{\hbar\omega-\mu}{k_bT}
- \right]
- - 1
- }
+  \braket{n} = \frac{1}{
+  \exp\left[
+  \frac{\hbar\omega-\mu}{k_bT}
+  \right]
+  - 1
+  }
 $$
 
 $\mu$ ist das chemische Potential, für Phononen ist $\mu_\mathrm{Phonon}=0$. Für andere Bosonen gilt dagegen $\mu\neq 0$. Bei $T=0$ gilt allgemein $\mu=E_F$, d.h. $\mu$ ist die Fermienergie.
@@ -1437,13 +1398,13 @@ Die Zustandsdichte $D(\omega)$ im Fourierraum ist die Anzahl der Zustände in ei
 
 $$
 \begin{aligned}
- \braket{U_\mathrm{th}} &= U_0 + \braket{U} = U_0 + \sum_{\vec{k},p} \braket{U_p} \\
- \braket{U_p} &= \braket{n_p(\vec{k})} \hbar \omega_p(\vec{k}) = \frac{\hbar \omega_p(\vec{k})}
- {\exp\left[\hbar\omega(\vec{k})k_bT\right]-1} \\
- \braket{U_p} &= \int \frac{\hbar\omega}{\exp[\hbar\omega k_BT]} D(\omega)\mathrm{d}\omega \\
- D(\omega)\mathrm d\omega &=
- \frac{V}{(2\pi)^3}
- \int_{\omega(\vec{k})}^{\omega(\vec{k})+\mathrm d\omega(\vec{k})} \mathrm d^3 k
+  \braket{U_\mathrm{th}} &= U_0 + \braket{U} = U_0 + \sum_{\vec{k},p} \braket{U_p} \\
+  \braket{U_p} &= \braket{n_p(\vec{k})} \hbar \omega_p(\vec{k}) = \frac{\hbar \omega_p(\vec{k})}
+  {\exp\left[\hbar\omega(\vec{k})k_bT\right]-1} \\
+  \braket{U_p} &= \int \frac{\hbar\omega}{\exp[\hbar\omega k_BT]} D(\omega)\mathrm{d}\omega \\
+  D(\omega)\mathrm d\omega &=
+  \frac{V}{(2\pi)^3}
+  \int_{\omega(\vec{k})}^{\omega(\vec{k})+\mathrm d\omega(\vec{k})} \mathrm d^3 k
 \end{aligned}
 $$
 
@@ -1453,7 +1414,7 @@ Die Debye-Näherung beschreibt das Verhalten bei niedrigen Temperaturen durch ei
 In der Debye-Näherung kann die Zustandsdichte $D(\omega)$ durch das Volumen $V$, die Frequenz $\omega$ und die Steigung der Dispersionsreleation $v$ beschrieben werden. Für sehr niedrige Temperaturen folgt das $T^3$-Gesetz.
 
 $$
- D(\omega) = 3\frac{V}{2\pi^2}\frac{\omega^2}{v^3}
+  D(\omega) = 3\frac{V}{2\pi^2}\frac{\omega^2}{v^3}
 $$
 
 Insbesondere bei Kristallen mit vielen Basisatomen wird die Zustandsdichte $D(\omega)$ für akustische Zweige durch die Debye-Näherung beschrieben. Für optische Zweige wählt man die Einstein-Näherung.
@@ -1462,7 +1423,7 @@ Insbesondere bei Kristallen mit vielen Basisatomen wird die Zustandsdichte $D(\o
 Für niedrige Temperaturen, d.h. $T\ll \theta_D$ deutlich kleiner als die Debye-Temperatur $\theta_D$ gilt in der Debye-Näherung $\frac{\hbar\omega_D}{k_bT}\gg 1$ und $\braket{n}\approx 0$. Damit kann die Wärmekapazität berechnet werden.
 
 $$
- C_V = \frac{12\pi^2}{5} Nk_B \left(\frac{T}{\theta_D}\right)^3
+  C_V = \frac{12\pi^2}{5} Nk_B \left(\frac{T}{\theta_D}\right)^3
 $$
 
 ## Einstein-Näherung
@@ -1472,17 +1433,17 @@ Bei der Einstein-Temperatur $\theta_E$ soll die thermische Energie gleich der En
 
 $$
 \begin{aligned}
- D(\omega) &= 3N\delta(\omega-\omega_E) \\
- \braket{U} &= 3N\hbar\omega_E\braket{n}
- = \frac{3N\hbar\omega_E}{
- \exp\left[
- \frac{\hbar\omega}{k_bT}
- \right]
- - 1
- }\\
- C_V &= 3Nk_B\left(\frac{\theta_E}{T}\right)^2
- \frac{\exp\left[\frac{\theta_E}{T}\right]}
- {\left(\exp\left[\frac{\theta_E}{T}\right]-1\right)^2}
+  D(\omega) &= 3N\delta(\omega-\omega_E) \\
+  \braket{U} &= 3N\hbar\omega_E\braket{n}
+  = \frac{3N\hbar\omega_E}{
+  \exp\left[
+  \frac{\hbar\omega}{k_bT}
+  \right]
+  - 1
+  }\\
+  C_V &= 3Nk_B\left(\frac{\theta_E}{T}\right)^2
+  \frac{\exp\left[\frac{\theta_E}{T}\right]}
+  {\left(\exp\left[\frac{\theta_E}{T}\right]-1\right)^2}
 \end{aligned}
 $$
 
@@ -1497,7 +1458,7 @@ So kann man weder Längenausdehnung oder Wärmeleitfähigkeit noch Wechselwirkun
 Die Längenausdehnung $\alpha_L$ ist die relative Änderung der Länge $L$ unter Änderung der Temperatur $T$. Um sie zu erklären, benötigt man die anharmonische Näherung.
 
 $$
- \alpha_L = \frac{1}{L} \frac{\mathrm dL}{\mathrm dT}
+  \alpha_L = \frac{1}{L} \frac{\mathrm dL}{\mathrm dT}
 $$
 
 ### Wärmeleitfähigkeit
@@ -1505,8 +1466,8 @@ Die Wärmeleitfähigkeit ist proportional zum Temperaturgradienten $\nabla T$, d
 
 $$
 \begin{aligned}
- \vec{j}_Q &= -\kappa\nabla T \\
- \kappa &= \frac{1}{3} vl\frac{C_V}{V}
+  \vec{j}_Q &= -\kappa\nabla T \\
+  \kappa &= \frac{1}{3} vl\frac{C_V}{V}
 \end{aligned}
 $$
 
@@ -1530,8 +1491,8 @@ Die Besetzungswahrscheinlichkeit der Zustände mit Energie $E_n$ durch die Fermi
 
 $$
 \begin{aligned}
- E_n &= \frac{\hbar^2k_n^2}{2m} \\
- k_n^2 &= \left(\frac{2\pi}{L}\right)^2 \left[n^2_x + n^2_y + n^2_z \right]
+  E_n &= \frac{\hbar^2k_n^2}{2m} \\
+  k_n^2 &= \left(\frac{2\pi}{L}\right)^2 \left[n^2_x + n^2_y + n^2_z \right]
 \end{aligned}
 $$
 
@@ -1542,8 +1503,8 @@ Die Zustandsdichte $Z$ des freien Elektronengases ist doppelt so hoch wie im kla
 
 $$
 \begin{aligned}
-    Z(k) &= 2\frac{V}{(2\pi)^3} \\
-    D(E) \mathrm dE &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
+  Z(k) &= 2\frac{V}{(2\pi)^3} \\
+  D(E) \mathrm dE &= \frac{V}{2\pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E}
 \end{aligned}
 $$
 
@@ -1556,16 +1517,16 @@ Bei einem Fermigas geht man davon aus, dass die meisten niederenergetischen Zust
 
 Die Fermienergie bildet im Wellenraum eine Kugelschale, das eingeschlossene Volumen nennt man Fermikugel. Die inneren Zustände sind dabei praktisch eingefroren: Sie können sich nicht verändern, weil alle erreichbaren Zustände schon besetzt sind. Daher ist nur die Oberfläche der Fermikugel für Wechselwirkungen, Anregungen etc. interessant.
 
-Die Besetzungszahl ist durch die Fermi-Dirac-Verteilung beschrieben. $n_e=\frac{N}{V}$ ist hier die Elektronendichte. Die Fermitemperatur $T_F$ ist die Temperatur, die $E_F$ entspricht. Analog werden der Fermiwellenvektor $k_F$, die Fermi-Wellenlänge $\lambda_F$, der Fermi-Impuls $p_F$ und Fermi-Geschwindigkeit $v_F$ definiert.
+Die Besetzungszahl ist durch die Fermi-Dirac-Verteilung beschrieben. $\frac{N}{V}$ ist die Elektronendichte. Die Fermitemperatur $T_F$ ist die Temperatur, die $E_F$ entspricht. Analog werden der Fermiwellenvektor $k_F$, die Fermi-Wellenlänge $\lambda_F$, der Fermi-Impuls $p_F$ und Fermi-Geschwindigkeit $v_F$ definiert.
 
 $$
 \begin{aligned}
- E_F &= \frac{p_F^2}{2m} \\
- p_F &= \hbar k_F \\
- k_F &= \sqrt[3]{3\pi^2 n_e} \\
- k_BT_F &= E_F \\
- \lambda_F &= \frac{2\pi}{k_F} \\
- p_F &= m v_F
+  E_F &= \frac{p_F^2}{2m} \\
+  p_F &= \hbar k_F \\
+  k_F &= \sqrt[3]{3\pi^2 \frac{N}{V}} \\
+  k_BT_F &= E_F \\
+  \lambda_F &= \frac{2\pi}{k_F} \\
+  p_F &= m v_F
 \end{aligned}
 $$
 
@@ -1576,16 +1537,16 @@ Das Potential $V(\vec{r})$ sei außerhalb eines Kastens der Länge $L$ ein Wert 
 
 $$
 \begin{aligned}
- V(\vec{r}) &=
- \begin{cases}
- 0 &: x,y,z \in [0, L] \\
- V_0 &: x,y,z \notin [0, L] \\
- \end{cases} \\
- E \Psi(\vec{r}) &=
- \left[
- -\frac{\hbar^2}{2m} \nabla^2 + V(\vec{r})
- \right] \Psi(\vec{r}) \\
- \Psi(\vec{r}) &= \frac{1}{\sqrt{V}} \exp[i\vec{k}\vec{r}]
+  V(\vec{r}) &=
+  \begin{cases}
+  0 &: x,y,z \in [0, L] \\
+  V_0 &: x,y,z \notin [0, L] \\
+  \end{cases} \\
+  E \Psi(\vec{r}) &=
+  \left[
+  -\frac{\hbar^2}{2m} \nabla^2 + V(\vec{r})
+  \right] \Psi(\vec{r}) \\
+  \Psi(\vec{r}) &= \frac{1}{\sqrt{V}} \exp[i\vec{k}\vec{r}]
 \end{aligned}
 $$
 
@@ -1595,9 +1556,9 @@ Der Normierungsfaktor $\frac{1}{\sqrt{V}}$ kann aus der Forderung zur Normierung
 Die Fermi-Dirac-Verteilung beschreibt die Verteilung der Teilchenzahl von Fermionen. Die Zahl der Fermionen ist durch die Energie bestimmt, daher sind die Energie $E$ und die thermische Energie $k_BT$ ausschlaggebend für den Erwartungswert der Phononenzahl $\braket{n}$, $\mu$ ist das chemische Potential. Ein Anwendungsfall ist das freie Elektronengas.
 
 $$
- \braket{n} = \frac{1}{
- \exp\left[\frac{E-\mu}{k_BT}\right] + 1
- }
+  \braket{n} = \frac{1}{
+  \exp\left[\frac{E-\mu}{k_BT}\right] + 1
+  }
 $$
 
 Bei $T=0$ sind alle Zustände mit einer Energie bis zu der Fermi-Energie besetzt. Dann ist die Besetzungswahrscheinlichkeit für alle Zustände mit einer Energie bis zur Fermi-Energie $1$ und für alle größeren Energien $0$. Diese Kante nennt man Fermikante. Bei Temperaturen $T>0$ schmilzt diese Kante ab.
@@ -1606,13 +1567,13 @@ Bei $T=0$ sind alle Zustände mit einer Energie bis zu der Fermi-Energie besetzt
 Stehen zwei Systeme in Kontakt, sodass Wärme und Teilchen ausgetauscht werden können, so müssen ihre Temperaturen $T$ und chemische Potentiale $\mu$ gleich sein. $\mu$ ist die Freie Energie $F=E-TS$, die notwendig ist, um einem System ein Teilchen hinzuzufügen. Dies kann auch durch die freie Enthalpie $G$ pro Teilchen dargestellt werden.
 
 $$
- \mu=\frac{G}{N}
+  \mu=\frac{G}{N}
 $$
 
 Bei $T=0$ ist $\mu$ gleich der Fermienergie $E_F$. Mithilfe der Somerfeld-Näherung kann man $\mu$ für Temperaturen oberhalb der Fermienergie berechnen. Bei typischen Temperaturen (auf der Erde) nimmt die Temperatur nur minimal ab, es gilt auch dann $\mu\approx E_F$.
 
 $$
- \mu(T) = E_F\left[1 - \frac{\pi^2}{12}\left(\frac{T}{T_F}\right)^2 \right]
+\mu(T) = E_F\left[1 - \frac{\pi^2}{12}\left(\frac{T}{T_F}\right)^2 \right]
 $$
 
 ### Abschmelzen der Fermikante
@@ -1641,8 +1602,8 @@ Wenn eine Spannung anliegt, erhöht sich die Driftgeschwindigkeit, bis sie durch
 
 $$
 \begin{aligned}
- \vec{v}_D &= - \frac{e\tau}{m} \vec{E} \\
- \vec{j} &= -ne\vec{v}_D \\
+  \vec{v}_D &= - \frac{e\tau}{m} \vec{E} \\
+  \vec{j} &= -ne\vec{v}_D \\
 \end{aligned}
 $$
 
@@ -1651,29 +1612,29 @@ Die Stromdichte kann im Elektronengas durch die Driftgeschwindigkeit $v_D$ der E
 
 $$
 \begin{aligned}
- \vec{j} &= -ne\vec{v}_D \\
- \vec{j} &= \sigma \vec{E}
+  \vec{j} &= -ne\vec{v}_D \\
+  \vec{j} &= \sigma \vec{E}
 \end{aligned}
 $$
 #### Spezifische Leitfähigkeit
 Die spezifische Leitfähigkeit ist ein Proportionalitätsfaktor zwischen einem elektrischen Feld $\vec{E}$ und der daraus resultierenden Stromdichte $\vec{j}$. Sie ist invers zum spezifischen Widerstand.
 
 $$
- \vec{j} = \sigma \vec{E}
+  \vec{j} = \sigma \vec{E}
 $$
 
 #### Spezifischer Widerstand
 Der spezifische Widerstand $\sigma$ ist der Proportionalitätsfaktor zwischen einem elektrischen Feld $\vec{E}$ und der daraus resultierenden Stromdichte $\vec{j}$. Er ist invers zur spezifischen Leitfähigkeit.
 
 $$
- \vec{E} = \rho \vec{j}
+  \vec{E} = \rho \vec{j}
 $$
 
 ### Relaxationszeitnäherung
 Die Relaxationszeitnäherung beschreibt die Stöße von Elektronen, die die Transporteigenschaften beeinflussen. Diese Stöße bremsen Elektronen ab, durch ein existierendes Potential $V$ werden sie allerdings wieder beschleunigt, wobei die Kraft $\vec{F}=-\nabla V$ wirkt. Hierbei ist $\tau$ die Relaxationszeit.
 
 $$
- \frac{\mathrm d\vec{p}}{\mathrm dt} = \vec{F}(t) - \frac{\vec{p}(t)}{\tau}
+  \frac{\mathrm d\vec{p}}{\mathrm dt} = \vec{F}(t) - \frac{\vec{p}(t)}{\tau}
 $$
 
 ### Wiedemann-Franz-Gesetz
@@ -1681,7 +1642,7 @@ Das Wiedemann-Franz-Gesetz nähert reale Metalle an, indem man berücksichtigt, 
 
 $$
 \begin{aligned}
- L &= \frac{\kappa}{\sigma T} \\
+  L &= \frac{\kappa}{\sigma T} \\
 \end{aligned}
 $$
 
@@ -1689,7 +1650,7 @@ $$
 Die Lorenzzahl $L$ kann unter Berücksichtigung der Fermistatistik hergeleitet werden. Sie ist relevant für das Wiedemann-Franz-Gesetz.
 
 $$
- L = \frac{\pi^2}{3} \left(\frac{k_B}{e}\right)^2 \approx 2.45 \cdot 10^{-8} \frac{\mathrm W\Omega}{\mathrm K^2}
+  L = \frac{\pi^2}{3} \left(\frac{k_B}{e}\right)^2 \approx 2.45 \cdot 10^{-8} \frac{\mathrm W\Omega}{\mathrm K^2}
 $$
 
 ### Halleffekt
@@ -1697,8 +1658,8 @@ Eine Stromdichte in $x$-Richtung $j_x$ wird durch ein elektrisches Feld $\vec{B}
 
 $$
 \begin{aligned}
- \rho_{xy}(\vec{B}) &= \frac{E_y}{j_x} = B_z \cdot A_H \\
- A_H &= -\frac{1}{ne}
+  \rho_{xy}(\vec{B}) &= \frac{E_y}{j_x} = B_z \cdot A_H \\
+  A_H &= -\frac{1}{ne}
 \end{aligned}
 $$
 
@@ -1721,9 +1682,9 @@ Durch die Periodizität des Potentials $U$ muss auch die Wellenfunktion $\Psi$ p
 
 $$
 \begin{aligned}
- \Psi &= \Psi(\vec{r} + \vec{R}) \\
- u &= u(\vec{r} + \vec{R}) \\
- \Psi &= u \cdot \exp[i\vec{k}\vec{r}]
+  \Psi &= \Psi(\vec{r} + \vec{R}) \\
+  u &= u(\vec{r} + \vec{R}) \\
+  \Psi &= u \cdot \exp[i\vec{k}\vec{r}]
 \end{aligned}
 $$
 
@@ -1732,9 +1693,9 @@ Durch die Forderungen des Bloch-Theorems ist die Aufenthaltswahrscheinlichkeit d
 
 $$
 \begin{aligned}
- \Psi_{n,\vec{k}}(\vec{r}+\vec{R}) &= \exp[i\vec{k}\vec{R}] \cdot \exp[i\vec{k}\vec{r}] \\
- \vec{k} &= \sum_{i=1}^3 m_i \vec{b_i} \\
- \Rightarrow \Psi_{n,\vec{k}}(\vec{r}) &= \sum_{\vec{G}} c_{n, \vec{k}-\vec{G}} \exp[i(\vec{k}-\vec{G})\vec{r}]
+  \Psi_{n,\vec{k}}(\vec{r}+\vec{R}) &= \exp[i\vec{k}\vec{R}] \cdot \exp[i\vec{k}\vec{r}] \\
+  \vec{k} &= \sum_{i=1}^3 m_i \vec{b_i} \\
+  \Rightarrow \Psi_{n,\vec{k}}(\vec{r}) &= \sum_{\vec{G}} c_{n, \vec{k}-\vec{G}} \exp[i(\vec{k}-\vec{G})\vec{r}]
 \end{aligned}
 $$
 Daraus folgt, dass der Kristallimpuls $\hbar \vec{k}$ nur bis auf einen reziproken Gittervektor $\vec{G}$ erhalten ist, er ist insbesondere kein Eigenwert des Impulsoperators. Weiterhin ist $\vec{k}$ ein quasikontinuierlicher Parameter.
@@ -1743,7 +1704,7 @@ Daraus folgt, dass der Kristallimpuls $\hbar \vec{k}$ nur bis auf einen reziprok
 Analog zu der Gruppengeschwindigkeit von Phononen kann man die Gruppengeschwindigkeit $\vec{v}_n(\vec{k})$ der Elektronen im Bloch-Modell bestimmen. Diese ist wiederum die Ableitung der Dispersionsrelation.
 
 $$
- \vec{v}_n(\vec{k}) = \frac{1}{\hbar} \nabla_k E_n(\vec{k})
+  \vec{v}_n(\vec{k}) = \frac{1}{\hbar} \nabla_k E_n(\vec{k})
 $$
 
 Quantenmechanisch wird dies durch Wellenpakete beschrieben mit der Energie $E_n(\vec{k})$ beschrieben.
@@ -1799,9 +1760,9 @@ Halbleiter können mit Donatoren oder Akzekptoren dotiert werden, um spezifische
 ### Transparenz
 Festkörper sind dann transparent, wenn es zwischen dem Valenzband und dem Leitungsband eine Energielücke gibt, die größer als die Energie der betreffenden Strahlung ist. Dadurch kann die Strahlung nicht absorbiert werden, um ein Elektron von dem Valenzband in das Leitungsband anzuregen.
 
-Da optisches Licht im Energiebereich von $1.59 \mathrm{eV}$ (Rot) und $3.26 \mathrm{eV}$ (Violett) liegt,[^7] sind Materialien mit Bandlücken in dieser Größe transparent für optisches Licht.
+Da optisches Licht im Energiebereich von $1.59 \mathrm{eV}$ (Rot) und $3.26 \mathrm{eV}$ (Violett) liegt,[^8] sind Materialien mit Bandlücken in dieser Größe transparent für optisches Licht.
 
-^[^7]: Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Elektromagnetisches_Spektrum), Abruf 2023-07-30
+[^8]: Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Elektromagnetisches_Spektrum), Abruf 2023-07-30
 
 # Literatur
 1. [@Gross2012Festkörper]

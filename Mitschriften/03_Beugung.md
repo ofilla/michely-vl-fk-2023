@@ -14,19 +14,19 @@ Es gibt verschiedene praktikable Verfahren, um Messungen durchzuführen.
 Eine gitterperiodischen Funktion $f(\vec{r}) = f(\vec{r} + \vec{R})$ kann auch als als Fourierreihe $\mathcal F(f(\vec{r}))$ dargestellt werden. Die Menge aller $\vec{G}$ erfüllt $\mathrm e^{i\vec{G}\vec{R}}=1$ und definiert somit reziprokes Gitter.
 
 $$
- f(\vec{r}) = \mathcal F(f(\vec{r})) = \sum_{\vec{G}} f_{\vec{G}}\mathrm e^{i\vec{G}\vec{R}}=1 \\
- f_{\vec{G}} = \frac{1}{V} \int_V f(\vec{r}) \mathrm e^{-i\vec{G}\vec{R}}
+  f(\vec{r}) = \mathcal F(f(\vec{r})) = \sum_{\vec{G}} f_{\vec{G}}\mathrm e^{i\vec{G}\vec{R}}=1 \\
+  f_{\vec{G}} = \frac{1}{V} \int_V f(\vec{r}) \mathrm e^{-i\vec{G}\vec{R}}
 $$
 
 Dieses ist ein Bravaisgitter, da $\vec{G}$ durch ganzzahlige $k_i$ und Basisvektoren $\vec{b_i}$ dargestellt werden kann. Die Basisvektoren sind die Entsprechung zu Primitiven Translationen im direkten Gitter. $V$ ist hier das Volumen einer Einheitszelle. Die Vektoren $\vec{b}_i$ haben die Einheit $\mathrm m^{-1}$, da sie Wellenvektoren $k=\frac{2\pi}{\lambda}$ entsprechen, und können aus den primitiven Translationen $\vec{a}_i$ ermittelt werden.
 
 $$
 \begin{aligned}
- \vec{G} = &k_1 \vec{b}_1 + k_2 \vec{b}_2 + k_3 \vec{b}_3\\
- \vec{b}_1 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_2 \times \vec{a}_3)\\
- \vec{b}_2 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_3 \times \vec{a}_1)\\
- \vec{b}_3 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_1 \times \vec{a}_2)\\
- \forall i,j\in\{1,2,3\}: &\ \vec{a}_i \vec{b}_j = \delta_{ij}
+  \vec{G} = &k_1 \vec{b}_1 + k_2 \vec{b}_2 + k_3 \vec{b}_3\\
+  \vec{b}_1 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_2 \times \vec{a}_3)\\
+  \vec{b}_2 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_3 \times \vec{a}_1)\\
+  \vec{b}_3 = &\frac{2\pi}{V_\mathrm{Zelle}}(\vec{a}_1 \times \vec{a}_2)\\
+  \forall i,j\in\{1,2,3\}: &\ \vec{a}_i \vec{b}_j = \delta_{ij}
 \end{aligned}
 $$
 
@@ -38,7 +38,7 @@ Das Gitter im Realraum wird zur Unterscheidung vom reziproken Gitter direktes Gi
 * Zu jedem reziproken Gittervektor $\vec{G}$ gibt es eine Netzebenenschar, die senkrecht zu $\vec{G}$ steht und den Abstand $d$ haben. Der kürzeste zu $\vec{G}$ parallele Gittervektor ist $\vec{G}_\mathrm{min}$ mit $|\vec{G}_\mathrm{min}| = \frac{2\pi}{d}$.
 * Die ganzzahligen Komponenten von $\vec{G}_\mathrm{min}$ sind die Millerschen Indizes.
 
-## Literatur
+#### Literatur
 1. Vorlesung: Festkörperpysik
 2. [@Gross2012Festkörper]
 3. [@Hunklinger2011Festkörper]
@@ -54,17 +54,17 @@ Im zweidimensionalen Raum wird sie konstruiert, indem die Mittelsenkrechten zwis
 
 Wird eine Welle an einem Punkt im reziproken Gitter gestreut, so wird sie dann reflektiert wenn sie auf dem Rand der 1. BZ enden.
 
-## Literatur
+#### Literatur
 1. Vorlesung: Festkörperpysik
 2. [@Gross2012Festkörper]
 3. [@Hunklinger2011Festkörper]
 ### Netzebenen
 Eine Netzebene ist eine Ebene durch 3 Gitterpunkte eines Bravaisgitters, die nicht auf einer Linie liegen. Eine Netzebene entält unendlich viele Gitterpunkte. Netzebenen werden durch die Millerschen Indizes beschrieben.
 
-## Netzebenenschar
+#### Netzebenenschar
 Eine Netzebenenschar ist eine Menge äquidistanter und paralleler Netzebenen, die alle Gitterpunkte enthalten.
 
-## Klassifizierung von Netzebenenscharen
+#### Klassifizierung von Netzebenenscharen
 Für jede Netzebenenschar mit Ebenenabstand $d$ gibt es reziproke Gittervektoren senkrecht auf diesen Ebenen. Der kürzeste dieser reziproke Gittervektoren $\vec{G}_\mathrm{min}$ hat die Länge $|\vec{G}_\mathrm{min}|=\frac{2\pi}{d}$.
 
 Umgekehrt gibt es zu jedem reziproken Gittervektor $\vec{G}$ eine Netzebenenschar, die senkrecht zu $\vec{G}$ steht und den Abstand $d$ haben. Der kürzeste zu $\vec{G}$ parallele Gittervektor ist $\vec{G}_\mathrm{min}$ mit $|\vec{G}_\mathrm{min}| = \frac{2\pi}{d}$.
@@ -85,15 +85,15 @@ Einen negativen Achsenabschnitt kennzeichnet man durch einen Strich über der Za
 
 Im kubischen Gitter stehen die Ebenen $(hkl)$ und die Richtungen $[hkl]$ senkrecht aufeinander, in anderen Kristallsystemen gilt dies nicht. Die Richtungen $[110]$, $[100]$ und $[111]$ werden zudem durch besondere Punkte wie dem $\Gamma$-Punkt bezeichnet.
 
-## Ebenen
+#### Ebenen
 Eine einzelne Ebene wird durch runde Klammern, z.B. $(100)$, dargestellt. Meint man alle äquivalenten Ebenen, nutzt man geschweifte Klammern, beispielsweise $\{100\}$.
 
 $n(111)$ oder $(nnn)$ beschreibt die $n$-te Beugungsebene in der $(111)$-Ebene.
 
-## Richtungen
+#### Richtungen
 Richtungen im Kristall werden durch die kleinsten ganzen Zahlen $[n_1,n_2,n_3]$ angegeben, die dasselbe Verhältnis wie die selben Komponenten des Richtungsvektors $\vec{R} = n_1 \vec{a_1} + n_2 \vec{a_2} + n_3 \vec{a_3}$ haben. Einen Satz äquivalenter Richtungen stellt man in spitzen Klammern, z.B. $\braket{100}$, dar.
 
-## Merkhilfe
+#### Merkhilfe
 * Ebenen haben keine Kanten, daher werden zur Notation runde oder geschweifte Klammern verwendet.
 * Richtungen sind Vektoren, deswegen werden zur Notation eckige oder spitze Klammern verwendet.
 
@@ -109,9 +109,9 @@ Dies ist äquivalent zu $\exp[i(\vec{k}-\vec{k}^\prime)\vec{R}]=1$, die Differen
 
 $$
 \begin{aligned}
-     && \vec{G} &= \vec{k}-\vec{k}^\prime \\
-     2\mathrm D: && \vec{G}_\parallel &= \vec{k}_\parallel-\vec{k}_\parallel^\prime \\
-     && \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} &= \frac{|\vec{G}|}{2}
+  && \vec{G} &= \vec{k}-\vec{k}^\prime \\
+  2\mathrm D: && \vec{G}_\parallel &= \vec{k}_\parallel-\vec{k}_\parallel^\prime \\
+  && \vec{k}\cdot\frac{\vec{G}}{|\vec{G}|} &= \frac{|\vec{G}|}{2}
 \end{aligned}
 $$
 
@@ -142,7 +142,7 @@ Die Braggsche Beugungsbedingung lautet $n\cdot \lambda = 2d\sin\theta$ mit dem E
 
 Dies ist nicht vollständig physikalisch erklärbar, da sich nicht notwendigerweise auf jeder Netzebene ein Atom "unterhalb" der Atome der 1. Ebene befindet. Man kann die Bragg-Bedingung allerdings aus Laues Erklärung herleiten.
 
-#### Herleitung der Bragg-Bedingung aus der Laue-Bedingung
+###### Herleitung der Bragg-Bedingung aus der Laue-Bedingung
 Der Streuvektor $\vec{G}$ sei ein ganzzahliges Vielfaches des kürzesten reziproken Gittervektors $\vec{G}_\mathrm{min}$, d.h. $\vec{G}=n\cdot\vec{G}_\mathrm{min}$. Dieser Gittervektor steht senkrecht auf der Netzebenenschar, an der reflektiert wird. Es soll konstruktive Interferenz geben, also gilt nach der Laue-Bedingung $n\vec{G}_\mathrm{min} = 2k\sin\theta$. Da $k=\frac{2\pi}{\lambda}$ und $|\vec{G}_\mathrm{min}|=\frac{2\pi}{d}$ folgt die Bragg-Bedingung $n\lambda=2d\sin\theta$.
 
 ## Streuintensität
@@ -151,20 +151,20 @@ Der zu betrachtende Ort ist der Ort der Elektronen, da Röntgenstrahlung an den 
 Die messbare Streuintensität eines Kristalls ist $I_{\vec{G}} \propto |S_{\vec{G}}|^2$. Sei $\vec{r}$ der Ort, der betrachtet wird, $\tilde{\vec{r}}$ der Vektor von einem Atomkern zu ebendiesem Punkt und $\vec{r}_1$ der Vektor zum Atomkern. Dann schreiben wir die Elektronendichte in einer Elementarzelle als
 
 $$
- \rho(\vec{r}) = \sum_j \rho_j(\vec{r}-\vec{r}_j) = \sum_j \rho_j(\tilde{\vec{r}}) .
+  \rho(\vec{r}) = \sum_j \rho_j(\vec{r}-\vec{r}_j) = \sum_j \rho_j(\tilde{\vec{r}}) .
 $$
 
 Damit wird der Strukturfaktor $S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \sum_j \rho_j(\tilde{\vec{r}}) \cdot \mathrm e^{i\vec{G}(\vec{r}+\tilde{\vec{r}_j})} \mathrm dV$. Da $\vec{r}_j$ konstant ist, können die Terme mit $\vec{r}_j$ aus dem Integral gezogen werden.
 
 $$
- S_{\vec{G}} = \sum_j \mathrm e^{i\vec{G}\vec{r}_j}
- \int_{V_\mathrm{Zelle}} \rho_j(\tilde{\vec{r}}) \cdot \mathrm e^{i\vec{G}\tilde{\vec{r}_j}} \mathrm dV
+  S_{\vec{G}} = \sum_j \mathrm e^{i\vec{G}\vec{r}_j}
+  \int_{V_\mathrm{Zelle}} \rho_j(\tilde{\vec{r}}) \cdot \mathrm e^{i\vec{G}\tilde{\vec{r}_j}} \mathrm dV
 $$
 
 Unter Verwendung der Atomformfaktoren $f_j$ kann man den Strukturfaktor einfacher darstellen.
 
 $$
- S_{\vec{G}} = \sum_j \mathrm e^{-i\vec{G}\vec{r}_j} \cdot f_j
+  S_{\vec{G}} = \sum_j \mathrm e^{-i\vec{G}\vec{r}_j} \cdot f_j
 $$
 
 Die Temperaturabhängigkeit der Streuintensität wird durch den Debye-Waller-Faktor $D(T)$ beschrieben. Je größer der reziproke Gittervektor $\vec{G}$ oder Temperatur $T$ sind, desto kleiner sind $D(T)$ und die Streuintensität $I(T)$. Dadurch sind Streuungen höherer Ordnung schwächer.
@@ -178,20 +178,19 @@ Die Streuamplitude in Richtung $\vec{k}^\prime$ wird bestimmt durch Superpositio
 
 $$
 \begin{aligned}
-    S_{\vec{G}} &=
-        \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\varphi(\vec{r})} \mathrm dV\\
-    S_{\vec{G}} &= \sum_j f_j(\vec{G}) \cdot \exp[-i\vec{G}\vec{r}_j] \\
+  S_{\vec{G}} &=
+  \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\varphi(\vec{r})} \mathrm dV\\
+  S_{\vec{G}} &= \sum_j f_j(\vec{G}) \cdot \exp[-i\vec{G}\vec{r}_j] \\
 \end{aligned}
 $$
 
 An Gitterpunkten $\vec{R}$ gilt $\varphi(\vec{r})=-\vec{G}\cdot\vec{R}=2\pi n$ für ganze Zahlen $n\in\mathbb Z$. Die Phase der gestreuten Teilwelle ist $-\vec{G}\cdot\vec{r} = \varphi(\vec{r})$. Daraus folgt die Streuamplitude.
 
-
 $$
- S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\vec{G}\vec{r}} \mathrm dV
+  S_{\vec{G}} = \int_{V_\mathrm{Zelle}} \rho(\vec{r})\mathrm e^{i\vec{G}\vec{r}} \mathrm dV
 $$
 
-#### Beispiel
+###### Beispiel
 Sei das bcc-Gitter als sc-Gitter mit zweiatomiger Basis beschrieben. Dann werden die Ebenen $\{hkl\}$ reflektieren, die einen Strukturfaktor ungleich $0$ haben. Für gerade $n$ ist dies für alle Ebenen $\{nh\ nk\ nl\}$ gegeben. Beispielsweise gibt es keinen $(100)$-Reflex, aber einen $(200)$-Reflex.
 
 Im fcc-Gitter gibt es deutlich mehr reflektierende Ebenen. In der Diamantstruktur gibt es zwar mehr als im bcc-Gitter, aber weniger als im fcc-Giter.
@@ -200,7 +199,7 @@ Im fcc-Gitter gibt es deutlich mehr reflektierende Ebenen. In der Diamantstruktu
 Der Atomformfaktor ist die Fouriertransformierte der Elektronendichte eines Atoms und gibt das Streuvermögen desselben als Funktion des Streuvektors $\vec{G}$ an. Dieser ist dabei ein reziproker Gittervektor.
 
 $$
- f = \int_{V_\mathrm{Atom}} \rho(\vec{r}) \cdot \mathrm e^{i\vec{G}\vec{r}} \mathrm dV
+  f = \int_{V_\mathrm{Atom}} \rho(\vec{r}) \cdot \mathrm e^{i\vec{G}\vec{r}} \mathrm dV
 $$
 
 Die gesamte Elektronendichte $\rho$ kann man sehr gut annähern, indem man die Elektronendichte des einzelnen Atoms annimmt. Die Veränderung durch Wechselwirkung bei Atombindungen ist vergleichsweise gering. Je größer der Streuvektor $\vec{G}$, desto kleiner der Atomformfaktor $f_{\vec{G}}$.
@@ -213,8 +212,8 @@ Die geringste Beugungsordnung hat die höchste Streuintensität.
 Der Debye-Waller-Faktor $D(T)$ beschreibt in der Festkörperphysik das Verhalten der Streuintensität $I(T)$ als Funktion der Temperatur. $M$ ist die Masse der schwingenden Atome bzw. Modeküle, $\omega$ die Schwingungsfrequenz.
 
 $$
- D(T) = \exp\left[-\frac{k_bT}{M\omega^2}\cdot |\vec{G}|^2\right] < 1 \\
- I(T) = D(T)\cdot I_0 \\
+  D(T) = \exp\left[-\frac{k_bT}{M\omega^2}\cdot |\vec{G}|^2\right] < 1 \\
+  I(T) = D(T)\cdot I_0 \\
 $$
 
 Je größer der reziproke Gittervektor $\vec{G}$ oder Temperatur $T$ sind, desto kleiner sind $D(T)$ und die Streuintensität $I(T)$.
@@ -250,12 +249,12 @@ Der große Vorteil dieser Methode ist, dass keine makroskopischen Kristalle ben�
 ### Strahlung für Beugungsexperimente
 Für passende Strahlung wirkt ein Kristall als Beugungsgitter. Röntgenstrahlung ist die häufigste verwendete Strahlung. Die Wellenlänge der Strahlung $\lambda$ muss die Größenordnung der Gitterkonstante $a$ haben.
 
-## Synchrotronstrahlung
+#### Synchrotronstrahlung
 Die Röntgenbeugung hat einen großen Aufschwung durch den Bau von Synchrotronstrahlungsquellen erfahren. Sie liefern eine Auflösung mit $10^{10}$-mal größerer Brillianz (Intensität pro Fläche) als Laborgeräte mit herkömmlicher Röntgenstrahlung.
 
 Die Abstrahlcharakteristik eines im Kreis rotierenden Elektrons hat in seinem Ruhesystem Dipolcharakteristik. Im Laborsystem tritt eine scharfe Fokussierung in Vorwärtsrichtung auf, da das Elektron relativistisch schnell ist.
 
-## Teilchenstrahlen
+#### Teilchenstrahlen
 Neben Photonen können auch Teilchen mit Ruhemasse an Kristallen gebeugt werden. Die De-Broglie-Wellenlänge ist für nichtrelativistische Teilchen $\lambda=\frac{h}{p}=\frac{h}{\sqrt{2mE}}$.
 
 Beispielsweise kann man mit Heliumatomen die Oberfläche von Kristallen messen.

@@ -20,12 +20,12 @@ Dazu wird das Potential $V(x)$ durch eine Taylor-Entwicklung um die Gleichgewich
 
 $$
 \begin{aligned}
- V(x) &= V(0)
- + \left.\frac{\partial V}{\partial x}\right|_{x_0=0} \cdot (x-x_0)
- + \left.\frac{\partial^ V}{\partial x^2}\right|_{x_0=0} \cdot (x-x_0)^2
- + \mathcal O((x-x_0)^3) \\
- \Rightarrow V(x) &\approx ax^2 \\
- \Rightarrow F&=-cx
+  V(x) &= V(0)
+  + \left.\frac{\partial V}{\partial x}\right|_{x_0=0} \cdot (x-x_0)
+  + \left.\frac{\partial^ V}{\partial x^2}\right|_{x_0=0} \cdot (x-x_0)^2
+  + \mathcal O((x-x_0)^3) \\
+  \Rightarrow V(x) &\approx ax^2 \\
+  \Rightarrow F&=-cx
 \end{aligned}
 $$
 
@@ -41,10 +41,10 @@ Betrachtet man Kristalle mit mehratomiger Basis, so ergeben sich unterschiedlich
 #### Schallgeschwindigkeit
 Die Schallgeschwindigkeit $v_s$ ist betragsmäßig die Amplitude der Gruppengeschwindigkeit einer Welle.
 
-Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$. So lange die Dispersionsrelation nicht linear ist, ist sie nicht konstant, hat aber eine konstante Amplitude, die Schallgeschwindigkeit. Für kleine Frequenzen ist die Gruppengeschwindigkeit näherungsweise konstant gleich der Schallgeschwindigkeit.
+Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$.
 
 $$
- v_G(t) = \frac{\mathrm d\omega(k)}{\mathrm dk} \propto v_s
+  v_G(t) = \frac{\mathrm d\omega(k)}{\mathrm dk} \propto v_s
 $$
 
 Es bestimmte Wellenvektoren, für die die Gruppengeschwindigkeit unabhängig von $v_s$ verschwindet $(v_G=0)$, dann gibt es stehende Wellen. Dies ist insbesondere am Rand der ersten Brillouinzone der Fall und kann beispielsweise anhand der eindimensionalen Kette ermittelt werden. Dies gilt auch im dreidimensionalen Fall.
@@ -78,52 +78,11 @@ Sei $a$ der Abstand zwischen den Atomen, dann befinde sich die Ruhelage des $n$-
 
 $$
 \begin{aligned}
- M\ddot{u}(na) = F(na)
- &= -C{\large [} u(na) - u((n-1)a) + u(na) - u((n+1)a) {\large ]} \\
- &= -C{\large [} 2u(na) - u((n-1)a) - u((n+1)a) {\large ]}
+  M\ddot{u}(na) = F(na)
+  &= -C{\large [} u(na) - u((n-1)a) + u(na) - u((n+1)a) {\large ]} \\
+  &= -C{\large [} 2u(na) - u((n-1)a) - u((n+1)a) {\large ]}
 \end{aligned}
 $$
-
-## Dispersionsrelation
-Im Folgenden bestehe die Basis der eindimensionalen Kette aus einem einzelnen Atom, eine Kette mit zweiatomiger Basis ist eine weitere Verallgemeinerung. Zudem werden Normalkoordinaten $u$ verwendet.
-
-Der Ansatz zur Lösung der Differentialgleichung kann als laufende, auf Gitterpunkten definierte Welle $u(ua, t) = A\exp[i(kna - \omega t)]$ gewählt werden. Dadurch kann die Schwingungsfrequenz (durch Einsetzen in die Differentialgleichung) bestimmt werden. Daraus erhält man die folgende Dispersionsrelation $\omega(k)$, die mit der Relation $\frac{1-\cos(2\alpha)}{2} = \sin^2(\alpha)$ vereinfacht werden kann.
-
-$$
-\begin{aligned}
- \omega(k) &= \sqrt{\frac{2C}{M} [1-\cos(ka)]} \\
- \omega(k) &= 2\sqrt{\frac{C}{M}}
- \left|
- \sin\left(
- \frac{ka}{2}
- \right)
- \right|
-\end{aligned}
-$$
-
-Hierbei muss der Wellenvektor $k$ muss aus der ersten Brilloinzone stammen. Dadurch sind die Frequenzen der Wellen auf $\omega\in\left[0, 2\sqrt{\frac{C}{M}} \right]$ beschränkt.
-
-Der Wellenvektor kann beide Vorzeichen haben, da die Wellen in beide Richtungen laufen dürfen. An der Zonengrenze schwingen die Atome gegenphasig, was durch $u(na, t)_{\frac{a}{2}}=(-1)^n A\exp[-i\omega t]$ beschrieben wird.
-
-## Beschränkung von $k$ und $\omega$
-Weil $\omega(k)$ periodisch ist, ist auch die Auslenkung $u(x, t)$ an der Stelle $x_n=na$ periodisch. Phasendifferenzen von benachbarten Atomen sind nur physikalisch sinnvoll sind, wenn sie kleiner als $\pi$ sind, ansonsten weist man Schwingungen in einem Raum zu, an denen keine Atome sitzen. Daraus folgt eine Einschränkung der Wellenlänge.
-
-Da $\lambda=\frac{2\pi}{|k|}$ gilt folgt mit dem kürzestmöglichen reziproken Gittervektor $G_0$ eine Einschränkung von $2k\in[-G_0, G_0]$, da dies äquivalent zu der Forderung $ka \in [-\pi, \pi]$ ist. Folglich muss $k$ ein Wellenvektor aus der ersten Brillouinzone sein.
-
-## Schallgeschwindigkeit
-Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$ nach dem Wellenvektor $k$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$ der eindimensionalen Kette. Es gibt Wellenvektoren $k=\frac{\pi}{a}$, für die die Gruppengeschwindigkeit $v_G$ verschwindet. Dies nennt man stehende Wellen, sie treten am Rand der ersten Brillouinzone auf.
-
-$$
-\begin{aligned}
- v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
- \Rightarrow v_s &= \sqrt{\frac{C}{M}}
-\end{aligned}
-$$
-
-Für kleine Frequenzen ist die Dispersionsrelation linear $\omega(k) \approx\sqrt{\frac{C}{M}} |ka|$, dann ist die Gruppengeschwindigkeit $v_G=v_s$ ist konstant, insbesondere unabhängig von der Wellenlänge.
-
-## Moden
-Es gibt eine akustische und zwei optische Moden. Die akustische Mode hat immer eine geringere Frequenz als die optischen Moden. Dies liegt daran, dass eine Scherung immer einfacher als eine Kompression ist. Die Kraftkonstanten der Moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
 
 #### Dispersionsrelation
 Im Folgenden bestehe die Basis der eindimensionalen Kette aus einem einzelnen Atom, eine Kette mit zweiatomiger Basis ist eine weitere Verallgemeinerung. Zudem werden Normalkoordinaten $u$ verwendet.
@@ -132,13 +91,13 @@ Der Ansatz zur Lösung der Differentialgleichung kann als laufende, auf Gitterpu
 
 $$
 \begin{aligned}
- \omega(k) &= \sqrt{\frac{2C}{M} [1-\cos(ka)]} \\
- \omega(k) &= 2\sqrt{\frac{C}{M}}
- \left|
- \sin\left(
- \frac{ka}{2}
- \right)
- \right|
+  \omega(k) &= \sqrt{\frac{2C}{M} [1-\cos(ka)]} \\
+  \omega(k) &= 2\sqrt{\frac{C}{M}}
+  \left|
+  \sin\left(
+  \frac{ka}{2}
+  \right)
+  \right|
 \end{aligned}
 $$
 
@@ -151,19 +110,19 @@ Weil $\omega(k)$ periodisch ist, ist auch die Auslenkung $u(x, t)$ an der Stelle
 
 Da $\lambda=\frac{2\pi}{|k|}$ gilt folgt mit dem kürzestmöglichen reziproken Gittervektor $G_0$ eine Einschränkung von $2k\in[-G_0, G_0]$, da dies äquivalent zu der Forderung $ka \in [-\pi, \pi]$ ist. Folglich muss $k$ ein Wellenvektor aus der ersten Brillouinzone sein.
 
-## Schallgeschwindigkeit
+##### Schallgeschwindigkeit
 Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$ nach dem Wellenvektor $k$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$ der eindimensionalen Kette. Es gibt Wellenvektoren $k=\frac{\pi}{a}$, für die die Gruppengeschwindigkeit $v_G$ verschwindet. Dies nennt man stehende Wellen, sie treten am Rand der ersten Brillouinzone auf.
 
 $$
 \begin{aligned}
- v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
- \Rightarrow v_s &= \sqrt{\frac{C}{M}}
+  v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
+  \Rightarrow v_s &= \sqrt{\frac{C}{M}}
 \end{aligned}
 $$
 
 Für kleine Frequenzen ist die Dispersionsrelation linear $\omega(k) \approx\sqrt{\frac{C}{M}} |ka|$, dann ist die Gruppengeschwindigkeit $v_G=v_s$ ist konstant, insbesondere unabhängig von der Wellenlänge.
 
-## Moden
+##### Moden
 Es gibt eine akustische und zwei optische Moden. Die akustische Mode hat immer eine geringere Frequenz als die optischen Moden. Dies liegt daran, dass eine Scherung immer einfacher als eine Kompression ist. Die Kraftkonstanten der Moden unterscheiden sich, ansonsten gelten die gleichen Dispersionsrelationen.
 
 #### Schallgeschwindigkeit
@@ -171,8 +130,8 @@ Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\ome
 
 $$
 \begin{aligned}
- v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
- \Rightarrow v_s &= \sqrt{\frac{C}{M}}
+  v_G &= v_s \left|\cos\left(\frac{ka}{2}\right)\right| \\
+  \Rightarrow v_s &= \sqrt{\frac{C}{M}}
 \end{aligned}
 $$
 
@@ -185,8 +144,8 @@ Es gibt schon in der eindimensionalen Kette eine akustische und zwei optische Mo
 Es wird eine eindimensionale Kette betrachtet, die eine zweiatomige Basis hat. Dies führt dazu, dass die Dispersionsrelation zwei verschiedene Zweige hat. Dies ist genau so lange der Fall, wie die Massen der beiden Teilchen unterschiedlich sind; ansonsten bilden beide Basisatome eine neue Einheitszelle.
 
 $$
- \omega^2 =
- \frac{C+D}{M} \pm \frac{1}{M}\sqrt{C^2+D^2+2CD\cos(ka)}
+  \omega^2 =
+  \frac{C+D}{M} \pm \frac{1}{M}\sqrt{C^2+D^2+2CD\cos(ka)}
 $$
 
 Der Zweig mit der geringeren Frequenz, der mit dem Minus, ist der _akustische Zweig_. Der Zweig mit der höheren Frequenz, der mit dem Plus, ist der _optische Zweig_. Der akustische Zweig verschwindet bei $k=0$ und verändert sich im Interval $\pm \frac{\pi}{a}$ sehr stark. Der optische Zweig dagegen hat bei $k=0$ ein Maximum, verändert sich im selben Interval allerdings vergleichsweise gering.
@@ -202,36 +161,38 @@ Die wirkende Kraft $F_i=M\ddot{u}_i$ besteht jeweils aus der Federkraft zum link
 
 $$
 \begin{aligned}
- M\ddot{u}_1(na) &= -C[u_1(na) - u_2(na)] - D[u_1(na) - u_2((n-1)a)] \\
- M\ddot{u}_2(na) &= -C[u_2(na) - u_1(na)] - D[u_2(na) - u_1((n+1)a)]
+  M\ddot{u}_1(na) &= -C[u_1(na) - u_2(na)] - D[u_1(na) - u_2((n-1)a)] \\
+  M\ddot{u}_2(na) &= -C[u_2(na) - u_1(na)] - D[u_2(na) - u_1((n+1)a)]
 \end{aligned}
 $$
 
 ## Klassische Theorie im dreidimension Fall
 ### Darstellung der Dispersionsrelation
-Üblicherweise wird der Wellenvektor $\vec{k}$ in Einheiten von $\frac{\pi}{a}$ geplottet, sodass die erste Brillouinzone (BZ) durch das Interval $[-1, 1]$ dargestellt wird. Hierbei gibt es mehrere Möglichkeiten der Darstellung, die meistgenutzte ist die reduzierte Darstellung.[^3] Alle drei Darstellungen enthalten die komplette Information.
+Üblicherweise wird der Wellenvektor $\vec{k}$ in Einheiten von $\frac{\pi}{a}$ geplottet, sodass die erste Brillouinzone (BZ) durch das Interval $[-1, 1]$ dargestellt wird. Hierbei gibt es mehrere Möglichkeiten der Darstellung, die meistgenutzte ist die reduzierte Darstellung.[^3] Alle drei Darstellungen der Dispersionsrelation enthalten die komplette Information.
 
 In der _ausgedehnten_ Darstellung wird die komplette Dispersionsrelation über den gesamten Raum geplottet, sie wird dabei nicht auf die erste BZ beschränkt. In der _periodischen_ Darstellung werden die Dispersionsrelationen aller reziproken Gitterpunkte nebeneinander geplottet.
 
 In der _reduzierten_ Darstellung wird die komplette Dispersionsrelation auf die erste BZ reduziert dargestellt. Dazu wird die Funktion gespiegelt, sobald sie den Rand der ersten BZ überschreiten würde. Das Ergebnis sieht wie ein Ausschnitt aus der periodischen Darstellung aus.
 
-Dispersionsrelationen werden üblicherweise in Hochsymmetrierichtungen geplottet. Im dreidimensionalen Fall werden normalerweise alle Messungen zwischen den Punkten $\Gamma$, $X$, $K$ und $L$ in dem selben Diagramm reduziert dargestellt. Dies sieht ohne Übung unübersichtlich aus.[^2]
+Dispersionsrelationen werden üblicherweise in Hochsymmetrierichtungen geplottet. Im dreidimensionalen Fall werden normalerweise alle Messungen zwischen den Punkten $\Gamma$, $X$, $K$ und $L$ in dem selben Diagramm reduziert dargestellt. Dies sieht ohne Übung unübersichtlich aus.[^4]
 
-^^[^3]: siehe Abbildung 8.6 in [@Gross2012Festkörper, p. 345]
-[^2]: siehe Abbildung 8.22 in [@Gross2012Festkörper, p. 370]### Schwingungsmoden
+[^3]: siehe Abbildung 8.6 in [@Gross2012Festkörper, p. 345]
+[^4]: siehe Abbildung 8.22 in [@Gross2012Festkörper, p. 370]
+
+### Schwingungsmoden
 Für jede Welle mit Wellenvektor $\vec{k}$ gibt es $3$ Moden, von denen eine Mode akustisch und zwei Moden optisch sind. Für eine Basis mit $j$ Atomen gibt es $3$ akustische Zweige und $3j-3$ optische Zweige der Dispersionsrelation.
 
-In Hochsymmetrischen Kristallrichtungen[^4] sind die transversalen Moden entartet. Das bedeutet, beide transversalen Moden sind identisch und man kann nur eine transversale Mode messen.
+In Hochsymmetrischen Kristallrichtungen[^5] sind die transversalen Moden entartet. Das bedeutet, beide transversalen Moden sind identisch und man kann nur eine transversale Mode messen.
 
-^[^4]: beispielsweise $[100]$ im kubischen System
+[^5]: beispielsweise $[100]$ im kubischen System
 
 ### Schallgeschwindigkeit
 Die Schallgeschwindigkeit $v_s$ ist betragsmäßig die Amplitude der Gruppengeschwindigkeit einer Welle.
 
-Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$. So lange die Dispersionsrelation nicht linear ist, ist sie nicht konstant, hat aber eine konstante Amplitude, die Schallgeschwindigkeit. Für kleine Frequenzen ist die Gruppengeschwindigkeit näherungsweise konstant gleich der Schallgeschwindigkeit.
+Die Gruppengeschwindigkeit $v_G$ ist die Ableitung der Dispersionsrelation $\omega(k)$, ihre Amplitude ist die Schallgeschwindigkeit $v_s$.
 
 $$
- v_G(t) = \frac{\mathrm d\omega(k)}{\mathrm dk} \propto v_s
+  v_G(t) = \frac{\mathrm d\omega(k)}{\mathrm dk} \propto v_s
 $$
 
 Es bestimmte Wellenvektoren, für die die Gruppengeschwindigkeit unabhängig von $v_s$ verschwindet $(v_G=0)$, dann gibt es stehende Wellen. Dies ist insbesondere am Rand der ersten Brillouinzone der Fall und kann beispielsweise anhand der eindimensionalen Kette ermittelt werden. Dies gilt auch im dreidimensionalen Fall.
@@ -241,16 +202,16 @@ Manche Richtungen in Kristallen weisen besonders hohe Symmetrie auf. Um diese zu
 
 Die Punkte $\Gamma$, $X$, $K$ und $L$ liegen im Abstand $\sqrt{i}\frac{\pi}{a}$ mit $i=0,1,2,3$ vom Zentrum der ersten Brillouinzone entfernt. Die Richtungen $\Gamma X$, $\Gamma K$ und $\Gamma L$ bezeichnen die $[110]$, $[100]$ und die $[111]$-Richtung.
 
-## Gammapunkt
+#### Gammapunkt
 Der $\Gamma$-Punkt ist der Punkt im Zentrum der ersten Brillouinzone, an dieser Stelle gilt $\vec{k}=0$.
 
-## X-Punkt
+#### X-Punkt
 Der Punkt $X$ liegt an der Stelle mit $k=\frac{\pi}{a}$, wobei $\Gamma X$ die $[110]$-Richtung im Kristall beschreibt.
 
-## K-Punkt
+#### K-Punkt
 Der Punkt $K$ liegt an der Stelle mit $k=\sqrt{2}\frac{\pi}{a}$, wobei $\Gamma K$ die $[100]$-Richtung im Kristall beschreibt.
 
-## L-Punkt
+#### L-Punkt
 Der Punkt $L$ liegt an der Stelle mit $k=\sqrt{3}\frac{\pi}{a}$, wobei $\Gamma L$ die $[111]$-Richtung im Kristall beschreibt.
 
 ## Randbedingungen
@@ -264,16 +225,16 @@ Hier soll die eindimensionale Betrachtung der Born-von-Karmann-Randbedingungen h
 
 Alle Randatome bilden einen geschlossenen Ring an Atomen, die durch einzelne Federkräfte verbunden sind. Demnach das $0$-te Atom identisch mit dem $N$-ten, es gilt also $u(0) = u(Na)$. Daraus folgt mit dem Ansatz für die eindimensionale Kette $\exp[ikNa]=1$, was mit ganzen Zahlen $n\in\mathbb Z$ durch $kNa=2\pi n$ erfüllt ist.
 
-Man erhält $N$ verschiedene $k$-Werte mit verschiedenen Eigenfrequenzen $\omega$ für $N$ eindimensionale Oszillatoren. Da $\vec{k}$ in der ersten Brillouinzone liegen muss,[^5] gilt $ak\in(-\pi, \pi]$. Daraus ergibt sich folgende Relation für $N$ und $n$, was die möglichen Wellenvektoren definiert. Dadurch gibt es $Na$ erlaubte Zustände.
+Man erhält $N$ verschiedene $k$-Werte mit verschiedenen Eigenfrequenzen $\omega$ für $N$ eindimensionale Oszillatoren. Da $\vec{k}$ in der ersten Brillouinzone liegen muss,[^6] gilt $ak\in(-\pi, \pi]$. Daraus ergibt sich folgende Relation für $N$ und $n$, was die möglichen Wellenvektoren definiert. Dadurch gibt es $Na$ erlaubte Zustände.
 
 $$
 \begin{aligned}
- k &= \frac{2\pi}{a} \cdot \frac{n}{N} \\
- \Rightarrow - \frac{N}{2} &< n \le \frac{N}{2}
+  k &= \frac{2\pi}{a} \cdot \frac{n}{N} \\
+  \Rightarrow - \frac{N}{2} &< n \le \frac{N}{2}
 \end{aligned}
 $$
 
-^[^5]: vgl. eindimensionale Kette
+[^6]: vgl. eindimensionale Kette
 
 #### 3D
 Hier soll die dreidimensionale Betrachtung der Born-von-Karmann-Randbedingungen hergeleitet werden.
@@ -285,8 +246,8 @@ Die Zustandsdichte ist die Anzahl der Zustände im $\vec{k}$-Raum pro $\vec{k}$-
 
 $$
 \begin{aligned}
- Z(k) &= \frac{\#\mathrm{Zustände}}{k\mathrm{-Raum-Intervall}} \\
- Z(k) &= \frac{V}{(2\pi)^2}
+  Z(k) &= \frac{\#\mathrm{Zustände}}{k\mathrm{-Raum-Intervall}} \\
+  Z(k) &= \frac{V}{(2\pi)^2}
 \end{aligned}
 $$
 
@@ -297,8 +258,8 @@ Im dreidimensionalen Fall erhält man mit den primitiven Translationen des rezip
 
 $$
 \begin{aligned}
- \vec{k} &= \frac{l_1}{N_1}\vec{b}_1 + \frac{l_2}{N_2}\vec{b}_2 + \frac{l_3}{N_3}\vec{b}_3 \\
- Z(k) &= \frac{L_1\cdot L_2\cdot L_3}{(2\pi)^3} = \frac{V}{(2\pi)^3}
+  \vec{k} &= \frac{l_1}{N_1}\vec{b}_1 + \frac{l_2}{N_2}\vec{b}_2 + \frac{l_3}{N_3}\vec{b}_3 \\
+  Z(k) &= \frac{L_1\cdot L_2\cdot L_3}{(2\pi)^3} = \frac{V}{(2\pi)^3}
 \end{aligned}
 $$
 
@@ -318,7 +279,7 @@ Bei Festkörpern geht man davon aus, dass die Schwingungen um die Gitterpunkte k
 Zur quantitativen Beschreibung sind Normalkoordinaten hilfreich, die eine Auslenkung $\vec{u}$ um den jeweiligen Gitterpunkt beschreiben. Dazu wird der Ortsvektor $\vec{r}(t)$ eines Atoms durch eine Abweichung $\vec{u}$ vom Gitterpunkt an der Position $\vec{R}$ beschrieben.
 
 $$
- \vec{r}(t) = \vec{R} + \vec{u}(\vec{R},t)
+  \vec{r}(t) = \vec{R} + \vec{u}(\vec{R},t)
 $$
 
 #### Energie
@@ -328,12 +289,12 @@ Sei $E_p$ die Eigenenergie zum Impuls $p\in\{1, \dots, 3N_j\}$, die aufgrund der
 
 $$
 \begin{aligned}
- E_p &= \left(n_{\vec{k}}, p+\frac{1}{2}\right)\hbar\omega_p(\vec{k}) \\
- E &= \sum_{\vec{k}, p}
- \left(
- n_{\vec{k}, p} + \frac{1}{2}
- \right)
- \cdot \hbar \omega_p(\vec{k})
+  E_p &= \left(n_{\vec{k}}, p+\frac{1}{2}\right)\hbar\omega_p(\vec{k}) \\
+  E &= \sum_{\vec{k}, p}
+  \left(
+  n_{\vec{k}, p} + \frac{1}{2}
+  \right)
+  \cdot \hbar \omega_p(\vec{k})
 \end{aligned}
 $$
 
@@ -363,8 +324,8 @@ Für die inelastische Streuung eines Teilchens am Kristall müssen für die Erze
 
 $$
 \begin{aligned}
- E_{\vec{k}} - E_{\vec{k}^\prime} &= \pm \hbar \omega_\mathrm{Phonon} \\
- \vec{k} - \vec{k}^\prime &= \pm \vec{k}_\mathrm{Phonon} + \vec{G}
+  E_{\vec{k}} - E_{\vec{k}^\prime} &= \pm \hbar \omega_\mathrm{Phonon} \\
+  \vec{k} - \vec{k}^\prime &= \pm \vec{k}_\mathrm{Phonon} + \vec{G}
 \end{aligned}
 $$
 
@@ -375,8 +336,8 @@ Für die inelastische Streuung eines Teilchens am Kristall müssen für die Erze
 
 $$
 \begin{aligned}
- E_{\vec{k}} - E_{\vec{k}^\prime} &= \pm \hbar \omega_\mathrm{Phonon} \\
- \vec{k} - \vec{k}^\prime &= \pm \vec{k}_\mathrm{Phonon} + \vec{G}
+  E_{\vec{k}} - E_{\vec{k}^\prime} &= \pm \hbar \omega_\mathrm{Phonon} \\
+  \vec{k} - \vec{k}^\prime &= \pm \vec{k}_\mathrm{Phonon} + \vec{G}
 \end{aligned}
 $$
 
@@ -396,18 +357,18 @@ Der Streuwinkel $2\theta$ kann durch die Energie des einfallenden Strahls $E_i$ 
 
 $$
 \begin{aligned}
- E_i + E_f -\frac{Q^2\hbar^2}{2m} &= p_i p_f \cos(2\theta) \\
- &= 2\sqrt{E_iE_f} \cos(2\theta) \\
- \Leftrightarrow 2\theta &= \arccos\left[
- \frac{
- -\frac{Q^2\hbar^2}{2m} + E_i + E_f
- }{2\sqrt{E_i E_f}}
- \right] \\
- \Leftrightarrow 2\theta &= \arccos\left[
- \frac{
- -Q^2 + k_i^2 + k_f^2
- }{2 k_i k_f}
- \right]
+  E_i + E_f -\frac{Q^2\hbar^2}{2m} &= p_i p_f \cos(2\theta) \\
+  &= 2\sqrt{E_iE_f} \cos(2\theta) \\
+  \Leftrightarrow 2\theta &= \arccos\left[
+  \frac{
+  -\frac{Q^2\hbar^2}{2m} + E_i + E_f
+  }{2\sqrt{E_i E_f}}
+  \right] \\
+  \Leftrightarrow 2\theta &= \arccos\left[
+  \frac{
+  -Q^2 + k_i^2 + k_f^2
+  }{2 k_i k_f}
+  \right]
 \end{aligned}
 $$
 
@@ -417,7 +378,7 @@ In der Raman-Spektroskopie wird optisches Licht zur Streuung in Kristallen verwe
 Die Differenzen der Frequenzen des einfallenden Lichtes $\Omega$ und des ausfallenden Lichtes $\Omega^\prime$ muss der Frequenz des erzeugten Phonons $\omega_\mathrm{Phonon}$ entsprechen.
 
 $$
- \frac{\Omega-\Omega^\prime}{\Omega} = \frac{\Delta \Omega}{\Omega} = \frac{\omega_\mathrm{Phonon}}{\Omega}
+  \frac{\Omega-\Omega^\prime}{\Omega} = \frac{\Delta \Omega}{\Omega} = \frac{\omega_\mathrm{Phonon}}{\Omega}
 $$
 
 Bei der Phononenerzeugung entsteht Stokes-Streuung, bei der Phononenvernichtung Anti-Stokes-Streuung. Bei Energien um $E\approx 3\mathrm{eV}$ gilt $\vec{k}=\vec{k}^\prime$, daher sollte eigentlich keine Strahlung entstehen. Durch Defekte im Kristall entsteht jedoch Reyleigh-Strahlung.

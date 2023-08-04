@@ -8,10 +8,10 @@ Ein Bravaisgitter ist definiert als eine sich unendliche erstreckende Anordnung 
 Bravaisgitter besteht aus der Menge der Punkte mit Positionsvektoren $\vec{R}$, die durch ganzzahlige Linearkombinationen der _Primitiven Translationen_ $\vec{a}_i$ gebildet werden. Es dürfen dabei nicht alle primitiven Translationen $\vec{a}_i$ in einer Ebene liegen. Dies ist eine äquivalent zur erstgenannten Definition.
 
 $$
- \left\{\left.
- \vec{R} = \sum_{i=1}^3 n_i\vec{a}_i \in \mathbb R^3 \right|
- n_i \in \mathbb Z \land \vec{a}_1\cdot(\vec{a}_2\times\vec{a}_3) \neq 0
- \right\}
+  \left\{\left.
+  \vec{R} = \sum_{i=1}^3 n_i\vec{a}_i \in \mathbb R^3 \right|
+  n_i \in \mathbb Z \land \vec{a}_1\cdot(\vec{a}_2\times\vec{a}_3) \neq 0
+  \right\}
 $$
 
 Bravaisgitter werden mittels der Kristallsysteme klassifiziert.
@@ -95,11 +95,11 @@ Bei einem sc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W�
 * bcc-Gitter können als sc mit zweiatomiger Basis dargestellt werden.
 
 $$
- \vec{a}_1 = a \cdot \begin{pmatrix} 1\\0\\0 \end{pmatrix}
- \land
- \vec{a}_2 = a \cdot \begin{pmatrix} 0\\1\\0 \end{pmatrix}
- \land
- \vec{a}_3 = a \cdot \begin{pmatrix} 0\\0\\1 \end{pmatrix}
+  \vec{a}_1 = a \cdot \begin{pmatrix} 1\\0\\0 \end{pmatrix}
+  \land
+  \vec{a}_2 = a \cdot \begin{pmatrix} 0\\1\\0 \end{pmatrix}
+  \land
+  \vec{a}_3 = a \cdot \begin{pmatrix} 0\\0\\1 \end{pmatrix}
 $$
 
 #### body centered cubic (_bcc_)
@@ -111,20 +111,20 @@ Bei einem bcc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * Primitive Translationen $\vec{a}_i$ zeigen von einer Würfelecke auf benachbarte Körperzentrierte Punkte
 * Das reziproke Gitter ist ein fcc-Gitter.
 * Die Konventionelle Einheitszelle ist einfach-kubisch (_sc_), mit zweiatomiger Basis
- * Die Vektoren $\vec{d}_1=a/2 (0,0,0)^T$ und $\vec{d}_2=a/2 (1,1,1)^T$ weisen von einem Gitterpunkt auf die beiden Elemente der Basis.
+  * Die Vektoren $\vec{d}_1=a/2 (0,0,0)^T$ und $\vec{d}_2=a/2 (1,1,1)^T$ weisen von einem Gitterpunkt auf die beiden Elemente der Basis.
 * Der Strukturfaktor $S_{\vec{G}}$ verschwindet für viele Netzebenen
 
 $$
- \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
- \land
- \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\-1\\1 \end{pmatrix}
- \land
- \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} -1\\1\\1 \end{pmatrix} \\
- S_{\vec{G}} =
- \begin{cases}
- 2 & \Leftrightarrow nh+nk+nl \text{ gerade}\\
- 0 & \Leftrightarrow nh+nk+nl \text{ ungerade}
- \end{cases}
+  \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\1 \end{pmatrix}
+  \land
+  \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\-1\\1 \end{pmatrix}
+  \land
+  \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} -1\\1\\1 \end{pmatrix} \\
+  S_{\vec{G}} =
+  \begin{cases}
+  2 & \Leftrightarrow nh+nk+nl \text{ gerade}\\
+  0 & \Leftrightarrow nh+nk+nl \text{ ungerade}
+  \end{cases}
 $$
 
 #### face centered cubic (_fcc_)
@@ -133,7 +133,7 @@ Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * 24 Metalle kristallisieren in dieser Gitterstruktur.
 * Packungsdichte $P_\mathrm{ffc} \approx 0.74$
 * Dies ist die dichtestmögliche Kugelpackung
- * Vermutung von Kepler, Beweis 2017
+  * Vermutung von Kepler, Beweis 2017
 * Es gibt 3 verschiedene "Schichten": Die Stapelfolge folgt dem Muster $A,B,C,A,B,C$
 * Koordinationszahl $12$: $6$ Würfelecken und $6$ Flächenzentrierte Punkte
 * Das reziproke Gitter ist ein bcc-Gitter.
@@ -142,17 +142,17 @@ Bei einem ffc-Gitter liegt immer ein Gitterpunkt an jeder Ecke eines gedachten W
 * Der Strukturfaktor $S_{\vec{G}}$ verschwindet für einige Netzebenen
 
 $$
- \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\0 \end{pmatrix}
- \land
- \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\0\\1 \end{pmatrix}
- \land
- \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}\\
- S_{\vec{G}} =
- \begin{cases}
- 4 & \Leftrightarrow h,k,l \text{ gerade}\\
- 4 & \Leftrightarrow h,k,l \text{ ungerade}\\
- 0 & \Leftrightarrow \text{sonst}
- \end{cases}
+  \vec{a}_1 = \frac{a}{2} \cdot \begin{pmatrix} 1\\1\\0 \end{pmatrix}
+  \land
+  \vec{a}_2 = \frac{a}{2} \cdot \begin{pmatrix} 1\\0\\1 \end{pmatrix}
+  \land
+  \vec{a}_3 = \frac{a}{2} \cdot \begin{pmatrix} 0\\1\\1 \end{pmatrix}\\
+  S_{\vec{G}} =
+  \begin{cases}
+  4 & \Leftrightarrow h,k,l \text{ gerade}\\
+  4 & \Leftrightarrow h,k,l \text{ ungerade}\\
+  0 & \Leftrightarrow \text{sonst}
+  \end{cases}
 $$
 
 #### hexagonal closed packed (hcp)
@@ -206,12 +206,12 @@ Die Struktur wird dann eingenommen, wenn vier $\mathrm{sp}^3$-Orbitale eine Kova
 Der Strukturfaktor $S_{\vec{G}}$ verschwindet für einige Netzebenen. Hierbei bezeichnet $n$ die Ordnung des Beugungsreflexes.
 
 $$
- S_{\vec{G}} =
- \begin{cases}
- 4 & \Leftrightarrow h,k,l \text{ gerade } \land (h+k+l)=4n\\
- 4 & \Leftrightarrow h,k,l \text{ ungerade}\\
- 0 & \Leftrightarrow \text{sonst}
- \end{cases}
+  S_{\vec{G}} =
+  \begin{cases}
+  4 & \Leftrightarrow h,k,l \text{ gerade } \land (h+k+l)=4n\\
+  4 & \Leftrightarrow h,k,l \text{ ungerade}\\
+  0 & \Leftrightarrow \text{sonst}
+  \end{cases}
 $$
 
 #### Graphit
@@ -224,7 +224,7 @@ Ein hochenergetischer Elektronenstrahl, der ähnlich wie Licht unterschiedlich f
 Bei einer Energie von ca $100\mathrm{keV}$ erhält man eine Wellenlänge von $\lambda_e \approx 4\cdot10^{-12}\mathrm{m}$
 
 $$
- \lambda_e = \frac{h}{p} = \frac{4}{\sqrt{2m_eE}}
+  \lambda_e = \frac{h}{p} = \frac{4}{\sqrt{2m_eE}}
 $$
 
 Der Streuwinkel $\alpha$ ist wegen sphärischer Aberration geladener Teilchen sehr klein. Die Auflösung $\approx\frac{\lambda_e}{\sin{(\alpha)}}$ ist dafür sehr gering.
@@ -303,6 +303,6 @@ Bedeutungen:
 
 fcc und bcc sind Spezialfälle des tetragonalen Gitters (bct).
 
-## nicht-sphärische Basis
+#### nicht-sphärische Basis
 Heftet man an diese Gruppen eine nicht-spärische Basis, verändert das die Symmetrie. Es gibt dann 32 kristallographische Punktgruppen und 230 kristallographische Raumgruppen. Hier treten auch Translationen auf, die keine Gittervektoren sind. Solche Symmetrieoperationen können z.B. eine Schraubenachse oder eine Gleitspiegelebene sein.
 

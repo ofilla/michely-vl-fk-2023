@@ -15,9 +15,9 @@ Durch die Periodizität des Potentials $U$ muss auch die Wellenfunktion $\Psi$ p
 
 $$
 \begin{aligned}
- \Psi &= \Psi(\vec{r} + \vec{R}) \\
- u &= u(\vec{r} + \vec{R}) \\
- \Psi &= u \cdot \exp[i\vec{k}\vec{r}]
+  \Psi &= \Psi(\vec{r} + \vec{R}) \\
+  u &= u(\vec{r} + \vec{R}) \\
+  \Psi &= u \cdot \exp[i\vec{k}\vec{r}]
 \end{aligned}
 $$
 
@@ -26,9 +26,9 @@ Durch die Forderungen des Bloch-Theorems ist die Aufenthaltswahrscheinlichkeit d
 
 $$
 \begin{aligned}
- \Psi_{n,\vec{k}}(\vec{r}+\vec{R}) &= \exp[i\vec{k}\vec{R}] \cdot \exp[i\vec{k}\vec{r}] \\
- \vec{k} &= \sum_{i=1}^3 m_i \vec{b_i} \\
- \Rightarrow \Psi_{n,\vec{k}}(\vec{r}) &= \sum_{\vec{G}} c_{n, \vec{k}-\vec{G}} \exp[i(\vec{k}-\vec{G})\vec{r}]
+  \Psi_{n,\vec{k}}(\vec{r}+\vec{R}) &= \exp[i\vec{k}\vec{R}] \cdot \exp[i\vec{k}\vec{r}] \\
+  \vec{k} &= \sum_{i=1}^3 m_i \vec{b_i} \\
+  \Rightarrow \Psi_{n,\vec{k}}(\vec{r}) &= \sum_{\vec{G}} c_{n, \vec{k}-\vec{G}} \exp[i(\vec{k}-\vec{G})\vec{r}]
 \end{aligned}
 $$
 Daraus folgt, dass der Kristallimpuls $\hbar \vec{k}$ nur bis auf einen reziproken Gittervektor $\vec{G}$ erhalten ist, er ist insbesondere kein Eigenwert des Impulsoperators. Weiterhin ist $\vec{k}$ ein quasikontinuierlicher Parameter.
@@ -37,7 +37,7 @@ Daraus folgt, dass der Kristallimpuls $\hbar \vec{k}$ nur bis auf einen reziprok
 Analog zu der Gruppengeschwindigkeit von Phononen kann man die Gruppengeschwindigkeit $\vec{v}_n(\vec{k})$ der Elektronen im Bloch-Modell bestimmen. Diese ist wiederum die Ableitung der Dispersionsrelation.
 
 $$
- \vec{v}_n(\vec{k}) = \frac{1}{\hbar} \nabla_k E_n(\vec{k})
+  \vec{v}_n(\vec{k}) = \frac{1}{\hbar} \nabla_k E_n(\vec{k})
 $$
 
 Quantenmechanisch wird dies durch Wellenpakete beschrieben mit der Energie $E_n(\vec{k})$ beschrieben.
@@ -93,7 +93,7 @@ Halbleiter können mit Donatoren oder Akzekptoren dotiert werden, um spezifische
 ### Transparenz
 Festkörper sind dann transparent, wenn es zwischen dem Valenzband und dem Leitungsband eine Energielücke gibt, die größer als die Energie der betreffenden Strahlung ist. Dadurch kann die Strahlung nicht absorbiert werden, um ein Elektron von dem Valenzband in das Leitungsband anzuregen.
 
-Da optisches Licht im Energiebereich von $1.59 \mathrm{eV}$ (Rot) und $3.26 \mathrm{eV}$ (Violett) liegt,[^7] sind Materialien mit Bandlücken in dieser Größe transparent für optisches Licht.
+Da optisches Licht im Energiebereich von $1.59 \mathrm{eV}$ (Rot) und $3.26 \mathrm{eV}$ (Violett) liegt,[^8] sind Materialien mit Bandlücken in dieser Größe transparent für optisches Licht.
 
-^[^7]: Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Elektromagnetisches_Spektrum), Abruf 2023-07-30
+[^8]: Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Elektromagnetisches_Spektrum), Abruf 2023-07-30
 

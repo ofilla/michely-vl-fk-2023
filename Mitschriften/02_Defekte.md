@@ -10,7 +10,7 @@ Es gibt 3 Kategorien an Defekten:
 
 ## Punktdefekte
 * Leerstellen
- * Bei Ionenkristallen bestimmen die Leerstellen die Leitfähigkeit
+  * Bei Ionenkristallen bestimmen die Leerstellen die Leitfähigkeit
 * Zwischengitteratome
 * Fremdatome
 
@@ -18,7 +18,7 @@ Punktdefekte erhöhen den spezifischen Widerstand in Metallen.
 
 ## Liniendefekte
 * Versetzungen
- * verursachen Kaltverfestigung
+  * verursachen Kaltverfestigung
 * Burgers-Vektor
 * Stapelfehler
 * Korngrenzen
@@ -44,12 +44,13 @@ Bei Temperaturerhöhung können neue Leerstellen eingebaut werden und der Krista
 
 Zur Erklärung dieses Phänomens ist es wichtig, dass das Gibbs-Potential minimiert wird, die Minimierung der inneren Energie erklärt das Phänomen nicht.
 
-## Hüpffrequenz
+#### Hüpffrequenz
 $$
- \nu = \nu_0 \exp[-\frac{\varepsilon_m}{k_BT}]
+  \nu = \nu_0 \exp[-\frac{\varepsilon_m}{k_BT}]
 $$
 
 Im B-Praktikum gibt es einen Versuch mit $\mathrm{Cu_3Au}$. Zur Erklärung ist es wichtig, dass das Gibbs-Potential minimiert wird. Minimierung der inneren Energie erklärt das Phänomen nicht.
+
 ### Leitfähigkeit
 Bei Ionenkristallen wird die Leitfähigkeit größtenteils durch die Anzahl der Leerstellen bestimmt. Dadurch gibt es eine _Atommobilität_ und der Ionenkristall kann Elektrizität leiten.
 
@@ -89,12 +90,12 @@ Dadurch ist eine Versetzunglinie entstanden: Eine Ebene des Kristallgitters ende
 ### Stufenversetzung
 Eine Schraubenversetzung ist ein Liniendefekt, dessen Burgersvektor senkrecht zur Versetzungslinie ist.
 
-## Verschiebungen
+#### Verschiebungen
 Verschiebungen sind damit quasi gequantelt im $\vec{b}$, da die Gitterstruktur erhalten bleiben muss. Die aufzuwendende Arbeit $W$ ist kann für die Stufenversetzung durch die Verformungsarbeit ermittelt werden.
 
 $$
- W = A\cdot\sigma\cdot\underbrace{\frac{2\pi rb}{A} b}_\text{mittlere Verformung}
- = 2\pi rb^2 \sigma\ .
+  W = A\cdot\sigma\cdot\underbrace{\frac{2\pi rb}{A} b}_\text{mittlere Verformung}
+  = 2\pi rb^2 \sigma\ .
 $$
 
 ### Schraubenversetzung
@@ -111,7 +112,7 @@ Der Burgersvektor[^1] $\vec{b}$ ist der Schließungswinkel beim Umlauf um eine V
 
 Bei einer Stufenversetzung ist $\vec{b}$ immer senkrecht zur Gleitebene, bei einer Schraubenversetzung parallel zur Gleitebene.
 
-^[^1]: Benannt nach dem Niederländischen Wissenschaftler Jan Burgers.
+[^1]: Benannt nach dem Niederländischen Wissenschaftler Jan Burgers.
 
 ### Frank-Read-Quelle (Versetzungsquelle)
 Eine Versetzung ist zwischen 2 Punkten im Gitter fixiert, beispielsweise zwischen zwei Fremdatomen.
